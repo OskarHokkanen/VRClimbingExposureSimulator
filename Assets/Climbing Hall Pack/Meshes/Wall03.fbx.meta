@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: db72ccb1e29114841b7cc440a9dfcd2c
+timeCreated: 1495025732
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Wall03_basemesh
+    100004: Wall03_slot
+    100006: Wall03_slot.001
+    100008: Wall03_slot.002
+    100010: Wall03_slot.003
+    100012: Wall03_slot.004
+    100014: Wall03_slot.005
+    100016: Wall03_slot.006
+    100018: Wall03_slot.007
+    100020: Wall03_slot.008
+    100022: Wall03_slot.009
+    100024: Wall03_slot.010
+    100026: Wall03_slot.011
+    100028: Wall03_slot.012
+    100030: Wall03_slot.013
+    100032: Wall03_slot.014
+    400000: //RootNode
+    400002: Wall03_basemesh
+    400004: Wall03_slot
+    400006: Wall03_slot.001
+    400008: Wall03_slot.002
+    400010: Wall03_slot.003
+    400012: Wall03_slot.004
+    400014: Wall03_slot.005
+    400016: Wall03_slot.006
+    400018: Wall03_slot.007
+    400020: Wall03_slot.008
+    400022: Wall03_slot.009
+    400024: Wall03_slot.010
+    400026: Wall03_slot.011
+    400028: Wall03_slot.012
+    400030: Wall03_slot.013
+    400032: Wall03_slot.014
+    2300000: Wall03_basemesh
+    2300002: Wall03_slot
+    2300004: Wall03_slot.001
+    2300006: Wall03_slot.002
+    2300008: Wall03_slot.003
+    2300010: Wall03_slot.004
+    2300012: Wall03_slot.005
+    2300014: Wall03_slot.006
+    2300016: Wall03_slot.007
+    2300018: Wall03_slot.008
+    2300020: Wall03_slot.009
+    2300022: Wall03_slot.010
+    2300024: Wall03_slot.011
+    2300026: Wall03_slot.012
+    2300028: Wall03_slot.013
+    2300030: Wall03_slot.014
+    3300000: Wall03_basemesh
+    3300002: Wall03_slot
+    3300004: Wall03_slot.001
+    3300006: Wall03_slot.002
+    3300008: Wall03_slot.003
+    3300010: Wall03_slot.004
+    3300012: Wall03_slot.005
+    3300014: Wall03_slot.006
+    3300016: Wall03_slot.007
+    3300018: Wall03_slot.008
+    3300020: Wall03_slot.009
+    3300022: Wall03_slot.010
+    3300024: Wall03_slot.011
+    3300026: Wall03_slot.012
+    3300028: Wall03_slot.013
+    3300030: Wall03_slot.014
+    4300000: Wall03_slot.014
+    4300002: Wall03_slot.013
+    4300004: Wall03_slot.012
+    4300006: Wall03_slot.011
+    4300008: Wall03_slot.010
+    4300010: Wall03_slot.009
+    4300012: Wall03_slot.008
+    4300014: Wall03_slot.007
+    4300016: Wall03_slot.006
+    4300018: Wall03_slot.005
+    4300020: Wall03_slot.004
+    4300022: Wall03_slot.003
+    4300024: Wall03_slot.002
+    4300026: Wall03_slot.001
+    4300028: Wall03_slot
+    4300030: Wall03_basemesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Meshes/Wall03.fbx
+  uploadId: 475803

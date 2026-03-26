@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: beeb3b6132f4eae44a9b6f514e885df3
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1495463364
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Equipment/Wall Anchor_Horizontal.prefab
+  uploadId: 475803

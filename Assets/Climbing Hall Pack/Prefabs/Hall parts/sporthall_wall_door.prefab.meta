@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 799e92cf7bef25149868232352d2b6d7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Hall parts/sporthall_wall_door.prefab
+  uploadId: 475803

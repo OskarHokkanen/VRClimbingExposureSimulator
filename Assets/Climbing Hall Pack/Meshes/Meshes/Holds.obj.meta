@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 73aa1688c528b0549bf7bc7a7c2bfb89
+timeCreated: 1494248909
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: hold01a_Sphere.006
+    100002: hold01b_Sphere.019
+    100004: hold02a_Sphere.009
+    100006: hold02b_Sphere.018
+    100008: hold03a_Sphere.015
+    100010: hold03b_Sphere.016
+    100012: hold04a_Sphere.010
+    100014: hold04b_Sphere.017
+    100016: hold05a_Sphere
+    100018: hold05b_Sphere.014
+    100020: hold06a_Sphere.001
+    100022: hold06b_Sphere.013
+    100024: hold07a_Sphere.002
+    100026: hold07b_Sphere.012
+    100028: hold08a_Sphere.004
+    100030: hold08b_Sphere.011
+    100032: hold09a_Sphere.021
+    100034: hold09b_Sphere.022
+    100036: hold10a_Sphere.023
+    100038: hold10b_Sphere.024
+    100040: //RootNode
+    400000: hold01a_Sphere.006
+    400002: hold01b_Sphere.019
+    400004: hold02a_Sphere.009
+    400006: hold02b_Sphere.018
+    400008: hold03a_Sphere.015
+    400010: hold03b_Sphere.016
+    400012: hold04a_Sphere.010
+    400014: hold04b_Sphere.017
+    400016: hold05a_Sphere
+    400018: hold05b_Sphere.014
+    400020: hold06a_Sphere.001
+    400022: hold06b_Sphere.013
+    400024: hold07a_Sphere.002
+    400026: hold07b_Sphere.012
+    400028: hold08a_Sphere.004
+    400030: hold08b_Sphere.011
+    400032: hold09a_Sphere.021
+    400034: hold09b_Sphere.022
+    400036: hold10a_Sphere.023
+    400038: hold10b_Sphere.024
+    400040: //RootNode
+    2300000: hold01a_Sphere.006
+    2300002: hold01b_Sphere.019
+    2300004: hold02a_Sphere.009
+    2300006: hold02b_Sphere.018
+    2300008: hold03a_Sphere.015
+    2300010: hold03b_Sphere.016
+    2300012: hold04a_Sphere.010
+    2300014: hold04b_Sphere.017
+    2300016: hold05a_Sphere
+    2300018: hold05b_Sphere.014
+    2300020: hold06a_Sphere.001
+    2300022: hold06b_Sphere.013
+    2300024: hold07a_Sphere.002
+    2300026: hold07b_Sphere.012
+    2300028: hold08a_Sphere.004
+    2300030: hold08b_Sphere.011
+    2300032: hold09a_Sphere.021
+    2300034: hold09b_Sphere.022
+    2300036: hold10a_Sphere.023
+    2300038: hold10b_Sphere.024
+    3300000: hold01a_Sphere.006
+    3300002: hold01b_Sphere.019
+    3300004: hold02a_Sphere.009
+    3300006: hold02b_Sphere.018
+    3300008: hold03a_Sphere.015
+    3300010: hold03b_Sphere.016
+    3300012: hold04a_Sphere.010
+    3300014: hold04b_Sphere.017
+    3300016: hold05a_Sphere
+    3300018: hold05b_Sphere.014
+    3300020: hold06a_Sphere.001
+    3300022: hold06b_Sphere.013
+    3300024: hold07a_Sphere.002
+    3300026: hold07b_Sphere.012
+    3300028: hold08a_Sphere.004
+    3300030: hold08b_Sphere.011
+    3300032: hold09a_Sphere.021
+    3300034: hold09b_Sphere.022
+    3300036: hold10a_Sphere.023
+    3300038: hold10b_Sphere.024
+    4300000: hold01a_Sphere.006
+    4300002: hold01b_Sphere.019
+    4300004: hold02a_Sphere.009
+    4300006: hold02b_Sphere.018
+    4300008: hold03a_Sphere.015
+    4300010: hold03b_Sphere.016
+    4300012: hold04a_Sphere.010
+    4300014: hold04b_Sphere.017
+    4300016: hold05a_Sphere
+    4300018: hold05b_Sphere.014
+    4300020: hold06a_Sphere.001
+    4300022: hold06b_Sphere.013
+    4300024: hold07a_Sphere.002
+    4300026: hold07b_Sphere.012
+    4300028: hold08a_Sphere.004
+    4300030: hold08b_Sphere.011
+    4300032: hold09a_Sphere.021
+    4300034: hold09b_Sphere.022
+    4300036: hold10a_Sphere.023
+    4300038: hold10b_Sphere.024
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

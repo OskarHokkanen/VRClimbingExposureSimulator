@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d118e835d7934914ca3a1d26da698f1c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/FPS Controller/RMBase.cs
+  uploadId: 475803

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ec9f8c175f7c9ce41bd2adff82e2a7a1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/_Scenes/PopulatorTestSettings.lighting
+  uploadId: 475803

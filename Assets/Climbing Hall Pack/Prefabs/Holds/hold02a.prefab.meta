@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5af99d6104aa7c34781a8f95a4e4d7f6
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1494605486
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Holds/hold02a.prefab
+  uploadId: 475803

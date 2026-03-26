@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: ae2abf31e237ae141aceaab87a14330b
+timeCreated: 1494353440
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pyramid01_Cube.026
+    100002: pyramid01_sharp_Cube.027
+    100004: pyramid02_Cube.038
+    100006: pyramid02_sharp_Cube.028
+    100008: pyramid03_Cube.035
+    100010: pyramid03_sharp_Cube.005
+    100012: pyramid04_Cube.037
+    100014: pyramid04_sharp_Cube.036
+    100016: wedge_sharp_Cube.033
+    100018: wedge_smooth_Cube.029
+    100020: //RootNode
+    400000: pyramid01_Cube.026
+    400002: pyramid01_sharp_Cube.027
+    400004: pyramid02_Cube.038
+    400006: pyramid02_sharp_Cube.028
+    400008: pyramid03_Cube.035
+    400010: pyramid03_sharp_Cube.005
+    400012: pyramid04_Cube.037
+    400014: pyramid04_sharp_Cube.036
+    400016: wedge_sharp_Cube.033
+    400018: wedge_smooth_Cube.029
+    400020: //RootNode
+    2300000: pyramid01_Cube.026
+    2300002: pyramid01_sharp_Cube.027
+    2300004: pyramid02_Cube.038
+    2300006: pyramid02_sharp_Cube.028
+    2300008: pyramid03_Cube.035
+    2300010: pyramid03_sharp_Cube.005
+    2300012: pyramid04_Cube.037
+    2300014: pyramid04_sharp_Cube.036
+    2300016: wedge_sharp_Cube.033
+    2300018: wedge_smooth_Cube.029
+    3300000: pyramid01_Cube.026
+    3300002: pyramid01_sharp_Cube.027
+    3300004: pyramid02_Cube.038
+    3300006: pyramid02_sharp_Cube.028
+    3300008: pyramid03_Cube.035
+    3300010: pyramid03_sharp_Cube.005
+    3300012: pyramid04_Cube.037
+    3300014: pyramid04_sharp_Cube.036
+    3300016: wedge_sharp_Cube.033
+    3300018: wedge_smooth_Cube.029
+    4300000: pyramid01_Cube.026
+    4300002: pyramid01_sharp_Cube.027
+    4300004: pyramid02_Cube.038
+    4300006: pyramid02_sharp_Cube.028
+    4300008: pyramid03_Cube.035
+    4300010: pyramid03_sharp_Cube.005
+    4300012: pyramid04_Cube.037
+    4300014: pyramid04_sharp_Cube.036
+    4300016: wedge_sharp_Cube.033
+    4300018: wedge_smooth_Cube.029
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Meshes/wedges.obj
+  uploadId: 475803

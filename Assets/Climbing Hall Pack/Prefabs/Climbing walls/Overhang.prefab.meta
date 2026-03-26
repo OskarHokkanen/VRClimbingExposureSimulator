@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 625dd95d0fac3e14c81e0d5fb00ac4c6
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1495360068
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Climbing walls/Overhang.prefab
+  uploadId: 475803

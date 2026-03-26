@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebe485981476b1d4fbe6d878bd32d1b0
+timeCreated: 1494250479
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/HallFloor_tiles.mat
+  uploadId: 475803

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2da7b8aa398049a4dbbcd927bb6b5d4b
+timeCreated: 1494249131
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/Holds_green.mat
+  uploadId: 475803

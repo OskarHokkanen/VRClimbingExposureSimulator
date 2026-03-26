@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ed3e61cb5dc605144844e33783221872
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1495355996
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Climbing walls/Boulder.prefab
+  uploadId: 475803

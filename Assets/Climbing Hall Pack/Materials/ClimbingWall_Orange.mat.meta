@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69aec1ebfd2b38a448826f07766eeefb
+timeCreated: 1494254780
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/ClimbingWall_Orange.mat
+  uploadId: 475803

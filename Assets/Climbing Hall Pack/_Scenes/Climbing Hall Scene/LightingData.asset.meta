@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b63899e37cd52f3459cc0aa4eddc48aa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/_Scenes/Climbing Hall Scene/LightingData.asset
+  uploadId: 475803

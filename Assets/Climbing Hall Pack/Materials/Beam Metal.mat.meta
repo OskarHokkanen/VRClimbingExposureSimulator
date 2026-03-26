@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab61ecee5bd02f04ab72e641a6392e64
+timeCreated: 1495461409
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/Beam Metal.mat
+  uploadId: 475803

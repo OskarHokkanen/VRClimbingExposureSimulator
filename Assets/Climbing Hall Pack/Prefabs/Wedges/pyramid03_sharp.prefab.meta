@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4b9e5f36ed0ca714a8945e72b684b2a6
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1494853621
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Wedges/pyramid03_sharp.prefab
+  uploadId: 475803

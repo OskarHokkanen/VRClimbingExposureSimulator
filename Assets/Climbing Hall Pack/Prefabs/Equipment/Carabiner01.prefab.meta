@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e9b8e25e19a937645a1b825e2b3e1076
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1494254370
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Equipment/Carabiner01.prefab
+  uploadId: 475803

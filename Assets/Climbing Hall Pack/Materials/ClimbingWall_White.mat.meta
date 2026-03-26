@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a7ea2c23e29c6d4f83a0a4a5428e667
+timeCreated: 1494254780
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/ClimbingWall_White.mat
+  uploadId: 475803

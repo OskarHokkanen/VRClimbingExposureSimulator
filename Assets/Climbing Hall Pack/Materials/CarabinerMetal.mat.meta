@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c71a13ec580efe40a08b3c20f90b5fb
+timeCreated: 1494253898
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Materials/CarabinerMetal.mat
+  uploadId: 475803

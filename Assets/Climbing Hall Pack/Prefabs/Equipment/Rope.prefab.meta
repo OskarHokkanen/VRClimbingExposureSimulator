@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 04df51f1bc695b142b140569775b4995
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1495124414
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Equipment/Rope.prefab
+  uploadId: 475803

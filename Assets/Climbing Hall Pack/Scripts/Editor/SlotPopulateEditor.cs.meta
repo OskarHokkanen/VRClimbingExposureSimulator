@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 3d66d6e34409c8a4c830df1b862a16d1
+timeCreated: 1494938593
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Scripts/Editor/SlotPopulateEditor.cs
+  uploadId: 475803

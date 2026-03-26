@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0c320154e9214384e8b9fbe0503c423f
+timeCreated: 1494936187
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Scripts/SlotPopulator.cs
+  uploadId: 475803

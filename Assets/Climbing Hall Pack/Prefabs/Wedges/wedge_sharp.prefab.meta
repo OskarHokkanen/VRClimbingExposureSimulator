@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c1a9d34a61a3df44dadac3f73aa2ac29
+labels:
+- climbing_hall
+- indoor
+- rock_climbing
+timeCreated: 1494853626
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211591
+  packageName: Climbing Hall
+  packageVersion: 2.0
+  assetPath: Assets/Climbing Hall Pack/Prefabs/Wedges/wedge_sharp.prefab
+  uploadId: 475803
