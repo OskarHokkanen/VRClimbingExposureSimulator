@@ -39,7 +39,8 @@ public class RemoteControlServer : MonoBehaviour
 
     [Tooltip("Show the IP address in the VR status text")]
     public bool showIPInVR = true;
-
+    public TMPro.TextMeshProUGUI statusText;
+    
     [Header("Presets")]
     public List<WallPreset> presets = new List<WallPreset>();
 
@@ -106,6 +107,10 @@ public class RemoteControlServer : MonoBehaviour
             _serverThread = new Thread(ListenLoop) { IsBackground = true };
             _serverThread.Start();
             Debug.Log($"RemoteControlServer: listening on port {port}");
+            if (statusText != null)
+            {
+                statusText.text = URL;
+            }
         }
         catch (Exception e)
         {

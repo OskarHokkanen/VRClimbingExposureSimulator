@@ -32,7 +32,7 @@ public class SimpleWallSystem : MonoBehaviour
     [Header("References")]
     public Transform rightController;
     public Transform leftController;
-    public Transform headTransform; 
+    public Transform headTransform; // Main Camera — used for wall top height
     public EnvironmentManager environmentManager;
 
     [Header("Wall Dimensions")]
@@ -43,7 +43,7 @@ public class SimpleWallSystem : MonoBehaviour
     public float topAboveHead = 1.0f;
 
     [Tooltip("How far each wall extends past the corner to prevent gaps (meters)")]
-    public float cornerOverlap = 0.005f;
+    public float cornerOverlap = 0.05f;
 
     [Header("Wing Settings")]
     [Tooltip("Enable wing panels on the outer sides")]
@@ -74,7 +74,7 @@ public class SimpleWallSystem : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI statusText;
-    public HoldPlacementManager holdPlacementManager; 
+    public HoldPlacementManager holdPlacementManager; // optional, for hold count display
 
     // ── State ──
     public enum Phase { CalibratingWall1, CalibratingWall2, Editing, Done }
@@ -104,8 +104,9 @@ public class SimpleWallSystem : MonoBehaviour
     // Input
     private bool _triggerPrev, _primaryPrev, _secondaryPrev, _gripPrev;
 
-    // Head height captured during calibration
+    // Head position captured during calibration (used for wall top + direction)
     private float _headYAtCalibration;
+    private Vector3 _headPosAtCalibration;
 
     // Public access for other scripts
     public Vector3 Wall1Normal => _wall1Normal;
@@ -286,9 +287,12 @@ public class SimpleWallSystem : MonoBehaviour
             _wall1Height = height;
             _wall1Valid = true;
 
-            // Capture head height for wall top calculation
+            // Capture head position for wall top and direction calculations
             if (headTransform != null)
+            {
                 _headYAtCalibration = headTransform.position.y;
+                _headPosAtCalibration = headTransform.position;
+            }
 
             ClearSamples();
             CurrentPhase = Phase.CalibratingWall2;
@@ -387,7 +391,7 @@ public class SimpleWallSystem : MonoBehaviour
         {
             // Left wing: hinged on the outer edge of wall 1
             Vector3 wall1OuterEdge = GetOuterEdge(
-                _cornerPoint, _wall1Right, _wall1Center);
+                _cornerPoint, _wall1Normal, _wall1Center);
 
             Vector3 leftWingNormal = RotateNormalAroundEdge(
                 _wall1Normal, _wall1Up, _wall1Right, wall1OuterEdge,
@@ -402,7 +406,7 @@ public class SimpleWallSystem : MonoBehaviour
 
             // Right wing: hinged on the outer edge of wall 2
             Vector3 wall2OuterEdge = GetOuterEdge(
-                _cornerPoint, _wall2Right, _wall2Center);
+                _cornerPoint, _wall2Normal, _wall2Center);
 
             Vector3 rightWingNormal = RotateNormalAroundEdge(
                 _wall2Normal, _wall2Up, _wall2Right, wall2OuterEdge,
@@ -421,16 +425,39 @@ public class SimpleWallSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// Determine which direction along wallRight the wall extends from the corner.
-    /// Picks the direction that goes toward the wall's own center (where
-    /// the user actually sampled), so the wall covers the real physical surface.
-    /// This works for both inside and outside corners.
+    /// Determine which direction along the wall surface each wall extends
+    /// from the corner. Uses the geometric relationship between the corner
+    /// line and the wall normal, then verifies against the player's position.
+    ///
+    /// The extension direction is perpendicular to both the corner line
+    /// and the wall normal — there are only two options (+ or -).
+    /// We pick the one that puts the wall on the side where the player stood.
     /// </summary>
-    Vector3 GetOuterEdge(Vector3 corner, Vector3 wallRight, Vector3 wallCenter)
+    Vector3 GetOuterEdge(Vector3 corner, Vector3 wallNormal, Vector3 wallCenter)
     {
-        Vector3 cornerToCenter = wallCenter - corner;
-        float dot = Vector3.Dot(cornerToCenter, wallRight);
-        return dot >= 0 ? wallRight : -wallRight;
+        // Direction along the wall surface, perpendicular to the corner edge
+        Vector3 candidate = Vector3.Cross(_cornerLineDir, wallNormal).normalized;
+
+        if (candidate.sqrMagnitude < 0.001f)
+        {
+            // Fallback if corner line is parallel to normal (shouldn't happen)
+            candidate = Vector3.Cross(Vector3.up, wallNormal).normalized;
+        }
+
+        // Pick the sign: the wall should extend toward where it was sampled.
+        // Primary check: toward the wall's sample center
+        // Secondary check: toward where the player stood (head position)
+        Vector3 toCenter = wallCenter - corner;
+        float dotCenter = Vector3.Dot(candidate, toCenter);
+
+        // If center is very close to corner (ambiguous), use head position
+        if (Mathf.Abs(dotCenter) < 0.05f)
+        {
+            Vector3 toHead = _headPosAtCalibration - corner;
+            dotCenter = Vector3.Dot(candidate, toHead);
+        }
+
+        return dotCenter >= 0 ? candidate : -candidate;
     }
 
     /// <summary>
@@ -454,8 +481,8 @@ public class SimpleWallSystem : MonoBehaviour
         Vector3 cornerPoint, float height, float width, Color color,
         float groundY, Vector3 wallCenter)
     {
-        // Extend from corner toward the wall's own center
-        Vector3 outerDir = GetOuterEdge(cornerPoint, right, wallCenter);
+        // Extend from corner using wall normal and center for direction
+        Vector3 outerDir = GetOuterEdge(cornerPoint, normal, wallCenter);
 
         // Top: above the player's head
         float topY = _headYAtCalibration + topAboveHead;
@@ -471,8 +498,7 @@ public class SimpleWallSystem : MonoBehaviour
         if (bottomT > topT - 1f) bottomT = topT - 5f; // ensure some height
 
         // Inner edge extends past the corner by overlap amount to fill gaps
-        Vector3 innerEdge = cornerPoint - outerDir;
-        // Vector3 innerEdge = cornerPoint - outerDir * cornerOverlap;
+        Vector3 innerEdge = cornerPoint - outerDir * cornerOverlap;
 
         Vector3 BL = innerEdge + up * bottomT;
         Vector3 BR = cornerPoint + outerDir * width + up * bottomT;
@@ -498,7 +524,7 @@ public class SimpleWallSystem : MonoBehaviour
             ? (groundY - hingePoint.y) / up.y
             : -(halfH + 50f);
         if (bottomT > topT - 1f) bottomT = topT - 5f;
-        
+       
 
         // Wing extends from hinge point outward
         // The "outward" direction for the wing is its own right axis,
@@ -529,16 +555,29 @@ public class SimpleWallSystem : MonoBehaviour
         var colors = new Color[n];
 
         float calibratedBottomY = centerY - halfH;
-        float topY = centerY + halfH + topAboveHead;
-        float totalHeight = topY - groundY;
+
+        // Compute wall-local axes for UV projection.
+        // wallRight = direction along the wall surface perpendicular to up
+        Vector3 wallRight = Vector3.Cross(up, normal).normalized;
+        if (wallRight.sqrMagnitude < 0.001f)
+            wallRight = Vector3.Cross(Vector3.forward, normal).normalized;
+
+        // Find the UV origin (bottom-left corner, first vertex)
+        // and project all vertices relative to it for consistent tiling
+        Vector3 uvOrigin = verts[0];
 
         for (int i = 0; i < n; i++)
         {
             vertices[i] = verts[i];
             normals[i] = normal;
-            uvs[i] = new Vector2(i < 2 ? 0 : 1,
-                Mathf.Clamp01((verts[i].y - groundY) / Mathf.Max(totalHeight, 0.1f)));
 
+            // UV: 1 unit = 1 meter in world space (tiles naturally)
+            Vector3 offset = verts[i] - uvOrigin;
+            float u = Vector3.Dot(offset, wallRight);
+            float v = Vector3.Dot(offset, up);
+            uvs[i] = new Vector2(u, v);
+
+            // Vertex color fade below calibrated area
             float belowCalibrated = calibratedBottomY - verts[i].y;
             float extensionHeight = calibratedBottomY - groundY;
             float t = (extensionHeight <= 0.01f || belowCalibrated <= 0f)
@@ -635,9 +674,9 @@ public class SimpleWallSystem : MonoBehaviour
         if (!_wall1Valid || !_wall2Valid) return;
 
         Vector3 w1Outer = GetOuterEdge(
-            _cornerPoint, _wall1Right, _wall1Center);
+            _cornerPoint, _wall1Normal, _wall1Center);
         Vector3 w2Outer = GetOuterEdge(
-            _cornerPoint, _wall2Right, _wall2Center);
+            _cornerPoint, _wall2Normal, _wall2Center);
 
         // Wall 1
         Vector3 w1Center = _cornerPoint + w1Outer * (wallWidth * 0.5f);

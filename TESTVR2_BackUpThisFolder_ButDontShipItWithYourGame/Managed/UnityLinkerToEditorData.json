@@ -1018,7 +1018,9 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/ExperimentScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
