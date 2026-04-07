@@ -20387,7 +20387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TooltipAttribute__ctor_m9DA2380A6739B9D4
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 46146
+// Method Definition Index: 46147
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool StringMarshaller_TryMarshalEmptyOrNullString_m615203C511071D59295D889AB136575DFFEA90A6_inline (String_t* ___0_s, ManagedSpanWrapper_tE7FC4BBB631B130757F8DEB15853D98FD3D5DC0E* ___1_managedSpanWrapper, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -26203,7 +26203,7 @@ IL_0019:
 		return L_10;
 	}
 }
-// Method Definition Index: 46141
+// Method Definition Index: 46142
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BlittableArrayWrapper_Unmarshal_TisGradientColorKey_tBD03A613338639E3774A10265CC5F3619C13421A_m24F75CD43ADA04E3024B59C02C5920219F8F10C3_gshared_inline (BlittableArrayWrapper_t1512FE0506F4BD7778410D562DBA6FE2DDEE4F59* __this, GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -26362,7 +26362,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Span_1_get_Length_m2F1A0C
 		return L_0;
 	}
 }
-// Method Definition Index: 46141
+// Method Definition Index: 46142
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BlittableArrayWrapper_Unmarshal_TisGradientAlphaKey_tF469955E4BBAF1044320D956CD8D990F1A26EAA0_m0EAC25FDCF00502414AC6A47005D27DEB41B097B_gshared_inline (BlittableArrayWrapper_t1512FE0506F4BD7778410D562DBA6FE2DDEE4F59* __this, GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E** ___0_array, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);

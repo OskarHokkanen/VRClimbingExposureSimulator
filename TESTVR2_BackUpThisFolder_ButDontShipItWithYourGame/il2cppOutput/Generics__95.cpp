@@ -20383,7 +20383,7 @@ IL2CPP_EXTERN_C  NativeArray_1_tA250DFA6F2B09B543458A4231692763973E84C57 NativeA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 64915
+// Method Definition Index: 64916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeArrayStaticId_1__cctor_m67213AA7112EE9BCD68829DC44441438CB42950A_gshared (const RuntimeMethod* method) 
 {
 	{

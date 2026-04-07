@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.XR;
 public class HoldPlacementManager : MonoBehaviour
 {
+    [Header("Frustum (optional)")]
+    [Tooltip("If assigned, holds can also be placed on the frustum's near plane")]
+    public WallFrustumCalibrator frustumCalibrator;
+    
     [Header("References")]
     public SimpleWallSystem wallSystem;
     public Transform rightController;
@@ -34,10 +38,16 @@ public class HoldPlacementManager : MonoBehaviour
 
     void Update()
     {
-        if (wallSystem == null || wallSystem.Walls.Count == 0)
-            return;
-        if (wallSystem.CurrentPhase != SimpleWallSystem.Phase.Done)
-            return;
+        // bool wallsReady = wallSystem != null && wallSystem.Walls.Count > 0
+        //                                      && wallSystem.CurrentPhase == SimpleWallSystem.Phase.Done;
+        bool frustumReady = frustumCalibrator != null && frustumCalibrator.IsCalibrated;
+
+        // if (!wallsReady && !frustumReady) return;
+        
+        // if (wallSystem == null || wallSystem.Walls.Count == 0)
+        //     return;
+        // if (wallSystem.CurrentPhase != SimpleWallSystem.Phase.Done)
+        //     return;
         if (rightController == null)
             return;
 
@@ -68,11 +78,42 @@ public class HoldPlacementManager : MonoBehaviour
         Vector3 controllerPos = rightController.position;
         controllerPos.y += heightOffset;
 
-        // Find nearest wall
+        // // Find nearest wall
+        // float bestDist = float.MaxValue;
+        // int bestWall = -1;
+        //
+        // var walls = wallSystem.Walls;
+        // for (int i = 0; i < walls.Count; i++)
+        // {
+        //     float dist = Mathf.Abs(walls[i].SignedDistanceToPoint(controllerPos));
+        //     if (dist < bestDist && dist < maxDistance)
+        //     {
+        //         bestDist = dist;
+        //         bestWall = i;
+        //     }
+        // }
+        //
+        // if (bestWall < 0) return;
+        //
+        // var wall = walls[bestWall];
+
+        // Collect walls from both sources
+        
+        // Frustum start
+        var walls = new List<CalibratedWall>(wallSystem != null ? wallSystem.Walls : new List<CalibratedWall>());
+        if (frustumCalibrator != null && frustumCalibrator.IsCalibrated)
+            walls.Add(frustumCalibrator.GetNearPlaneAsWall());
+
+        if (walls.Count == 0)
+        {
+            Debug.LogWarning("Holdplacement: No walls available.");
+            return;
+        } 
+            
+
         float bestDist = float.MaxValue;
         int bestWall = -1;
 
-        var walls = wallSystem.Walls;
         for (int i = 0; i < walls.Count; i++)
         {
             float dist = Mathf.Abs(walls[i].SignedDistanceToPoint(controllerPos));
@@ -83,10 +124,19 @@ public class HoldPlacementManager : MonoBehaviour
             }
         }
 
-        if (bestWall < 0) return;
+        if (bestWall < 0)
+        {
+            Debug.LogWarning($"HoldPlacement: No wall within maxDistance ({maxDistance}m). " +
+                             $"Best was {bestDist:F3}m. Try increasing maxDistance.");
+            return;
+        }
 
         var wall = walls[bestWall];
-
+        
+        
+        // Frustum end
+        
+        
         // Project controller onto wall, then offset slightly outward
         Vector3 onWall = wall.ProjectPointOntoWall(controllerPos);
         Vector3 holdPos = onWall + wall.normal * wallOffset;
@@ -113,6 +163,7 @@ public class HoldPlacementManager : MonoBehaviour
         obj.transform.localScale *= holdScale;
         obj.name = $"Hold_{_holds.Count}";
         _holds.Add(obj);
+        Debug.Log($"Hold_{_holds.Count}");
     }
 
     /// <summary>Remove all placed holds.</summary>
@@ -124,9 +175,10 @@ public class HoldPlacementManager : MonoBehaviour
 
     InputDevice GetDevice()
     {
-        var flags = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        var flags = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
         var devs = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(flags, devs);
+        Debug.Log("Devices found: " + devs.Count);
         return devs.Count > 0 ? devs[0] : default;
     }
 }
