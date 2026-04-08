@@ -20365,6 +20365,8 @@ struct CachedSearchType_tD3FB4A27A9B60F29037EC3842C95866EB2036513
 struct CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076  : public RuntimeObject
 {
 	int32_t ___wallIndex;
+	float ___surfaceTopY;
+	float ___surfaceBottomY;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___center;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___localRight;
@@ -55106,6 +55108,12 @@ struct HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8  : public 
 	float ___maxDistance;
 	float ___wallOffset;
 	float ___heightOffset;
+	float ___holdsPerMeter;
+	float ___minVerticalSpacing;
+	float ___minHorizontalSpacing;
+	float ___edgeMargin;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___playerHead;
+	float ___spawnBelowFeet;
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ____holds;
 	bool ____triggerPrev;
 	bool ____thumbPrev;
@@ -55998,6 +56006,11 @@ struct ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20  : public MonoBeha
 	SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* ___wallSystem;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___targetForward;
 	bool ___recenterOnStart;
+	bool ___recenterOnWear;
+	float ___wearDelay;
+	bool ____wasWorn;
+	bool ____pendingRecenter;
+	float ____wearTimer;
 };
 struct WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -63129,6 +63142,10 @@ struct HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66_StaticFiel
 struct HandsOneEuroFilterPostProcessor_tE99F8855C6D85959C0EDF9226ED522B08DBF14AE_StaticFields
 {
 	List_1_tE4111BEC044D13259EFD4EC5907636C855887179* ___s_SubsystemsReuse;
+};
+struct HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8_StaticFields
+{
+	ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* ___HoldColors;
 };
 struct MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33_StaticFields
 {
@@ -71695,7 +71712,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize9544 = { sizeof(EnvironmentP
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9545;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9545 = { sizeof(HeightController_t45572F379E3AE95475190B009A3838A649C1775B), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9546;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9546 = { sizeof(HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9546 = { sizeof(HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8), -1, sizeof(HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9547;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9547 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9548;

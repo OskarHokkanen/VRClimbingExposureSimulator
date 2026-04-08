@@ -10,6 +10,12 @@ public class CalibratedWall
 {
     public int wallIndex;
 
+    /// <summary>World Y of the top of the visual wall mesh.</summary>
+    public float surfaceTopY;
+
+    /// <summary>World Y of the bottom of the visual wall mesh (ground level).</summary>
+    public float surfaceBottomY;
+    
     // ── Plane geometry ──
     /// <summary>Center point of the wall in world space.</summary>
     public Vector3 center;

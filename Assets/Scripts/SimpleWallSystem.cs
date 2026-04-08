@@ -317,6 +317,9 @@ public class SimpleWallSystem : MonoBehaviour
             SendHaptic(0.8f, 0.5f); // strong buzz — walls are ready
             Debug.Log($"Wall 2 calibrated: normal={normal}, center={centroid}");
         }
+        
+        if (holdPlacementManager != null)
+            holdPlacementManager.AutoPopulate();
     }
 
     void ComputeWallFrame(Vector3 normal, out Vector3 right, out Vector3 up)
@@ -437,6 +440,9 @@ public class SimpleWallSystem : MonoBehaviour
 
         // Rebuild the CalibratedWall list so HoldPlacementManager can use it
         RebuildCalibratedWalls();
+        
+        if (holdPlacementManager != null && _wall1Valid && _wall2Valid)
+            holdPlacementManager.AutoPopulate();
     }
 
     /// <summary>
@@ -735,17 +741,22 @@ public class SimpleWallSystem : MonoBehaviour
     CalibratedWall BuildCalibratedWall(int index, Vector3 center,
         Vector3 normal, Vector3 right, Vector3 up, float width, float height)
     {
+        float groundY = environmentManager != null ? environmentManager.GroundY : -20f;
+        float topY    = _headYAtCalibration + topAboveHead;
+
         return new CalibratedWall
         {
-            wallIndex = index,
-            center = center,
-            normal = normal,
-            localRight = right,
-            localUp = up,
-            width = width,
-            height = height,
-            samplePoints = new List<Vector3>(),
-            sampleNormals = new List<Vector3>()
+            wallIndex      = index,
+            center         = center,
+            normal         = normal,
+            localRight     = right,
+            localUp        = up,
+            width          = width,
+            height         = height,
+            surfaceTopY    = topY,
+            surfaceBottomY = groundY,
+            samplePoints   = new List<Vector3>(),
+            sampleNormals  = new List<Vector3>()
         };
     }
 

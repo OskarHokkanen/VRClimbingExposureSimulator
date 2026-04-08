@@ -1857,6 +1857,12 @@ MonoBehaviour:
   maxDistance: 0.4
   wallOffset: 0.02
   heightOffset: -0.36
+  holdsPerMeter: 1
+  minVerticalSpacing: 1.84
+  minHorizontalSpacing: 1.5
+  edgeMargin: 0.15
+  playerHead: {fileID: 259917669}
+  spawnBelowFeet: 0.5
 --- !u!114 &67783203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,7 +1878,7 @@ MonoBehaviour:
   wallSystem: {fileID: 67783208}
   environmentRoot: {fileID: 1783572214}
   wallHeight: 2
-  minHeight: 2
+  minHeight: 0
   maxHeight: 100
   physicalFloorY: 0
   autoDetectFloor: 0
@@ -2099,6 +2105,8 @@ MonoBehaviour:
   wallSystem: {fileID: 0}
   targetForward: {x: 0, y: 0, z: 1}
   recenterOnStart: 1
+  recenterOnWear: 1
+  wearDelay: 1.2
 --- !u!1001 &92756425
 PrefabInstance:
   m_ObjectHideFlags: 0
