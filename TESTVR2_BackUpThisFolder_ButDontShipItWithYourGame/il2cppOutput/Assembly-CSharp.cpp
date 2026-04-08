@@ -4272,6 +4272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWingMesh_m83871B02
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_mA64CA88D48B597DC1B89D3F43BCEFDCDFCEAF5AD (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80_inline (float ___0_angle, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_axis, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_worldY, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_verts, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___4_surfaceColor, float ___5_groundY, float ___6_centerY, float ___7_halfH, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh__ctor_m5A9AECEDDAFFD84811ED8928012BDE97A9CEBD00 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, const RuntimeMethod* method) ;
@@ -15293,26 +15294,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeCorner_m65F8BD4C
 	float V_5 = 0.0f;
 	float V_6 = 0.0f;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:337>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:336>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_0, L_1, NULL);
 		__this->____cornerLineDir = L_2;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:338>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:337>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerLineDir);
 		float L_4;
 		L_4 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline(L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:340>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:339>
 		float L_5 = V_0;
 		if ((!(((float)L_5) < ((float)(0.00100000005f)))))
 		{
-			goto IL_0059;
+			goto IL_0058;
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:343>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:341>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->____wall1Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->____wall2Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
@@ -15320,96 +15321,163 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeCorner_m65F8BD4C
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_8, (0.5f), NULL);
 		__this->____cornerPoint = L_9;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:344>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = __this->____wall1Up;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:342>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		__this->____cornerLineDir = L_10;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:345>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:343>
 		return;
 	}
 
-IL_0059:
+IL_0058:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:348>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:346>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = __this->____cornerLineDir;
 		float L_12 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 		L_13 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_11, L_12, NULL);
 		__this->____cornerLineDir = L_13;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:351>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = __this->____wall1Normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = __this->____wall1Center;
-		float L_16;
-		L_16 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_14, L_15, NULL);
-		V_1 = L_16;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:352>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = __this->____wall2Normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = __this->____wall2Center;
-		float L_19;
-		L_19 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_17, L_18, NULL);
-		V_2 = L_19;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:353>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = __this->____wall1Normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____wall2Normal;
-		float L_22;
-		L_22 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_20, L_21, NULL);
-		V_3 = L_22;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:354>
-		float L_23 = V_3;
-		float L_24 = V_3;
-		V_4 = ((float)il2cpp_codegen_subtract((1.0f), ((float)il2cpp_codegen_multiply(L_23, L_24))));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:356>
-		float L_25 = V_4;
-		float L_26;
-		L_26 = fabsf(L_25);
-		if ((!(((float)L_26) < ((float)(9.99999997E-07f)))))
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:349>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_14 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerLineDir);
+		float L_15 = L_14->___y;
+		if ((!(((float)L_15) < ((float)(0.0f)))))
 		{
-			goto IL_00dc;
+			goto IL_008d;
+		}
+	}
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:349>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = __this->____cornerLineDir;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_16, NULL);
+		__this->____cornerLineDir = L_17;
+	}
+
+IL_008d:
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:351>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = __this->____wall1Normal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = __this->____wall1Center;
+		float L_20;
+		L_20 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_18, L_19, NULL);
+		V_1 = L_20;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:352>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____wall2Normal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = __this->____wall2Center;
+		float L_23;
+		L_23 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_21, L_22, NULL);
+		V_2 = L_23;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:353>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = __this->____wall1Normal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = __this->____wall2Normal;
+		float L_26;
+		L_26 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_24, L_25, NULL);
+		V_3 = L_26;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:354>
+		float L_27 = V_3;
+		float L_28 = V_3;
+		V_4 = ((float)il2cpp_codegen_subtract((1.0f), ((float)il2cpp_codegen_multiply(L_27, L_28))));
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:356>
+		float L_29 = V_4;
+		float L_30;
+		L_30 = fabsf(L_29);
+		if ((!(((float)L_30) < ((float)(9.99999997E-07f)))))
+		{
+			goto IL_00fe;
 		}
 	}
 	{
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:358>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = __this->____wall1Center;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = __this->____wall2Center;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
-		L_29 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_27, L_28, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
-		L_30 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_29, (0.5f), NULL);
-		__this->____cornerPoint = L_30;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = __this->____wall1Center;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = __this->____wall2Center;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
+		L_33 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_31, L_32, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_33, (0.5f), NULL);
+		__this->____cornerPoint = L_34;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:359>
 		return;
 	}
 
-IL_00dc:
+IL_00fe:
 	{
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:362>
-		float L_31 = V_1;
-		float L_32 = V_2;
-		float L_33 = V_3;
-		float L_34 = V_4;
-		V_5 = ((float)(((float)il2cpp_codegen_subtract(L_31, ((float)il2cpp_codegen_multiply(L_32, L_33))))/L_34));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:363>
-		float L_35 = V_2;
-		float L_36 = V_1;
+		float L_35 = V_1;
+		float L_36 = V_2;
 		float L_37 = V_3;
 		float L_38 = V_4;
-		V_6 = ((float)(((float)il2cpp_codegen_subtract(L_35, ((float)il2cpp_codegen_multiply(L_36, L_37))))/L_38));
+		V_5 = ((float)(((float)il2cpp_codegen_subtract(L_35, ((float)il2cpp_codegen_multiply(L_36, L_37))))/L_38));
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:363>
+		float L_39 = V_2;
+		float L_40 = V_1;
+		float L_41 = V_3;
+		float L_42 = V_4;
+		V_6 = ((float)(((float)il2cpp_codegen_subtract(L_39, ((float)il2cpp_codegen_multiply(L_40, L_41))))/L_42));
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:364>
-		float L_39 = V_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = __this->____wall1Normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
-		L_41 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_39, L_40, NULL);
-		float L_42 = V_6;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = __this->____wall2Normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
-		L_44 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_42, L_43, NULL);
+		float L_43 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
-		L_45 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_41, L_44, NULL);
-		__this->____cornerPoint = L_45;
+		L_45 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_43, L_44, NULL);
+		float L_46 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = __this->____wall2Normal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48;
+		L_48 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_46, L_47, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
+		L_49 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_45, L_48, NULL);
+		__this->____cornerPoint = L_49;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:365>
 		return;
 	}
 }
 // Method Definition Index: 81858
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_worldY, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:373>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerLineDir);
+		float L_1 = L_0->___y;
+		float L_2;
+		L_2 = fabsf(L_1);
+		if ((!(((float)L_2) > ((float)(0.00999999978f)))))
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:375>
+		float L_3 = ___0_worldY;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerPoint);
+		float L_5 = L_4->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_6 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerLineDir);
+		float L_7 = L_6->___y;
+		V_0 = ((float)(((float)il2cpp_codegen_subtract(L_3, L_5))/L_7));
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:376>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->____cornerPoint;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = __this->____cornerLineDir;
+		float L_10 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_9, L_10, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_8, L_11, NULL);
+		return L_12;
+	}
+
+IL_0049:
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:379>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_13 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerPoint);
+		float L_14 = L_13->___x;
+		float L_15 = ___0_worldY;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_16 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____cornerPoint);
+		float L_17 = L_16->___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		memset((&L_18), 0, sizeof(L_18));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_18), L_14, L_15, L_17, NULL);
+		return L_18;
+	}
+}
+// Method Definition Index: 81859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15445,9 +15513,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0
 	memset((&V_10), 0, sizeof(V_10));
 	float G_B6_0 = 0.0f;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:373>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:388>
 		SimpleWallSystem_ClearMeshes_mFA0EA9CB73F1D20BA05D7FFC046793AD516A0897(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:374>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:389>
 		bool L_0 = __this->____wall1Valid;
 		if (!L_0)
 		{
@@ -15464,13 +15532,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0
 
 IL_0016:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:374>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:389>
 		return;
 	}
 
 IL_0017:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:376>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:391>
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_2 = __this->___environmentManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -15497,18 +15565,18 @@ IL_002c:
 IL_0037:
 	{
 		V_0 = G_B6_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:380>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:395>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->____wall1Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_6, L_7, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:381>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:396>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = __this->____wall2Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 		L_11 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_9, L_10, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:384>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:385>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:399>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:400>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = __this->____wall1Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = __this->____wall1Right;
@@ -15519,8 +15587,8 @@ IL_0037:
 		float L_19 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = __this->____wall1Center;
 		SimpleWallSystem_BuildWallMesh_m3F9579EC9EF150093961E41237284CE2DB50B500(__this, _stringLiteralAFD6DBB252A0946AAB3A97EA6323DB77619E5E2C, L_12, L_13, L_14, L_15, L_16, L_17, L_18, L_19, L_20, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:386>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:387>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:401>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:402>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = __this->____wall2Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = __this->____wall2Right;
@@ -15531,7 +15599,7 @@ IL_0037:
 		float L_28 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = __this->____wall2Center;
 		SimpleWallSystem_BuildWallMesh_m3F9579EC9EF150093961E41237284CE2DB50B500(__this, _stringLiteral470DEA9A2C79DF47E2F756B19849EFDA35A2A752, L_21, L_22, L_23, L_24, L_25, L_26, L_27, L_28, L_29, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:390>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:405>
 		bool L_30 = __this->___enableWings;
 		if (!L_30)
 		{
@@ -15539,17 +15607,17 @@ IL_0037:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:393>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:394>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:408>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:409>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = __this->____wall1Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
 		L_34 = SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE(__this, L_31, L_32, L_33, NULL);
 		V_1 = L_34;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:396>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:397>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:398>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:411>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:412>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:413>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = __this->____wall1Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = __this->____wall1Right;
@@ -15559,10 +15627,10 @@ IL_0037:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
 		L_41 = SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659(__this, L_35, L_36, L_37, L_38, L_39, L_40, NULL);
 		V_2 = L_41;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:400>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:415>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = V_2;
 		SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653(__this, L_42, (&V_3), (&V_4), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:402>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:417>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = V_1;
 		float L_45 = __this->___wallWidth;
@@ -15571,9 +15639,9 @@ IL_0037:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47;
 		L_47 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_43, L_46, NULL);
 		V_5 = L_47;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:403>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:404>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:405>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:418>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:419>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:420>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_3;
@@ -15584,17 +15652,17 @@ IL_0037:
 		float L_55 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_1;
 		SimpleWallSystem_BuildWingMesh_m83871B02F31DA58BC8759292B2368A1A7A716430(__this, _stringLiteralBBD84D1E7608E6C384FDDE2C9E9CE209D20F168D, L_48, L_49, L_50, L_51, L_52, L_53, L_54, L_55, L_56, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:408>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:409>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:423>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:424>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = __this->____wall2Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
 		L_60 = SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE(__this, L_57, L_58, L_59, NULL);
 		V_6 = L_60;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:411>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:412>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:413>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:426>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:427>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:428>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = __this->____wall2Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = __this->____wall2Right;
@@ -15604,10 +15672,10 @@ IL_0037:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
 		L_67 = SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659(__this, L_61, L_62, L_63, L_64, L_65, L_66, NULL);
 		V_7 = L_67;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:415>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:430>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_7;
 		SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653(__this, L_68, (&V_8), (&V_9), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:417>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:432>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_6;
 		float L_71 = __this->___wallWidth;
@@ -15616,9 +15684,9 @@ IL_0037:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73;
 		L_73 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_69, L_72, NULL);
 		V_10 = L_73;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:418>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:419>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:420>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:433>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:434>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:435>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_9;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = V_8;
@@ -15633,13 +15701,13 @@ IL_0037:
 
 IL_01f7:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:424>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:439>
 		SimpleWallSystem_RebuildCalibratedWalls_mA64CA88D48B597DC1B89D3F43BCEFDCDFCEAF5AD(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:425>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:440>
 		return;
 	}
 }
-// Method Definition Index: 81859
+// Method Definition Index: 81860
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_corner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallCenter, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -15652,7 +15720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
 	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:439>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:454>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____cornerLineDir;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_wallNormal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
@@ -15661,7 +15729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_3), NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:441>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:456>
 		float L_4;
 		L_4 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
 		if ((!(((float)L_4) < ((float)(0.00100000005f)))))
@@ -15670,7 +15738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:444>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:459>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_wallNormal;
@@ -15684,19 +15752,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_0037:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:450>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:465>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___2_wallCenter;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___0_corner;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 		L_11 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_9, L_10, NULL);
 		V_1 = L_11;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:451>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:466>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_1;
 		float L_14;
 		L_14 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_12, L_13, NULL);
 		V_2 = L_14;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:454>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:469>
 		float L_15 = V_2;
 		float L_16;
 		L_16 = fabsf(L_15);
@@ -15706,13 +15774,13 @@ IL_0037:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:456>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:471>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = __this->____headPosAtCalibration;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___0_corner;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
 		L_19 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_17, L_18, NULL);
 		V_4 = L_19;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:457>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:472>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_4;
 		float L_22;
@@ -15722,7 +15790,7 @@ IL_0037:
 
 IL_006b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:460>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:475>
 		float L_23 = V_2;
 		if ((((float)L_23) >= ((float)(0.0f))))
 		{
@@ -15742,18 +15810,18 @@ IL_007a:
 		return L_26;
 	}
 }
-// Method Definition Index: 81860
+// Method Definition Index: 81861
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallUp, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallRight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_outerDir, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_corner, float ___5_angleDeg, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:472>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:487>
 		float L_0 = ___5_angleDeg;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_wallUp;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_2;
 		L_2 = Quaternion_AngleAxis_mF37022977B297E63AA70D69EA1C4C922FF22CC80_inline(L_0, L_1, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:473>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:488>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_wallNormal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_2, L_3, NULL);
@@ -15763,7 +15831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_5;
 	}
 }
-// Method Definition Index: 81861
+// Method Definition Index: 81862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWallMesh_m3F9579EC9EF150093961E41237284CE2DB50B500 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_cornerPoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_wallCenter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15778,12 +15846,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWallMesh_m3F9579EC
 	memset((&V_0), 0, sizeof(V_0));
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
-	float V_3 = 0.0f;
-	float V_4 = 0.0f;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
-	memset((&V_5), 0, sizeof(V_5));
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_6;
-	memset((&V_6), 0, sizeof(V_6));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	float V_5 = 0.0f;
+	float V_6 = 0.0f;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_7;
 	memset((&V_7), 0, sizeof(V_7));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_8;
@@ -15792,190 +15860,182 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWallMesh_m3F9579EC
 	float G_B3_0 = 0.0f;
 	float G_B6_0 = 0.0f;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:485>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:499>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___4_cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___9_wallCenter;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE(__this, L_0, L_1, L_2, NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:488>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:501>
 		float L_4 = __this->____headYAtCalibration;
 		float L_5 = __this->___topAboveHead;
 		V_1 = ((float)il2cpp_codegen_add(L_4, L_5));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:489>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:490>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:491>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___2_up;
-		float L_7 = L_6.___y;
-		float L_8;
-		L_8 = fabsf(L_7);
-		if ((((float)L_8) > ((float)(0.00999999978f))))
-		{
-			goto IL_003d;
-		}
-	}
-	{
-		float L_9 = ___5_height;
-		float L_10 = __this->___topAboveHead;
-		G_B3_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_9, (0.5f))), L_10));
-		goto IL_004d;
-	}
-
-IL_003d:
-	{
-		float L_11 = V_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___4_cornerPoint;
-		float L_13 = L_12.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___2_up;
-		float L_15 = L_14.___y;
-		G_B3_0 = ((float)(((float)il2cpp_codegen_subtract(L_11, L_13))/L_15));
-	}
-
-IL_004d:
-	{
-		V_2 = G_B3_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:494>
-		float L_16 = ___5_height;
-		V_3 = ((float)il2cpp_codegen_multiply(L_16, (0.5f)));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:495>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:496>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:497>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___2_up;
-		float L_18 = L_17.___y;
-		float L_19;
-		L_19 = fabsf(L_18);
-		if ((((float)L_19) > ((float)(0.00999999978f))))
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:502>
+		float L_6 = ___5_height;
+		V_2 = ((float)il2cpp_codegen_multiply(L_6, (0.5f)));
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:506>
+		float L_7 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4(__this, L_7, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		float L_10 = __this->___cornerOverlap;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_9, L_10, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_8, L_11, NULL);
+		V_3 = L_12;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:507>
+		float L_13 = ___8_groundY;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4(__this, L_13, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_0;
+		float L_16 = __this->___cornerOverlap;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, L_16, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_14, L_17, NULL);
+		V_4 = L_18;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:511>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:512>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:513>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___2_up;
+		float L_20 = L_19.___y;
+		float L_21;
+		L_21 = fabsf(L_20);
+		if ((((float)L_21) > ((float)(0.00999999978f))))
 		{
 			goto IL_0073;
 		}
 	}
 	{
-		float L_20 = V_3;
-		G_B6_0 = ((-((float)il2cpp_codegen_add(L_20, (50.0f)))));
-		goto IL_0084;
+		float L_22 = V_2;
+		float L_23 = __this->___topAboveHead;
+		G_B3_0 = ((float)il2cpp_codegen_add(L_22, L_23));
+		goto IL_0083;
 	}
 
 IL_0073:
 	{
-		float L_21 = ___8_groundY;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = ___4_cornerPoint;
-		float L_23 = L_22.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = ___2_up;
-		float L_25 = L_24.___y;
-		G_B6_0 = ((float)(((float)il2cpp_codegen_subtract(L_21, L_23))/L_25));
+		float L_24 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___4_cornerPoint;
+		float L_26 = L_25.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ___2_up;
+		float L_28 = L_27.___y;
+		G_B3_0 = ((float)(((float)il2cpp_codegen_subtract(L_24, L_26))/L_28));
 	}
 
-IL_0084:
+IL_0083:
 	{
-		V_4 = G_B6_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:498>
-		float L_26 = V_4;
-		float L_27 = V_2;
-		if ((!(((float)L_26) > ((float)((float)il2cpp_codegen_subtract(L_27, (1.0f)))))))
+		V_5 = G_B3_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:514>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:515>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:516>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = ___2_up;
+		float L_30 = L_29.___y;
+		float L_31;
+		L_31 = fabsf(L_30);
+		if ((((float)L_31) > ((float)(0.00999999978f))))
 		{
-			goto IL_009a;
+			goto IL_00a1;
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:498>
-		float L_28 = V_2;
-		V_4 = ((float)il2cpp_codegen_subtract(L_28, (5.0f)));
+		float L_32 = V_2;
+		G_B6_0 = ((-((float)il2cpp_codegen_add(L_32, (50.0f)))));
+		goto IL_00b2;
 	}
 
-IL_009a:
+IL_00a1:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:501>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = ___4_cornerPoint;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_0;
-		float L_31 = __this->___cornerOverlap;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
-		L_32 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_30, L_31, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
-		L_33 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_29, L_32, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:503>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = L_33;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = ___2_up;
-		float L_36 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
-		L_37 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_35, L_36, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
-		L_38 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_34, L_37, NULL);
-		V_5 = L_38;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:504>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = ___4_cornerPoint;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_0;
-		float L_41 = ___6_width;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
-		L_42 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_40, L_41, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
-		L_43 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_39, L_42, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = ___2_up;
-		float L_45 = V_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46;
-		L_46 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_44, L_45, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47;
-		L_47 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_43, L_46, NULL);
-		V_6 = L_47;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:505>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = ___4_cornerPoint;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = V_0;
-		float L_50 = ___6_width;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
-		L_51 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_49, L_50, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
-		L_52 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_48, L_51, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = ___2_up;
-		float L_54 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55;
-		L_55 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_53, L_54, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56;
-		L_56 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_52, L_55, NULL);
-		V_7 = L_56;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:506>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = ___2_up;
-		float L_58 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
-		L_59 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_57, L_58, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
-		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_34, L_59, NULL);
-		V_8 = L_60;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:508>
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_61 = (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B*)il2cpp_codegen_object_new(List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_il2cpp_TypeInfo_var);
-		List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C(L_61, List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C_RuntimeMethod_var);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_62 = L_61;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_5;
+		float L_33 = ___8_groundY;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = ___4_cornerPoint;
+		float L_35 = L_34.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ___2_up;
+		float L_37 = L_36.___y;
+		G_B6_0 = ((float)(((float)il2cpp_codegen_subtract(L_33, L_35))/L_37));
+	}
+
+IL_00b2:
+	{
+		V_6 = G_B6_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:517>
+		float L_38 = V_6;
+		float L_39 = V_5;
+		if ((!(((float)L_38) > ((float)((float)il2cpp_codegen_subtract(L_39, (1.0f)))))))
+		{
+			goto IL_00ca;
+		}
+	}
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:517>
+		float L_40 = V_5;
+		V_6 = ((float)il2cpp_codegen_subtract(L_40, (5.0f)));
+	}
+
+IL_00ca:
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:519>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = ___4_cornerPoint;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = V_0;
+		float L_43 = ___6_width;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
+		L_44 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_42, L_43, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
+		L_45 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_41, L_44, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:520>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = L_45;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = ___2_up;
+		float L_48 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
+		L_49 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_47, L_48, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50;
+		L_50 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_46, L_49, NULL);
+		V_7 = L_50;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:521>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51 = ___2_up;
+		float L_52 = V_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
+		L_53 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_51, L_52, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
+		L_54 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_46, L_53, NULL);
+		V_8 = L_54;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:523>
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_55 = (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B*)il2cpp_codegen_object_new(List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_il2cpp_TypeInfo_var);
+		List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C(L_55, List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C_RuntimeMethod_var);
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_56 = L_55;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_4;
+		NullCheck(L_56);
+		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_56, L_57, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_58 = L_56;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_8;
+		NullCheck(L_58);
+		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_58, L_59, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_60 = L_58;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_7;
+		NullCheck(L_60);
+		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_60, L_61, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_62 = L_60;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_3;
 		NullCheck(L_62);
 		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_62, L_63, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_64 = L_62;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65 = V_6;
-		NullCheck(L_64);
-		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_64, L_65, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_66 = L_64;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_7;
-		NullCheck(L_66);
-		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_66, L_67, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_68 = L_66;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = V_8;
-		NullCheck(L_68);
-		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_68, L_69, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
-		V_9 = L_68;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:509>
-		String_t* L_70 = ___0_name;
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_71 = V_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = ___1_normal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = ___2_up;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_74 = ___7_color;
-		float L_75 = ___8_groundY;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = ___4_cornerPoint;
-		float L_77 = L_76.___y;
-		float L_78 = V_3;
-		SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F(__this, L_70, L_71, L_72, L_73, L_74, L_75, L_77, L_78, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:510>
+		V_9 = L_62;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:524>
+		String_t* L_64 = ___0_name;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_65 = V_9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66 = ___1_normal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = ___2_up;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_68 = ___7_color;
+		float L_69 = ___8_groundY;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = ___4_cornerPoint;
+		float L_71 = L_70.___y;
+		float L_72 = V_2;
+		SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F(__this, L_64, L_65, L_66, L_67, L_68, L_69, L_71, L_72, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:525>
 		return;
 	}
 }
-// Method Definition Index: 81862
+// Method Definition Index: 81863
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWingMesh_m83871B02F31DA58BC8759292B2368A1A7A716430 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_hingePoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_outerDir, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16006,13 +16066,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWingMesh_m83871B02
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B11_0;
 	memset((&G_B11_0), 0, sizeof(G_B11_0));
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:517>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:532>
 		float L_0 = __this->____headYAtCalibration;
 		float L_1 = __this->___topAboveHead;
 		V_0 = ((float)il2cpp_codegen_add(L_0, L_1));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:518>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:519>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:520>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:533>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:534>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:535>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___2_up;
 		float L_3 = L_2.___y;
 		float L_4;
@@ -16042,12 +16102,12 @@ IL_0031:
 IL_0041:
 	{
 		V_1 = G_B3_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:522>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:537>
 		float L_12 = ___5_height;
 		V_2 = ((float)il2cpp_codegen_multiply(L_12, (0.5f)));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:523>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:524>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:525>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:538>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:539>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:540>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___2_up;
 		float L_14 = L_13.___y;
 		float L_15;
@@ -16076,7 +16136,7 @@ IL_0067:
 IL_0078:
 	{
 		V_3 = G_B6_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:526>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:541>
 		float L_22 = V_3;
 		float L_23 = V_1;
 		if ((!(((float)L_22) > ((float)((float)il2cpp_codegen_subtract(L_23, (1.0f)))))))
@@ -16085,19 +16145,19 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:526>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:541>
 		float L_24 = V_1;
 		V_3 = ((float)il2cpp_codegen_subtract(L_24, (5.0f)));
 	}
 
 IL_008b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:533>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:548>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___9_outerDir;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = ___3_right;
 		float L_27;
 		L_27 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_25, L_26, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:534>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:549>
 		if ((((float)L_27) >= ((float)(0.0f))))
 		{
 			goto IL_00a4;
@@ -16120,7 +16180,7 @@ IL_00a4:
 IL_00a6:
 	{
 		V_4 = G_B11_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:536>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:551>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = ___4_hingePoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = ___2_up;
 		float L_33 = V_3;
@@ -16129,7 +16189,7 @@ IL_00a6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
 		L_35 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_31, L_34, NULL);
 		V_5 = L_35;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:537>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:552>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ___4_hingePoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_4;
 		float L_38 = ___6_width;
@@ -16144,7 +16204,7 @@ IL_00a6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
 		L_44 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_40, L_43, NULL);
 		V_6 = L_44;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:538>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:553>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = ___4_hingePoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = V_4;
 		float L_47 = ___6_width;
@@ -16159,7 +16219,7 @@ IL_00a6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
 		L_53 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_49, L_52, NULL);
 		V_7 = L_53;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:539>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:554>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = ___4_hingePoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = ___2_up;
 		float L_56 = V_1;
@@ -16168,7 +16228,7 @@ IL_00a6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
 		L_58 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_54, L_57, NULL);
 		V_8 = L_58;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:541>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:556>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_59 = (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B*)il2cpp_codegen_object_new(List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_il2cpp_TypeInfo_var);
 		List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C(L_59, List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C_RuntimeMethod_var);
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_60 = L_59;
@@ -16188,7 +16248,7 @@ IL_00a6:
 		NullCheck(L_66);
 		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_66, L_67, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
 		V_9 = L_66;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:542>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:557>
 		String_t* L_68 = ___0_name;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_69 = V_9;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = ___1_normal;
@@ -16199,11 +16259,11 @@ IL_00a6:
 		float L_75 = L_74.___y;
 		float L_76 = V_2;
 		SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F(__this, L_68, L_69, L_70, L_71, L_72, L_73, L_75, L_76, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:543>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:558>
 		return;
 	}
 }
-// Method Definition Index: 81863
+// Method Definition Index: 81864
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_verts, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___4_surfaceColor, float ___5_groundY, float ___6_centerY, float ___7_halfH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16252,12 +16312,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* G_B12_0 = NULL;
 	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* G_B12_1 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:548>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:563>
 		String_t* L_0 = ___0_name;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_1, L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:549>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:564>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_2 = (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4*)il2cpp_codegen_object_new(Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4_il2cpp_TypeInfo_var);
 		Mesh__ctor_m5A9AECEDDAFFD84811ED8928012BDE97A9CEBD00(L_2, NULL);
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_3 = L_2;
@@ -16265,33 +16325,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC
 		NullCheck(L_3);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_3, L_4, NULL);
 		V_1 = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:551>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:566>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_5 = ___1_verts;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_inline(L_5, List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_RuntimeMethod_var);
 		V_2 = L_6;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:552>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:567>
 		int32_t L_7 = V_2;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_7);
 		V_3 = L_8;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:553>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:568>
 		int32_t L_9 = V_2;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_10 = (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C*)SZArrayNew(Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var, (uint32_t)L_9);
 		V_4 = L_10;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:554>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:569>
 		int32_t L_11 = V_2;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_12 = (Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA*)SZArrayNew(Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var, (uint32_t)L_11);
 		V_5 = L_12;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:555>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:570>
 		int32_t L_13 = V_2;
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_14 = (ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)SZArrayNew(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var, (uint32_t)L_13);
 		V_6 = L_14;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:557>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:572>
 		float L_15 = ___6_centerY;
 		float L_16 = ___7_halfH;
 		V_7 = ((float)il2cpp_codegen_subtract(L_15, L_16));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:561>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:576>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___3_up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___2_normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
@@ -16300,7 +16360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_10), NULL);
 		V_8 = L_20;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:562>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:577>
 		float L_21;
 		L_21 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_8), NULL);
 		if ((!(((float)L_21) < ((float)(0.00100000005f)))))
@@ -16309,7 +16369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:563>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:578>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
 		L_22 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___2_normal;
@@ -16323,20 +16383,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC
 
 IL_0078:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:567>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:582>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_26 = ___1_verts;
 		NullCheck(L_26);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
 		L_27 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_26, 0, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		V_9 = L_27;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:569>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:584>
 		V_11 = 0;
 		goto IL_0153;
 	}
 
 IL_0089:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:571>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:586>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_28 = V_3;
 		int32_t L_29 = V_11;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_30 = ___1_verts;
@@ -16346,13 +16406,13 @@ IL_0089:
 		L_32 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_30, L_31, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		NullCheck(L_28);
 		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(L_29), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_32);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:572>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:587>
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_33 = V_4;
 		int32_t L_34 = V_11;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = ___2_normal;
 		NullCheck(L_33);
 		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(L_34), (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_35);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:575>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:590>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_36 = ___1_verts;
 		int32_t L_37 = V_11;
 		NullCheck(L_36);
@@ -16361,18 +16421,18 @@ IL_0089:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = V_9;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
 		L_40 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_38, L_39, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:576>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:591>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = L_40;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = V_8;
 		float L_43;
 		L_43 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_41, L_42, NULL);
 		V_12 = L_43;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:577>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:592>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = ___3_up;
 		float L_45;
 		L_45 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_41, L_44, NULL);
 		V_13 = L_45;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:578>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:593>
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_46 = V_5;
 		int32_t L_47 = V_11;
 		float L_48 = V_12;
@@ -16382,7 +16442,7 @@ IL_0089:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_50), L_48, L_49, NULL);
 		NullCheck(L_46);
 		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(L_47), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_50);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:581>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:596>
 		float L_51 = V_7;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_52 = ___1_verts;
 		int32_t L_53 = V_11;
@@ -16391,12 +16451,12 @@ IL_0089:
 		L_54 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_52, L_53, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		float L_55 = L_54.___y;
 		V_14 = ((float)il2cpp_codegen_subtract(L_51, L_55));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:582>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:597>
 		float L_56 = V_7;
 		float L_57 = ___5_groundY;
 		V_15 = ((float)il2cpp_codegen_subtract(L_56, L_57));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:583>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:584>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:598>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:599>
 		float L_58 = V_15;
 		if ((((float)L_58) <= ((float)(0.00999999978f))))
 		{
@@ -16427,7 +16487,7 @@ IL_010e:
 IL_0113:
 	{
 		V_16 = G_B7_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:585>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:600>
 		float L_63 = __this->___fadeStart;
 		float L_64 = V_16;
 		float L_65;
@@ -16435,11 +16495,11 @@ IL_0113:
 		float L_66;
 		L_66 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_65, NULL);
 		V_17 = L_66;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:586>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:601>
 		float L_67 = V_17;
 		float L_68 = V_17;
 		V_17 = ((float)il2cpp_codegen_multiply(L_67, L_68));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:587>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:602>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_69 = V_6;
 		int32_t L_70 = V_11;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_71 = ___4_surfaceColor;
@@ -16449,14 +16509,14 @@ IL_0113:
 		L_74 = Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline(L_71, L_72, L_73, NULL);
 		NullCheck(L_69);
 		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(L_70), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_74);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:569>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:584>
 		int32_t L_75 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_75, 1));
 	}
 
 IL_0153:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:569>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:584>
 		int32_t L_76 = V_11;
 		int32_t L_77 = V_2;
 		if ((((int32_t)L_76) < ((int32_t)L_77)))
@@ -16465,31 +16525,31 @@ IL_0153:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:590>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:605>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_78 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_79 = V_3;
 		NullCheck(L_78);
 		Mesh_set_vertices_m5BB814D89E9ACA00DBF19F7D8E22CB73AC73FE5C(L_78, L_79, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:591>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:606>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_80 = V_1;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_81 = V_4;
 		NullCheck(L_80);
 		Mesh_set_normals_m85D73193C49211BE9FA135FF72D5749B16A4760B(L_80, L_81, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:592>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:607>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_82 = V_1;
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_83 = V_5;
 		NullCheck(L_82);
 		Mesh_set_uv_m6ED9C50E0DA8166DD48AC40FD6C828B9AD2E9617(L_82, L_83, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:593>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:608>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_84 = V_1;
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_85 = V_6;
 		NullCheck(L_84);
 		Mesh_set_colors_m5558BAAA60676427B7954F1694A1765B000EB0FE(L_84, L_85, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:596>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:597>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:598>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:599>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:600>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:611>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:612>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:613>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:615>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_86 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_87 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12));
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_88 = L_87;
@@ -16497,15 +16557,15 @@ IL_0153:
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_88, L_89, NULL);
 		NullCheck(L_86);
 		Mesh_set_triangles_m124405320579A8D92711BB5A124644963A26F60B(L_86, L_88, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:601>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:616>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_90 = V_1;
 		NullCheck(L_90);
 		Mesh_RecalculateBounds_mA9B293F57C6CD298AE2D2DB19061FC23B05AB90B(L_90, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:602>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:617>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_91 = V_1;
 		NullCheck(L_91);
 		Mesh_RecalculateNormals_m3AA2788914611444E030CA310E03E3CFE683902B(L_91, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:604>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:619>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_92 = V_0;
 		NullCheck(L_92);
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_93;
@@ -16513,13 +16573,13 @@ IL_0153:
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_94 = V_1;
 		NullCheck(L_93);
 		MeshFilter_set_mesh_mD2988E2D835205FD6B6CD35A61E1592844D971F8(L_93, L_94, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:605>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:620>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_95 = V_0;
 		NullCheck(L_95);
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_96;
 		L_96 = GameObject_AddComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_mCDD3E77673305199F52C772AE8C7952F3864740D(L_95, GameObject_AddComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_mCDD3E77673305199F52C772AE8C7952F3864740D_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:606>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:607>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:621>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:622>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_97 = __this->___wallMaterial;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_98;
@@ -16552,16 +16612,16 @@ IL_01d1:
 	{
 		NullCheck(G_B12_1);
 		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(G_B12_1, G_B12_0, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:609>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:624>
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_102 = __this->____meshObjects;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_103 = V_0;
 		NullCheck(L_102);
 		List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_inline(L_102, L_103, List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:610>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:625>
 		return;
 	}
 }
-// Method Definition Index: 81864
+// Method Definition Index: 81865
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearMeshes_mFA0EA9CB73F1D20BA05D7FFC046793AD516A0897 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16579,7 +16639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearMeshes_mFA0EA9CB73
 	memset((&V_0), 0, sizeof(V_0));
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = __this->____meshObjects;
 		NullCheck(L_0);
 		Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 L_1;
@@ -16604,11 +16664,11 @@ FINALLY_0030:
 
 IL_000e_1:
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 				L_2 = Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_inline((&V_0), Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
 				V_1 = L_2;
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				bool L_4;
@@ -16619,7 +16679,7 @@ IL_000e_1:
 				}
 			}
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_5, NULL);
@@ -16627,7 +16687,7 @@ IL_000e_1:
 
 IL_0025_1:
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:614>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
 				bool L_6;
 				L_6 = Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27((&V_0), Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
 				if (L_6)
@@ -16647,15 +16707,15 @@ IL_0025_1:
 
 IL_003e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:615>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:630>
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_7 = __this->____meshObjects;
 		NullCheck(L_7);
 		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_7, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:616>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:631>
 		return;
 	}
 }
-// Method Definition Index: 81865
+// Method Definition Index: 81866
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* SimpleWallSystem_CreateDefaultMaterial_m9185AE012C04DB7007F9D3E0224F677380B17A12 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16681,14 +16741,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_2 = NULL;
 	int32_t V_3 = 0;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:622>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:623>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:624>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:625>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:626>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:627>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:628>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:629>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:637>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:638>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:639>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:640>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:641>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:642>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:643>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:644>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -16705,9 +16765,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
 		NullCheck(L_5);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:631>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:646>
 		V_0 = (Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692*)NULL;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:632>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:647>
 		V_2 = L_5;
 		V_3 = 0;
 		goto IL_004b;
@@ -16715,17 +16775,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 
 IL_0035:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:632>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:647>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = V_2;
 		int32_t L_7 = V_3;
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
 		String_t* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:634>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:649>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_10;
 		L_10 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(L_9, NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:635>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:650>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_11 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_12;
@@ -16742,7 +16802,7 @@ IL_0035:
 
 IL_004b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:632>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:647>
 		int32_t L_14 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = V_2;
 		NullCheck(L_15);
@@ -16754,7 +16814,7 @@ IL_004b:
 
 IL_0051:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:638>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:653>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_16 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -16765,10 +16825,10 @@ IL_0051:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:640>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:655>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralFC80B6807067FE307F80391C17B96C93746EA731, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:641>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:656>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_18;
 		L_18 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(_stringLiteralA3DFDD1C75685F4BD136ACAF08E535626B718D2C, NULL);
 		V_0 = L_18;
@@ -16776,17 +16836,17 @@ IL_0051:
 
 IL_006f:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:644>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:659>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_19 = V_0;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_20 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
 		Material__ctor_m7FDF47105D66D19591BE505A0C42B0F90D88C9BF(L_20, L_19, NULL);
 		V_1 = L_20;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:645>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:660>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_21 = V_1;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22 = __this->___wallColor;
 		NullCheck(L_21);
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_21, L_22, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:648>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:663>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = V_1;
 		NullCheck(L_23);
 		bool L_24;
@@ -16797,7 +16857,7 @@ IL_006f:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:649>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:664>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_25 = V_1;
 		NullCheck(L_25);
 		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_25, _stringLiteral181BB4565C7AA61CC8716A421960A53BA01AEE22, (0.0f), NULL);
@@ -16805,7 +16865,7 @@ IL_006f:
 
 IL_009f:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:652>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:667>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_26 = V_1;
 		NullCheck(L_26);
 		bool L_27;
@@ -16816,7 +16876,7 @@ IL_009f:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:653>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:668>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_28 = V_1;
 		NullCheck(L_28);
 		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_28, _stringLiteral3E9A62B69C5F5E0B442C380DE6647017BA5F0E0C, (0.0f), NULL);
@@ -16824,21 +16884,21 @@ IL_009f:
 
 IL_00bc:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:655>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:670>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_29 = V_1;
 		return L_29;
 	}
 }
-// Method Definition Index: 81866
+// Method Definition Index: 81867
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:669>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:684>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_0 = __this->____calibratedWalls;
 		return L_0;
 	}
 }
-// Method Definition Index: 81867
+// Method Definition Index: 81868
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_mA64CA88D48B597DC1B89D3F43BCEFDCDFCEAF5AD (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16893,11 +16953,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B10_1;
 	memset((&G_B10_1), 0, sizeof(G_B10_1));
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:673>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:688>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_0 = __this->____calibratedWalls;
 		NullCheck(L_0);
 		List_1_Clear_mF77AA5AFA36A537755D15604E3730A31561C8F3E_inline(L_0, List_1_Clear_mF77AA5AFA36A537755D15604E3730A31561C8F3E_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:674>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:689>
 		bool L_1 = __this->____wall1Valid;
 		if (!L_1)
 		{
@@ -16914,29 +16974,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_
 
 IL_001b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:674>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:689>
 		return;
 	}
 
 IL_001c:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:676>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:677>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:691>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:692>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->____wall1Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE(__this, L_3, L_4, L_5, NULL);
 		V_0 = L_6;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:678>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:679>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:693>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:694>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = __this->____wall2Center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE(__this, L_7, L_8, L_9, NULL);
 		V_1 = L_10;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:682>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:697>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
 		float L_13 = __this->___wallWidth;
@@ -16945,8 +17005,8 @@ IL_001c:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_11, L_14, NULL);
 		V_2 = L_15;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:683>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:684>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:698>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:699>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_16 = __this->____calibratedWalls;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = __this->____wall1Normal;
@@ -16958,7 +17018,7 @@ IL_001c:
 		L_23 = SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4(__this, 0, L_17, L_18, L_19, L_20, L_21, L_22, NULL);
 		NullCheck(L_16);
 		List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_inline(L_16, L_23, List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:687>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:702>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = V_1;
 		float L_26 = __this->___wallWidth;
@@ -16967,8 +17027,8 @@ IL_001c:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_24, L_27, NULL);
 		V_3 = L_28;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:688>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:689>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:703>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:704>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_29 = __this->____calibratedWalls;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = __this->____wall2Normal;
@@ -16980,7 +17040,7 @@ IL_001c:
 		L_36 = SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4(__this, 1, L_30, L_31, L_32, L_33, L_34, L_35, NULL);
 		NullCheck(L_29);
 		List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_inline(L_29, L_36, List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:692>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:707>
 		bool L_37 = __this->___enableWings;
 		if (!L_37)
 		{
@@ -16988,9 +17048,9 @@ IL_001c:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:695>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:696>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:697>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:710>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:711>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:712>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = __this->____wall1Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = __this->____wall1Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = __this->____wall1Right;
@@ -17000,10 +17060,10 @@ IL_001c:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44;
 		L_44 = SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659(__this, L_38, L_39, L_40, L_41, L_42, L_43, NULL);
 		V_4 = L_44;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:698>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:713>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = V_4;
 		SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653(__this, L_45, (&V_5), (&V_6), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:699>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:714>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_0;
 		float L_48 = __this->___wallWidth;
@@ -17011,12 +17071,12 @@ IL_001c:
 		L_49 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_47, L_48, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50;
 		L_50 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_46, L_49, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:700>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:715>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_5;
 		float L_53;
 		L_53 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_51, L_52, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:701>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:716>
 		if ((((float)L_53) >= ((float)(0.0f))))
 		{
 			G_B6_0 = L_50;
@@ -17043,7 +17103,7 @@ IL_0159:
 IL_015b:
 	{
 		V_7 = G_B7_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:702>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:717>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_7;
 		float L_58 = __this->___wingWidth;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
@@ -17051,8 +17111,8 @@ IL_015b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
 		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B7_1, L_59, NULL);
 		V_8 = L_60;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:703>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:704>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:718>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:719>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_61 = __this->____calibratedWalls;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63 = V_4;
@@ -17064,9 +17124,9 @@ IL_015b:
 		L_68 = SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4(__this, 2, L_62, L_63, L_64, L_65, L_66, L_67, NULL);
 		NullCheck(L_61);
 		List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_inline(L_61, L_68, List_1_Add_m2811ACCF8E723FD6F29F5FDD895FD3DAA96CDBBA_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:707>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:708>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:709>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:722>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:723>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:724>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = __this->____wall2Normal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = __this->____wall2Up;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = __this->____wall2Right;
@@ -17076,10 +17136,10 @@ IL_015b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659(__this, L_69, L_70, L_71, L_72, L_73, L_74, NULL);
 		V_9 = L_75;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:710>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:725>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = V_9;
 		SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653(__this, L_76, (&V_10), (&V_11), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:711>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:726>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = __this->____cornerPoint;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_1;
 		float L_79 = __this->___wallWidth;
@@ -17087,12 +17147,12 @@ IL_015b:
 		L_80 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_78, L_79, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
 		L_81 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_77, L_80, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:712>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:727>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83 = V_10;
 		float L_84;
 		L_84 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_82, L_83, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:713>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:728>
 		if ((((float)L_84) >= ((float)(0.0f))))
 		{
 			G_B9_0 = L_81;
@@ -17119,7 +17179,7 @@ IL_01ff:
 IL_0201:
 	{
 		V_12 = G_B10_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:714>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:729>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = V_12;
 		float L_89 = __this->___wingWidth;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90;
@@ -17127,8 +17187,8 @@ IL_0201:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_91;
 		L_91 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B10_1, L_90, NULL);
 		V_13 = L_91;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:715>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:716>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:730>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:731>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_92 = __this->____calibratedWalls;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93 = V_13;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94 = V_9;
@@ -17144,11 +17204,11 @@ IL_0201:
 
 IL_0243:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:718>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:733>
 		return;
 	}
 }
-// Method Definition Index: 81868
+// Method Definition Index: 81869
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_up, float ___5_width, float ___6_height, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17160,18 +17220,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA8535
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:723>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:724>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:725>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:726>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:727>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:728>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:729>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:730>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:731>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:732>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:733>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:734>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:738>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:739>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:740>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:741>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:742>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:743>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:744>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:745>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:746>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:747>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:748>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:749>
 		CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* L_0 = (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076*)il2cpp_codegen_object_new(CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076_il2cpp_TypeInfo_var);
 		CalibratedWall__ctor_mC6EC279DA6EE022C8761F98BD453ECAC8D98DEFD(L_0, NULL);
 		CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* L_1 = L_0;
@@ -17217,7 +17277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA8535
 		return L_17;
 	}
 }
-// Method Definition Index: 81869
+// Method Definition Index: 81870
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17228,21 +17288,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:744>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:759>
 		SimpleWallSystem_ClearMeshes_mFA0EA9CB73F1D20BA05D7FFC046793AD516A0897(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:745>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:760>
 		SimpleWallSystem_ClearSamples_m8D9F8DB937A55BC9B89B74FC0BF4ED4FEB290FF4(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:746>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:761>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_0 = __this->____calibratedWalls;
 		NullCheck(L_0);
 		List_1_Clear_mF77AA5AFA36A537755D15604E3730A31561C8F3E_inline(L_0, List_1_Clear_mF77AA5AFA36A537755D15604E3730A31561C8F3E_RuntimeMethod_var);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:747>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:762>
 		__this->____wall1Valid = (bool)0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:748>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:763>
 		__this->____wall2Valid = (bool)0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:749>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:764>
 		SimpleWallSystem_set_CurrentPhase_m37840EF33165B660A0ADED05A69F6500D2C8AB6A_inline(__this, 0, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:752>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:767>
 		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_1 = __this->___holdPlacementManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -17253,7 +17313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:753>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:768>
 		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_3 = __this->___holdPlacementManager;
 		NullCheck(L_3);
 		HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2(L_3, NULL);
@@ -17261,46 +17321,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C
 
 IL_0045:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:754>
-		return;
-	}
-}
-// Method Definition Index: 81870
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC313E1AADAE0A87ADDEA3AEAA758F5F1C (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_leftAngle, float ___1_rightAngle, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:761>
-		float L_0 = ___0_leftAngle;
-		float L_1;
-		L_1 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_0, (-135.0f), (135.0f), NULL);
-		__this->___leftWingAngle = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:762>
-		float L_2 = ___1_rightAngle;
-		float L_3;
-		L_3 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_2, (-135.0f), (135.0f), NULL);
-		__this->___rightWingAngle = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:763>
-		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:764>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:769>
 		return;
 	}
 }
 // Method Definition Index: 81871
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07571CAD7B613137CF94B12C35BF4F665 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_width, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC313E1AADAE0A87ADDEA3AEAA758F5F1C (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_leftAngle, float ___1_rightAngle, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:771>
-		float L_0 = ___0_width;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:776>
+		float L_0 = ___0_leftAngle;
 		float L_1;
-		L_1 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_0, (0.200000003f), (5.0f), NULL);
-		__this->___wingWidth = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:772>
+		L_1 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_0, (-135.0f), (135.0f), NULL);
+		__this->___leftWingAngle = L_1;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:777>
+		float L_2 = ___1_rightAngle;
+		float L_3;
+		L_3 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_2, (-135.0f), (135.0f), NULL);
+		__this->___rightWingAngle = L_3;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:778>
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:773>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:779>
 		return;
 	}
 }
 // Method Definition Index: 81872
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07571CAD7B613137CF94B12C35BF4F665 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_width, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:786>
+		float L_0 = ___0_width;
+		float L_1;
+		L_1 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_0, (0.200000003f), (5.0f), NULL);
+		__this->___wingWidth = L_1;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:787>
+		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(__this, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:788>
+		return;
+	}
+}
+// Method Definition Index: 81873
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem__getHoldCount_m9E631C2A39A8315A151B88D9FEC80C1D68A77B48 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17310,7 +17370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem__getHoldCount_m9E631
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:780>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:795>
 		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_0 = __this->___holdPlacementManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -17333,7 +17393,7 @@ IL_0010:
 		return L_3;
 	}
 }
-// Method Definition Index: 81873
+// Method Definition Index: 81874
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UpdateStatusText_m2ECE3A6B7155A89720D8EA1EB3CB6E14E2DCA09F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17365,7 +17425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UpdateStatusText_m2ECE3
 	int32_t V_4 = 0;
 	String_t* G_B15_0 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:784>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:799>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___statusText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -17376,13 +17436,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UpdateStatusText_m2ECE3
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:784>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:799>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:786>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:801>
 		int32_t L_2;
 		L_2 = SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline(__this, NULL);
 		V_2 = L_2;
@@ -17413,8 +17473,8 @@ IL_000f:
 
 IL_002d:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:789>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:790>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:804>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:805>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_4 = __this->___statusText;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_5 = __this->____samplePoints;
 		NullCheck(L_5);
@@ -17428,14 +17488,14 @@ IL_002d:
 		L_10 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_9, _stringLiteralC05D74D633A81FF0A28249552EF60CE199252286, NULL);
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, L_10);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:791>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:806>
 		return;
 	}
 
 IL_005d:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:793>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:794>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:808>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:809>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_11 = __this->___statusText;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_12 = __this->____samplePoints;
 		NullCheck(L_12);
@@ -17449,19 +17509,19 @@ IL_005d:
 		L_17 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_16, _stringLiteralC05D74D633A81FF0A28249552EF60CE199252286, NULL);
 		NullCheck(L_11);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_11, L_17);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:795>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:810>
 		return;
 	}
 
 IL_008d:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:797>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:798>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:799>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:800>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:801>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:802>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:803>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:812>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:813>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:814>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:815>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:816>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:817>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:818>
 		int32_t L_18 = __this->____editTarget;
 		V_4 = L_18;
 		int32_t L_19 = V_4;
@@ -17487,7 +17547,7 @@ IL_008d:
 
 IL_00aa:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:799>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:814>
 		float L_20 = __this->___wallWidth;
 		float L_21 = L_20;
 		RuntimeObject* L_22 = Box(il2cpp_defaults.single_class, &L_21);
@@ -17499,7 +17559,7 @@ IL_00aa:
 
 IL_00c2:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:800>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:815>
 		float L_24 = __this->___leftWingAngle;
 		float L_25 = L_24;
 		RuntimeObject* L_26 = Box(il2cpp_defaults.single_class, &L_25);
@@ -17511,7 +17571,7 @@ IL_00c2:
 
 IL_00da:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:801>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:816>
 		float L_28 = __this->___rightWingAngle;
 		float L_29 = L_28;
 		RuntimeObject* L_30 = Box(il2cpp_defaults.single_class, &L_29);
@@ -17523,7 +17583,7 @@ IL_00da:
 
 IL_00f2:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:802>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:817>
 		V_3 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 
@@ -17531,8 +17591,8 @@ IL_00f8:
 	{
 		String_t* L_32 = V_3;
 		V_0 = L_32;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:804>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:805>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:819>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:820>
 		int32_t L_33 = __this->____editTarget;
 		if (L_33)
 		{
@@ -17557,9 +17617,9 @@ IL_0109:
 IL_011e:
 	{
 		V_1 = G_B15_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:806>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:807>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:808>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:821>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:822>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:823>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_38 = __this->___statusText;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_39 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_40 = L_39;
@@ -17597,14 +17657,14 @@ IL_011e:
 		L_58 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_57, NULL);
 		NullCheck(L_38);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_38, L_58);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:809>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:824>
 		return;
 	}
 
 IL_0184:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:811>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:812>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:826>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:827>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_59 = __this->___statusText;
 		int32_t L_60;
 		L_60 = SimpleWallSystem__getHoldCount_m9E631C2A39A8315A151B88D9FEC80C1D68A77B48(__this, NULL);
@@ -17616,16 +17676,16 @@ IL_0184:
 		L_64 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_63, _stringLiteral5E1D97B023711165E809D1C75D729B49BDBA7512, NULL);
 		NullCheck(L_59);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_59, L_64);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:815>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:830>
 		return;
 	}
 }
-// Method Definition Index: 81874
+// Method Definition Index: 81875
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* SimpleWallSystem_GetController_m81EA579B42CF182B84C845CA36530E0346150F1B (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:822>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:823>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:837>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:838>
 		int32_t L_0 = __this->___activeHand;
 		if (!L_0)
 		{
@@ -17643,7 +17703,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81875
+// Method Definition Index: 81876
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD SimpleWallSystem_GetDevice_m91B3D5DD57B59CC0DC55BE9383FF1C52CA9055CB (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17660,9 +17720,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F2
 	memset((&V_1), 0, sizeof(V_1));
 	int32_t G_B3_0 = 0;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:827>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:828>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:829>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:842>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:843>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:844>
 		int32_t L_0 = __this->___activeHand;
 		if (!L_0)
 		{
@@ -17681,14 +17741,14 @@ IL_000f:
 
 IL_0014:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:830>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:845>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_1 = (List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE*)il2cpp_codegen_object_new(List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE_il2cpp_TypeInfo_var);
 		List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4(L_1, List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:831>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:846>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_2 = V_0;
 		InputDevices_GetDevicesWithCharacteristics_m82F54DE2802FCE4EB730FCFBF8731CA91A27DEB0(G_B3_0, L_2, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:832>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:847>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_3 = V_0;
 		NullCheck(L_3);
 		int32_t L_4;
@@ -17713,17 +17773,17 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81876
+// Method Definition Index: 81877
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SendHaptic_m58341255E13A4038815904C06FC45A6BD57EBB11 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_amplitude, float ___1_duration, const RuntimeMethod* method) 
 {
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:841>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:856>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_0;
 		L_0 = SimpleWallSystem_GetDevice_m91B3D5DD57B59CC0DC55BE9383FF1C52CA9055CB(__this, NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:842>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:857>
 		bool L_1;
 		L_1 = InputDevice_get_isValid_mA908CF8195CECA44FF457430AFF9198C3FEC0948((&V_0), NULL);
 		if (!L_1)
@@ -17732,7 +17792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SendHaptic_m58341255E13
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:844>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:859>
 		float L_2 = ___0_amplitude;
 		float L_3 = ___1_duration;
 		bool L_4;
@@ -17741,11 +17801,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SendHaptic_m58341255E13
 
 IL_001b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:846>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:861>
 		return;
 	}
 }
-// Method Definition Index: 81877
+// Method Definition Index: 81878
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CBF5B9EAE59A7EAF36384F23C7 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17807,7 +17867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CB
 		List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC(L_6, List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var);
 		__this->____meshObjects = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____meshObjects), (void*)L_6);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:662>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:677>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_7 = (List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC*)il2cpp_codegen_object_new(List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC_il2cpp_TypeInfo_var);
 		List_1__ctor_m7B5160FD0C536CB947AD5D600DB727F0EBB2C5C0(L_7, List_1__ctor_m7B5160FD0C536CB947AD5D600DB727F0EBB2C5C0_RuntimeMethod_var);
 		__this->____calibratedWalls = L_7;
@@ -17848,7 +17908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81878
+// Method Definition Index: 81879
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Start_mECEF9139B620F1A7E83F02231A8505FFD572939C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17876,7 +17936,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 81879
+// Method Definition Index: 81880
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Recenter_m4D7340E1EE7B8E9A89DABB1B0DDC116B709F9A85 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18029,7 +18089,7 @@ IL_0079:
 		return;
 	}
 }
-// Method Definition Index: 81880
+// Method Definition Index: 81881
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterTowardWall_mAAB5364AD3AE3620B09D42CF97D42FF2E5C4D3F1 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18109,7 +18169,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 81881
+// Method Definition Index: 81882
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4DA011BE1832DF8EECFB05644431B79EFA94 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldDirection, const RuntimeMethod* method) 
 {
 	{
@@ -18122,7 +18182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4D
 		return;
 	}
 }
-// Method Definition Index: 81882
+// Method Definition Index: 81883
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6E5B6DA3184B366971D3C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18144,7 +18204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81883
+// Method Definition Index: 81884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60ABDC2AE786AA3152F160E0B03A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18163,7 +18223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60A
 		return;
 	}
 }
-// Method Definition Index: 81884
+// Method Definition Index: 81885
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Update_m06C2BE7FE1AAADC5C6F1EC10EB18FFBCC10AA3E7 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18185,7 +18245,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 81885
+// Method Definition Index: 81886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0 WallAngleAnalyzer_AnalyzePair_m7D7E7A9A179AD50940C375BA7E7636360DA79F34 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18304,7 +18364,7 @@ IL_00a7:
 		return L_28;
 	}
 }
-// Method Definition Index: 81886
+// Method Definition Index: 81887
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_AnalyzeAllPairs_m61C82B759E01207F645FE0018DB34C9F21952005 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18397,7 +18457,7 @@ IL_003b:
 		return L_16;
 	}
 }
-// Method Definition Index: 81887
+// Method Definition Index: 81888
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_FindAdjacentWalls_mCDE8D5C1C12E982E371670701FEBD524ACEBD992 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18450,7 +18510,7 @@ IL_0025:
 		return L_6;
 	}
 }
-// Method Definition Index: 81888
+// Method Definition Index: 81889
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallAngleAnalyzer_GetTiltCategory_mE5BB24E605C21F65E8B44741E1CBDC9BC6D98FB7 (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18561,7 +18621,7 @@ IL_005b:
 		return _stringLiteral719DC4C792BEE02C4C7BAB1D974D09000F87BB1B;
 	}
 }
-// Method Definition Index: 81889
+// Method Definition Index: 81890
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_ComputePlaneIntersection_m2023705E376BEF5E8ADB765409F372B89F6796CB (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_a, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_lineDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_linePoint, float* ___4_planeDistance, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18785,7 +18845,7 @@ IL_0108:
 		return;
 	}
 }
-// Method Definition Index: 81890
+// Method Definition Index: 81891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_UpdateEdgeVisuals_m0AE0BDE230D3F5F88B9DBFA05B69BE9052857C81 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19044,7 +19104,7 @@ IL_0157:
 		return;
 	}
 }
-// Method Definition Index: 81891
+// Method Definition Index: 81892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_LogFullReport_mBC62A12EC19E75484AE2B7614ED73D9105CC7A9A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19301,7 +19361,7 @@ IL_0196:
 		return;
 	}
 }
-// Method Definition Index: 81892
+// Method Definition Index: 81893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer__ctor_m478E655215475B06663A3CE0696AC67665ECB7BC (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19425,7 +19485,7 @@ IL2CPP_EXTERN_C void WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_
 IL2CPP_EXTERN_C void WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_marshal_com_cleanup(WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 81893
+// Method Definition Index: 81894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1 (WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19479,7 +19539,7 @@ IL2CPP_EXTERN_C  String_t* WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81894
+// Method Definition Index: 81895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m06C5C6277314E87B66CAB81D60CEA6BA09F72938 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19496,7 +19556,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m06C5C6277314E87B66CAB81D
 		return;
 	}
 }
-// Method Definition Index: 81895
+// Method Definition Index: 81896
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m60B4070D21789EBA6C49E2EC56EB82AC757A2DC5 (U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19504,7 +19564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m60B4070D21789EBA6C49E2EC5
 		return;
 	}
 }
-// Method Definition Index: 81896
+// Method Definition Index: 81897
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_mDE013FEF80C50BEE1F3F6E2154162445DBCFB71B (U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538* __this, WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0 ___0_p, const RuntimeMethod* method) 
 {
 	{
@@ -19522,7 +19582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81897
+// Method Definition Index: 81898
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF7890FF51C2D02CB1C91D7CDF1374B9882EB0A (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19531,7 +19591,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF
 		return L_0;
 	}
 }
-// Method Definition Index: 81898
+// Method Definition Index: 81899
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91E5BAE7B91C2966C847BFDDD872269414A3 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -19541,7 +19601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91
 		return;
 	}
 }
-// Method Definition Index: 81899
+// Method Definition Index: 81900
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Walls_mA96195C9EF184885E070FA7F72B6524E9404DDCB (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19550,7 +19610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Wal
 		return L_0;
 	}
 }
-// Method Definition Index: 81900
+// Method Definition Index: 81901
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Start_m449C8BB1487D0AD032759C8DDDFEDC83E68FFCA7 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19640,7 +19700,7 @@ IL_0057:
 		return;
 	}
 }
-// Method Definition Index: 81901
+// Method Definition Index: 81902
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Update_m61459DFCA2C8E3AF9BB2230681B11AE3B4AD4207 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19654,7 +19714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Update_m61459DFCA
 		return;
 	}
 }
-// Method Definition Index: 81902
+// Method Definition Index: 81903
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ReadInputAndProcess_m63B23E02669FD452E60AB7336D55C121388A1C48 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19855,7 +19915,7 @@ IL_00df:
 		return;
 	}
 }
-// Method Definition Index: 81903
+// Method Definition Index: 81904
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD WallCalibrationManager_GetActiveDevice_m60EADDB23239511051BAB40980C99AF72C824863 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19925,7 +19985,7 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81904
+// Method Definition Index: 81905
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* WallCalibrationManager_GetActiveControllerTransform_mE243CFB8251AE861AD5548F4F34C49D5D3E2335D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19947,7 +20007,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81905
+// Method Definition Index: 81906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_BeginNewWall_m0B330A606813E5FB95278841246A287F3B33C3B0 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19997,7 +20057,7 @@ IL_001e:
 		return;
 	}
 }
-// Method Definition Index: 81906
+// Method Definition Index: 81907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SamplePoint_mF2C125B2E902E1E324732A1D1B06A52C85D58C25 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20184,7 +20244,7 @@ IL_00e3:
 		return;
 	}
 }
-// Method Definition Index: 81907
+// Method Definition Index: 81908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UndoLastSample_m8A875266A698848583D0B120C797DF436169589F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20270,7 +20330,7 @@ IL_0081:
 		return;
 	}
 }
-// Method Definition Index: 81908
+// Method Definition Index: 81909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_FinalizeCurrentWall_mFD9FD967C3307DF7A887770F12C24327F848AFAD (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20583,7 +20643,7 @@ IL_0178:
 		return;
 	}
 }
-// Method Definition Index: 81909
+// Method Definition Index: 81910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ComputeWallFrame_mC9EE0ABCC8F2780118FFFF0543CC049CEB35453F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_wallRight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_wallUp, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -20650,7 +20710,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81910
+// Method Definition Index: 81911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ComputeWallExtents_m936FE1428A3EEF82BE7B660429093DBE1F748D92 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_samples, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, float* ___4_width, float* ___5_height, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___6_adjustedCenter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20810,7 +20870,7 @@ IL_007e:
 		return;
 	}
 }
-// Method Definition Index: 81911
+// Method Definition Index: 81912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UpdatePreview_mAF54FC044EA43FB1E1DA79BCBF5A6B508BE106C2 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21060,7 +21120,7 @@ IL_00fa:
 		return;
 	}
 }
-// Method Definition Index: 81912
+// Method Definition Index: 81913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* WallCalibrationManager_CreateWallQuad_m8A9D6AEBC66DAC2EA4BECF5CB703B1E6679E84C1 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, String_t* ___0_name, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___1_mat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21148,7 +21208,7 @@ IL_0072:
 		return L_18;
 	}
 }
-// Method Definition Index: 81913
+// Method Definition Index: 81914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_CreateWallVisual_m0D2F63A115B3E8CD48676DE2F43DD4B7C62813E0 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, bool ___1_finalized, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21248,7 +21308,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 81914
+// Method Definition Index: 81915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SetMaterialTransparent_mFEEA9AFC2DA1D53E642114300F0AE81E5332D98B (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_mat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21305,7 +21365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SetMaterialTransp
 		return;
 	}
 }
-// Method Definition Index: 81915
+// Method Definition Index: 81916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UndoLastWall_m32B1732578EA31E6BB55A00891D42D0CFDA7A3EB (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21381,7 +21441,7 @@ IL_0040:
 		return;
 	}
 }
-// Method Definition Index: 81916
+// Method Definition Index: 81917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ResetAll_m4B20889663D9FF8303F27BFD98AA0EE47694E231 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21502,7 +21562,7 @@ IL_0072:
 		return;
 	}
 }
-// Method Definition Index: 81917
+// Method Definition Index: 81918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ClearCurrentMarkers_m3C696F529A5BDD0E23C5EFDD501AF81D61A300C7 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21596,7 +21656,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 81918
+// Method Definition Index: 81919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UpdateStatusText_mDA1A9D3FE43697FD0E8DF636146B431D6340B439 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21966,7 +22026,7 @@ IL_0170:
 		return;
 	}
 }
-// Method Definition Index: 81919
+// Method Definition Index: 81920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_PlaySound_mBEE368CFDCD2AA95C5C7EDAD21E82BB97D011D1F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_clip, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22010,7 +22070,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81920
+// Method Definition Index: 81921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetAngleBetweenWalls_m290C61C308544F26D6FC1914232AC85F3183C30D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22086,7 +22146,7 @@ IL_002a:
 		return L_16;
 	}
 }
-// Method Definition Index: 81921
+// Method Definition Index: 81922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetDihedralAngle_m255166097E6139C9DB52106EE305B2243012E06F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	{
@@ -22098,7 +22158,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetDihedralAngle
 		return ((float)il2cpp_codegen_subtract((180.0f), L_2));
 	}
 }
-// Method Definition Index: 81922
+// Method Definition Index: 81923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCalibrationManager_SerializeWalls_m86F25A7AEB9B2EF470FF17728253F35F08DC5C7D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22122,7 +22182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCalibrationManager_SerializeWal
 		return L_3;
 	}
 }
-// Method Definition Index: 81923
+// Method Definition Index: 81924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_DeserializeWalls_m49B7C5A9BCD7A39303828C8582BF3D1F9DF8AFD9 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22250,7 +22310,7 @@ IL_005f:
 		return;
 	}
 }
-// Method Definition Index: 81924
+// Method Definition Index: 81925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager__ctor_mEE2C07A75ECDE40F87AD569001396EA88917ED18 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22317,7 +22377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager__ctor_mEE2C07A75E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81925
+// Method Definition Index: 81926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationData__ctor_m5050A67CD1EF6226660B1D237FEA7E376D9CE042 (WallCalibrationData_t736FBDB5313D6A99438FB3C20D6FFFDAC436CC96* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22333,7 +22393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationData__ctor_m5050A67CD1EF6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81926
+// Method Definition Index: 81927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder_RebuildAllWalls_m2569E7C667FAE72A474CA9E9FB78E2CCAA0EBA67 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22584,7 +22644,7 @@ IL_00e2:
 		return;
 	}
 }
-// Method Definition Index: 81927
+// Method Definition Index: 81928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder_ClearMeshes_mF1851E20FFFB29AA51D40894E9349EAAB7CC31E1 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22678,7 +22738,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 81928
+// Method Definition Index: 81929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* WallMeshBuilder_BuildWallPolygon_mFB6AEB63B1D3447D3D2BAE77C07B93CD7F32C5C8 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, float ___1_groundY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22874,7 +22934,7 @@ IL_006d:
 		return L_76;
 	}
 }
-// Method Definition Index: 81929
+// Method Definition Index: 81930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder_ClipAllPairs_m8A21F48F3E68FC79EBC4F57DE52C1A915BA1A410 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, List_1_tE5E2F520A1D08DC8DA6B8BF059CF6AE99CA46D0F* ___0_polygons, RuntimeObject* ___1_walls, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23005,7 +23065,7 @@ IL_0059:
 		return;
 	}
 }
-// Method Definition Index: 81930
+// Method Definition Index: 81931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder_ClipPairAtIntersection_m051594443D1329D9D891722207EAD21AC4BC81BA (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, List_1_tE5E2F520A1D08DC8DA6B8BF059CF6AE99CA46D0F* ___0_polygons, RuntimeObject* ___1_walls, int32_t ___2_i, int32_t ___3_j, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23141,7 +23201,7 @@ IL_0093:
 		return;
 	}
 }
-// Method Definition Index: 81931
+// Method Definition Index: 81932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallMeshBuilder_ShouldClip_m533778FC3BDDED4A4640C3FA67C17CDFC13A26EB (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_a, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -23224,7 +23284,7 @@ IL_002c:
 		return (bool)((((float)L_20) < ((float)L_27))? 1 : 0);
 	}
 }
-// Method Definition Index: 81932
+// Method Definition Index: 81933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* WallMeshBuilder_BuildMeshObject_mBABAF145C2098F57D2ADB2292D368451B29E5317 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_verts, float ___2_groundY, int32_t ___3_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23314,7 +23374,7 @@ IL_0051:
 		return G_B3_2;
 	}
 }
-// Method Definition Index: 81933
+// Method Definition Index: 81934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* WallMeshBuilder_BuildMesh_m54BAD01962DF1B372C0ACF4A1ECD61BBDBEFB746 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_worldVerts, float ___2_groundY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23599,7 +23659,7 @@ IL_0197:
 		return L_104;
 	}
 }
-// Method Definition Index: 81934
+// Method Definition Index: 81935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* WallMeshBuilder_CreateDefaultMaterial_m44160016D61F0F0F11F41CCC7E992A87CA446ED7 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23722,7 +23782,7 @@ IL_008f:
 		return L_17;
 	}
 }
-// Method Definition Index: 81935
+// Method Definition Index: 81936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder__ctor_mCE9E7EE0EF30B28CE31D902E1E7875F2E3D255A0 (WallMeshBuilder_tB644F89DD82C088B1AE941EDBFF29A40D4E49027* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23770,7 +23830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallMeshBuilder__ctor_mCE9E7EE0EF30B28CE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81936
+// Method Definition Index: 81937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23804,7 +23864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 81937
+// Method Definition Index: 81938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23890,7 +23950,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81938
+// Method Definition Index: 81939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Start_m84A5BBC02FFBE8BF40D0A3E2D7B36D1FD701DED6 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23956,7 +24016,7 @@ IL_0035:
 		return;
 	}
 }
-// Method Definition Index: 81939
+// Method Definition Index: 81940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Update_mD2CF52D5A41427FB49A899A2478D687B470A7EDE (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23980,7 +24040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Update_mD2CF52D5A41427FB49
 		return;
 	}
 }
-// Method Definition Index: 81940
+// Method Definition Index: 81941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_OnAnchorEnter_mE9B77E39B80360DFB9B413B1749CF416F2486E3C (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24091,7 +24151,7 @@ IL_0072:
 		return;
 	}
 }
-// Method Definition Index: 81941
+// Method Definition Index: 81942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_OnAnchorExit_m46DB1144C80EA09930E35E537ADE10D62216F350 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24196,7 +24256,7 @@ IL_0061:
 		return;
 	}
 }
-// Method Definition Index: 81942
+// Method Definition Index: 81943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_HideArrowOnTeleport_mAF2775EAD028A9913AECE46CA85A21020EDB1A9D (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24210,7 +24270,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_HideArrowOnTeleport_mAF277
 		return;
 	}
 }
-// Method Definition Index: 81943
+// Method Definition Index: 81944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals__ctor_m33BE9FB784CF00841C8359369FF41EC9DD425E67 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24230,7 +24290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals__ctor_m33BE9FB784CF00841C8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81944
+// Method Definition Index: 81945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_Awake_mB49A15D7FA935094EF77C19851E57949E800FD32 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24271,7 +24331,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 81945
+// Method Definition Index: 81946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnEnable_m1D63BC7A9B05274B8FB1442F6F260926976C02F3 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24294,7 +24354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnEnable_m1D63BC7A9B05274B8F
 		return;
 	}
 }
-// Method Definition Index: 81946
+// Method Definition Index: 81947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnDisable_m83B0645C14AEF9A8A631192A9DADF9AD9C1613F1 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24315,7 +24375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnDisable_m83B0645C14AEF9A8A
 		return;
 	}
 }
-// Method Definition Index: 81947
+// Method Definition Index: 81948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnBeforeRender_mAC5F36C0A5EA622C0E30384A7ADE90D72BB535F3 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24346,7 +24406,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 81948
+// Method Definition Index: 81949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_Update_m0D27C858A0CAC12AA9194F35C6524D2CB3EA089C (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24391,7 +24451,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 81949
+// Method Definition Index: 81950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_DrawCurve_mCFB656A65F8002B3B9B9A03791E10C61736E6BEA (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -24591,7 +24651,7 @@ IL_0148:
 		return;
 	}
 }
-// Method Definition Index: 81950
+// Method Definition Index: 81951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 BezierCurve_CalculateCubicBezierPoint_m9EB641B7C3156DFA8118FB4CF153E9CA01D8FA71 (float ___0_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_p0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_p3, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -24648,7 +24708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_24;
 	}
 }
-// Method Definition Index: 81951
+// Method Definition Index: 81952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_AnimateCurve_m7D19797535EDBC8A51C526C4FFBEB257536309F9 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24741,7 +24801,7 @@ IL_00af:
 		return;
 	}
 }
-// Method Definition Index: 81952
+// Method Definition Index: 81953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve__ctor_m00317F17289DF5D603287D3292B341A75BAAF214 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25197,11 +25257,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 81866
+// Method Definition Index: 81867
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:669>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/SimpleWallSystem.cs:684>
 		List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC* L_0 = __this->____calibratedWalls;
 		return L_0;
 	}
@@ -25864,7 +25924,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 81899
+// Method Definition Index: 81900
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Walls_mA96195C9EF184885E070FA7F72B6524E9404DDCB_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25982,7 +26042,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 81897
+// Method Definition Index: 81898
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF7890FF51C2D02CB1C91D7CDF1374B9882EB0A_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25991,7 +26051,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_ge
 		return L_0;
 	}
 }
-// Method Definition Index: 81898
+// Method Definition Index: 81899
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91E5BAE7B91C2966C847BFDDD872269414A3_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{

@@ -333,21 +333,21 @@ public class SimpleWallSystem : MonoBehaviour
 
     void ComputeCorner()
     {
-        // Find intersection line of the two wall planes
         _cornerLineDir = Vector3.Cross(_wall1Normal, _wall2Normal);
         float mag = _cornerLineDir.magnitude;
 
         if (mag < 0.001f)
         {
-            // Walls are parallel — place corner between them
             _cornerPoint = (_wall1Center + _wall2Center) * 0.5f;
-            _cornerLineDir = _wall1Up;
+            _cornerLineDir = Vector3.up; // fallback
             return;
         }
 
         _cornerLineDir /= mag;
 
-        // Find a point on the intersection line
+        // ── Always point upward so parameterization is consistent ──
+        if (_cornerLineDir.y < 0) _cornerLineDir = -_cornerLineDir;
+
         float d1 = Vector3.Dot(_wall1Normal, _wall1Center);
         float d2 = Vector3.Dot(_wall2Normal, _wall2Center);
         float n1n2 = Vector3.Dot(_wall1Normal, _wall2Normal);
@@ -360,8 +360,23 @@ public class SimpleWallSystem : MonoBehaviour
         }
 
         float alpha = (d1 - d2 * n1n2) / denom;
-        float beta = (d2 - d1 * n1n2) / denom;
+        float beta  = (d2 - d1 * n1n2) / denom;
         _cornerPoint = alpha * _wall1Normal + beta * _wall2Normal;
+    }
+    
+    /// <summary>
+    /// Returns the point on the corner intersection line at the given world Y.
+    /// Falls back gracefully if the line is nearly horizontal.
+    /// </summary>
+    Vector3 CornerLinePointAtY(float worldY)
+    {
+        if (Mathf.Abs(_cornerLineDir.y) > 0.01f)
+        {
+            float t = (worldY - _cornerPoint.y) / _cornerLineDir.y;
+            return _cornerPoint + _cornerLineDir * t;
+        }
+        // Intersection line is nearly horizontal — project cornerPoint to that Y
+        return new Vector3(_cornerPoint.x, worldY, _cornerPoint.z);
     }
 
     // ────────────────────────────────────────────
@@ -481,31 +496,31 @@ public class SimpleWallSystem : MonoBehaviour
         Vector3 cornerPoint, float height, float width, Color color,
         float groundY, Vector3 wallCenter)
     {
-        // Extend from corner using wall normal and center for direction
         Vector3 outerDir = GetOuterEdge(cornerPoint, normal, wallCenter);
 
-        // Top: above the player's head
-        float topY = _headYAtCalibration + topAboveHead;
-        float topT = Mathf.Abs(up.y) > 0.01f
-            ? (topY - cornerPoint.y) / up.y
-            : height * 0.5f + topAboveHead;
+        float topY    = _headYAtCalibration + topAboveHead;
+        float halfH   = height * 0.5f;
 
-        // Bottom: down to ground
-        float halfH = height * 0.5f;
+        // ── Inner edge: exact 3D points on the intersection line ──────────────
+        // Both walls share this line, so there's a perfect seam at any angle
+        Vector3 innerTop    = CornerLinePointAtY(topY)    - outerDir * cornerOverlap;
+        Vector3 innerBottom = CornerLinePointAtY(groundY) - outerDir * cornerOverlap;
+
+        // ── Outer edge: project from the inner points along the wall's local up ──
+        // The outer edge doesn't need to match the other wall so local up is fine
+        float topT = Mathf.Abs(up.y) > 0.01f
+            ? (topY    - cornerPoint.y) / up.y
+            : halfH + topAboveHead;
         float bottomT = Mathf.Abs(up.y) > 0.01f
             ? (groundY - cornerPoint.y) / up.y
             : -(halfH + 50f);
-        if (bottomT > topT - 1f) bottomT = topT - 5f; // ensure some height
+        if (bottomT > topT - 1f) bottomT = topT - 5f;
 
-        // Inner edge extends past the corner by overlap amount to fill gaps
-        Vector3 innerEdge = cornerPoint - outerDir * cornerOverlap;
+        Vector3 outerBase = cornerPoint + outerDir * width;
+        Vector3 outerTop    = outerBase + up * topT;
+        Vector3 outerBottom = outerBase + up * bottomT;
 
-        Vector3 BL = innerEdge + up * bottomT;
-        Vector3 BR = cornerPoint + outerDir * width + up * bottomT;
-        Vector3 TR = cornerPoint + outerDir * width + up * topT;
-        Vector3 TL = innerEdge + up * topT;
-
-        var verts = new List<Vector3> { BL, BR, TR, TL };
+        var verts = new List<Vector3> { innerBottom, outerBottom, outerTop, innerTop };
         CreateMeshObject(name, verts, normal, up, color, groundY, cornerPoint.y, halfH);
     }
 

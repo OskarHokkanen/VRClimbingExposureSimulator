@@ -139,6 +139,7 @@ extern void SimpleWallSystem_ClearSamples_m8D9F8DB937A55BC9B89B74FC0BF4ED4FEB290
 extern void SimpleWallSystem_FinalizeCurrentWall_mE08D0DA8E0733F1312B4F7D2F3C00C99310447F2 (void);
 extern void SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653 (void);
 extern void SimpleWallSystem_ComputeCorner_m65F8BD4C0901071C3FD5966D34EF36999726BA6E (void);
+extern void SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4 (void);
 extern void SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D (void);
 extern void SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE (void);
 extern void SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659 (void);
@@ -432,7 +433,7 @@ extern void RMFPSController_FixedUpdate_m77E8B9EDA1453061160D0B3AB672B824251F828
 extern void RMFPSController_UnlockMouse_m2332B925B156C0C3F01DAEDBED79FEE39D0FB681 (void);
 extern void RMFPSController_LockMouse_mEB1FCB6BA153D83113B6E7E059449FA2433F82E0 (void);
 extern void RMFPSController__ctor_m283E0DCA6E534A31F9186931499D88748A8724FE (void);
-static Il2CppMethodPointer s_methodPointers[425] = 
+static Il2CppMethodPointer s_methodPointers[426] = 
 {
 	SlotPopulator_PopulateHolds_mF0C12C884F4C4E09C755EAF818DF8A5EBC6930C7,
 	SlotPopulator__ctor_m10F81468B1675042EDE8D1E250DFBC80DAE0E454,
@@ -566,6 +567,7 @@ static Il2CppMethodPointer s_methodPointers[425] =
 	SimpleWallSystem_FinalizeCurrentWall_mE08D0DA8E0733F1312B4F7D2F3C00C99310447F2,
 	SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653,
 	SimpleWallSystem_ComputeCorner_m65F8BD4C0901071C3FD5966D34EF36999726BA6E,
+	SimpleWallSystem_CornerLinePointAtY_mCB296357DFDC6C3841E7EB072C5844A6634913F4,
 	SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D,
 	SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE,
 	SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659,
@@ -867,13 +869,13 @@ extern void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F03
 extern void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[5] = 
 {
-	{ 0x060000A8, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
-	{ 0x0600014B, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
-	{ 0x0600014C, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
-	{ 0x0600014D, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
-	{ 0x0600014E, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
+	{ 0x060000A9, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
+	{ 0x0600014C, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
+	{ 0x0600014D, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
+	{ 0x0600014E, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
+	{ 0x0600014F, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[425] = 
+static const int32_t s_InvokerIndices[426] = 
 {
 	16907,
 	16907,
@@ -1007,6 +1009,7 @@ static const int32_t s_InvokerIndices[425] =
 	16907,
 	2998,
 	16907,
+	11391,
 	16907,
 	2579,
 	482,
@@ -1305,7 +1308,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	425,
+	426,
 	s_methodPointers,
 	5,
 	s_adjustorThunks,
