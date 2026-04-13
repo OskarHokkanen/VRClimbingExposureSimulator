@@ -5,6 +5,10 @@ using UnityEngine.XR;
 
 public class HoldPlacementManager : MonoBehaviour
 {
+    
+    [Tooltip("Color for manually placed holds")]
+    public Color manualHoldColor = new Color(1f, 0.6f, 0f); // orange
+    
     [Header("References")]
     public SimpleWallSystem wallSystem;
     public Transform rightController;
@@ -53,11 +57,12 @@ public class HoldPlacementManager : MonoBehaviour
     };
 
     // ── State ──
-    private List<GameObject> _holds = new List<GameObject>();
+    private List<GameObject> _holds = new List<GameObject>();       // auto-populated
+    private List<GameObject> _manualHolds = new List<GameObject>(); // manually placed
     private bool _triggerPrev;
     private bool _thumbPrev;
 
-    public int HoldCount => _holds.Count;
+    public int HoldCount => _holds.Count + _manualHolds.Count;
 
     void Update()
     {
@@ -76,10 +81,10 @@ public class HoldPlacementManager : MonoBehaviour
             TryPlace();
 
         // Thumbstick click → undo last hold
-        if (thumb && !_thumbPrev && _holds.Count > 0)
+        if (thumb && !_thumbPrev && _manualHolds.Count > 0)
         {
-            Destroy(_holds[_holds.Count - 1]);
-            _holds.RemoveAt(_holds.Count - 1);
+            Destroy(_manualHolds[_manualHolds.Count - 1]);
+            _manualHolds.RemoveAt(_manualHolds.Count - 1);
         }
 
         _triggerPrev = trigger;
@@ -91,7 +96,9 @@ public class HoldPlacementManager : MonoBehaviour
     // ────────────────────────────────────────────
     public void AutoPopulate()
     {
-        ClearAll();
+        // Only clear auto holds, never touch manual ones
+        foreach (var h in _holds) if (h != null) Destroy(h);
+        _holds.Clear();
 
         var walls = wallSystem.Walls;
         if (walls == null || walls.Count == 0) return;
@@ -207,11 +214,10 @@ public class HoldPlacementManager : MonoBehaviour
         Vector3 onWall  = wall.ProjectPointOntoWall(controllerPos);
         Vector3 holdPos = onWall + wall.normal * wallOffset;
         Quaternion rot  = Quaternion.LookRotation(wall.normal, wall.localUp);
-        Color col       = HoldColors[Random.Range(0, HoldColors.Length)];
 
-        GameObject obj = CreateHoldObject(holdPos, rot, col);
-        obj.name = $"Hold_Manual_{_holds.Count}";
-        _holds.Add(obj);
+        GameObject obj = CreateHoldObject(holdPos, rot, manualHoldColor);
+        obj.name = $"Hold_Manual_{_manualHolds.Count}";
+        _manualHolds.Add(obj);
     }
 
     // ────────────────────────────────────────────
@@ -251,8 +257,10 @@ public class HoldPlacementManager : MonoBehaviour
 
     public void ClearAll()
     {
-        foreach (var h in _holds) if (h != null) Destroy(h);
+        foreach (var h in _holds)       if (h != null) Destroy(h);
+        foreach (var h in _manualHolds) if (h != null) Destroy(h);
         _holds.Clear();
+        _manualHolds.Clear();
     }
 
     InputDevice GetDevice()
