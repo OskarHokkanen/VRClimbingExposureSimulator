@@ -25,6 +25,12 @@ extern void ClimbingHold_get_ApproxRadius_mE69506510CB536A2DDAE9A90F197DF1242283
 extern void ClimbingHold_GetWorldPosition_m1022782E012A90EF964E7B84F62A0DB42F3E528D (void);
 extern void ClimbingHold_GetWorldRotation_m3CC6586F5AAEDA1A8093332522460C9E786DEB7C (void);
 extern void ClimbingHold__ctor_m4656DF63A1D5264AE6BF2CACEF63A0B8E53F73CA (void);
+extern void ClimbingRope_Start_mB322ED4915176D9495CD3C488419A2FA4E04DBF0 (void);
+extern void ClimbingRope_Update_mC811A931F5054D77CEA8429403DCA9BAC5745ADF (void);
+extern void ClimbingRope_GetCarabinerPosition_mFECDD328EC51552008BDF06E7DCB5758DD79DD03 (void);
+extern void ClimbingRope_DrawCatenary_m4ACFBF6A4E67340B9E364E220F0565006C12B870 (void);
+extern void ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631 (void);
+extern void ClimbingRope__ctor_m7AF5FD1C65DEC3621F5DD9A361D97A8D4D1B8160 (void);
 extern void EnvironmentManager_get_GroundY_m1D6D9FABC03E5D96BB91A015C471FE7F890FE2AA (void);
 extern void EnvironmentManager_Start_m2ABCA1DA9612A019ADBD451B4760B91EE56709D8 (void);
 extern void EnvironmentManager_Update_m9EE7473F5FD921A655B31FCA931CEE9B0ABF17AF (void);
@@ -438,7 +444,7 @@ extern void RMFPSController_FixedUpdate_m77E8B9EDA1453061160D0B3AB672B824251F828
 extern void RMFPSController_UnlockMouse_m2332B925B156C0C3F01DAEDBED79FEE39D0FB681 (void);
 extern void RMFPSController_LockMouse_mEB1FCB6BA153D83113B6E7E059449FA2433F82E0 (void);
 extern void RMFPSController__ctor_m283E0DCA6E534A31F9186931499D88748A8724FE (void);
-static Il2CppMethodPointer s_methodPointers[431] = 
+static Il2CppMethodPointer s_methodPointers[437] = 
 {
 	SlotPopulator_PopulateHolds_mF0C12C884F4C4E09C755EAF818DF8A5EBC6930C7,
 	SlotPopulator__ctor_m10F81468B1675042EDE8D1E250DFBC80DAE0E454,
@@ -458,6 +464,12 @@ static Il2CppMethodPointer s_methodPointers[431] =
 	ClimbingHold_GetWorldPosition_m1022782E012A90EF964E7B84F62A0DB42F3E528D,
 	ClimbingHold_GetWorldRotation_m3CC6586F5AAEDA1A8093332522460C9E786DEB7C,
 	ClimbingHold__ctor_m4656DF63A1D5264AE6BF2CACEF63A0B8E53F73CA,
+	ClimbingRope_Start_mB322ED4915176D9495CD3C488419A2FA4E04DBF0,
+	ClimbingRope_Update_mC811A931F5054D77CEA8429403DCA9BAC5745ADF,
+	ClimbingRope_GetCarabinerPosition_mFECDD328EC51552008BDF06E7DCB5758DD79DD03,
+	ClimbingRope_DrawCatenary_m4ACFBF6A4E67340B9E364E220F0565006C12B870,
+	ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631,
+	ClimbingRope__ctor_m7AF5FD1C65DEC3621F5DD9A361D97A8D4D1B8160,
 	EnvironmentManager_get_GroundY_m1D6D9FABC03E5D96BB91A015C471FE7F890FE2AA,
 	EnvironmentManager_Start_m2ABCA1DA9612A019ADBD451B4760B91EE56709D8,
 	EnvironmentManager_Update_m9EE7473F5FD921A655B31FCA931CEE9B0ABF17AF,
@@ -879,13 +891,13 @@ extern void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F03
 extern void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[5] = 
 {
-	{ 0x060000AE, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
-	{ 0x06000151, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
-	{ 0x06000152, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
-	{ 0x06000153, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
-	{ 0x06000154, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
+	{ 0x060000B4, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
+	{ 0x06000157, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
+	{ 0x06000158, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
+	{ 0x06000159, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
+	{ 0x0600015A, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[431] = 
+static const int32_t s_InvokerIndices[437] = 
 {
 	16923,
 	16923,
@@ -904,6 +916,12 @@ static const int32_t s_InvokerIndices[431] =
 	16815,
 	11403,
 	11117,
+	16923,
+	16923,
+	16923,
+	11407,
+	6712,
+	12629,
 	16923,
 	16815,
 	16923,
@@ -1323,7 +1341,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	431,
+	437,
 	s_methodPointers,
 	5,
 	s_adjustorThunks,

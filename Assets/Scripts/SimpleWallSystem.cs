@@ -28,6 +28,9 @@ using TMPro;
 public class SimpleWallSystem : MonoBehaviour
 {
     public enum ControllerHand { Right, Left }
+    
+    [Header("Rope")]
+    public ClimbingRope climbingRope;
 
     [Header("References")]
     public Transform rightController;
@@ -320,6 +323,9 @@ public class SimpleWallSystem : MonoBehaviour
         
         if (holdPlacementManager != null)
             holdPlacementManager.AutoPopulate();
+        
+        if (climbingRope != null)
+            climbingRope.SetVisible(true);
     }
 
     void ComputeWallFrame(Vector3 normal, out Vector3 right, out Vector3 up)
