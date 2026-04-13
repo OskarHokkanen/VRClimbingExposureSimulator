@@ -2033,7 +2033,7 @@ MonoBehaviour:
     wingWidth: 100
     environmentIndex: 0
   - name: Low Medium
-    wallHeight: 5
+    wallHeight: 10
     wallWidth: 1
     leftWingAngle: 0
     rightWingAngle: 0
@@ -2075,7 +2075,7 @@ MonoBehaviour:
     wingWidth: 100
     environmentIndex: 0
   - name: High Medium
-    wallHeight: 100
+    wallHeight: 50
     wallWidth: 1
     leftWingAngle: 0
     rightWingAngle: 0
