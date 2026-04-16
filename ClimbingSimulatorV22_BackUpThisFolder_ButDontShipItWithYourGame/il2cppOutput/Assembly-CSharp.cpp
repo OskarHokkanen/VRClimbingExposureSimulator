@@ -110,6 +110,7 @@ struct IReadOnlyList_1_t4421AD36B480AE60DB8C1007A6CE0FB04A084B4C;
 struct List_1_t8A13B779C46D727E70F898BDC49373CBBC1DC5CC;
 struct List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A;
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
+struct List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF;
 struct List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE;
 struct List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B;
 struct List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607;
@@ -138,6 +139,7 @@ struct EnvironmentPresetU5BU5D_t035D0B2A0F9C5A0F1B4A31BE301C6858C2925EAC;
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
+struct HoldDefinitionU5BU5D_t174E7E1F5E50D4D17FBAA14549FD3B2877873499;
 struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
 struct InputDeviceU5BU5D_t1361FC6DDFE12D211F933B024E51B7E5CF073F63;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
@@ -201,6 +203,8 @@ struct ExtendedProtectionPolicy_t50F460D31056608D80176DD66F24EE5ACEA54F99;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 struct HeightController_t45572F379E3AE95475190B009A3838A649C1775B;
+struct HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B;
+struct HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD;
 struct HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8;
 struct HttpConnection_tAA1DA73AA1D39D03237022305791474A193E0308;
 struct HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01;
@@ -242,6 +246,7 @@ struct RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54;
 struct RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715;
 struct RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
 struct SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2;
 struct ServiceNameStore_t58D68EFA9BC0DF88B9FA9940086DCE0DEF08D843;
 struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692;
@@ -286,8 +291,8 @@ struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct ExtendedProtectionSelector_t92B47BADD9172C82C0FCB8DBE510911774DE632F;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
-struct U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9;
 struct U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB;
+struct U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3;
 struct ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
@@ -324,6 +329,7 @@ IL2CPP_EXTERN_C RuntimeClass* List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_i
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4_il2cpp_TypeInfo_var;
@@ -341,8 +347,8 @@ IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ValueTuple_5U5BU5D_tE6DE72DC63987C1582A685098CF40D752EA3654B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var;
@@ -417,6 +423,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5BE4C8560FD651DBC6DE99699A4B65349DBC1992
 IL2CPP_EXTERN_C String_t* _stringLiteral5D3C63C46C9533241760FD3E7434C50B1BD9CD2F;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D54E959817188DBAD9E65FA3DB55F06B70F5E3C;
 IL2CPP_EXTERN_C String_t* _stringLiteral5E1D97B023711165E809D1C75D729B49BDBA7512;
+IL2CPP_EXTERN_C String_t* _stringLiteral5E94217EFBFFB6027B6CE860C39CBFB0CE07C746;
 IL2CPP_EXTERN_C String_t* _stringLiteral5EA7EADE6D8270A2E7001F82AF850090F8D72F25;
 IL2CPP_EXTERN_C String_t* _stringLiteral5FEEFC550145E07CE528EBB9F5717D8DCD28B358;
 IL2CPP_EXTERN_C String_t* _stringLiteral603BAD1642EF85288EC8468F4BF62A560035D9A9;
@@ -599,6 +606,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m479FB8FE7B74FD8DEBA77E3C94
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m482122FD05018D3A1F5EE75A17852A8F8A911679_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m38500C20418699AEC04B1946434E06EC96FB4B1C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m4A383A0A5FCA8C0C4430CD0DF7AE4D97BE8E4B8C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m7B5160FD0C536CB947AD5D600DB727F0EBB2C5C0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mAE71F0F6ED83D3A403F2EE2AEB7E9EAE3B120556_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mC54E2BCBE43279A96FC082F5CDE2D76388BD8F9C_RuntimeMethod_var;
@@ -630,10 +638,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F5
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_mB986A63C8D68BD8606522BF24176D36503CFD9C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_U3CHandleResetU3Eb__30_0_m7A4DD1B1AF556619BDF0E2DC68FF14F5B03E7AD2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_mDE013FEF80C50BEE1F3F6E2154162445DBCFB71B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass28_0_U3CHandleSetU3Eb__0_mE00B19AB986BEDDE30EEB4E6843C5D3723731816_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass29_0_U3CHandlePresetU3Eb__0_m5B447B433C9AD62BB615CA6F31B7380D4BDC11EA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_5__ctor_m63152ED6989D304BA53C14AE098A958E5591836F_RuntimeMethod_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
@@ -684,6 +692,13 @@ struct List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A  : public RuntimeObject
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B  : public RuntimeObject
 {
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF  : public RuntimeObject
+{
+	HoldDefinitionU5BU5D_t174E7E1F5E50D4D17FBAA14549FD3B2877873499* ____items;
 	int32_t ____size;
 	int32_t ____version;
 	RuntimeObject* ____syncRoot;
@@ -994,14 +1009,14 @@ struct WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C  : public RuntimeObj
 	float ___wingWidth;
 	int32_t ___environmentIndex;
 };
-struct U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9  : public RuntimeObject
+struct U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB  : public RuntimeObject
 {
 	String_t* ___key;
 	RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* ___U3CU3E4__this;
 	float ___value;
 	String_t* ___body;
 };
-struct U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB  : public RuntimeObject
+struct U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3  : public RuntimeObject
 {
 	RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* ___U3CU3E4__this;
 	WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* ___p;
@@ -1709,6 +1724,13 @@ struct HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B
 	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___color;
 	TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 ___padding;
 };
+struct HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B  : public RuntimeObject
+{
+	String_t* ___name;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab;
+	float ___scale;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color;
+};
 struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1 
 {
 	int32_t ___value__;
@@ -2022,6 +2044,15 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates;
 };
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
 struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
@@ -2081,6 +2112,10 @@ struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t3
 };
 struct ExternalException_t419875A3CD3C551692EDBBC99E4927E69F2E1F4C  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
+};
+struct HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* ___holds;
 };
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -2437,6 +2472,7 @@ struct RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7  : public M
 	EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* ___environmentSwitcher;
 	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___frustumCalibrator;
 	ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* ___climbingRope;
+	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* ___holdPlacementManager;
 	int32_t ___port;
 	bool ___showIPInVR;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___statusText;
@@ -2915,6 +2951,10 @@ struct List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A_StaticFields
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_StaticFields
 {
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___s_emptyArray;
+};
+struct List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF_StaticFields
+{
+	HoldDefinitionU5BU5D_t174E7E1F5E50D4D17FBAA14549FD3B2877873499* ___s_emptyArray;
 };
 struct List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE_StaticFields
 {
@@ -3925,6 +3965,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentManager_AdjustWallHeight_m664B9C8516D54849FFDFB3735D62A14AFDA31C6F (EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* __this, float ___0_delta, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightController_UpdateUI_m74EC3CAC8AFB8305F6A8B365F024C0345862B24C (HeightController_t45572F379E3AE95475190B009A3838A649C1775B* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) ;
+inline void List_1__ctor_m4A383A0A5FCA8C0C4430CD0DF7AE4D97BE8E4B8C (List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD HoldPlacementManager_GetDevice_mBD6084AA920472B2C652785F6E90FE482C9D18C6 (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager_TryPlace_mB593248B2F15E2850BF2FC0511CD258EFDAF906B (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
@@ -4110,7 +4156,7 @@ inline int32_t List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_inline
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0 (HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* __this, String_t* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0__ctor_mD49414808810CEDA4A38DBB6347689FB815797B0 (U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* HttpListenerRequest_get_InputStream_m82EAFAD0E5C62D5CDC9503495BB1133BF9D69C9A (HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpListenerRequest_get_ContentEncoding_m17F868921B2CA926019A0DAC683A60D53F29C973 (HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReader__ctor_m7712DDC735E99B6833E2666ADFD8A06CB96A58B1 (StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
@@ -4118,7 +4164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_action, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) ;
 inline void Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4 (Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_item, const RuntimeMethod* method)
 {
@@ -7960,6 +8006,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightController__ctor_m993CAF4A8B0B705E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 80939
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldLibrary__ctor_m61EE59324FB2BC09CCAAC8DE01DA0C0FAF4209CA (HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4A383A0A5FCA8C0C4430CD0DF7AE4D97BE8E4B8C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/HoldLibrary.cs:7>
+		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_0 = (List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF*)il2cpp_codegen_object_new(List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF_il2cpp_TypeInfo_var);
+		List_1__ctor_m4A383A0A5FCA8C0C4430CD0DF7AE4D97BE8E4B8C(L_0, List_1__ctor_m4A383A0A5FCA8C0C4430CD0DF7AE4D97BE8E4B8C_RuntimeMethod_var);
+		__this->___holds = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___holds), (void*)L_0);
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 80940
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldDefinition__ctor_m5FCEB02D8F5A5C63C85F149BEAE60B35E85C420D (HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E94217EFBFFB6027B6CE860C39CBFB0CE07C746);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/HoldLibrary.cs:13>
+		__this->___name = _stringLiteral5E94217EFBFFB6027B6CE860C39CBFB0CE07C746;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___name), (void*)_stringLiteral5E94217EFBFFB6027B6CE860C39CBFB0CE07C746);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/HoldLibrary.cs:16>
+		__this->___scale = (1.0f);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/HoldLibrary.cs:17>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		L_0 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		__this->___color = L_0;
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 80941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7977,7 +8082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HoldPlacementManager_get_HoldCount_mA
 		return L_1;
 	}
 }
-// Method Definition Index: 80940
+// Method Definition Index: 80942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager_Update_m136A40EBF1AAB1C9FAB5A4B4D3463B9349AA16EA (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8146,7 +8251,7 @@ IL_00ba:
 		return;
 	}
 }
-// Method Definition Index: 80941
+// Method Definition Index: 80943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager_TryPlace_mB593248B2F15E2850BF2FC0511CD258EFDAF906B (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8542,7 +8647,7 @@ IL_01c2:
 		return;
 	}
 }
-// Method Definition Index: 80942
+// Method Definition Index: 80944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2 (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8636,7 +8741,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 80943
+// Method Definition Index: 80945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD HoldPlacementManager_GetDevice_mBD6084AA920472B2C652785F6E90FE482C9D18C6 (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8700,7 +8805,7 @@ IL_0041:
 		return L_10;
 	}
 }
-// Method Definition Index: 80944
+// Method Definition Index: 80946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager__ctor_m68137EEC89F4996EF180658FE6703A5DA7F9F0DF (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8736,7 +8841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager__ctor_m68137EEC89F4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80945
+// Method Definition Index: 80947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ModeManager_get_CurrentMode_mBDB0A051B2EFBC00C968A1523A46B48718DBACD5 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8745,7 +8850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ModeManager_get_CurrentMode_mBDB0A051
 		return L_0;
 	}
 }
-// Method Definition Index: 80946
+// Method Definition Index: 80948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_set_CurrentMode_m4D719F2EF72BA335C270A9DDD9980E653AC6B775 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -8755,7 +8860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_set_CurrentMode_m4D719F2EF72
 		return;
 	}
 }
-// Method Definition Index: 80947
+// Method Definition Index: 80949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_Start_m4D4F012D1B0F4F4BBEF4043CA256E95F4A2FE0C6 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8765,7 +8870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_Start_m4D4F012D1B0F4F4BBEF40
 		return;
 	}
 }
-// Method Definition Index: 80948
+// Method Definition Index: 80950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_Update_mC9CD6BA3AE2796856FF0E5302876FA996CDB34D6 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8790,7 +8895,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 80949
+// Method Definition Index: 80951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_OnHandTrackingStarted_mBB1EB269633E54BAE7431EF5B09966FA5FE1AD8B (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8834,7 +8939,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 80950
+// Method Definition Index: 80952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_OnControllerModeStarted_mC7A4CBE44E1C6F0B1066808C375C35D68FCCD682 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8854,7 +8959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_OnControllerModeStarted_mC7A
 		return;
 	}
 }
-// Method Definition Index: 80951
+// Method Definition Index: 80953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_CheckGripHold_mF15FDE398DF9D1BDFA9235F470F01B9DEA0D454C (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8979,7 +9084,7 @@ IL_00a2:
 		return;
 	}
 }
-// Method Definition Index: 80952
+// Method Definition Index: 80954
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_ApplyCalibrationMode_m6A09E2FD4D4CEF51E33AA1BE316374AFB6DD38BE (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9013,7 +9118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_ApplyCalibrationMode_m6A09E2
 		return;
 	}
 }
-// Method Definition Index: 80953
+// Method Definition Index: 80955
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_ApplyClimbingMode_mB62CE3A5DA97EBDF27B79679D60CAB7ADABAA8B0 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9075,7 +9180,7 @@ IL_0061:
 		return;
 	}
 }
-// Method Definition Index: 80954
+// Method Definition Index: 80956
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_RequestClimbingMode_mC345822080BBB2A41A1F409F88B271224D6DB3E4 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9085,7 +9190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_RequestClimbingMode_mC345822
 		return;
 	}
 }
-// Method Definition Index: 80955
+// Method Definition Index: 80957
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_RequestCalibrationMode_mF2FDA8AB49B1CBAAECC364FE933DAA04FDAB591C (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9095,7 +9200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_RequestCalibrationMode_mF2FD
 		return;
 	}
 }
-// Method Definition Index: 80956
+// Method Definition Index: 80958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_UpdateStatusText_mD15E6FBB4544212101457969D0046D0F2C03B243 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9207,7 +9312,7 @@ IL_007b:
 		return;
 	}
 }
-// Method Definition Index: 80957
+// Method Definition Index: 80959
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_SetEnabled_mC33EC271609F2DB6EB14581980ECC99A6AA07688 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ___0_comp, bool ___1_on, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9241,7 +9346,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 80958
+// Method Definition Index: 80960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager_SetActive_m23DE4877E3073068AFF9081C02F435506E9E9E20 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_obj, bool ___1_on, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9275,7 +9380,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 80959
+// Method Definition Index: 80961
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ModeManager_GetDevice_mD9A3EAF8C6846F66153D4CA26CE1EB27F30DB19A (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, uint32_t ___0_side, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9325,7 +9430,7 @@ IL_0023:
 		return L_7;
 	}
 }
-// Method Definition Index: 80960
+// Method Definition Index: 80962
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager__ctor_m4184945531D240FFFDECD39C3B94A8DCE420A491 (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9351,7 +9456,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModeManager__ctor_m4184945531D240FFFDECD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80961
+// Method Definition Index: 80963
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlaneFit_FitPlane_m7E567668557352D6EF59628A6CE1B7F42B68918F (RuntimeObject* ___0_points, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_normal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9523,7 +9628,7 @@ IL_00de:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80962
+// Method Definition Index: 80964
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlaneFit_ComputeRMSError_m88BACDFDB25E5A3E06271C4B4E44080F784E941F (RuntimeObject* ___0_points, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9611,7 +9716,7 @@ IL_0036:
 		return L_19;
 	}
 }
-// Method Definition Index: 80963
+// Method Definition Index: 80965
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlaneFit_FitPlane3Points_mF243FEF8ADBB65B431840D4BE82BB9A6B75F9E93 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_c, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_normal, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -9670,7 +9775,7 @@ IL_005b:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80964
+// Method Definition Index: 80966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PlaneFit_ComputeCentroid_m9E5044D5EB5209E5C3247F54A1795FD7E2957DFC (RuntimeObject* ___0_points, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9735,7 +9840,7 @@ IL_001c:
 		return L_13;
 	}
 }
-// Method Definition Index: 80965
+// Method Definition Index: 80967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PlaneFit_SmallestEigenvector3x3_mB153275FC38C4A9B476750EDFA417A76D8C6EBD3 (float ___0_xx, float ___1_xy, float ___2_xz, float ___3_yy, float ___4_yz, float ___5_zz, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10282,7 +10387,7 @@ IL_0300:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80966
+// Method Definition Index: 80968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* PolygonClipper_ClipByPlane_mE36276DACB59474B5212AE69218E7EED0FCAB421 (RuntimeObject* ___0_polygon, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_planePoint, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_planeNormal, bool ___3_keepPositiveSide, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10469,7 +10574,7 @@ IL_00cb:
 		return L_47;
 	}
 }
-// Method Definition Index: 80967
+// Method Definition Index: 80969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolygonClipper_PlanePlaneIntersection_mD6F22AD3C925782079BA95C70252EA4F3FAAAF4D (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_pointA, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normalA, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_pointB, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_normalB, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_linePoint, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___5_lineDir, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -10604,7 +10709,7 @@ IL_00a3:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80968
+// Method Definition Index: 80970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolygonClipper_BuildIntersectionClipPlane_mF40A386637898116C67EC4E598DB8AC0A3EEFEE9 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_planePointA, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normalA, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_planePointB, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_normalB, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_keepCenter, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___5_clipPlanePoint, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___6_clipPlaneNormal, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -10692,7 +10797,7 @@ IL_0056:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80969
+// Method Definition Index: 80971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PolygonClipper_Intersect_mDB76331FDB901CE02B47F2F6E2D933A416B196E1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_pp, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_pn, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -10750,7 +10855,7 @@ IL_001d:
 		return L_21;
 	}
 }
-// Method Definition Index: 80970
+// Method Definition Index: 80972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* PolygonClipper_Triangulate_m489E025FB034B0AEB2C5C3C67FFE07A076F35E1E (int32_t ___0_vertCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10826,7 +10931,7 @@ IL_0038:
 		return L_15;
 	}
 }
-// Method Definition Index: 80971
+// Method Definition Index: 80973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PolygonClipper_U3CClipByPlaneU3Eg__SignU7C0_0_mD75C93A5970ECC1B997EA230FA7121020382BAE6 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_p, U3CU3Ec__DisplayClass0_0_tBF3F23FF9E8B521A7BCBFB0578DADEBDC08B39EF* ___1_p, const RuntimeMethod* method) 
 {
 	{
@@ -10843,7 +10948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PolygonClipper_U3CClipByPlaneU3Eg__Sign
 		return L_6;
 	}
 }
-// Method Definition Index: 80972
+// Method Definition Index: 80974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolygonClipper_U3CClipByPlaneU3Eg__InsideU7C0_1_mC6DA17FB3225977DF9ACE965195154F3E9F33929 (float ___0_d, U3CU3Ec__DisplayClass0_0_tBF3F23FF9E8B521A7BCBFB0578DADEBDC08B39EF* ___1_p, const RuntimeMethod* method) 
 {
 	{
@@ -10882,7 +10987,7 @@ IL_0014:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80973
+// Method Definition Index: 80975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallFrustumCalibrator_get_CurrentPhase_mDD7530E4DA72A767782380E490DADC76B2AC169C (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10891,7 +10996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallFrustumCalibrator_get_CurrentPhas
 		return L_0;
 	}
 }
-// Method Definition Index: 80974
+// Method Definition Index: 80976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_set_CurrentPhase_m0E5436D8FD3F63817A19DB6E5D69027CD9C15A7C (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -10901,7 +11006,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_set_CurrentPhase_m
 		return;
 	}
 }
-// Method Definition Index: 80975
+// Method Definition Index: 80977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_Awake_m32975677AB631E98E33C5F34DEF8F5AD6479F771 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10962,7 +11067,7 @@ IL_0048:
 		return;
 	}
 }
-// Method Definition Index: 80976
+// Method Definition Index: 80978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_Update_m962517BCE013A4889C9644CB115019FDC408B49C (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11270,7 +11375,7 @@ IL_013e:
 		return;
 	}
 }
-// Method Definition Index: 80977
+// Method Definition Index: 80979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_SamplePoint_m49F92D01BEA158A2C2C80CBE33F49DBCBEF17980 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11388,7 +11493,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 80978
+// Method Definition Index: 80980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UndoLastSample_m9C34A14506B83FD05092FF344245568E7643F199 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11436,7 +11541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UndoLastSample_m9C
 		return;
 	}
 }
-// Method Definition Index: 80979
+// Method Definition Index: 80981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_ClearSamples_m9BAFB27A4B55E9F4203E82ED4CA2457B110FE151 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11539,7 +11644,7 @@ IL_0054:
 		return;
 	}
 }
-// Method Definition Index: 80980
+// Method Definition Index: 80982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_FinalizeCalibration_m700601BF300DB44606F0F82436BB8D2B80DAE94B (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11748,7 +11853,7 @@ IL_00f1:
 		return;
 	}
 }
-// Method Definition Index: 80981
+// Method Definition Index: 80983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_ComputeWallFrame_m2F3BA7F103E2A12483417583D351DC18DE83B430 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_up, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -11814,7 +11919,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 80982
+// Method Definition Index: 80984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12309,7 +12414,7 @@ IL_0345:
 		return;
 	}
 }
-// Method Definition Index: 80983
+// Method Definition Index: 80985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_OnValidate_m7A2340E1C0ADD72B9386984ADF3BB5C50EB2DD86 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12318,7 +12423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_OnValidate_m7A2340
 		return;
 	}
 }
-// Method Definition Index: 80984
+// Method Definition Index: 80986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_RebuildPreviewHolds_m8697E71B0A1156C10CF3145887393998936AE581 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, float ___1_nearHW, float ___2_nearHH, float ___3_fHW, float ___4_fHH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12902,7 +13007,7 @@ IL_03c9:
 		return;
 	}
 }
-// Method Definition Index: 80985
+// Method Definition Index: 80987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_ResetCalibration_m721A9FB50BC77F0A6CCEA65628FDFA52AF9D10E8 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13021,7 +13126,7 @@ IL_0076:
 		return;
 	}
 }
-// Method Definition Index: 80986
+// Method Definition Index: 80988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_get_WallNormal_m0BA6302EB658E617581AA120BDF2093C9890D4B3 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13030,7 +13135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 80987
+// Method Definition Index: 80989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_get_WallCenter_m466F714B6F1EA9910B580710EEB0BCF0AE567EF9 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13039,7 +13144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 80988
+// Method Definition Index: 80990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13048,7 +13153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_IsCalibrated_m
 		return L_0;
 	}
 }
-// Method Definition Index: 80989
+// Method Definition Index: 80991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* WallFrustumCalibrator_GetNearPlaneAsWall_mC8F0BC5BF17B6C3CC7437DD4F4C9D647530D3275 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13194,7 +13299,7 @@ IL_004b:
 		return L_27;
 	}
 }
-// Method Definition Index: 80990
+// Method Definition Index: 80992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UpdateStatusText_mA4A1B4AD342840DF0528ABEA51105562470C2A05 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13345,7 +13450,7 @@ IL_0089:
 		return;
 	}
 }
-// Method Definition Index: 80991
+// Method Definition Index: 80993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* WallFrustumCalibrator_GetController_mBE56F2158796482C56DFC259FAE1CAEE4EFE6C13 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13367,7 +13472,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 80992
+// Method Definition Index: 80994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD WallFrustumCalibrator_GetDevice_mE4457C5D5F80C92120A6A94328C8D0CA836DC813 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13437,7 +13542,7 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 80993
+// Method Definition Index: 80995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_SendHaptic_m1BA42EA667347127D3587B5A24AEFD2D5B8B3C8B (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_amplitude, float ___1_duration, const RuntimeMethod* method) 
 {
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
@@ -13469,7 +13574,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 80994
+// Method Definition Index: 80996
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* WallFrustumCalibrator_BuildDefaultMaterial_m1D347C2B506AAEBBE204A4809FF07B686F58C9E0 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13661,7 +13766,7 @@ IL_00ed:
 		return L_33;
 	}
 }
-// Method Definition Index: 80995
+// Method Definition Index: 80997
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator__ctor_m276D5613F8FEAE017558C164CC06F43162EB4CEB (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13728,7 +13833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator__ctor_m276D5613F8F
 		return;
 	}
 }
-// Method Definition Index: 80996
+// Method Definition Index: 80998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C48_0_m2580C060159B5B8235388752EA8EB3FF091745F0 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_x, float ___1_y, float ___2_z, U3CU3Ec__DisplayClass48_0_t9E04C21EC77C9916B5E5D3BBC0D15069FF20C90A* ___3_p, const RuntimeMethod* method) 
 {
 	{
@@ -13755,7 +13860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_11;
 	}
 }
-// Method Definition Index: 80997
+// Method Definition Index: 80999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C50_0_mBD88643A9B2313AC29C1389F435CB8B4B7CC0219 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_x, float ___1_y, float ___2_z, U3CU3Ec__DisplayClass50_0_t3B67F390D327C4E9072F0627F2D4F65CF7EB79B3* ___3_p, const RuntimeMethod* method) 
 {
 	{
@@ -13832,16 +13937,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80998
+// Method Definition Index: 81000
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_LocalIP_mE554AEBFC8BF00E22273BC282BFF784BE1625A0A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:60>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:61>
 		String_t* L_0 = __this->____localIP;
 		return L_0;
 	}
 }
-// Method Definition Index: 80999
+// Method Definition Index: 81001
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13851,7 +13956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:61>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:62>
 		String_t* L_0 = __this->____localIP;
 		int32_t L_1 = __this->___port;
 		int32_t L_2 = L_1;
@@ -13861,7 +13966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7C
 		return L_4;
 	}
 }
-// Method Definition Index: 81000
+// Method Definition Index: 81002
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Start_m1E22DA33EF06A9CC71D2BED83F334BFD98ACD276 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13872,25 +13977,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Start_m1E22DA33EF06A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:69>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:70>
 		String_t* L_0;
 		L_0 = RemoteControlServer_GetLocalIP_mCB2646189F0A2E9EE6DE28CEB080DDD7826A9AA7(__this, NULL);
 		__this->____localIP = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____localIP), (void*)L_0);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:70>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:71>
 		String_t* L_1;
 		L_1 = RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247(__this, NULL);
 		String_t* L_2;
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral0307841D64370497F83ADF9921EEA2A480B28D56, L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:71>
-		RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52(__this, NULL);
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:72>
+		RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52(__this, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:73>
 		return;
 	}
 }
-// Method Definition Index: 81001
+// Method Definition Index: 81003
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Update_m5EB9B3644001E1A0D553DD7CCE16D2478B82ECE6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13905,7 +14010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Update_m5EB9B3644001
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B4_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B3_0 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:77>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:78>
 		RuntimeObject* L_0 = __this->____queueLock;
 		V_0 = L_0;
 		V_1 = (bool)0;
@@ -13944,7 +14049,7 @@ IL_0042:
 
 IL_0013_1:
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:81>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:82>
 				Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_4 = __this->____mainThreadQueue;
 				NullCheck(L_4);
 				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5;
@@ -13969,7 +14074,7 @@ IL_0024_1:
 
 IL_0029_1:
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:79>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:80>
 				Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_7 = __this->____mainThreadQueue;
 				NullCheck(L_7);
 				int32_t L_8;
@@ -13980,7 +14085,7 @@ IL_0029_1:
 				}
 			}
 			{
-				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:83>
+				//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:84>
 				goto IL_0043;
 			}
 		}
@@ -13992,31 +14097,31 @@ IL_0029_1:
 
 IL_0043:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:84>
-		return;
-	}
-}
-// Method Definition Index: 81002
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnDestroy_m636884AA7E76B93636075D559ED0A589E79F8D2F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:88>
-		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:89>
-		return;
-	}
-}
-// Method Definition Index: 81003
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnApplicationQuit_m59994E68AF0B17E513672923089559DBE7AAC1AF (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:93>
-		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:94>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:85>
 		return;
 	}
 }
 // Method Definition Index: 81004
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnDestroy_m636884AA7E76B93636075D559ED0A589E79F8D2F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:89>
+		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:90>
+		return;
+	}
+}
+// Method Definition Index: 81005
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnApplicationQuit_m59994E68AF0B17E513672923089559DBE7AAC1AF (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:94>
+		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:95>
+		return;
+	}
+}
+// Method Definition Index: 81006
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14035,12 +14140,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 	Exception_t* V_0 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:102>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:103>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = (HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01*)il2cpp_codegen_object_new(HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01_il2cpp_TypeInfo_var);
 		HttpListener__ctor_m16577B4C2A3E2D5CA19F2CB38EEEC6DE3DD70463(L_0, NULL);
 		__this->____listener = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener), (void*)L_0);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:103>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:104>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_1 = __this->____listener;
 		NullCheck(L_1);
 		HttpListenerPrefixCollection_tC33808D167E85BCF19C8EA7B02709F95FC604897* L_2;
@@ -14056,13 +14161,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 	try
 	{
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:107>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:108>
 			HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_7 = __this->____listener;
 			NullCheck(L_7);
 			HttpListener_Start_mFFF59C04274FCAA5F9C86A1908DDBE1FDC48D867(L_7, NULL);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:108>
-			__this->____running = (bool)1;
 			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:109>
+			__this->____running = (bool)1;
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:110>
 			ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_8 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 			ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_8, __this, (intptr_t)((void*)RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F_RuntimeMethod_var), NULL);
 			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_9 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
@@ -14072,11 +14177,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			Thread_set_IsBackground_m45F00BD4C46F9B8A7C46A20A170B22BABB8FBA30(L_10, (bool)1, NULL);
 			__this->____serverThread = L_10;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->____serverThread), (void*)L_10);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:110>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:111>
 			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_11 = __this->____serverThread;
 			NullCheck(L_11);
 			Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA(L_11, NULL);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:111>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:112>
 			int32_t L_12 = __this->___port;
 			int32_t L_13 = L_12;
 			RuntimeObject* L_14 = Box(il2cpp_defaults.int32_class, &L_13);
@@ -14084,7 +14189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			L_15 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralB9CD42A70EA3DA7A68EBD58982D550B83FAB45EA, L_14, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:112>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:113>
 			TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_16 = __this->___statusText;
 			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 			bool L_17;
@@ -14095,7 +14200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:114>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:115>
 			TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = __this->___statusText;
 			String_t* L_19;
 			L_19 = RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247(__this, NULL);
@@ -14105,7 +14210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 
 IL_00a4_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:116>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:117>
 			goto IL_00be;
 		}
 	}
@@ -14122,9 +14227,9 @@ IL_00a4_1:
 CATCH_00a6:
 	{
 		Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:117>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:118>
 		V_0 = L_20;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:119>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:120>
 		Exception_t* L_21 = V_0;
 		NullCheck(L_21);
 		String_t* L_22;
@@ -14133,24 +14238,24 @@ CATCH_00a6:
 		L_23 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral88E0D020D4C21B154FB2E3C50398FC015EF6EF84)), L_22, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_23, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:120>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:121>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00be;
 	}
 
 IL_00be:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:121>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:122>
 		return;
 	}
 }
-// Method Definition Index: 81005
+// Method Definition Index: 81007
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:125>
-		__this->____running = (bool)0;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:126>
+		__this->____running = (bool)0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:127>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = __this->____listener;
 		if (!L_0)
 		{
@@ -14168,11 +14273,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:128>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:129>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_3 = __this->____listener;
 		NullCheck(L_3);
 		HttpListener_Stop_mCE62183FF81F99305C3AB6E30B79B3A457DDC350(L_3, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:129>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:130>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_4 = __this->____listener;
 		NullCheck(L_4);
 		HttpListener_Close_m2EA568D9C3A846D03B56A823EF120D3619D13CCC(L_4, NULL);
@@ -14180,11 +14285,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F
 
 IL_0032:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:131>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:132>
 		return;
 	}
 }
-// Method Definition Index: 81006
+// Method Definition Index: 81008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* V_0 = NULL;
@@ -14199,16 +14304,16 @@ IL_0002:
 	}
 	try
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:139>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:140>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = __this->____listener;
 		NullCheck(L_0);
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_1;
 		L_1 = HttpListener_GetContext_m5E954E672B070E730511A6925B384E6DD092F484(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:140>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:141>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_2 = V_0;
 		RemoteControlServer_ProcessRequest_m0D4C1DC52F91ADB8B0173A2C794CEFD1F9890F1A(__this, L_2, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:141>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:142>
 		goto IL_0033;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -14229,8 +14334,8 @@ IL_0002:
 CATCH_0018:
 	{
 		HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E* L_3 = ((HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E*)IL2CPP_GET_ACTIVE_EXCEPTION(HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E*));;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:142>
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:145>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:143>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:146>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0050;
 	}
@@ -14238,9 +14343,9 @@ CATCH_0018:
 CATCH_001b:
 	{
 		Exception_t* L_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:147>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:148>
 		V_1 = L_4;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:149>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:150>
 		Exception_t* L_5 = V_1;
 		NullCheck(L_5);
 		String_t* L_6;
@@ -14249,14 +14354,14 @@ CATCH_001b:
 		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8FF7BC6C749C7FBC6FF723A9A5FAB86C85F5802A)), L_6, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_7, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:150>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:151>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0033;
 	}
 
 IL_0033:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:135>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:136>
 		bool L_8 = __this->____running;
 		if (!L_8)
 		{
@@ -14283,11 +14388,11 @@ IL_0033:
 
 IL_0050:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:152>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:153>
 		return;
 	}
 }
-// Method Definition Index: 81007
+// Method Definition Index: 81009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C1DC52F91ADB8B0173A2C794CEFD1F9890F1A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14309,7 +14414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 	Exception_t* V_2 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:160>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:161>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_0 = ___0_context;
 		NullCheck(L_0);
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_1;
@@ -14321,7 +14426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 		String_t* L_3;
 		L_3 = Uri_get_AbsolutePath_mABB93DD30D4C0F11948DE5C117650B1C3A9925CA(L_2, NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:161>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:162>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_4 = ___0_context;
 		NullCheck(L_4);
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_5;
@@ -14334,7 +14439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 	try
 	{
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:165>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:166>
 			String_t* L_7 = V_0;
 			bool L_8;
 			L_8 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_7, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, NULL);
@@ -14355,7 +14460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 
 IL_0037_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:167>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:168>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_11 = ___0_context;
 			NullCheck(L_11);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_12;
@@ -14366,7 +14471,7 @@ IL_0037_1:
 
 IL_0048_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:169>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:170>
 			String_t* L_13 = V_0;
 			bool L_14;
 			L_14 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_13, _stringLiteralCE1786E6CE95551F6A00D0B34E2D43B17B373425, NULL);
@@ -14385,7 +14490,7 @@ IL_0048_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:171>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:172>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_17 = ___0_context;
 			NullCheck(L_17);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_18;
@@ -14396,7 +14501,7 @@ IL_0048_1:
 
 IL_0073_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:173>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:174>
 			String_t* L_19 = V_0;
 			bool L_20;
 			L_20 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_19, _stringLiteral866EDFE3F72DD888BA131B98F77006FC19A2B27D, NULL);
@@ -14415,7 +14520,7 @@ IL_0073_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:175>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:176>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_23 = ___0_context;
 			NullCheck(L_23);
 			HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_24;
@@ -14430,7 +14535,7 @@ IL_0073_1:
 
 IL_00a1_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:177>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:178>
 			String_t* L_27 = V_0;
 			bool L_28;
 			L_28 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_27, _stringLiteral1D9A60562572741F59285BB7550A3A3A16887421, NULL);
@@ -14449,7 +14554,7 @@ IL_00a1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:179>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:180>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_31 = ___0_context;
 			NullCheck(L_31);
 			HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_32;
@@ -14464,7 +14569,7 @@ IL_00a1_1:
 
 IL_00cf_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:181>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:182>
 			String_t* L_35 = V_0;
 			bool L_36;
 			L_36 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_35, _stringLiteral1AEB99CB8C61203DA6EA2AC09B764D15A0EF0E52, NULL);
@@ -14483,7 +14588,7 @@ IL_00cf_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:183>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:184>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_39 = ___0_context;
 			NullCheck(L_39);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_40;
@@ -14494,14 +14599,14 @@ IL_00cf_1:
 
 IL_00f7_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:187>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:188>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_41 = ___0_context;
 			NullCheck(L_41);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_42;
 			L_42 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_41, NULL);
 			NullCheck(L_42);
 			HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_42, ((int32_t)404), NULL);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:188>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:189>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_43 = ___0_context;
 			NullCheck(L_43);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_44;
@@ -14511,7 +14616,7 @@ IL_00f7_1:
 
 IL_0118_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:190>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:191>
 			goto IL_013f;
 		}
 	}
@@ -14528,16 +14633,16 @@ IL_0118_1:
 CATCH_011a:
 	{
 		Exception_t* L_45 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:191>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:192>
 		V_2 = L_45;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:193>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:194>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_46 = ___0_context;
 		NullCheck(L_46);
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_47;
 		L_47 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_46, NULL);
 		NullCheck(L_47);
 		HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_47, ((int32_t)500), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:194>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:195>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_48 = ___0_context;
 		NullCheck(L_48);
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_49;
@@ -14547,18 +14652,18 @@ CATCH_011a:
 		String_t* L_51;
 		L_51 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_50);
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_49, L_51, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:195>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:196>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_013f;
 	}
 
 IL_013f:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:196>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:197>
 		return;
 	}
 }
-// Method Definition Index: 81008
+// Method Definition Index: 81010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9645C7A26255C05D15C6BDD7A556CD9B6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14660,13 +14765,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B40_2 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B40_3 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:200>
-		V_0 = (bool)0;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:201>
-		V_1 = _stringLiteralDBDB932A3BE7C7AE6E0011E7B64C1A04D81D6072;
+		V_0 = (bool)0;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:202>
+		V_1 = _stringLiteralDBDB932A3BE7C7AE6E0011E7B64C1A04D81D6072;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:203>
 		V_2 = (bool)0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:204>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:205>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_0 = __this->___frustumCalibrator;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -14677,12 +14782,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:206>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:207>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_2 = __this->___frustumCalibrator;
 		NullCheck(L_2);
 		bool L_3 = L_2->___flipDirection;
 		V_0 = L_3;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:207>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:208>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_4 = __this->___frustumCalibrator;
 		NullCheck(L_4);
 		int32_t* L_5 = (int32_t*)(&L_4->___mode);
@@ -14690,7 +14795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 		String_t* L_7;
 		L_7 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_6), NULL);
 		V_1 = L_7;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:208>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:209>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_8 = __this->___frustumCalibrator;
 		NullCheck(L_8);
 		bool L_9;
@@ -14700,9 +14805,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 
 IL_0047:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:211>
-		V_3 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:212>
+		V_3 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:213>
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_10 = __this->___climbingRope;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -14713,7 +14818,7 @@ IL_0047:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:214>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:215>
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_12 = __this->___climbingRope;
 		NullCheck(L_12);
 		bool L_13;
@@ -14724,15 +14829,15 @@ IL_0047:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:215>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:216>
 		V_3 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
 		goto IL_008a;
 	}
 
 IL_0070:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:217>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:218>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:219>
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_14 = __this->___climbingRope;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___anchorMode;
@@ -14758,23 +14863,23 @@ IL_0089:
 
 IL_008a:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:221>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:222>
 		V_4 = (5.0f);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:222>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:223>
 		V_5 = (0.0f);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:222>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:223>
 		V_6 = (0.0f);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:223>
-		V_7 = (1.5f);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:223>
-		V_8 = (3.0f);
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:224>
-		V_9 = 0;
+		V_7 = (1.5f);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:224>
+		V_8 = (3.0f);
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:225>
-		V_10 = 0;
+		V_9 = 0;
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:226>
+		V_10 = 0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:227>
 		V_11 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:229>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:230>
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_16 = __this->___environmentManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -14785,7 +14890,7 @@ IL_008a:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:229>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:230>
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_18 = __this->___environmentManager;
 		NullCheck(L_18);
 		float L_19 = L_18->___wallHeight;
@@ -14794,7 +14899,7 @@ IL_008a:
 
 IL_00d5:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:230>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:231>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_20 = __this->___wallSystem;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_21;
@@ -14805,22 +14910,22 @@ IL_00d5:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:232>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:233>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_22 = __this->___wallSystem;
 		NullCheck(L_22);
 		float L_23 = L_22->___leftWingAngle;
 		V_5 = L_23;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:233>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:234>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_24 = __this->___wallSystem;
 		NullCheck(L_24);
 		float L_25 = L_24->___rightWingAngle;
 		V_6 = L_25;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:234>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:235>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_26 = __this->___wallSystem;
 		NullCheck(L_26);
 		float L_27 = L_26->___wingWidth;
 		V_7 = L_27;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:235>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:236>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_28 = __this->___wallSystem;
 		NullCheck(L_28);
 		float L_29 = L_28->___wallWidth;
@@ -14829,7 +14934,7 @@ IL_00d5:
 
 IL_0117:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:237>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:238>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_30 = __this->___environmentSwitcher;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_31;
@@ -14840,13 +14945,13 @@ IL_0117:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:239>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:240>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_32 = __this->___environmentSwitcher;
 		NullCheck(L_32);
 		int32_t L_33;
 		L_33 = EnvironmentSwitcher_get_ActiveIndex_m99F0723A063641E7F261D0CF035E6D634EA002C9_inline(L_32, NULL);
 		V_9 = L_33;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:240>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:241>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_34 = __this->___environmentSwitcher;
 		NullCheck(L_34);
 		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_35 = L_34->___environments;
@@ -14854,7 +14959,7 @@ IL_0117:
 		int32_t L_36;
 		L_36 = List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_inline(L_35, List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_RuntimeMethod_var);
 		V_10 = L_36;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:241>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:242>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_37 = __this->___environmentSwitcher;
 		NullCheck(L_37);
 		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_38;
@@ -14900,18 +15005,18 @@ IL_0164:
 
 IL_0166:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:245>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:246>
 		StringBuilder_t* L_42 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_42, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
 		V_12 = L_42;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:246>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:247>
 		V_16 = 0;
 		goto IL_026b;
 	}
 
 IL_017a:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:248>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:249>
 		int32_t L_43 = V_16;
 		if ((((int32_t)L_43) <= ((int32_t)0)))
 		{
@@ -14919,7 +15024,7 @@ IL_017a:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:248>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:249>
 		StringBuilder_t* L_44 = V_12;
 		NullCheck(L_44);
 		StringBuilder_t* L_45;
@@ -14928,20 +15033,20 @@ IL_017a:
 
 IL_018c:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:249>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:250>
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_46 = __this->___presets;
 		int32_t L_47 = V_16;
 		NullCheck(L_46);
 		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_48;
 		L_48 = List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9(L_46, L_47, List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9_RuntimeMethod_var);
 		V_17 = L_48;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:250>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:251>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:252>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:253>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:254>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:255>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:256>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:257>
 		StringBuilder_t* L_49 = V_12;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_50 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_51 = L_50;
@@ -15023,14 +15128,14 @@ IL_018c:
 		NullCheck(L_49);
 		StringBuilder_t* L_94;
 		L_94 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_49, L_93, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:246>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:247>
 		int32_t L_95 = V_16;
 		V_16 = ((int32_t)il2cpp_codegen_add(L_95, 1));
 	}
 
 IL_026b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:246>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:247>
 		int32_t L_96 = V_16;
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_97 = __this->___presets;
 		NullCheck(L_97);
@@ -15042,16 +15147,16 @@ IL_026b:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:258>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:259>
 		StringBuilder_t* L_99 = V_12;
 		NullCheck(L_99);
 		StringBuilder_t* L_100;
 		L_100 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_99, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:261>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:262>
 		StringBuilder_t* L_101 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_101, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
 		V_13 = L_101;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:262>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:263>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_102 = __this->___environmentSwitcher;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_103;
@@ -15062,14 +15167,14 @@ IL_026b:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:264>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:265>
 		V_18 = 0;
 		goto IL_02f9;
 	}
 
 IL_02a9:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:266>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:267>
 		int32_t L_104 = V_18;
 		if ((((int32_t)L_104) <= ((int32_t)0)))
 		{
@@ -15077,7 +15182,7 @@ IL_02a9:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:266>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:267>
 		StringBuilder_t* L_105 = V_13;
 		NullCheck(L_105);
 		StringBuilder_t* L_106;
@@ -15086,7 +15191,7 @@ IL_02a9:
 
 IL_02bb:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:267>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:268>
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_107 = __this->___environmentSwitcher;
 		NullCheck(L_107);
 		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_108 = L_107->___environments;
@@ -15097,7 +15202,7 @@ IL_02bb:
 		NullCheck(L_110);
 		String_t* L_111 = L_110->___displayName;
 		V_19 = L_111;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:268>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:269>
 		StringBuilder_t* L_112 = V_13;
 		String_t* L_113 = V_19;
 		String_t* L_114;
@@ -15107,14 +15212,14 @@ IL_02bb:
 		NullCheck(L_112);
 		StringBuilder_t* L_116;
 		L_116 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_112, L_115, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:264>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:265>
 		int32_t L_117 = V_18;
 		V_18 = ((int32_t)il2cpp_codegen_add(L_117, 1));
 	}
 
 IL_02f9:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:264>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:265>
 		int32_t L_118 = V_18;
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_119 = __this->___environmentSwitcher;
 		NullCheck(L_119);
@@ -15130,12 +15235,12 @@ IL_02f9:
 
 IL_030d:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:271>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:272>
 		StringBuilder_t* L_122 = V_13;
 		NullCheck(L_122);
 		StringBuilder_t* L_123;
 		L_123 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_122, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:273>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:274>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_124 = __this->___wallSystem;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_125;
@@ -15166,7 +15271,6 @@ IL_032f:
 IL_0349:
 	{
 		V_14 = G_B34_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:275>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:276>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:277>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:278>
@@ -15183,6 +15287,7 @@ IL_0349:
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:289>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:290>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:291>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:292>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_130 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)25));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_131 = L_130;
 		NullCheck(L_131);
@@ -15369,19 +15474,19 @@ IL_0449:
 		String_t* L_195;
 		L_195 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_194, NULL);
 		V_15 = L_195;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:293>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:294>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_196 = ___0_response;
 		NullCheck(L_196);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_196, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:294>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:295>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_197 = ___0_response;
 		String_t* L_198 = V_15;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_197, L_198, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:295>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:296>
 		return;
 	}
 }
-// Method Definition Index: 81009
+// Method Definition Index: 81011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A5DA2689E612B960E7277A31B1FEE0E2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15390,8 +15495,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass28_0_U3CHandleSetU3Eb__0_mE00B19AB986BEDDE30EEB4E6843C5D3723731816_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
@@ -15399,17 +15504,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7D028CCE3B6E7B61AE2C752D7AE970DA04AB7C6);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* V_0 = NULL;
+	U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* V_0 = NULL;
 	StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* V_1 = NULL;
 	{
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_0 = (U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass28_0__ctor_mD49414808810CEDA4A38DBB6347689FB815797B0(L_0, NULL);
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_0 = (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B(L_0, NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_1 = V_0;
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_1 = V_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:300>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:301>
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_2 = ___0_request;
 		NullCheck(L_2);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3;
@@ -15449,8 +15554,8 @@ IL_0036:
 		});
 		try
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:301>
-			U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_9 = V_0;
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:302>
+			U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_9 = V_0;
 			StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_10 = V_1;
 			NullCheck(L_10);
 			String_t* L_11;
@@ -15468,9 +15573,9 @@ IL_0036:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:305>
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_12 = V_0;
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_13 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:306>
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_12 = V_0;
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_13 = V_0;
 		NullCheck(L_13);
 		String_t* L_14 = L_13->___body;
 		String_t* L_15;
@@ -15478,22 +15583,21 @@ IL_0037:
 		NullCheck(L_12);
 		L_12->___key = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___key), (void*)L_15);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:306>
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_16 = V_0;
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_17 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:307>
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_16 = V_0;
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_17 = V_0;
 		NullCheck(L_17);
 		String_t* L_18 = L_17->___body;
 		float L_19;
 		L_19 = RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383(__this, L_18, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, NULL);
 		NullCheck(L_16);
 		L_16->___value = L_19;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:307>
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_20 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:308>
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_20 = V_0;
 		NullCheck(L_20);
 		String_t* L_21 = L_20->___body;
 		String_t* L_22;
 		L_22 = RemoteControlServer_ExtractJsonString_m92AC5E2A8AA01E1A9C7D3EF39B525585B57DF390(__this, L_21, _stringLiteral9A631D67F45076985AE0592A66EFEB4D48DF1B0C, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:309>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:310>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:311>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:312>
@@ -15573,22 +15677,23 @@ IL_0037:
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:386>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:387>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:388>
-		U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* L_23 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:389>
+		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_23 = V_0;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CHandleSetU3Eb__0_mE00B19AB986BEDDE30EEB4E6843C5D3723731816_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var), NULL);
 		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_24, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:390>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:391>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_25 = ___1_response;
 		NullCheck(L_25);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_25, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:391>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:392>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_26 = ___1_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_26, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:392>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:393>
 		return;
 	}
 }
-// Method Definition Index: 81010
+// Method Definition Index: 81012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandlePreset_m71226C907DBF6E88E5D5AA1464C95435F05BA3D6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15599,26 +15704,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandlePreset_m71226C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_U3CHandlePresetU3Eb__0_m5B447B433C9AD62BB615CA6F31B7380D4BDC11EA_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* V_0 = NULL;
+	U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* V_0 = NULL;
 	String_t* V_1 = NULL;
 	int32_t V_2 = 0;
 	StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* V_3 = NULL;
 	{
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_0 = (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B(L_0, NULL);
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_0 = (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E(L_0, NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_1 = V_0;
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_1 = V_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:397>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:398>
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_2 = ___0_request;
 		NullCheck(L_2);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3;
@@ -15658,7 +15763,7 @@ IL_0031:
 		});
 		try
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:398>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:399>
 			StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_9 = V_3;
 			NullCheck(L_9);
 			String_t* L_10;
@@ -15674,12 +15779,12 @@ IL_0031:
 
 IL_0032:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:400>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:401>
 		String_t* L_11 = V_1;
 		float L_12;
 		L_12 = RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383(__this, L_11, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, NULL);
 		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(L_12);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:402>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:403>
 		int32_t L_13 = V_2;
 		if ((((int32_t)L_13) < ((int32_t)0)))
 		{
@@ -15698,8 +15803,8 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:404>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_17 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:405>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_17 = V_0;
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_18 = __this->___presets;
 		int32_t L_19 = V_2;
 		NullCheck(L_18);
@@ -15708,7 +15813,6 @@ IL_0032:
 		NullCheck(L_17);
 		L_17->___p = L_20;
 		Il2CppCodeGenWriteBarrier((void**)(&L_17->___p), (void*)L_20);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:405>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:406>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:407>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:408>
@@ -15723,58 +15827,59 @@ IL_0032:
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:417>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:418>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:419>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_21 = V_0;
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:420>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_21 = V_0;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_22 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass29_0_U3CHandlePresetU3Eb__0_m5B447B433C9AD62BB615CA6F31B7380D4BDC11EA_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var), NULL);
 		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_22, NULL);
 	}
 
 IL_0076:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:422>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:423>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_23 = ___1_response;
 		NullCheck(L_23);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_23, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:423>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:424>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_24 = ___1_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_24, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:424>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:425>
 		return;
 	}
 }
-// Method Definition Index: 81011
+// Method Definition Index: 81013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleReset_m5EBE22421820600203DC9E63E512FB1802F17134 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RemoteControlServer_U3CHandleResetU3Eb__30_0_m7A4DD1B1AF556619BDF0E2DC68FF14F5B03E7AD2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:428>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:429>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:430>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:431>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:432>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:433>
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)RemoteControlServer_U3CHandleResetU3Eb__30_0_m7A4DD1B1AF556619BDF0E2DC68FF14F5B03E7AD2_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var), NULL);
 		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_0, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:434>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:435>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_1 = ___0_response;
 		NullCheck(L_1);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_1, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:435>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:436>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_2 = ___0_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_2, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:436>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:437>
 		return;
 	}
 }
-// Method Definition Index: 81012
+// Method Definition Index: 81014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeHTML_mA50DC28F5770621D47D1C9602D652189071EE944 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15784,20 +15889,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeHTML_mA50DC28F5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:444>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:445>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_0 = ___0_response;
 		NullCheck(L_0);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_0, _stringLiteral1535B58BAB49F5727C55AEF9FE1CAE3A3BCB5B99, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:445>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:446>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_1 = ___0_response;
 		String_t* L_2;
 		L_2 = RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88(__this, NULL);
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_1, L_2, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:446>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:447>
 		return;
 	}
 }
-// Method Definition Index: 81013
+// Method Definition Index: 81015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15807,7 +15912,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageH
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:450>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:451>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:452>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:453>
@@ -16119,10 +16223,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageH
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:759>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:760>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:761>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:762>
 		return _stringLiteralB964B9B6D3B71C773703AEA726DA577DA24112C1;
 	}
 }
-// Method Definition Index: 81014
+// Method Definition Index: 81016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_action, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16134,7 +16239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36
 	RuntimeObject* V_0 = NULL;
 	bool V_1 = false;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:770>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:771>
 		RuntimeObject* L_0 = __this->____queueLock;
 		V_0 = L_0;
 		V_1 = (bool)0;
@@ -16167,12 +16272,12 @@ IL_0028:
 		{
 			RuntimeObject* L_3 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:772>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:773>
 			Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_4 = __this->____mainThreadQueue;
 			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = ___0_action;
 			NullCheck(L_4);
 			Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4(L_4, L_5, Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4_RuntimeMethod_var);
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:773>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:774>
 			goto IL_0029;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -16183,16 +16288,16 @@ IL_0028:
 
 IL_0029:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:774>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:775>
 		return;
 	}
 }
-// Method Definition Index: 81015
+// Method Definition Index: 81017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, String_t* ___1_content, const RuntimeMethod* method) 
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:778>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:779>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_1 = ___1_content;
@@ -16200,13 +16305,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_1);
 		V_0 = L_2;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:779>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:780>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_3 = ___0_response;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = V_0;
 		NullCheck(L_4);
 		NullCheck(L_3);
 		HttpListenerResponse_set_ContentLength64_m74DE30C7F71ECD88A03D44FCB97520CCDDB60B18(L_3, ((int64_t)((int32_t)(((RuntimeArray*)L_4)->max_length))), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:780>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:781>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_5 = ___0_response;
 		NullCheck(L_5);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_6;
@@ -16216,18 +16321,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD
 		NullCheck(L_8);
 		NullCheck(L_6);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(29, L_6, L_7, 0, ((int32_t)(((RuntimeArray*)L_8)->max_length)));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:781>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:782>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_9 = ___0_response;
 		NullCheck(L_9);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_10;
 		L_10 = HttpListenerResponse_get_OutputStream_m7A8666B4CFAE080313690B80D59CF27FB665B376(L_9, NULL);
 		NullCheck(L_10);
 		VirtualActionInvoker0::Invoke(13, L_10);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:782>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:783>
 		return;
 	}
 }
-// Method Definition Index: 81016
+// Method Definition Index: 81018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2646189F0A2E9EE6DE28CEB080DDD7826A9AA7 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16252,7 +16357,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2
 	try
 	{
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:788>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:789>
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_0;
 			L_0 = NetworkInterface_GetAllNetworkInterfaces_m4E5A4AAEED8B11868BDC8F78975460D9B6F3CD70(NULL);
 			V_0 = L_0;
@@ -16262,14 +16367,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2
 
 IL_000a_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:788>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:789>
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_1 = V_0;
 			int32_t L_2 = V_1;
 			NullCheck(L_1);
 			int32_t L_3 = L_2;
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 			V_2 = L_4;
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:790>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:791>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_5 = V_2;
 			NullCheck(L_5);
 			int32_t L_6;
@@ -16280,7 +16385,7 @@ IL_000a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:792>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:793>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_7 = V_2;
 			NullCheck(L_7);
 			int32_t L_8;
@@ -16291,7 +16396,7 @@ IL_000a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:795>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:796>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_9 = V_2;
 			NullCheck(L_9);
 			IPInterfaceProperties_t60A00D504E4F72CAFE4C0AE4DA6A062B44D1512F* L_10;
@@ -16337,13 +16442,13 @@ IL_0080_1:
 
 IL_0034_2:
 				{
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:795>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:796>
 					RuntimeObject* L_15 = V_3;
 					NullCheck(L_15);
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_16;
 					L_16 = InterfaceFuncInvoker0< UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* >::Invoke(0, IEnumerator_1_tA218C3658C89562941B7435E73E48E2EDC26D9BD_il2cpp_TypeInfo_var, L_15);
 					V_4 = L_16;
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:797>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:798>
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_17 = V_4;
 					NullCheck(L_17);
 					IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_18;
@@ -16357,7 +16462,7 @@ IL_0034_2:
 					}
 				}
 				{
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:799>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:800>
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_20 = V_4;
 					NullCheck(L_20);
 					IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_21;
@@ -16366,7 +16471,7 @@ IL_0034_2:
 					String_t* L_22;
 					L_22 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_21);
 					V_5 = L_22;
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:800>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:801>
 					String_t* L_23 = V_5;
 					NullCheck(L_23);
 					bool L_24;
@@ -16377,7 +16482,7 @@ IL_0034_2:
 					}
 				}
 				{
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:800>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:801>
 					String_t* L_25 = V_5;
 					V_6 = L_25;
 					goto IL_00b0;
@@ -16385,7 +16490,7 @@ IL_0034_2:
 
 IL_006d_2:
 				{
-					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:795>
+					//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:796>
 					RuntimeObject* L_26 = V_3;
 					NullCheck(L_26);
 					bool L_27;
@@ -16413,7 +16518,7 @@ IL_0081_1:
 
 IL_0085_1:
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:788>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:789>
 			int32_t L_29 = V_1;
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_30 = V_0;
 			NullCheck(L_30);
@@ -16423,7 +16528,7 @@ IL_0085_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:804>
+			//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:805>
 			goto IL_00aa;
 		}
 	}
@@ -16440,9 +16545,9 @@ IL_0085_1:
 CATCH_0090:
 	{
 		Exception_t* L_31 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:805>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:806>
 		V_7 = L_31;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:807>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:808>
 		Exception_t* L_32 = V_7;
 		NullCheck(L_32);
 		String_t* L_33;
@@ -16451,25 +16556,25 @@ CATCH_0090:
 		L_34 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5228E530EB8CF8283F96D0CFBC908C0C3075CD13)), L_33, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_34, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:808>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:809>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00aa;
 	}
 
 IL_00aa:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:809>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:810>
 		return _stringLiteralE71CEA2F4DC92DEB85E44E625E13F0973AA40B52;
 	}
 
 IL_00b0:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:810>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:811>
 		String_t* L_35 = V_6;
 		return L_35;
 	}
 }
-// Method Definition Index: 81017
+// Method Definition Index: 81019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonString_m92AC5E2A8AA01E1A9C7D3EF39B525585B57DF390 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16484,19 +16589,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:815>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:816>
 		String_t* L_0 = ___1_key;
 		String_t* L_1;
 		L_1 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_0, _stringLiteralE1FA7984F63F6132B83FB4302371499FCEE3AAE0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:816>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:817>
 		String_t* L_2 = ___0_json;
 		String_t* L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = String_IndexOf_m69E9BDAFD93767C85A7FF861B453415D3B4A200F(L_2, L_3, NULL);
 		V_1 = L_4;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:817>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:818>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) >= ((int32_t)0)))
 		{
@@ -16504,27 +16609,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:817>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:818>
 		return _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 
 IL_0023:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:818>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:819>
 		int32_t L_6 = V_1;
 		String_t* L_7 = V_0;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, L_8));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:819>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:820>
 		String_t* L_9 = ___0_json;
 		int32_t L_10 = V_1;
 		NullCheck(L_9);
 		int32_t L_11;
 		L_11 = String_IndexOf_mCBADAB35416ED6F5F733DF46CC86C23E5C9E5A56(L_9, _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_10, NULL);
 		V_2 = L_11;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:820>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:821>
 		int32_t L_12 = V_2;
 		int32_t L_13 = V_1;
 		if ((((int32_t)L_12) > ((int32_t)L_13)))
@@ -16548,7 +16653,7 @@ IL_0043:
 		return L_18;
 	}
 }
-// Method Definition Index: 81018
+// Method Definition Index: 81020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16564,19 +16669,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mA
 	int32_t V_2 = 0;
 	float V_3 = 0.0f;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:825>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:826>
 		String_t* L_0 = ___1_key;
 		String_t* L_1;
 		L_1 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_0, _stringLiteralA333953DEB7B3F631AE4FEB93E9C3AD7F349F8C0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:826>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:827>
 		String_t* L_2 = ___0_json;
 		String_t* L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = String_IndexOf_m69E9BDAFD93767C85A7FF861B453415D3B4A200F(L_2, L_3, NULL);
 		V_1 = L_4;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:827>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:828>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) >= ((int32_t)0)))
 		{
@@ -16584,20 +16689,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mA
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:827>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:828>
 		return (0.0f);
 	}
 
 IL_0023:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:828>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:829>
 		int32_t L_6 = V_1;
 		String_t* L_7 = V_0;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, L_8));
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:829>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:830>
 		int32_t L_9 = V_1;
 		V_2 = L_9;
 		goto IL_0034;
@@ -16605,14 +16710,14 @@ IL_0023:
 
 IL_0030:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:831>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:832>
 		int32_t L_10 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
 IL_0034:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:830>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:831>
 		int32_t L_11 = V_2;
 		String_t* L_12 = ___0_json;
 		NullCheck(L_12);
@@ -16662,9 +16767,9 @@ IL_0034:
 
 IL_0061:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:832>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:833>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:834>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:835>
 		String_t* L_24 = ___0_json;
 		int32_t L_25 = V_1;
 		int32_t L_26 = V_2;
@@ -16677,12 +16782,12 @@ IL_0061:
 		L_29 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
 		bool L_30;
 		L_30 = Single_TryParse_mFB8CC32F0016FBB6EFCB97953CF3515767EB6431(L_28, ((int32_t)167), L_29, (&V_3), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:835>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:836>
 		float L_31 = V_3;
 		return L_31;
 	}
 }
-// Method Definition Index: 81019
+// Method Definition Index: 81021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16699,7 +16804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_EscapeJson_m89E
 	String_t* G_B5_0 = NULL;
 	String_t* G_B4_0 = NULL;
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:838>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:839>
 		String_t* L_0 = ___0_s;
 		if (L_0)
 		{
@@ -16742,7 +16847,7 @@ IL_002e:
 		return G_B5_0;
 	}
 }
-// Method Definition Index: 81020
+// Method Definition Index: 81022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer__ctor_mD889BD87C769818DE161D55A27635D7CF3EA06D9 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16757,34 +16862,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer__ctor_mD889BD87C7698
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:40>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:41>
 		__this->___port = ((int32_t)8080);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:43>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:44>
 		__this->___showIPInVR = (bool)1;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:47>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:48>
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_0 = (List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F*)il2cpp_codegen_object_new(List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F_il2cpp_TypeInfo_var);
 		List_1__ctor_mE611D57EDA19073D3F1B4A989BCB712E150C0B6E(L_0, List_1__ctor_mE611D57EDA19073D3F1B4A989BCB712E150C0B6E_RuntimeMethod_var);
 		__this->___presets = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___presets), (void*)L_0);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:54>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:55>
 		Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_1 = (Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA*)il2cpp_codegen_object_new(Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA_il2cpp_TypeInfo_var);
 		Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272(L_1, Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272_RuntimeMethod_var);
 		__this->____mainThreadQueue = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____mainThreadQueue), (void*)L_1);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:55>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:56>
 		RuntimeObject* L_2 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(L_2, NULL);
 		__this->____queueLock = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____queueLock), (void*)L_2);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:58>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:59>
 		__this->____localIP = _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____localIP), (void*)_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81021
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__30_0_m7A4DD1B1AF556619BDF0E2DC68FF14F5B03E7AD2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81023
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16793,7 +16898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:430>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:431>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_0 = __this->___wallSystem;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -16804,7 +16909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:431>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:432>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_2 = __this->___wallSystem;
 		NullCheck(L_2);
 		SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1(L_2, NULL);
@@ -16812,7 +16917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 
 IL_0019:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:432>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:433>
 		return;
 	}
 }
@@ -16824,16 +16929,16 @@ IL_0019:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81022
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0__ctor_mD49414808810CEDA4A38DBB6347689FB815797B0 (U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81024
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81023
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0_U3CHandleSetU3Eb__0_mE00B19AB986BEDDE30EEB4E6843C5D3723731816 (U3CU3Ec__DisplayClass28_0_t01A342C1755B9F21998EBC85B9684801D7233EC9* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81025
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8 (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17098,7 +17203,7 @@ IL_0106:
 
 IL_0117:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:314>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:315>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_33 = __this->___U3CU3E4__this;
 		NullCheck(L_33);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_34 = L_33->___environmentManager;
@@ -17111,7 +17216,7 @@ IL_0117:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:315>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:316>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_36 = __this->___U3CU3E4__this;
 		NullCheck(L_36);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_37 = L_36->___environmentManager;
@@ -17122,7 +17227,7 @@ IL_0117:
 
 IL_0140:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:316>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:317>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_39 = __this->___U3CU3E4__this;
 		NullCheck(L_39);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_40 = L_39->___wallSystem;
@@ -17147,19 +17252,19 @@ IL_0140:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:317>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:318>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_45 = __this->___U3CU3E4__this;
 		NullCheck(L_45);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_46 = L_45->___wallSystem;
 		NullCheck(L_46);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_46, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:318>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:319>
 		return;
 	}
 
 IL_017c:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:320>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:321>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_47 = __this->___U3CU3E4__this;
 		NullCheck(L_47);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_48 = L_47->___wallSystem;
@@ -17172,7 +17277,7 @@ IL_017c:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:322>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:323>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_50 = __this->___U3CU3E4__this;
 		NullCheck(L_50);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_51 = L_50->___wallSystem;
@@ -17181,7 +17286,7 @@ IL_017c:
 		L_53 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_52, (-135.0f), (135.0f), NULL);
 		NullCheck(L_51);
 		L_51->___leftWingAngle = L_53;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:323>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:324>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_54 = __this->___U3CU3E4__this;
 		NullCheck(L_54);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_55 = L_54->___wallSystem;
@@ -17194,19 +17299,19 @@ IL_017c:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:323>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:324>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_57 = __this->___U3CU3E4__this;
 		NullCheck(L_57);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_58 = L_57->___wallSystem;
 		NullCheck(L_58);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_58, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:325>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:326>
 		return;
 	}
 
 IL_01dd:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:327>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:328>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_59 = __this->___U3CU3E4__this;
 		NullCheck(L_59);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_60 = L_59->___wallSystem;
@@ -17219,7 +17324,7 @@ IL_01dd:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:329>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:330>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_62 = __this->___U3CU3E4__this;
 		NullCheck(L_62);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_63 = L_62->___wallSystem;
@@ -17228,7 +17333,7 @@ IL_01dd:
 		L_65 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_64, (-135.0f), (135.0f), NULL);
 		NullCheck(L_63);
 		L_63->___rightWingAngle = L_65;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:330>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:331>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_66 = __this->___U3CU3E4__this;
 		NullCheck(L_66);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_67 = L_66->___wallSystem;
@@ -17241,19 +17346,19 @@ IL_01dd:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:330>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:331>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_69 = __this->___U3CU3E4__this;
 		NullCheck(L_69);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_70 = L_69->___wallSystem;
 		NullCheck(L_70);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_70, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:332>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:333>
 		return;
 	}
 
 IL_023e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:334>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:335>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_71 = __this->___U3CU3E4__this;
 		NullCheck(L_71);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_72 = L_71->___wallSystem;
@@ -17266,7 +17371,7 @@ IL_023e:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:336>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:337>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_74 = __this->___U3CU3E4__this;
 		NullCheck(L_74);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_75 = L_74->___wallSystem;
@@ -17275,7 +17380,7 @@ IL_023e:
 		L_77 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_76, (0.200000003f), (5.0f), NULL);
 		NullCheck(L_75);
 		L_75->___wingWidth = L_77;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:337>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:338>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_78 = __this->___U3CU3E4__this;
 		NullCheck(L_78);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_79 = L_78->___wallSystem;
@@ -17288,19 +17393,19 @@ IL_023e:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:337>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:338>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_81 = __this->___U3CU3E4__this;
 		NullCheck(L_81);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_82 = L_81->___wallSystem;
 		NullCheck(L_82);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_82, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:339>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:340>
 		return;
 	}
 
 IL_029f:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:341>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:342>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_83 = __this->___U3CU3E4__this;
 		NullCheck(L_83);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_84 = L_83->___wallSystem;
@@ -17313,7 +17418,7 @@ IL_029f:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:343>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:344>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_86 = __this->___U3CU3E4__this;
 		NullCheck(L_86);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_87 = L_86->___wallSystem;
@@ -17322,7 +17427,7 @@ IL_029f:
 		L_89 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_88, (1.0f), (15.0f), NULL);
 		NullCheck(L_87);
 		L_87->___wallWidth = L_89;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:344>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:345>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_90 = __this->___U3CU3E4__this;
 		NullCheck(L_90);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_91 = L_90->___wallSystem;
@@ -17335,19 +17440,19 @@ IL_029f:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:344>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:345>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_93 = __this->___U3CU3E4__this;
 		NullCheck(L_93);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_94 = L_93->___wallSystem;
 		NullCheck(L_94);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_94, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:346>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:347>
 		return;
 	}
 
 IL_0300:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:348>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:349>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_95 = __this->___U3CU3E4__this;
 		NullCheck(L_95);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_96 = L_95->___environmentSwitcher;
@@ -17360,20 +17465,20 @@ IL_0300:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:349>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:350>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_98 = __this->___U3CU3E4__this;
 		NullCheck(L_98);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_99 = L_98->___environmentSwitcher;
 		float L_100 = __this->___value;
 		NullCheck(L_99);
 		EnvironmentSwitcher_SwitchTo_m905F8A8B81C87DD8013373F18EEEDA6602A20D98(L_99, il2cpp_codegen_cast_double_to_int<int32_t>(L_100), NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:350>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:351>
 		return;
 	}
 
 IL_032e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:352>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:353>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_101 = __this->___U3CU3E4__this;
 		NullCheck(L_101);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_102 = L_101->___frustumCalibrator;
@@ -17398,26 +17503,26 @@ IL_032e:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:354>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:355>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_107 = __this->___U3CU3E4__this;
 		NullCheck(L_107);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_108 = L_107->___frustumCalibrator;
 		float L_109 = __this->___value;
 		NullCheck(L_108);
 		L_108->___flipDirection = (bool)((((float)L_109) > ((float)(0.5f)))? 1 : 0);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:355>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:356>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_110 = __this->___U3CU3E4__this;
 		NullCheck(L_110);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_111 = L_110->___frustumCalibrator;
 		NullCheck(L_111);
 		WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD(L_111, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:357>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:358>
 		return;
 	}
 
 IL_0387:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:359>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:360>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_112 = __this->___U3CU3E4__this;
 		NullCheck(L_112);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_113 = L_112->___frustumCalibrator;
@@ -17442,9 +17547,9 @@ IL_0387:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:361>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:362>
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:363>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:364>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_118 = __this->___U3CU3E4__this;
 		NullCheck(L_118);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_119 = L_118->___frustumCalibrator;
@@ -17472,19 +17577,19 @@ IL_03ce:
 	{
 		NullCheck(G_B61_1);
 		G_B61_1->___mode = G_B61_0;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:364>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:365>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_121 = __this->___U3CU3E4__this;
 		NullCheck(L_121);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_122 = L_121->___frustumCalibrator;
 		NullCheck(L_122);
 		WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD(L_122, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:366>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:367>
 		return;
 	}
 
 IL_03e4:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:368>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:369>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_123 = __this->___U3CU3E4__this;
 		NullCheck(L_123);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_124 = L_123->___climbingRope;
@@ -17497,7 +17602,7 @@ IL_03e4:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:370>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:371>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_126 = __this->___U3CU3E4__this;
 		String_t* L_127 = __this->___body;
 		NullCheck(L_126);
@@ -17536,43 +17641,43 @@ IL_03e4:
 
 IL_0439:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:374>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:375>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_135 = __this->___U3CU3E4__this;
 		NullCheck(L_135);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_136 = L_135->___climbingRope;
 		NullCheck(L_136);
 		ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631(L_136, (bool)0, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:375>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:376>
 		return;
 	}
 
 IL_044b:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:377>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:378>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_137 = __this->___U3CU3E4__this;
 		NullCheck(L_137);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_138 = L_137->___climbingRope;
 		NullCheck(L_138);
 		ClimbingRope_SetAnchorMode_m0061E29E0B252EA750D9FDAE61AE1D0709D50664(L_138, 0, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:378>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:379>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_139 = __this->___U3CU3E4__this;
 		NullCheck(L_139);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_140 = L_139->___climbingRope;
 		NullCheck(L_140);
 		ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631(L_140, (bool)1, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:379>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:380>
 		return;
 	}
 
 IL_046e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:381>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:382>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_141 = __this->___U3CU3E4__this;
 		NullCheck(L_141);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_142 = L_141->___climbingRope;
 		NullCheck(L_142);
 		ClimbingRope_SetAnchorMode_m0061E29E0B252EA750D9FDAE61AE1D0709D50664(L_142, 1, NULL);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:382>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:383>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_143 = __this->___U3CU3E4__this;
 		NullCheck(L_143);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_144 = L_143->___climbingRope;
@@ -17582,7 +17687,7 @@ IL_046e:
 
 IL_0490:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:388>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:389>
 		return;
 	}
 }
@@ -17594,16 +17699,16 @@ IL_0490:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81024
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81026
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81025
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandlePresetU3Eb__0_m5B447B433C9AD62BB615CA6F31B7380D4BDC11EA (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81027
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17612,7 +17717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandlePrese
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:407>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:408>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_0 = __this->___U3CU3E4__this;
 		NullCheck(L_0);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_1 = L_0->___environmentManager;
@@ -17625,7 +17730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandlePrese
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:408>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:409>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_3 = __this->___U3CU3E4__this;
 		NullCheck(L_3);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_4 = L_3->___environmentManager;
@@ -17638,7 +17743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandlePrese
 
 IL_002e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:409>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:410>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_7 = __this->___U3CU3E4__this;
 		NullCheck(L_7);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_8 = L_7->___wallSystem;
@@ -17651,7 +17756,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:411>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:412>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_10 = __this->___U3CU3E4__this;
 		NullCheck(L_10);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_11 = L_10->___wallSystem;
@@ -17660,7 +17765,7 @@ IL_002e:
 		float L_13 = L_12->___wallWidth;
 		NullCheck(L_11);
 		L_11->___wallWidth = L_13;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:412>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:413>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_14 = __this->___U3CU3E4__this;
 		NullCheck(L_14);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_15 = L_14->___wallSystem;
@@ -17669,7 +17774,7 @@ IL_002e:
 		float L_17 = L_16->___leftWingAngle;
 		NullCheck(L_15);
 		L_15->___leftWingAngle = L_17;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:413>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:414>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_18 = __this->___U3CU3E4__this;
 		NullCheck(L_18);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_19 = L_18->___wallSystem;
@@ -17678,7 +17783,7 @@ IL_002e:
 		float L_21 = L_20->___rightWingAngle;
 		NullCheck(L_19);
 		L_19->___rightWingAngle = L_21;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:414>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:415>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_22 = __this->___U3CU3E4__this;
 		NullCheck(L_22);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_23 = L_22->___wallSystem;
@@ -17687,7 +17792,7 @@ IL_002e:
 		float L_25 = L_24->___wingWidth;
 		NullCheck(L_23);
 		L_23->___wingWidth = L_25;
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:415>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:416>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_26 = __this->___U3CU3E4__this;
 		NullCheck(L_26);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_27 = L_26->___wallSystem;
@@ -17700,7 +17805,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:415>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:416>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_29 = __this->___U3CU3E4__this;
 		NullCheck(L_29);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_30 = L_29->___wallSystem;
@@ -17710,7 +17815,7 @@ IL_002e:
 
 IL_00d2:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:417>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:418>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_31 = __this->___U3CU3E4__this;
 		NullCheck(L_31);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_32 = L_31->___environmentSwitcher;
@@ -17732,7 +17837,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:418>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:419>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_36 = __this->___U3CU3E4__this;
 		NullCheck(L_36);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_37 = L_36->___environmentSwitcher;
@@ -17745,7 +17850,7 @@ IL_00d2:
 
 IL_010e:
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:419>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:420>
 		return;
 	}
 }
@@ -17757,7 +17862,7 @@ IL_010e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81026
+// Method Definition Index: 81028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3451203E303658B62DE (WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17767,14 +17872,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:848>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:849>
 		__this->___name = _stringLiteralCCB58ECFF5BA5137F3C73F699B87A828BFFA7797;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___name), (void*)_stringLiteralCCB58ECFF5BA5137F3C73F699B87A828BFFA7797);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:849>
-		__this->___wallHeight = (5.0f);
 		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:850>
+		__this->___wallHeight = (5.0f);
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:851>
 		__this->___wallWidth = (3.0f);
-		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:853>
+		//<source_info:C:/Users/hokka/VR TEST/Assets/Scripts/RemoteControlServer.cs:854>
 		__this->___wingWidth = (1.5f);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
@@ -17788,7 +17893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81027
+// Method Definition Index: 81029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_LateUpdate_m474DC8B7947994168D5C529551897CBB7C092308 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17823,7 +17928,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 81028
+// Method Definition Index: 81030
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_ComputeTargets_m937D1CB5A0584E84175EB958378C1668C9CDA5A5 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17935,7 +18040,7 @@ IL_0097:
 		return;
 	}
 }
-// Method Definition Index: 81029
+// Method Definition Index: 81031
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RopeController_ComputeMiddlePoint_m7FE0EAABCB66A4269D5F6D3966E1ECEC638B1A71 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_harnessPos, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18099,7 +18204,7 @@ IL_007e:
 		return L_42;
 	}
 }
-// Method Definition Index: 81030
+// Method Definition Index: 81032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_ApplySmoothed_mC1FFB5696E9B1315A8F6F4A1C600AD24249C30FB (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18200,7 +18305,7 @@ IL_009d:
 		return;
 	}
 }
-// Method Definition Index: 81031
+// Method Definition Index: 81033
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController__ctor_m206D38DC05C1A9348670C3ECB31CDCAEB4A11F73 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18230,7 +18335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController__ctor_m206D38DC05C1A93486
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81032
+// Method Definition Index: 81034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Start_m8290B73AE3AB62C748EF6EC2A9DEE75D329C8189 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18238,7 +18343,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Start_m8290B73AE3AB62C
 		return;
 	}
 }
-// Method Definition Index: 81033
+// Method Definition Index: 81035
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Update_m050DCCC7D55E2F1741100638A2EC52ECBB2CD323 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18271,7 +18376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Update_m050DCCC7D55E2F
 		return;
 	}
 }
-// Method Definition Index: 81034
+// Method Definition Index: 81036
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager__ctor_m0E4EE7915E5DB37D0B1C1B7058F01B0FF4F80AD1 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18287,7 +18392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager__ctor_m0E4EE7915E5DB37
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81035
+// Method Definition Index: 81037
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Start_m1C3EF3B2F4581F5DDB628BEC5EAFD698EF25A8F7 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18295,7 +18400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Start_m1C3EF3B2F4581F5DD
 		return;
 	}
 }
-// Method Definition Index: 81036
+// Method Definition Index: 81038
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Update_mB5A5F48DB1BD468A904E6BD7BCD32E90BA02C412 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18328,7 +18433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Update_mB5A5F48DB1BD468A
 		return;
 	}
 }
-// Method Definition Index: 81037
+// Method Definition Index: 81039
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager__ctor_m3EA67F52F16518AE5BB68A0B9E90EB5EBEA435D1 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18344,7 +18449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager__ctor_m3EA67F52F16518AE5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81038
+// Method Definition Index: 81040
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18353,7 +18458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37
 		return L_0;
 	}
 }
-// Method Definition Index: 81039
+// Method Definition Index: 81041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840EF33165B660A0ADED05A69F6500D2C8AB6A (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -18363,7 +18468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840
 		return;
 	}
 }
-// Method Definition Index: 81040
+// Method Definition Index: 81042
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_Wall1Normal_m22CCCEACE7444CB787767BBB56384F541DF8C44D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18372,7 +18477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81041
+// Method Definition Index: 81043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_Wall2Normal_m1A108CB3D6C6F8BA180736A57D2639DE4FA5B310 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18381,7 +18486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81042
+// Method Definition Index: 81044
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_CornerPoint_m2B72F2399BF4ED6CB129EDBB6F10D84E44BEAB19 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18390,7 +18495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81043
+// Method Definition Index: 81045
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SimpleWallSystem_get_IsCalibrated_m86AC845D82AE00F81F0A106C1D0AA1B49E9EFB41 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18411,7 +18516,7 @@ IL_000f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 81044
+// Method Definition Index: 81046
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_Update_mC8D2D749C7C6DD0E0ECDBA8E92795F7D32570FB1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18791,7 +18896,7 @@ IL_024b:
 		return;
 	}
 }
-// Method Definition Index: 81045
+// Method Definition Index: 81047
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SamplePoint_mD32CB9FA7EA5FE861E0875C7FDC76598DCA7AFDA (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18909,7 +19014,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 81046
+// Method Definition Index: 81048
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UndoLastSample_m1FE4D1A536E955E59E1DED16C575026CF65E7593 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18963,7 +19068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UndoLastSample_m1FE4D1A
 		return;
 	}
 }
-// Method Definition Index: 81047
+// Method Definition Index: 81049
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearSamples_m8D9F8DB937A55BC9B89B74FC0BF4ED4FEB290FF4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19066,7 +19171,7 @@ IL_0054:
 		return;
 	}
 }
-// Method Definition Index: 81048
+// Method Definition Index: 81050
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_FinalizeCurrentWall_mE08D0DA8E0733F1312B4F7D2F3C00C99310447F2 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19405,7 +19510,7 @@ IL_0200:
 		return;
 	}
 }
-// Method Definition Index: 81049
+// Method Definition Index: 81051
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_up, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19471,7 +19576,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81050
+// Method Definition Index: 81052
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeCorner_m65F8BD4C0901071C3FD5966D34EF36999726BA6E (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19598,7 +19703,7 @@ IL_00dc:
 		return;
 	}
 }
-// Method Definition Index: 81051
+// Method Definition Index: 81053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19828,7 +19933,7 @@ IL_01f7:
 		return;
 	}
 }
-// Method Definition Index: 81052
+// Method Definition Index: 81054
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_corner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallCenter, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19931,7 +20036,7 @@ IL_007a:
 		return L_26;
 	}
 }
-// Method Definition Index: 81053
+// Method Definition Index: 81055
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallUp, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallRight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_outerDir, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_corner, float ___5_angleDeg, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19952,7 +20057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_5;
 	}
 }
-// Method Definition Index: 81054
+// Method Definition Index: 81056
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWallMesh_m3F9579EC9EF150093961E41237284CE2DB50B500 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_cornerPoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_wallCenter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20164,7 +20269,7 @@ IL_009a:
 		return;
 	}
 }
-// Method Definition Index: 81055
+// Method Definition Index: 81057
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWingMesh_m83871B02F31DA58BC8759292B2368A1A7A716430 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_hingePoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_outerDir, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20392,7 +20497,7 @@ IL_00a6:
 		return;
 	}
 }
-// Method Definition Index: 81056
+// Method Definition Index: 81058
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_verts, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___4_surfaceColor, float ___5_groundY, float ___6_centerY, float ___7_halfH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20750,7 +20855,7 @@ IL_01d1:
 		return;
 	}
 }
-// Method Definition Index: 81057
+// Method Definition Index: 81059
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearMeshes_mFA0EA9CB73F1D20BA05D7FFC046793AD516A0897 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20844,7 +20949,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 81058
+// Method Definition Index: 81060
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* SimpleWallSystem_CreateDefaultMaterial_m9185AE012C04DB7007F9D3E0224F677380B17A12 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21018,7 +21123,7 @@ IL_00bc:
 		return L_29;
 	}
 }
-// Method Definition Index: 81059
+// Method Definition Index: 81061
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21027,7 +21132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m23
 		return L_0;
 	}
 }
-// Method Definition Index: 81060
+// Method Definition Index: 81062
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_mA64CA88D48B597DC1B89D3F43BCEFDCDFCEAF5AD (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21337,7 +21442,7 @@ IL_0243:
 		return;
 	}
 }
-// Method Definition Index: 81061
+// Method Definition Index: 81063
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_up, float ___5_width, float ___6_height, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21406,7 +21511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA8535
 		return L_17;
 	}
 }
-// Method Definition Index: 81062
+// Method Definition Index: 81064
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21454,7 +21559,7 @@ IL_0045:
 		return;
 	}
 }
-// Method Definition Index: 81063
+// Method Definition Index: 81065
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC313E1AADAE0A87ADDEA3AEAA758F5F1C (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_leftAngle, float ___1_rightAngle, const RuntimeMethod* method) 
 {
 	{
@@ -21474,7 +21579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC
 		return;
 	}
 }
-// Method Definition Index: 81064
+// Method Definition Index: 81066
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07571CAD7B613137CF94B12C35BF4F665 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_width, const RuntimeMethod* method) 
 {
 	{
@@ -21489,7 +21594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07
 		return;
 	}
 }
-// Method Definition Index: 81065
+// Method Definition Index: 81067
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem__getHoldCount_m9E631C2A39A8315A151B88D9FEC80C1D68A77B48 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21522,7 +21627,7 @@ IL_0010:
 		return L_3;
 	}
 }
-// Method Definition Index: 81066
+// Method Definition Index: 81068
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UpdateStatusText_m2ECE3A6B7155A89720D8EA1EB3CB6E14E2DCA09F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21809,7 +21914,7 @@ IL_0184:
 		return;
 	}
 }
-// Method Definition Index: 81067
+// Method Definition Index: 81069
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* SimpleWallSystem_GetController_m81EA579B42CF182B84C845CA36530E0346150F1B (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21832,7 +21937,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81068
+// Method Definition Index: 81070
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD SimpleWallSystem_GetDevice_m91B3D5DD57B59CC0DC55BE9383FF1C52CA9055CB (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21902,7 +22007,7 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81069
+// Method Definition Index: 81071
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SendHaptic_m58341255E13A4038815904C06FC45A6BD57EBB11 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_amplitude, float ___1_duration, const RuntimeMethod* method) 
 {
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
@@ -21934,7 +22039,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 81070
+// Method Definition Index: 81072
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CBF5B9EAE59A7EAF36384F23C7 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22037,7 +22142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81071
+// Method Definition Index: 81073
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Start_mECEF9139B620F1A7E83F02231A8505FFD572939C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22065,7 +22170,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 81072
+// Method Definition Index: 81074
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Update_mA5D9E3B7940AE2C3377B6B9B48371C8770945810 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22192,7 +22297,7 @@ IL_0088:
 		return;
 	}
 }
-// Method Definition Index: 81073
+// Method Definition Index: 81075
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Recenter_m4D7340E1EE7B8E9A89DABB1B0DDC116B709F9A85 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22345,7 +22450,7 @@ IL_0079:
 		return;
 	}
 }
-// Method Definition Index: 81074
+// Method Definition Index: 81076
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterTowardWall_mAAB5364AD3AE3620B09D42CF97D42FF2E5C4D3F1 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22425,7 +22530,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 81075
+// Method Definition Index: 81077
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4DA011BE1832DF8EECFB05644431B79EFA94 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldDirection, const RuntimeMethod* method) 
 {
 	{
@@ -22438,7 +22543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4D
 		return;
 	}
 }
-// Method Definition Index: 81076
+// Method Definition Index: 81078
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6E5B6DA3184B366971D3C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22464,7 +22569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81077
+// Method Definition Index: 81079
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60ABDC2AE786AA3152F160E0B03A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22483,7 +22588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60A
 		return;
 	}
 }
-// Method Definition Index: 81078
+// Method Definition Index: 81080
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Update_m06C2BE7FE1AAADC5C6F1EC10EB18FFBCC10AA3E7 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22505,7 +22610,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 81079
+// Method Definition Index: 81081
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0 WallAngleAnalyzer_AnalyzePair_m7D7E7A9A179AD50940C375BA7E7636360DA79F34 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22624,7 +22729,7 @@ IL_00a7:
 		return L_28;
 	}
 }
-// Method Definition Index: 81080
+// Method Definition Index: 81082
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_AnalyzeAllPairs_m61C82B759E01207F645FE0018DB34C9F21952005 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22717,7 +22822,7 @@ IL_003b:
 		return L_16;
 	}
 }
-// Method Definition Index: 81081
+// Method Definition Index: 81083
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_FindAdjacentWalls_mCDE8D5C1C12E982E371670701FEBD524ACEBD992 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22770,7 +22875,7 @@ IL_0025:
 		return L_6;
 	}
 }
-// Method Definition Index: 81082
+// Method Definition Index: 81084
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallAngleAnalyzer_GetTiltCategory_mE5BB24E605C21F65E8B44741E1CBDC9BC6D98FB7 (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22881,7 +22986,7 @@ IL_005b:
 		return _stringLiteral719DC4C792BEE02C4C7BAB1D974D09000F87BB1B;
 	}
 }
-// Method Definition Index: 81083
+// Method Definition Index: 81085
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_ComputePlaneIntersection_m2023705E376BEF5E8ADB765409F372B89F6796CB (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_a, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_lineDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_linePoint, float* ___4_planeDistance, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -23105,7 +23210,7 @@ IL_0108:
 		return;
 	}
 }
-// Method Definition Index: 81084
+// Method Definition Index: 81086
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_UpdateEdgeVisuals_m0AE0BDE230D3F5F88B9DBFA05B69BE9052857C81 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23364,7 +23469,7 @@ IL_0157:
 		return;
 	}
 }
-// Method Definition Index: 81085
+// Method Definition Index: 81087
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_LogFullReport_mBC62A12EC19E75484AE2B7614ED73D9105CC7A9A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23621,7 +23726,7 @@ IL_0196:
 		return;
 	}
 }
-// Method Definition Index: 81086
+// Method Definition Index: 81088
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer__ctor_m478E655215475B06663A3CE0696AC67665ECB7BC (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23745,7 +23850,7 @@ IL2CPP_EXTERN_C void WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_
 IL2CPP_EXTERN_C void WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_marshal_com_cleanup(WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 81087
+// Method Definition Index: 81089
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1 (WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23799,7 +23904,7 @@ IL2CPP_EXTERN_C  String_t* WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81088
+// Method Definition Index: 81090
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m06C5C6277314E87B66CAB81D60CEA6BA09F72938 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23816,7 +23921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m06C5C6277314E87B66CAB81D
 		return;
 	}
 }
-// Method Definition Index: 81089
+// Method Definition Index: 81091
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m60B4070D21789EBA6C49E2EC56EB82AC757A2DC5 (U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23824,7 +23929,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m60B4070D21789EBA6C49E2EC5
 		return;
 	}
 }
-// Method Definition Index: 81090
+// Method Definition Index: 81092
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_mDE013FEF80C50BEE1F3F6E2154162445DBCFB71B (U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538* __this, WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0 ___0_p, const RuntimeMethod* method) 
 {
 	{
@@ -23842,7 +23947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81091
+// Method Definition Index: 81093
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF7890FF51C2D02CB1C91D7CDF1374B9882EB0A (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23851,7 +23956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF
 		return L_0;
 	}
 }
-// Method Definition Index: 81092
+// Method Definition Index: 81094
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91E5BAE7B91C2966C847BFDDD872269414A3 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -23861,7 +23966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91
 		return;
 	}
 }
-// Method Definition Index: 81093
+// Method Definition Index: 81095
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Walls_mA96195C9EF184885E070FA7F72B6524E9404DDCB (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23870,7 +23975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Wal
 		return L_0;
 	}
 }
-// Method Definition Index: 81094
+// Method Definition Index: 81096
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Start_m449C8BB1487D0AD032759C8DDDFEDC83E68FFCA7 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23960,7 +24065,7 @@ IL_0057:
 		return;
 	}
 }
-// Method Definition Index: 81095
+// Method Definition Index: 81097
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Update_m61459DFCA2C8E3AF9BB2230681B11AE3B4AD4207 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23974,7 +24079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_Update_m61459DFCA
 		return;
 	}
 }
-// Method Definition Index: 81096
+// Method Definition Index: 81098
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ReadInputAndProcess_m63B23E02669FD452E60AB7336D55C121388A1C48 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24175,7 +24280,7 @@ IL_00df:
 		return;
 	}
 }
-// Method Definition Index: 81097
+// Method Definition Index: 81099
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD WallCalibrationManager_GetActiveDevice_m60EADDB23239511051BAB40980C99AF72C824863 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24245,7 +24350,7 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81098
+// Method Definition Index: 81100
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* WallCalibrationManager_GetActiveControllerTransform_mE243CFB8251AE861AD5548F4F34C49D5D3E2335D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24267,7 +24372,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81099
+// Method Definition Index: 81101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_BeginNewWall_m0B330A606813E5FB95278841246A287F3B33C3B0 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24317,7 +24422,7 @@ IL_001e:
 		return;
 	}
 }
-// Method Definition Index: 81100
+// Method Definition Index: 81102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SamplePoint_mF2C125B2E902E1E324732A1D1B06A52C85D58C25 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24504,7 +24609,7 @@ IL_00e3:
 		return;
 	}
 }
-// Method Definition Index: 81101
+// Method Definition Index: 81103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UndoLastSample_m8A875266A698848583D0B120C797DF436169589F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24590,7 +24695,7 @@ IL_0081:
 		return;
 	}
 }
-// Method Definition Index: 81102
+// Method Definition Index: 81104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_FinalizeCurrentWall_mFD9FD967C3307DF7A887770F12C24327F848AFAD (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24903,7 +25008,7 @@ IL_0178:
 		return;
 	}
 }
-// Method Definition Index: 81103
+// Method Definition Index: 81105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ComputeWallFrame_mC9EE0ABCC8F2780118FFFF0543CC049CEB35453F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_wallRight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_wallUp, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -24970,7 +25075,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81104
+// Method Definition Index: 81106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ComputeWallExtents_m936FE1428A3EEF82BE7B660429093DBE1F748D92 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_samples, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_centroid, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, float* ___4_width, float* ___5_height, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___6_adjustedCenter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25130,7 +25235,7 @@ IL_007e:
 		return;
 	}
 }
-// Method Definition Index: 81105
+// Method Definition Index: 81107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UpdatePreview_mAF54FC044EA43FB1E1DA79BCBF5A6B508BE106C2 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25380,7 +25485,7 @@ IL_00fa:
 		return;
 	}
 }
-// Method Definition Index: 81106
+// Method Definition Index: 81108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* WallCalibrationManager_CreateWallQuad_m8A9D6AEBC66DAC2EA4BECF5CB703B1E6679E84C1 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, String_t* ___0_name, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___1_mat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25468,7 +25573,7 @@ IL_0072:
 		return L_18;
 	}
 }
-// Method Definition Index: 81107
+// Method Definition Index: 81109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_CreateWallVisual_m0D2F63A115B3E8CD48676DE2F43DD4B7C62813E0 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, bool ___1_finalized, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25568,7 +25673,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 81108
+// Method Definition Index: 81110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SetMaterialTransparent_mFEEA9AFC2DA1D53E642114300F0AE81E5332D98B (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_mat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25625,7 +25730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_SetMaterialTransp
 		return;
 	}
 }
-// Method Definition Index: 81109
+// Method Definition Index: 81111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UndoLastWall_m32B1732578EA31E6BB55A00891D42D0CFDA7A3EB (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25701,7 +25806,7 @@ IL_0040:
 		return;
 	}
 }
-// Method Definition Index: 81110
+// Method Definition Index: 81112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ResetAll_m4B20889663D9FF8303F27BFD98AA0EE47694E231 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25822,7 +25927,7 @@ IL_0072:
 		return;
 	}
 }
-// Method Definition Index: 81111
+// Method Definition Index: 81113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_ClearCurrentMarkers_m3C696F529A5BDD0E23C5EFDD501AF81D61A300C7 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25916,7 +26021,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 81112
+// Method Definition Index: 81114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_UpdateStatusText_mDA1A9D3FE43697FD0E8DF636146B431D6340B439 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26286,7 +26391,7 @@ IL_0170:
 		return;
 	}
 }
-// Method Definition Index: 81113
+// Method Definition Index: 81115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_PlaySound_mBEE368CFDCD2AA95C5C7EDAD21E82BB97D011D1F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_clip, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26330,7 +26435,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81114
+// Method Definition Index: 81116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetAngleBetweenWalls_m290C61C308544F26D6FC1914232AC85F3183C30D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26406,7 +26511,7 @@ IL_002a:
 		return L_16;
 	}
 }
-// Method Definition Index: 81115
+// Method Definition Index: 81117
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetDihedralAngle_m255166097E6139C9DB52106EE305B2243012E06F (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	{
@@ -26418,7 +26523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WallCalibrationManager_GetDihedralAngle
 		return ((float)il2cpp_codegen_subtract((180.0f), L_2));
 	}
 }
-// Method Definition Index: 81116
+// Method Definition Index: 81118
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCalibrationManager_SerializeWalls_m86F25A7AEB9B2EF470FF17728253F35F08DC5C7D (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26442,7 +26547,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCalibrationManager_SerializeWal
 		return L_3;
 	}
 }
-// Method Definition Index: 81117
+// Method Definition Index: 81119
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager_DeserializeWalls_m49B7C5A9BCD7A39303828C8582BF3D1F9DF8AFD9 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26570,7 +26675,7 @@ IL_005f:
 		return;
 	}
 }
-// Method Definition Index: 81118
+// Method Definition Index: 81120
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCalibrationManager__ctor_mEE2C07A75ECDE40F87AD569001396EA88917ED18 (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27036,7 +27141,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 80988
+// Method Definition Index: 80990
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE_inline (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27045,7 +27150,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_Is
 		return L_0;
 	}
 }
-// Method Definition Index: 81059
+// Method Definition Index: 81061
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27190,6 +27295,16 @@ IL_0018:
 		return L_1;
 	}
 }
+// Method Definition Index: 44512
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
+		return L_0;
+	}
+}
 // Method Definition Index: 44665
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
@@ -27204,7 +27319,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 80945
+// Method Definition Index: 80947
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ModeManager_get_CurrentMode_mBDB0A051B2EFBC00C968A1523A46B48718DBACD5_inline (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27213,7 +27328,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ModeManager_get_CurrentMo
 		return L_0;
 	}
 }
-// Method Definition Index: 80946
+// Method Definition Index: 80948
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ModeManager_set_CurrentMode_m4D719F2EF72BA335C270A9DDD9980E653AC6B775_inline (ModeManager_tB92C0AF0BD8110C5DD9D78B1E14A3355DA8C9BC1* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -27329,7 +27444,7 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 80973
+// Method Definition Index: 80975
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WallFrustumCalibrator_get_CurrentPhase_mDD7530E4DA72A767782380E490DADC76B2AC169C_inline (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27348,7 +27463,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 80974
+// Method Definition Index: 80976
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WallFrustumCalibrator_set_CurrentPhase_m0E5436D8FD3F63817A19DB6E5D69027CD9C15A7C_inline (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -27560,7 +27675,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t EnvironmentSwitcher_get_A
 		return L_0;
 	}
 }
-// Method Definition Index: 81038
+// Method Definition Index: 81040
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27577,7 +27692,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 81039
+// Method Definition Index: 81041
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840EF33165B660A0ADED05A69F6500D2C8AB6A_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -27807,7 +27922,7 @@ IL_0065:
 		return;
 	}
 }
-// Method Definition Index: 81042
+// Method Definition Index: 81044
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_CornerPoint_m2B72F2399BF4ED6CB129EDBB6F10D84E44BEAB19_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27816,7 +27931,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 81093
+// Method Definition Index: 81095
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Walls_mA96195C9EF184885E070FA7F72B6524E9404DDCB_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27934,7 +28049,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 81091
+// Method Definition Index: 81093
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_get_State_m0CF7890FF51C2D02CB1C91D7CDF1374B9882EB0A_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27943,7 +28058,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WallCalibrationManager_ge
 		return L_0;
 	}
 }
-// Method Definition Index: 81092
+// Method Definition Index: 81094
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WallCalibrationManager_set_State_m39AB91E5BAE7B91C2966C847BFDDD872269414A3_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{

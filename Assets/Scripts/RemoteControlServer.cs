@@ -34,6 +34,7 @@ public class RemoteControlServer : MonoBehaviour
     public EnvironmentSwitcher environmentSwitcher;
     public WallFrustumCalibrator frustumCalibrator;
     public ClimbingRope climbingRope;
+    public HoldPlacementManager holdPlacementManager;
 
     [Header("Server Settings")]
     [Tooltip("Port to listen on")]
