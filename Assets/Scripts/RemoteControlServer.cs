@@ -209,6 +209,22 @@ public class RemoteControlServer : MonoBehaviour
             frustumCalibrated  = frustumCalibrator.IsCalibrated;
         }
         
+        int activeHold = 0;
+        var holdListJson = new StringBuilder("[");
+        if (holdPlacementManager?.holdLibrary != null)
+        {
+            var holds = holdPlacementManager.holdLibrary.holds;
+            activeHold = holdPlacementManager.activeHoldIndex;
+            for (int i = 0; i < holds.Count; i++)
+            {
+                if (i > 0) holdListJson.Append(",");
+                holdListJson.Append(
+                    $"{{\"name\":\"{EscapeJson(holds[i].name)}\"," +
+                    $"\"scale\":{holds[i].scale:F2}}}");
+            }
+        }
+        holdListJson.Append("]");
+        
         string ropeMode = "Off";
         if (climbingRope != null)
         {
@@ -287,8 +303,11 @@ public class RemoteControlServer : MonoBehaviour
                       $"\"frustumFlipped\":{(frustumFlipped ? "true" : "false")}," +
                       $"\"frustumMode\":\"{frustumMode}\"," +
                       $"\"environments\":{envListJson}," +
-                      $"\"presets\":{presetJson}" +
+                      $"\"presets\":{presetJson}," +
                       $"\"ropeMode\":\"{ropeMode}\"," +
+                      $"\"activeHold\":{activeHold}," +
+                      $"\"holdCount\":{holdPlacementManager?.HoldCount ?? 0}," +
+                      $"\"holds\":{holdListJson}" +
                       $"}}";
 
         response.ContentType = "application/json";
@@ -384,6 +403,10 @@ public class RemoteControlServer : MonoBehaviour
                                 break;
                         }
                     }
+                    break;
+                case "activeHold":
+                    if (holdPlacementManager != null)
+                        holdPlacementManager.SetActiveHold((int)value);
                     break;
             }
         });
@@ -586,6 +609,14 @@ h2 { font-size: 14px; font-weight: 500; color: #888; text-transform: uppercase;
 </div>
 
 <div class=""card"">
+  <h2>Hold Type</h2>
+  <div class=""hold-grid"" id=""hold-grid""></div>
+  <div style=""margin-top:8px;font-size:12px;color:#555"">
+    Placed: <span id=""hold-count"">0</span>
+  </div>
+</div>
+
+<div class=""card"">
   <button class=""reset-btn"" onclick=""resetWalls()"">Reset Wall Placement</button>
 </div>
 
@@ -618,6 +649,7 @@ function updateUI() {
   buildPresetButtons();
   updateFrustumUI();
   updateRopeUI();
+buildHoldButtons();
 }
 
 function setSlider(id, value, fmt) {
@@ -753,7 +785,26 @@ function updateRopeUI() {
     if (btn) btn.classList.toggle('active', state.ropeMode === m);
   });
 }
+function buildHoldButtons() {
+  const grid    = document.getElementById('hold-grid');
+  const countEl = document.getElementById('hold-count');
+  if (countEl) countEl.textContent = state.holdCount ?? 0;
 
+  if (!state.holds || state.holds.length === 0) {
+    grid.innerHTML = '<span style=""""color:#555"""">No holds in library</span>';
+    return;
+  }
+  grid.innerHTML = '';
+  state.holds.forEach((h, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'env-btn' + (i === state.activeHold ? ' active' : '');
+    // Subtly scale font to hint at hold size
+    btn.style.fontSize = Math.round(10 + h.scale * 6) + 'px';
+    btn.textContent = h.name;
+    btn.onclick = () => sendSet('activeHold', i);
+    grid.appendChild(btn);
+  });
+}
 // Poll state
 fetchState();
 setInterval(fetchState, 2000);
