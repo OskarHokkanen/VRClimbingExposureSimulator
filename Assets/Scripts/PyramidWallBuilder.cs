@@ -3,30 +3,13 @@ using UnityEngine;
 using UnityEngine.XR;
 using TMPro;
 
-/// <summary>
-/// Calibrates a wall surface using VR controller samples, then builds a
-/// pyramidal frustum whose near face is centered on that wall, oriented
-/// along the wall's outward normal — like a camera frustum projected out
-/// of the climbing wall.
-///
-/// CONTROLS:
-///   [Trigger]  Sample a point on the wall (hold controller flat against wall)
-///   [A]        Finalize calibration (needs 3+ points)
-///   [B]        Undo last sample
-///   [Grip]     Reset everything
-///
-/// After calibration, the frustum is built and editable in the Inspector.
-/// </summary>
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 [ExecuteAlways]
 public class WallFrustumCalibrator : MonoBehaviour
 {
     public enum ControllerHand { Right, Left }
+    public enum FrustumMode { Frustum, FlatWall }
 
-    [Header("Orientation")]
-    [Tooltip("Flip the frustum 180° so it opens into the wall instead of outward")]
-    public bool flipDirection = false;
-    
     // ── References ──────────────────────────────────────────────────────
     [Header("References")]
     public Transform rightController;
@@ -35,13 +18,10 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     // ── Controller ──────────────────────────────────────────────────────
     [Header("Controls")]
-    public ControllerHand activeHand = ControllerHand.Right;
+    public ControllerHand activeHand = ControllerHand.Left;
 
     // ── Frustum Shape ───────────────────────────────────────────────────
     [Header("Frustum Shape")]
-    [Tooltip("Distance from the wall to the near (small) face")]
-    public float nearDistance = 0.1f;
-
     [Tooltip("Distance from the wall to the far (large) face")]
     public float farDistance = 3f;
 
@@ -57,21 +37,40 @@ public class WallFrustumCalibrator : MonoBehaviour
     [Tooltip("Height of the far face")]
     public float farHeight = 1.5f;
 
+    // ── Orientation ──────────────────────────────────────────────────────
+    [Header("Orientation")]
+    public FrustumMode mode = FrustumMode.Frustum;
+    public bool flipDirection = false;
+
     // ── Appearance ──────────────────────────────────────────────────────
     [Header("Appearance")]
     public Material frustumMaterial;
     public Color frustumColor = new Color(0.2f, 0.6f, 1f, 0.4f);
+
+    // ── Preview Holds ────────────────────────────────────────────────────
+    [Header("Preview Holds")]
+    [Tooltip("Total number of preview holds spread across the 4 side faces")]
+    public int previewHoldCount = 16;
+    public GameObject holdPrefab;
+    public float holdScale = 1f;
+    [Tooltip("Scale of each preview hold sphere")]
+    public float previewHoldScale = 0.06f;
+    public Color previewHoldColor = new Color(1f, 0.4f, 0.1f);
+    [Tooltip("Seed for random hold placement — change to shuffle positions")]
+    public int randomSeed = 42;
+
+    private List<GameObject> _previewHolds = new List<GameObject>();
 
     // ── State ────────────────────────────────────────────────────────────
     public enum Phase { Sampling, Done }
     public Phase CurrentPhase { get; private set; } = Phase.Sampling;
 
     // Calibration
-    private List<Vector3> _samplePoints  = new List<Vector3>();
-    private List<Vector3> _sampleNormals = new List<Vector3>();
+    private List<Vector3> _samplePoints   = new List<Vector3>();
+    private List<Vector3> _sampleNormals  = new List<Vector3>();
     private List<GameObject> _sampleMarkers = new List<GameObject>();
 
-    // Fitted plane result
+    // Fitted plane
     private Vector3 _wallCenter;
     private Vector3 _wallNormal;
     private Vector3 _wallUp;
@@ -81,8 +80,8 @@ public class WallFrustumCalibrator : MonoBehaviour
     // Mesh
     private Mesh _mesh;
 
-    // Input state
-    private bool _triggerPrev, _primaryPrev, _secondaryPrev, _gripPrev;
+    // Input
+    private bool _triggerPrev, _primaryPrev, _secondaryPrev, _gripPrev, _thumbPrev;
 
     // ────────────────────────────────────────────────────────────────────
     // Lifecycle
@@ -90,7 +89,6 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     private void Awake()
     {
-        // Pre-assign the mesh so the MeshFilter has something from the start
         _mesh = new Mesh { name = "WallFrustum" };
         GetComponent<MeshFilter>().sharedMesh = _mesh;
 
@@ -104,12 +102,11 @@ public class WallFrustumCalibrator : MonoBehaviour
         InputDevice dev = GetDevice();
         if (!dev.isValid) { UpdateStatusText(); return; }
 
-        dev.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger);
-        dev.TryGetFeatureValue(CommonUsages.primaryButton,   out bool primary);
-        dev.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondary);
-        dev.TryGetFeatureValue(CommonUsages.gripButton,      out bool grip);
+        dev.TryGetFeatureValue(CommonUsages.triggerButton,    out bool trigger);
+        dev.TryGetFeatureValue(CommonUsages.primaryButton,    out bool primary);
+        dev.TryGetFeatureValue(CommonUsages.secondaryButton,  out bool secondary);
+        dev.TryGetFeatureValue(CommonUsages.gripButton,       out bool grip);
 
-        // Grip always resets
         if (grip && !_gripPrev)
             ResetCalibration();
 
@@ -118,29 +115,40 @@ public class WallFrustumCalibrator : MonoBehaviour
             case Phase.Sampling:
                 if (trigger && !_triggerPrev)
                     SamplePoint();
-
                 if (primary && !_primaryPrev && _samplePoints.Count >= 3)
                     FinalizeCalibration();
-
                 if (secondary && !_secondaryPrev && _samplePoints.Count > 0)
                     UndoLastSample();
                 break;
 
             case Phase.Done:
-                // Allow going back to re-sample
+                // A → flip direction
+                if (primary && !_primaryPrev)
+                {
+                    flipDirection = !flipDirection;
+                    BuildFrustumMesh();
+                }
+
+                // Thumbstick click → toggle Frustum / FlatWall
+                dev.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out bool thumb);
+                if (thumb && !_thumbPrev)
+                {
+                    mode = mode == FrustumMode.Frustum
+                        ? FrustumMode.FlatWall : FrustumMode.Frustum;
+                    BuildFrustumMesh();
+                }
+                _thumbPrev = thumb;
+
+                // B → re-calibrate
                 if (secondary && !_secondaryPrev)
                     ResetCalibration();
-
-                if (primary && !_primaryPrev)
-                    flipDirection = !flipDirection;
-                    BuildFrustumMesh();    
                 break;
-        }  
+        }
 
-        _triggerPrev  = trigger;
-        _primaryPrev  = primary;
+        _triggerPrev   = trigger;
+        _primaryPrev   = primary;
         _secondaryPrev = secondary;
-        _gripPrev     = grip;
+        _gripPrev      = grip;
 
         UpdateStatusText();
     }
@@ -154,14 +162,12 @@ public class WallFrustumCalibrator : MonoBehaviour
         Transform ctrl = GetController();
         if (ctrl == null) return;
 
-        // Controller -forward is the face of the controller (pointing into the wall)
         Vector3 pos    = ctrl.position;
         Vector3 normal = -ctrl.forward;
 
         _samplePoints.Add(pos);
         _sampleNormals.Add(normal);
 
-        // Small sphere marker at sample location
         GameObject marker = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         marker.transform.position   = pos;
         marker.transform.localScale = Vector3.one * 0.015f;
@@ -195,26 +201,22 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     private void FinalizeCalibration()
     {
-        // Fit the plane for the normal only
         PlaneFit.FitPlane(_samplePoints, out _, out _wallNormal);
 
-        // Use the raw average of controller positions as the exact origin
         _wallCenter = Vector3.zero;
         foreach (var p in _samplePoints) _wallCenter += p;
         _wallCenter /= _samplePoints.Count;
-        
+
         transform.position = _wallCenter;
 
-        // Flip normal to face toward the climber (same direction as controller normals)
         Vector3 avgN = Vector3.zero;
         foreach (var n in _sampleNormals) avgN += n;
         if (Vector3.Dot(_wallNormal, avgN) < 0f) _wallNormal = -_wallNormal;
 
-        // Build an orthonormal frame on the wall surface
         ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
 
-        _calibrated   = true;
-        CurrentPhase  = Phase.Done;
+        _calibrated  = true;
+        CurrentPhase = Phase.Done;
 
         ClearSamples();
         BuildFrustumMesh();
@@ -223,10 +225,8 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     private static void ComputeWallFrame(Vector3 normal, out Vector3 right, out Vector3 up)
     {
-        // Use world-up unless the wall is nearly horizontal, then use forward
         Vector3 refUp = (Mathf.Abs(Vector3.Dot(normal, Vector3.up)) > 0.95f)
             ? Vector3.forward : Vector3.up;
-
         right = Vector3.Cross(refUp, normal).normalized;
         up    = Vector3.Cross(normal, right).normalized;
     }
@@ -235,117 +235,71 @@ public class WallFrustumCalibrator : MonoBehaviour
     // Frustum Mesh
     // ────────────────────────────────────────────────────────────────────
 
-    /// <summary>
-    /// Rebuilds the frustum mesh. The near face sits at wallCenter + normal *
-    /// nearDistance; the far face opens outward along the normal. Can be called
-    /// from OnValidate in the Editor to live-preview shape changes.
-    /// </summary>
     public void BuildFrustumMesh()
     {
         if (!_calibrated) return;
 
-        // ── The frustum coordinate system ──
-        // Origin  : _wallCenter  (fitted centroid on the wall surface)
-        // +Z axis : _wallNormal  (outward from wall → frustum opens this way)
-        // +X axis : _wallRight   (wall's horizontal axis)
-        // +Y axis : _wallUp      (wall's vertical axis)
+        Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
 
         float nHW = nearWidth  * 0.5f;
         float nHH = nearHeight * 0.5f;
         float fHW = farWidth   * 0.5f;
         float fHH = farHeight  * 0.5f;
 
-        Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
-        
-        // Helper: world position of a point in frustum-local space
-        // Local-space helper — origin is now the GameObject's position (= _wallCenter)
+        // FlatWall: near face expands to match the far (large) size
+        float nearHW = mode == FrustumMode.FlatWall ? fHW : nHW;
+        float nearHH = mode == FrustumMode.FlatWall ? fHH : nHH;
+
+        // Local-space — transform.position == _wallCenter so no extra offset needed
         Vector3 P(float x, float y, float z) =>
-            _wallRight  * x +
-            _wallUp     * y +
-            normal      * z;
+            _wallRight * x +
+            _wallUp    * y +
+            normal     * z;
 
-        // Near face corners (small rectangle, close to wall)
-        Vector3 n0 = P(-nHW, -nHH, 0f); // bottom-left
-        Vector3 n1 = P( nHW, -nHH, 0f); // bottom-right
-        Vector3 n2 = P( nHW,  nHH, 0f); // top-right
-        Vector3 n3 = P(-nHW,  nHH, 0f); // top-left
+        Vector3 n0 = P(-nearHW, -nearHH, 0f);
+        Vector3 n1 = P( nearHW, -nearHH, 0f);
+        Vector3 n2 = P( nearHW,  nearHH, 0f);
+        Vector3 n3 = P(-nearHW,  nearHH, 0f);
 
-        // Far face corners (large rectangle, far from wall) — not rendered
         Vector3 f0 = P(-fHW, -fHH, farDistance);
         Vector3 f1 = P( fHW, -fHH, farDistance);
         Vector3 f2 = P( fHW,  fHH, farDistance);
         Vector3 f3 = P(-fHW,  fHH, farDistance);
 
-        // ── 5 faces, each duplicated for double-sided rendering ──
-        // Faces: Near cap | Bottom | Top | Left | Right
-        // Each face = 4 verts front + 4 verts back = 8 verts
-        // Total: 5 faces × 8 = 40 verts
-
         Vector3[] vertices =
         {
-            // ── FRONT FACES ──────────────────────────────────
-            n0, n1, n2, n3,          // Near cap   [0-3]
-            n0, n1, f1, f0,          // Bottom     [4-7]
-            n3, n2, f2, f3,          // Top        [8-11]
-            f0, n0, n3, f3,          // Left       [12-15]
-            n1, f1, f2, n2,          // Right      [16-19]
+            // ── FRONT ──────────────────────────────────────
+            n0, n1, n2, n3,     // Near cap  [0-3]
+            n0, n1, f1, f0,     // Bottom    [4-7]
+            n3, n2, f2, f3,     // Top       [8-11]
+            f0, n0, n3, f3,     // Left      [12-15]
+            n1, f1, f2, n2,     // Right     [16-19]
 
-            // ── BACK FACES (same positions, reversed winding) ─
-            n0, n1, n2, n3,          // Near cap   [20-23]
-            n0, n1, f1, f0,          // Bottom     [24-27]
-            n3, n2, f2, f3,          // Top        [28-31]
-            f0, n0, n3, f3,          // Left       [32-35]
-            n1, f1, f2, n2,          // Right      [36-39]
+            // ── BACK (reversed winding) ────────────────────
+            n0, n1, n2, n3,     // Near cap  [20-23]
+            n0, n1, f1, f0,     // Bottom    [24-27]
+            n3, n2, f2, f3,     // Top       [28-31]
+            f0, n0, n3, f3,     // Left      [32-35]
+            n1, f1, f2, n2,     // Right     [36-39]
         };
 
         int[] triangles =
         {
-            // ── FRONT (outward normals) ──────────────────────
+            // ── FRONT ──────────────────────────────────────
+             2,  1,  0,   3,  2,  0,   // Near cap
+             4,  5,  6,   4,  6,  7,   // Bottom
+             8,  9, 10,   8, 10, 11,   // Top
+            12, 13, 14,  12, 14, 15,   // Left
+            16, 17, 18,  16, 18, 19,   // Right
 
-            // Near cap (faces away from wall, toward climber)
-             2,  1,  0,
-             3,  2,  0,
-
-            // Bottom
-             4,  5,  6,
-             4,  6,  7,
-
-            // Top
-             8,  9, 10,
-             8, 10, 11,
-
-            // Left
-            12, 13, 14,
-            12, 14, 15,
-
-            // Right
-            16, 17, 18,
-            16, 18, 19,
-
-            // ── BACK (inward normals, reversed winding) ──────
-
-            // Near cap back
-            20, 21, 22,
-            20, 22, 23,
-
-            // Bottom back
-            25, 24, 26,
-            26, 24, 27,
-
-            // Top back
-            29, 28, 30,
-            30, 28, 31,
-
-            // Left back
-            33, 32, 34,
-            34, 32, 35,
-
-            // Right back
-            37, 36, 38,
-            38, 36, 39,
+            // ── BACK ───────────────────────────────────────
+            20, 21, 22,  20, 22, 23,   // Near cap
+            25, 24, 26,  26, 24, 27,   // Bottom
+            29, 28, 30,  30, 28, 31,   // Top
+            33, 32, 34,  34, 32, 35,   // Left
+            37, 36, 38,  38, 36, 39,   // Right
         };
 
-        // Simple planar UVs — same layout repeated per face
         Vector2[] uvs = new Vector2[40];
         for (int i = 0; i < 40; i += 4)
         {
@@ -361,33 +315,149 @@ public class WallFrustumCalibrator : MonoBehaviour
         _mesh.uv        = uvs;
         _mesh.RecalculateNormals();
         _mesh.RecalculateBounds();
+
+        RebuildPreviewHolds(normal, nearHW, nearHH, fHW, fHH);
     }
 
-    // Rebuild live in the editor when inspector values change
     private void OnValidate() => BuildFrustumMesh();
+
+    // ────────────────────────────────────────────────────────────────────
+    // Preview Holds
+    // ────────────────────────────────────────────────────────────────────
+
+    private void RebuildPreviewHolds(Vector3 normal,
+    float nearHW, float nearHH, float fHW, float fHH)
+{
+    foreach (var h in _previewHolds) if (h != null) Destroy(h);
+    _previewHolds.Clear();
+
+    if (!_calibrated || previewHoldCount <= 0) return;
+
+    Vector3 origin = transform.position;
+
+    // World-space point on the frustum surface
+    Vector3 W(float x, float y, float z) =>
+        origin + _wallRight * x + _wallUp * y + normal * z;
+
+    // Each face defined as a grid: step along two axes
+    // (edgeA start/end, edgeB start/end, steps along each)
+    int perFace = Mathf.Max(1, previewHoldCount / 4);
+    int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
+    int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
+
+    // Face: (corner00, corner10, corner01, corner11, surfaceNormal)
+    // corners: 00=near-start, 10=near-end, 01=far-start, 11=far-end
+    var faces = new (Vector3 c00, Vector3 c10, Vector3 c01, Vector3 c11, Vector3 faceNormal)[]
+    {
+        // Bottom
+        ( W(-nearHW, -nearHH, 0f),          W( nearHW, -nearHH, 0f),
+          W(-fHW,    -fHH,    farDistance),  W( fHW,   -fHH, farDistance),
+          _wallUp ),
+
+        // Top
+        ( W(-nearHW,  nearHH, 0f),          W( nearHW,  nearHH, 0f),
+          W(-fHW,     fHH,    farDistance),  W( fHW,    fHH, farDistance),
+          -_wallUp ),
+
+        // Left
+        ( W(-nearHW, -nearHH, 0f),          W(-nearHW,  nearHH, 0f),
+          W(-fHW,    -fHH,    farDistance),  W(-fHW,    fHH, farDistance),
+          _wallRight ),
+
+        // Right
+        ( W( nearHW, -nearHH, 0f),          W( nearHW,  nearHH, 0f),
+          W( fHW,    -fHH,    farDistance),  W( fHW,    fHH, farDistance),
+          -_wallRight ),
+    };
+
+    foreach (var face in faces)
+    {
+        for (int row = 0; row < rows; row++)
+        for (int col = 0; col < cols; col++)
+        {
+            // Evenly spaced t values, inset slightly from edges
+            float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
+            float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
+
+            // Bilinear interpolation across the trapezoid
+            Vector3 pos = Vector3.Lerp(
+                Vector3.Lerp(face.c00, face.c10, tCol),
+                Vector3.Lerp(face.c01, face.c11, tCol),
+                tRow);
+
+            // Offset slightly inward so holds sit on the surface
+            pos += face.faceNormal * 0.02f;
+
+            GameObject obj;
+            if (holdPrefab != null)
+            {
+                obj = Instantiate(holdPrefab, pos,
+                    Quaternion.LookRotation(face.faceNormal, _wallUp));
+                obj.transform.localScale *= holdScale;
+            }
+            else
+            {
+                obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                obj.transform.position   = pos;
+                obj.transform.localScale = Vector3.one * previewHoldScale;
+                var mat = new Material(
+                    Shader.Find("Universal Render Pipeline/Lit") ??
+                    Shader.Find("Standard"));
+                mat.color = previewHoldColor;
+                obj.GetComponent<Renderer>().material = mat;
+                Destroy(obj.GetComponent<Collider>());
+            }
+
+            obj.name = "PreviewHold";
+            _previewHolds.Add(obj);
+        }
+    }
+}
 
     // ────────────────────────────────────────────────────────────────────
     // Public API
     // ────────────────────────────────────────────────────────────────────
 
-    /// <summary>Clear the calibration and frustum mesh, and restart sampling.</summary>
     public void ResetCalibration()
     {
         _calibrated  = false;
         CurrentPhase = Phase.Sampling;
         ClearSamples();
 
+        foreach (var h in _previewHolds) if (h != null) Destroy(h);
+        _previewHolds.Clear();
+
         if (_mesh != null) _mesh.Clear();
     }
 
-    /// <summary>The fitted wall normal (outward). Valid only after calibration.</summary>
-    public Vector3 WallNormal => _wallNormal;
+    public Vector3 WallNormal    => _wallNormal;
+    public Vector3 WallCenter    => _wallCenter;
+    public bool    IsCalibrated  => _calibrated;
 
-    /// <summary>The fitted wall centroid. Valid only after calibration.</summary>
-    public Vector3 WallCenter => _wallCenter;
+    /// <summary>
+    /// Returns the near plane as a CalibratedWall for HoldPlacementManager.
+    /// Normal faces toward the climber for correct hold offsetting.
+    /// </summary>
+    public CalibratedWall GetNearPlaneAsWall()
+    {
+        Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
 
-    /// <summary>Whether the frustum has been calibrated and built.</summary>
-    public bool IsCalibrated => _calibrated;
+        float w = mode == FrustumMode.FlatWall ? farWidth  : nearWidth;
+        float h = mode == FrustumMode.FlatWall ? farHeight : nearHeight;
+
+        return new CalibratedWall
+        {
+            wallIndex    = 99,
+            center       = _wallCenter,
+            normal       = -normal,
+            localRight   = _wallRight,
+            localUp      = _wallUp,
+            width        = w,
+            height       = h,
+            samplePoints  = new List<Vector3>(),
+            sampleNormals = new List<Vector3>()
+        };
+    }
 
     // ────────────────────────────────────────────────────────────────────
     // UI
@@ -401,10 +471,8 @@ public class WallFrustumCalibrator : MonoBehaviour
         {
             Phase.Sampling => $"FRUSTUM CAL  |  Samples: {_samplePoints.Count}/3+\n"
                             + "[Trigger] Sample  [A] Finalize  [B] Undo  [Grip] Reset",
-
-            Phase.Done     => "FRUSTUM READY\n"
-                            + "[B] Re-calibrate  [Grip] Reset",
-
+            Phase.Done     => $"FRUSTUM READY  |  {mode}{(flipDirection ? " Flipped" : "")}\n"
+                            + "[A] Flip  [Stick] Flat/Frustum  [B] Re-calibrate  [Grip] Reset",
             _              => string.Empty
         };
     }
@@ -452,10 +520,9 @@ public class WallFrustumCalibrator : MonoBehaviour
         var mat = new Material(shader ?? Shader.Find("Hidden/InternalErrorShader"));
         mat.color = frustumColor;
 
-        // Transparent-ish so the frustum reads as a volume indicator
         if (mat.HasProperty("_Mode"))
         {
-            mat.SetFloat("_Mode", 3);          // Transparent
+            mat.SetFloat("_Mode", 3);
             mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
             mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
             mat.SetInt("_ZWrite",   0);
@@ -466,31 +533,8 @@ public class WallFrustumCalibrator : MonoBehaviour
         }
 
         if (mat.HasProperty("_Cull"))
-            mat.SetFloat("_Cull", 0); // Off — belt-and-suspenders for double-sided
+            mat.SetFloat("_Cull", 0);
 
         return mat;
-    }
-    
-    /// <summary>
-    /// Returns the near plane as a CalibratedWall so HoldPlacementManager
-    /// can project and place holds onto it.
-    /// The normal faces back toward the climber (opposite to frustum opening).
-    /// </summary>
-    public CalibratedWall GetNearPlaneAsWall()
-    {
-        Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
-
-        return new CalibratedWall
-        {
-            wallIndex    = 99,
-            center       = _wallCenter,
-            normal       = -normal,          // faces toward climber for correct offsetting
-            localRight   = _wallRight,
-            localUp      = _wallUp,
-            width        = nearWidth,
-            height       = nearHeight,
-            samplePoints  = new List<Vector3>(),
-            sampleNormals = new List<Vector3>()
-        };
     }
 }

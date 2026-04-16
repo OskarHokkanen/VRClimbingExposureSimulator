@@ -32,6 +32,7 @@ public class RemoteControlServer : MonoBehaviour
     public SimpleWallSystem wallSystem;
     public EnvironmentManager environmentManager;
     public EnvironmentSwitcher environmentSwitcher;
+    public WallFrustumCalibrator frustumCalibrator;
 
     [Header("Server Settings")]
     [Tooltip("Port to listen on")]
@@ -195,6 +196,17 @@ public class RemoteControlServer : MonoBehaviour
 
     void ServeState(HttpListenerResponse response)
     {
+        bool frustumFlipped = false;
+        string frustumMode = "Frustum";
+        bool frustumCalibrated = false;
+        
+        if (frustumCalibrator != null)
+        {
+            frustumFlipped     = frustumCalibrator.flipDirection;
+            frustumMode        = frustumCalibrator.mode.ToString();
+            frustumCalibrated  = frustumCalibrator.IsCalibrated;
+        }
+        
         float wallHeight = 5f;
         float leftWing = 0f, rightWing = 0f;
         float wingW = 1.5f, wallW = 3f;
@@ -250,18 +262,21 @@ public class RemoteControlServer : MonoBehaviour
         string phase = wallSystem != null ? wallSystem.CurrentPhase.ToString() : "Unknown";
 
         string json = $"{{" +
-            $"\"wallHeight\":{wallHeight:F1}," +
-            $"\"leftWingAngle\":{leftWing:F1}," +
-            $"\"rightWingAngle\":{rightWing:F1}," +
-            $"\"wingWidth\":{wingW:F1}," +
-            $"\"wallWidth\":{wallW:F1}," +
-            $"\"envIndex\":{envIndex}," +
-            $"\"envName\":\"{EscapeJson(envName)}\"," +
-            $"\"envCount\":{envCount}," +
-            $"\"phase\":\"{phase}\"," +
-            $"\"environments\":{envListJson}," +
-            $"\"presets\":{presetJson}" +
-            $"}}";
+                      $"\"wallHeight\":{wallHeight:F1}," +
+                      $"\"leftWingAngle\":{leftWing:F1}," +
+                      $"\"rightWingAngle\":{rightWing:F1}," +
+                      $"\"wingWidth\":{wingW:F1}," +
+                      $"\"wallWidth\":{wallW:F1}," +
+                      $"\"envIndex\":{envIndex}," +
+                      $"\"envName\":\"{EscapeJson(envName)}\"," +
+                      $"\"envCount\":{envCount}," +
+                      $"\"phase\":\"{phase}\"," +
+                      $"\"frustumCalibrated\":{(frustumCalibrated ? "true" : "false")}," +
+                      $"\"frustumFlipped\":{(frustumFlipped ? "true" : "false")}," +
+                      $"\"frustumMode\":\"{frustumMode}\"," +
+                      $"\"environments\":{envListJson}," +
+                      $"\"presets\":{presetJson}" +
+                      $"}}";
 
         response.ContentType = "application/json";
         WriteResponse(response, json);
@@ -319,6 +334,22 @@ public class RemoteControlServer : MonoBehaviour
                 case "environment":
                     if (environmentSwitcher != null)
                         environmentSwitcher.SwitchTo((int)value);
+                    break;
+                case "frustumFlipped":
+                    if (frustumCalibrator != null && frustumCalibrator.IsCalibrated)
+                    {
+                        frustumCalibrator.flipDirection = value > 0.5f;
+                        frustumCalibrator.BuildFrustumMesh();
+                    }
+                    break;
+                case "frustumMode":
+                    if (frustumCalibrator != null && frustumCalibrator.IsCalibrated)
+                    {
+                        frustumCalibrator.mode = value > 0.5f
+                            ? WallFrustumCalibrator.FrustumMode.FlatWall
+                            : WallFrustumCalibrator.FrustumMode.Frustum;
+                        frustumCalibrator.BuildFrustumMesh();
+                    }
                     break;
             }
         });
@@ -494,7 +525,15 @@ h2 { font-size: 14px; font-weight: 500; color: #888; text-transform: uppercase;
     <span class=""val"" id=""wingWidth-val"">1.5m</span>
   </div>
 </div>
-
+<div class=""card"">
+  <h2>Frustum</h2>
+  <div id=""frustum-status"" style=""font-size:13px;color:#888;margin-bottom:10px;"">Not calibrated</div>
+  <div style=""display:flex;gap:8px;margin-bottom:8px;"">
+    <button class=""env-btn"" id=""btn-normal""  onclick=""setFrustumMode('normal')"" >Normal</button>
+    <button class=""env-btn"" id=""btn-flipped"" onclick=""setFrustumMode('flipped')"">Flipped</button>
+    <button class=""env-btn"" id=""btn-flat""    onclick=""setFrustumMode('flat')"">Flat Wall</button>
+  </div>
+</div>
 <div class=""card"">
   <h2>Environment</h2>
   <div class=""env-grid"" id=""env-grid""></div>
@@ -536,6 +575,7 @@ function updateUI() {
   document.getElementById('phase').textContent = state.phase || '--';
   buildEnvButtons();
   buildPresetButtons();
+  updateFrustumUI();
 }
 
 function setSlider(id, value, fmt) {
@@ -623,6 +663,38 @@ function resetWalls() {
     sendSetDebounced(id, el.value);
   });
 });
+
+function setFrustumMode(m) {
+  if (m === 'flat') {
+    fetch(API + '/api/set', { method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({key:'frustumMode', value:1}) })
+      .then(() => setTimeout(fetchState, 200));
+  } else {
+    // Set flat off first, then set flip
+    fetch(API + '/api/set', { method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({key:'frustumMode', value:0}) })
+    .then(() => fetch(API + '/api/set', { method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({key:'frustumFlipped', value: m === 'flipped' ? 1 : 0}) }))
+    .then(() => setTimeout(fetchState, 200));
+  }
+}
+
+function updateFrustumUI() {
+  const status = document.getElementById('frustum-status');
+  if (status) {
+    status.textContent = state.frustumCalibrated ? 'Calibrated' : 'Not calibrated';
+    status.style.color = state.frustumCalibrated ? '#64ffda' : '#888';
+  }
+
+  // Highlight the active mode button
+  const isFlat     = state.frustumMode === 'FlatWall';
+  const isFlipped  = !isFlat && state.frustumFlipped;
+  const isNormal   = !isFlat && !isFlipped;
+
+  document.getElementById('btn-normal') ?.classList.toggle('active', isNormal);
+  document.getElementById('btn-flipped')?.classList.toggle('active', isFlipped);
+  document.getElementById('btn-flat')   ?.classList.toggle('active', isFlat);
+}
 
 // Poll state
 fetchState();
