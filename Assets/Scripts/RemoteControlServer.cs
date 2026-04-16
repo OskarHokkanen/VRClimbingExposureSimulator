@@ -33,6 +33,7 @@ public class RemoteControlServer : MonoBehaviour
     public EnvironmentManager environmentManager;
     public EnvironmentSwitcher environmentSwitcher;
     public WallFrustumCalibrator frustumCalibrator;
+    public ClimbingRope climbingRope;
 
     [Header("Server Settings")]
     [Tooltip("Port to listen on")]
@@ -207,6 +208,16 @@ public class RemoteControlServer : MonoBehaviour
             frustumCalibrated  = frustumCalibrator.IsCalibrated;
         }
         
+        string ropeMode = "Off";
+        if (climbingRope != null)
+        {
+            if (!climbingRope.IsVisible)
+                ropeMode = "Off";
+            else
+                ropeMode = climbingRope.anchorMode == ClimbingRope.AnchorMode.TopOfWall
+                    ? "Top" : "Bottom";
+        }
+        
         float wallHeight = 5f;
         float leftWing = 0f, rightWing = 0f;
         float wingW = 1.5f, wallW = 3f;
@@ -276,6 +287,7 @@ public class RemoteControlServer : MonoBehaviour
                       $"\"frustumMode\":\"{frustumMode}\"," +
                       $"\"environments\":{envListJson}," +
                       $"\"presets\":{presetJson}" +
+                      $"\"ropeMode\":\"{ropeMode}\"," +
                       $"}}";
 
         response.ContentType = "application/json";
@@ -292,6 +304,7 @@ public class RemoteControlServer : MonoBehaviour
         // Expected: {"key":"wallHeight","value":10.0}
         string key = ExtractJsonString(body, "key");
         float value = ExtractJsonFloat(body, "value");
+        string strValue = ExtractJsonString(body, "strValue");
 
         RunOnMainThread(() =>
         {
@@ -349,6 +362,26 @@ public class RemoteControlServer : MonoBehaviour
                             ? WallFrustumCalibrator.FrustumMode.FlatWall
                             : WallFrustumCalibrator.FrustumMode.Frustum;
                         frustumCalibrator.BuildFrustumMesh();
+                    }
+                    break;
+                case "ropeMode":
+                    if (climbingRope != null)
+                    {
+                        string modeStr = ExtractJsonString(body, "strValue");
+                        switch (modeStr)
+                        {
+                            case "Off":
+                                climbingRope.SetVisible(false);
+                                break;
+                            case "Top":
+                                climbingRope.SetAnchorMode(ClimbingRope.AnchorMode.TopOfWall);
+                                climbingRope.SetVisible(true);
+                                break;
+                            case "Bottom":
+                                climbingRope.SetAnchorMode(ClimbingRope.AnchorMode.BottomOfWall);
+                                climbingRope.SetVisible(true);
+                                break;
+                        }
                     }
                     break;
             }
@@ -538,7 +571,14 @@ h2 { font-size: 14px; font-weight: 500; color: #888; text-transform: uppercase;
   <h2>Environment</h2>
   <div class=""env-grid"" id=""env-grid""></div>
 </div>
-
+<div class=""card"">
+  <h2>Rope</h2>
+  <div style=""display:flex;gap:8px;"">
+    <button class=""env-btn"" id=""btn-rope-off""    onclick=""setRopeMode('Off')"">Off</button>
+    <button class=""env-btn"" id=""btn-rope-top""    onclick=""setRopeMode('Top')"">Top</button>
+    <button class=""env-btn"" id=""btn-rope-bottom"" onclick=""setRopeMode('Bottom')"">Bottom</button>
+  </div>
+</div>
 <div class=""card"">
   <h2>Presets</h2>
   <div class=""presets"" id=""presets""></div>
@@ -576,6 +616,7 @@ function updateUI() {
   buildEnvButtons();
   buildPresetButtons();
   updateFrustumUI();
+  updateRopeUI();
 }
 
 function setSlider(id, value, fmt) {
@@ -694,6 +735,22 @@ function updateFrustumUI() {
   document.getElementById('btn-normal') ?.classList.toggle('active', isNormal);
   document.getElementById('btn-flipped')?.classList.toggle('active', isFlipped);
   document.getElementById('btn-flat')   ?.classList.toggle('active', isFlat);
+}
+
+function setRopeMode(m) {
+  fetch(API + '/api/set', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({key: 'ropeMode', strValue: m})
+  }).then(() => setTimeout(fetchState, 200));
+}
+
+function updateRopeUI() {
+  const modes = ['Off', 'Top', 'Bottom'];
+  modes.forEach(m => {
+    const btn = document.getElementById('btn-rope-' + m.toLowerCase());
+    if (btn) btn.classList.toggle('active', state.ropeMode === m);
+  });
 }
 
 // Poll state
