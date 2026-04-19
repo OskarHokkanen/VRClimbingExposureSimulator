@@ -9,10 +9,10 @@ public class HoldLibrary : ScriptableObject
 
 [System.Serializable]
 public class HoldDefinition
-{ 
+{
     public string name = "Jug";
     public GameObject prefab;
-    [Tooltip("Scale multiplier applied on top of the base holdScale")]
+    [Tooltip("Scale multiplier — Jug=1.0, Crimp=0.5")]
     public float scale = 1f;
     public Color color = Color.white;
 }

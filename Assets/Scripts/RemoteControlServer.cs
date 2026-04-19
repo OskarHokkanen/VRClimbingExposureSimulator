@@ -218,9 +218,10 @@ public class RemoteControlServer : MonoBehaviour
             for (int i = 0; i < holds.Count; i++)
             {
                 if (i > 0) holdListJson.Append(",");
+                string scaleStr = holds[i].scale.ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
                 holdListJson.Append(
                     $"{{\"name\":\"{EscapeJson(holds[i].name)}\"," +
-                    $"\"scale\":{holds[i].scale:F2}}}");
+                    $"\"scale\":{scaleStr}}}");
             }
         }
         holdListJson.Append("]");
@@ -791,7 +792,7 @@ function buildHoldButtons() {
   if (countEl) countEl.textContent = state.holdCount ?? 0;
 
   if (!state.holds || state.holds.length === 0) {
-    grid.innerHTML = '<span style=""""color:#555"""">No holds in library</span>';
+    grid.innerHTML = '<span style=""color:#555"">No holds in library</span>';
     return;
   }
   grid.innerHTML = '';

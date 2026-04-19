@@ -45,6 +45,14 @@
             "icon": null
           },
           {
+            "name": "Avatar",
+            "scenes": [
+              "Assets/Scenes/ExperimentScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Behaviour",
             "scenes": [
               "Assets/Scenes/ExperimentScene.unity"
@@ -265,7 +273,9 @@
           },
           {
             "name": "Light",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/ExperimentScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

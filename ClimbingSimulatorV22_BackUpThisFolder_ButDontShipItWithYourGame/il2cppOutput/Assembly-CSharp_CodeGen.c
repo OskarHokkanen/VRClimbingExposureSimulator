@@ -21,6 +21,12 @@ extern void CalibratedWall_IsPointWithinBounds_m31BBD7FD6F87D99AD8BF7A23215841BC
 extern void CalibratedWall_get_MeanFittingError_m5488DB135C5586EB75BAA55A748F40C3DEEB9359 (void);
 extern void CalibratedWall_ToString_m16464FCDD92BCF8E36983A1C530CC0679A8B9A2E (void);
 extern void CalibratedWall__ctor_mC6EC279DA6EE022C8761F98BD453ECAC8D98DEFD (void);
+extern void ClimbingHallAmbience_Awake_m6178C9733666C03CFCD42455967173C8334BEABC (void);
+extern void ClimbingHallAmbience_Start_m796F8962D2CD03AE16EBC0F5652594AEE3075F35 (void);
+extern void ClimbingHallAmbience_Update_m8239925738D8D5E694319D7A9A501177051AD78D (void);
+extern void ClimbingHallAmbience_SetMuted_m321282EB58EE0A43FBAB5C4DFA5A4D1A9A83646E (void);
+extern void ClimbingHallAmbience_SetMaxVolume_m6AB8D50BD9A757199EBF0DD1D472737387470A62 (void);
+extern void ClimbingHallAmbience__ctor_m5163DC4FFA40D4B315A09E6346E90DC11DBF3B6D (void);
 extern void ClimbingHold_get_ApproxRadius_mE69506510CB536A2DDAE9A90F197DF1242283C62 (void);
 extern void ClimbingHold_GetWorldPosition_m1022782E012A90EF964E7B84F62A0DB42F3E528D (void);
 extern void ClimbingHold_GetWorldRotation_m3CC6586F5AAEDA1A8093332522460C9E786DEB7C (void);
@@ -63,9 +69,11 @@ extern void HeightController__ctor_m993CAF4A8B0B705E20E4E195568DC77090B2540E (vo
 extern void HoldLibrary__ctor_m61EE59324FB2BC09CCAAC8DE01DA0C0FAF4209CA (void);
 extern void HoldDefinition__ctor_m5FCEB02D8F5A5C63C85F149BEAE60B35E85C420D (void);
 extern void HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB (void);
+extern void HoldPlacementManager_get_ActiveHold_mA0FBEF88A063AAB17DC1DA1F35C5183051D745A9 (void);
+extern void HoldPlacementManager_SetActiveHold_m69078EBBEE5B2C60C44987EAD5A8BC770309452E (void);
+extern void HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2 (void);
 extern void HoldPlacementManager_Update_m136A40EBF1AAB1C9FAB5A4B4D3463B9349AA16EA (void);
 extern void HoldPlacementManager_TryPlace_mB593248B2F15E2850BF2FC0511CD258EFDAF906B (void);
-extern void HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2 (void);
 extern void HoldPlacementManager_GetDevice_mBD6084AA920472B2C652785F6E90FE482C9D18C6 (void);
 extern void HoldPlacementManager__ctor_m68137EEC89F4996EF180658FE6703A5DA7F9F0DF (void);
 extern void ModeManager_get_CurrentMode_mBDB0A051B2EFBC00C968A1523A46B48718DBACD5 (void);
@@ -469,7 +477,7 @@ extern void RMFPSController_UnlockMouse_m2332B925B156C0C3F01DAEDBED79FEE39D0FB68
 extern void RMFPSController_LockMouse_mEB1FCB6BA153D83113B6E7E059449FA2433F82E0 (void);
 extern void RMFPSController__ctor_m283E0DCA6E534A31F9186931499D88748A8724FE (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[462] = 
+static Il2CppMethodPointer s_methodPointers[470] = 
 {
 	SlotPopulator_PopulateHolds_mF0C12C884F4C4E09C755EAF818DF8A5EBC6930C7,
 	SlotPopulator__ctor_m10F81468B1675042EDE8D1E250DFBC80DAE0E454,
@@ -485,6 +493,12 @@ static Il2CppMethodPointer s_methodPointers[462] =
 	CalibratedWall_get_MeanFittingError_m5488DB135C5586EB75BAA55A748F40C3DEEB9359,
 	CalibratedWall_ToString_m16464FCDD92BCF8E36983A1C530CC0679A8B9A2E,
 	CalibratedWall__ctor_mC6EC279DA6EE022C8761F98BD453ECAC8D98DEFD,
+	ClimbingHallAmbience_Awake_m6178C9733666C03CFCD42455967173C8334BEABC,
+	ClimbingHallAmbience_Start_m796F8962D2CD03AE16EBC0F5652594AEE3075F35,
+	ClimbingHallAmbience_Update_m8239925738D8D5E694319D7A9A501177051AD78D,
+	ClimbingHallAmbience_SetMuted_m321282EB58EE0A43FBAB5C4DFA5A4D1A9A83646E,
+	ClimbingHallAmbience_SetMaxVolume_m6AB8D50BD9A757199EBF0DD1D472737387470A62,
+	ClimbingHallAmbience__ctor_m5163DC4FFA40D4B315A09E6346E90DC11DBF3B6D,
 	ClimbingHold_get_ApproxRadius_mE69506510CB536A2DDAE9A90F197DF1242283C62,
 	ClimbingHold_GetWorldPosition_m1022782E012A90EF964E7B84F62A0DB42F3E528D,
 	ClimbingHold_GetWorldRotation_m3CC6586F5AAEDA1A8093332522460C9E786DEB7C,
@@ -527,9 +541,11 @@ static Il2CppMethodPointer s_methodPointers[462] =
 	HoldLibrary__ctor_m61EE59324FB2BC09CCAAC8DE01DA0C0FAF4209CA,
 	HoldDefinition__ctor_m5FCEB02D8F5A5C63C85F149BEAE60B35E85C420D,
 	HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB,
+	HoldPlacementManager_get_ActiveHold_mA0FBEF88A063AAB17DC1DA1F35C5183051D745A9,
+	HoldPlacementManager_SetActiveHold_m69078EBBEE5B2C60C44987EAD5A8BC770309452E,
+	HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2,
 	HoldPlacementManager_Update_m136A40EBF1AAB1C9FAB5A4B4D3463B9349AA16EA,
 	HoldPlacementManager_TryPlace_mB593248B2F15E2850BF2FC0511CD258EFDAF906B,
-	HoldPlacementManager_ClearAll_m64ACBB48FEBEE35A08D6AF64F7C68EAAFBE19BD2,
 	HoldPlacementManager_GetDevice_mBD6084AA920472B2C652785F6E90FE482C9D18C6,
 	HoldPlacementManager__ctor_m68137EEC89F4996EF180658FE6703A5DA7F9F0DF,
 	ModeManager_get_CurrentMode_mBDB0A051B2EFBC00C968A1523A46B48718DBACD5,
@@ -941,13 +957,13 @@ extern void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F03
 extern void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[5] = 
 {
-	{ 0x060000CC, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
-	{ 0x0600016F, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
-	{ 0x06000170, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
-	{ 0x06000171, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
-	{ 0x06000172, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
+	{ 0x060000D4, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
+	{ 0x06000177, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
+	{ 0x06000178, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
+	{ 0x06000179, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
+	{ 0x0600017A, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[462] = 
+static const int32_t s_InvokerIndices[470] = 
 {
 	16916,
 	16916,
@@ -962,6 +978,12 @@ static const int32_t s_InvokerIndices[462] =
 	4197,
 	16808,
 	16698,
+	16916,
+	16916,
+	16916,
+	16916,
+	12623,
+	12929,
 	16916,
 	16808,
 	11397,
@@ -1005,6 +1027,8 @@ static const int32_t s_InvokerIndices[462] =
 	16916,
 	16916,
 	16625,
+	16698,
+	12760,
 	16916,
 	16916,
 	16916,
@@ -1416,7 +1440,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	462,
+	470,
 	s_methodPointers,
 	5,
 	s_adjustorThunks,
