@@ -11797,7 +11797,7 @@ inline RuntimeObject* InternalEnumerator_1_System_Collections_IEnumerator_get_Cu
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mAEFCA8E8E01FFCBD50E024380EFA3169D81714F0_gshared (InspectedTypeScope_1_tA474AD3C337D3F0C7C0C7B12D5350E35AA0602EB* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11831,7 +11831,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mAEFCA8E8E01FFCBD50E024380EFA31
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tA474AD3C337D3F0C7C0C7B12D5350E35AA0602EB*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mAEFCA8E8E01FFCBD50E024380EFA3169D81714F0(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m236A8E999079C23340F534C6086187E2B71353BF_gshared (InspectedTypeScope_1_tA474AD3C337D3F0C7C0C7B12D5350E35AA0602EB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11870,7 +11870,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m236A8E999079C23340F534C60861
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m9DC0FF3B0BF7B7AFA6AB674BA0FF66B7A0D89742_gshared (InspectedTypeScope_1_tA8A51DEBE98D2791C0A9BCBC057A25AC6C8061A9* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11904,7 +11904,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m9DC0FF3B0BF7B7AFA6AB674BA0FF66
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tA8A51DEBE98D2791C0A9BCBC057A25AC6C8061A9*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m9DC0FF3B0BF7B7AFA6AB674BA0FF66B7A0D89742(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m73DCEDD9903C9340C92C6CC8148E549008E9A163_gshared (InspectedTypeScope_1_tA8A51DEBE98D2791C0A9BCBC057A25AC6C8061A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11943,7 +11943,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m73DCEDD9903C9340C92C6CC8148E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mA68AB7CE29CF04240631B0DF27A957EF66F40AB4_gshared (InspectedTypeScope_1_tD36E447CCEAA212C90527209342E9E5916B51943* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11977,7 +11977,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mA68AB7CE29CF04240631B0DF27A957
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tD36E447CCEAA212C90527209342E9E5916B51943*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mA68AB7CE29CF04240631B0DF27A957EF66F40AB4(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mD42F4ACFBF91373FDA9ED543B2AC2DA6A70527A8_gshared (InspectedTypeScope_1_tD36E447CCEAA212C90527209342E9E5916B51943* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12016,7 +12016,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mD42F4ACFBF91373FDA9ED543B2AC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m1530613EBF7E0E2F4A2CA9590331C7629C715D3A_gshared (InspectedTypeScope_1_tAFEED7A66961E0DC52EB50FD55E0FC18BC171D6C* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12050,7 +12050,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m1530613EBF7E0E2F4A2CA9590331C7
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tAFEED7A66961E0DC52EB50FD55E0FC18BC171D6C*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m1530613EBF7E0E2F4A2CA9590331C7629C715D3A(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m200FBABF38650E6701CDDB249A421A4449B28D1C_gshared (InspectedTypeScope_1_tAFEED7A66961E0DC52EB50FD55E0FC18BC171D6C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12089,7 +12089,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m200FBABF38650E6701CDDB249A42
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m4FDC796413E81A62F8302AFA1EE9A1AD2EAE3BB3_gshared (InspectedTypeScope_1_t6413385A3838FA2657777D9B9C2DC9B23E2175F6* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12123,7 +12123,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m4FDC796413E81A62F8302AFA1EE9A1
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t6413385A3838FA2657777D9B9C2DC9B23E2175F6*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m4FDC796413E81A62F8302AFA1EE9A1AD2EAE3BB3(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m21093C2BE2D1E7E44A5E2B6A7CC26498EF46EF24_gshared (InspectedTypeScope_1_t6413385A3838FA2657777D9B9C2DC9B23E2175F6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12162,7 +12162,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m21093C2BE2D1E7E44A5E2B6A7CC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m7E822FC26F7A440B98A80207341F85324EE62B0F_gshared (InspectedTypeScope_1_t360573AA0B6BD48EFF93DAFF721EFD9BCAC2EEBB* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12196,7 +12196,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m7E822FC26F7A440B98A80207341F85
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t360573AA0B6BD48EFF93DAFF721EFD9BCAC2EEBB*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m7E822FC26F7A440B98A80207341F85324EE62B0F(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m75626A19BDDE1890971D485299B08AA04B06BFE0_gshared (InspectedTypeScope_1_t360573AA0B6BD48EFF93DAFF721EFD9BCAC2EEBB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12235,7 +12235,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m75626A19BDDE1890971D485299B0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mD9E45A9AB02AFA4311521B295DD751708379BC64_gshared (InspectedTypeScope_1_t7BBFB29CF632D345CD90231D408FC6382BC61801* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12269,7 +12269,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mD9E45A9AB02AFA4311521B295DD751
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t7BBFB29CF632D345CD90231D408FC6382BC61801*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mD9E45A9AB02AFA4311521B295DD751708379BC64(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m7F0BB1555CD054D4EED8FD029ED2F0C7936D3A2F_gshared (InspectedTypeScope_1_t7BBFB29CF632D345CD90231D408FC6382BC61801* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12308,7 +12308,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m7F0BB1555CD054D4EED8FD029ED2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m6DAA74B441A240D317EF35757B4BECC9316E2229_gshared (InspectedTypeScope_1_t534E2E9359138726A05C5ADAE08B426BFC043C66* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12342,7 +12342,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m6DAA74B441A240D317EF35757B4BEC
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t534E2E9359138726A05C5ADAE08B426BFC043C66*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m6DAA74B441A240D317EF35757B4BECC9316E2229(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mFAE8040218614431622381E74E762AB444450561_gshared (InspectedTypeScope_1_t534E2E9359138726A05C5ADAE08B426BFC043C66* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12381,7 +12381,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mFAE8040218614431622381E74E76
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m7D6216907E939C3356078246CDA4959490FDA1DE_gshared (InspectedTypeScope_1_t1902E53AB8095820F8E010430F24573A96E75D8A* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12415,7 +12415,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m7D6216907E939C3356078246CDA495
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t1902E53AB8095820F8E010430F24573A96E75D8A*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m7D6216907E939C3356078246CDA4959490FDA1DE(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m42B6E25722C95379C880102D29F1F2B1BB727D23_gshared (InspectedTypeScope_1_t1902E53AB8095820F8E010430F24573A96E75D8A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12454,7 +12454,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m42B6E25722C95379C880102D29F1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m0808DF6D1E1F20C0BE43619E16ADF3B42B5B118E_gshared (InspectedTypeScope_1_tE2BFF74B93DAC4540BD08194C36785F8A336FC2D* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12488,7 +12488,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m0808DF6D1E1F20C0BE43619E16ADF3
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tE2BFF74B93DAC4540BD08194C36785F8A336FC2D*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m0808DF6D1E1F20C0BE43619E16ADF3B42B5B118E(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m97BE1EDCE295A2D488E364791147882994F4BC3C_gshared (InspectedTypeScope_1_tE2BFF74B93DAC4540BD08194C36785F8A336FC2D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12527,7 +12527,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m97BE1EDCE295A2D488E364791147
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mEA4C1EE3D92D20FA7425A49655C0257E34BFCF92_gshared (InspectedTypeScope_1_tF8D948FE4DD43F4B0B8917BA11BC8EBFE8EAED68* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12561,7 +12561,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mEA4C1EE3D92D20FA7425A49655C025
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tF8D948FE4DD43F4B0B8917BA11BC8EBFE8EAED68*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mEA4C1EE3D92D20FA7425A49655C0257E34BFCF92(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m5493637FF009D92908240BD2B09D370F3C9B6BE8_gshared (InspectedTypeScope_1_tF8D948FE4DD43F4B0B8917BA11BC8EBFE8EAED68* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12600,7 +12600,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m5493637FF009D92908240BD2B09D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mDB15C8752C94DA14D00AE4469C1D0AE13AA3A168_gshared (InspectedTypeScope_1_tA494FAD8E8FACF2322A85E5521D82020C0039A10* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12634,7 +12634,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mDB15C8752C94DA14D00AE4469C1D0A
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tA494FAD8E8FACF2322A85E5521D82020C0039A10*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mDB15C8752C94DA14D00AE4469C1D0AE13AA3A168(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m24DA371E0A3F386C21B3D9CA6DD1CE949D3CFF64_gshared (InspectedTypeScope_1_tA494FAD8E8FACF2322A85E5521D82020C0039A10* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12673,7 +12673,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m24DA371E0A3F386C21B3D9CA6DD1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m0D60F1D353553EE3E242EA6E60D2E9D4DD4485BF_gshared (InspectedTypeScope_1_t7D7C9EC877E180A0210F2F561B9AE9C7CC055C8B* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12707,7 +12707,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m0D60F1D353553EE3E242EA6E60D2E9
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t7D7C9EC877E180A0210F2F561B9AE9C7CC055C8B*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m0D60F1D353553EE3E242EA6E60D2E9D4DD4485BF(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m84566C644ED4F6CB452D638F33E3E069D18680D6_gshared (InspectedTypeScope_1_t7D7C9EC877E180A0210F2F561B9AE9C7CC055C8B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12746,7 +12746,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m84566C644ED4F6CB452D638F33E3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mD39B490C627224599535C0FA0DBC766C027D59F9_gshared (InspectedTypeScope_1_tD51D35297B3304D7A4829A458E39BFC89154D584* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12780,7 +12780,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mD39B490C627224599535C0FA0DBC76
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tD51D35297B3304D7A4829A458E39BFC89154D584*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mD39B490C627224599535C0FA0DBC766C027D59F9(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mC5D632250B936F69EE913BE5B17919B2D6FC3347_gshared (InspectedTypeScope_1_tD51D35297B3304D7A4829A458E39BFC89154D584* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12819,7 +12819,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mC5D632250B936F69EE913BE5B179
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m8E8642C9A857E6C3C5B0DAB72D62AFFD370A131E_gshared (InspectedTypeScope_1_t6907A96511C84EF3EF8EB777DDECD3E1227A112E* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12853,7 +12853,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m8E8642C9A857E6C3C5B0DAB72D62AF
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t6907A96511C84EF3EF8EB777DDECD3E1227A112E*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m8E8642C9A857E6C3C5B0DAB72D62AFFD370A131E(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m82B3D0D1992D4B8E025D0B2075E5B436D5FBD3B5_gshared (InspectedTypeScope_1_t6907A96511C84EF3EF8EB777DDECD3E1227A112E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12892,7 +12892,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m82B3D0D1992D4B8E025D0B2075E5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mED39188CBC8C4170773C9A7290FF9D6E1C6441CA_gshared (InspectedTypeScope_1_t8ED30BEA06BFCBB73D1F0F6867FAB694599AF1A8* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12926,7 +12926,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mED39188CBC8C4170773C9A7290FF9D
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t8ED30BEA06BFCBB73D1F0F6867FAB694599AF1A8*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mED39188CBC8C4170773C9A7290FF9D6E1C6441CA(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m938C9D3837F46C4965C5DB636DBB061244681E77_gshared (InspectedTypeScope_1_t8ED30BEA06BFCBB73D1F0F6867FAB694599AF1A8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12965,7 +12965,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m938C9D3837F46C4965C5DB636DBB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m65CD6F78782316AD4B4D1D5ED18B5D6880DA1E2A_gshared (InspectedTypeScope_1_tE8FFB1F66BD1F56F2E44A29AB8514EAFD0BDD201* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12999,7 +12999,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m65CD6F78782316AD4B4D1D5ED18B5D
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tE8FFB1F66BD1F56F2E44A29AB8514EAFD0BDD201*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m65CD6F78782316AD4B4D1D5ED18B5D6880DA1E2A(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m2251733015E7204BCC1E94BBC32111444251854B_gshared (InspectedTypeScope_1_tE8FFB1F66BD1F56F2E44A29AB8514EAFD0BDD201* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13038,7 +13038,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m2251733015E7204BCC1E94BBC321
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m39FEE49EBA8331B22D2FC0E464250CEB319BBEE1_gshared (InspectedTypeScope_1_t2EEAD25EB16A78CFBAE0C16435F7171BA6C1DD02* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13072,7 +13072,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m39FEE49EBA8331B22D2FC0E464250C
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t2EEAD25EB16A78CFBAE0C16435F7171BA6C1DD02*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m39FEE49EBA8331B22D2FC0E464250CEB319BBEE1(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mF0835E73FEED1E3D79E1242AD24273E7351C0971_gshared (InspectedTypeScope_1_t2EEAD25EB16A78CFBAE0C16435F7171BA6C1DD02* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13111,7 +13111,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mF0835E73FEED1E3D79E1242AD242
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m85F41740463652199C7A1B6A6B1BABE7FC80FC7C_gshared (InspectedTypeScope_1_t49E712B30E989A8A827704692F24C947EABAB792* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13145,7 +13145,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m85F41740463652199C7A1B6A6B1BAB
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t49E712B30E989A8A827704692F24C947EABAB792*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m85F41740463652199C7A1B6A6B1BABE7FC80FC7C(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mA747B10EDF473B774841D654191F92F7D89C27B4_gshared (InspectedTypeScope_1_t49E712B30E989A8A827704692F24C947EABAB792* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13184,7 +13184,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mA747B10EDF473B774841D654191F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m8084AD08B920174F1504EDDCD81E7B6AD0705990_gshared (InspectedTypeScope_1_t4B9E3C4502943381E65844E4803FC836E2DB6AA4* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13218,7 +13218,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m8084AD08B920174F1504EDDCD81E7B
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t4B9E3C4502943381E65844E4803FC836E2DB6AA4*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m8084AD08B920174F1504EDDCD81E7B6AD0705990(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m9E552D7EAC467C2B414D6AE69187396EDE478784_gshared (InspectedTypeScope_1_t4B9E3C4502943381E65844E4803FC836E2DB6AA4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13257,7 +13257,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m9E552D7EAC467C2B414D6AE69187
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m9E2B86FCD921ED90EF8DA29049241883A9CAF18B_gshared (InspectedTypeScope_1_t902C5270811E5886B3499E8EE0F828176A60FB87* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13291,7 +13291,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m9E2B86FCD921ED90EF8DA290492418
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t902C5270811E5886B3499E8EE0F828176A60FB87*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m9E2B86FCD921ED90EF8DA29049241883A9CAF18B(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m576079475F9BE89E397940B64F494E8BB3EBD22D_gshared (InspectedTypeScope_1_t902C5270811E5886B3499E8EE0F828176A60FB87* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13330,7 +13330,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m576079475F9BE89E397940B64F49
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m1E5049CC16AAF27625721B9E81BCC8B1543F00AF_gshared (InspectedTypeScope_1_t2B1E5C4F04B74FD7D44A5DCC2685B1BFD102145F* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13364,7 +13364,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m1E5049CC16AAF27625721B9E81BCC8
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t2B1E5C4F04B74FD7D44A5DCC2685B1BFD102145F*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m1E5049CC16AAF27625721B9E81BCC8B1543F00AF(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m3935BD41D5ABBDA3CFE993F654B6018EBF6E8AD0_gshared (InspectedTypeScope_1_t2B1E5C4F04B74FD7D44A5DCC2685B1BFD102145F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13403,7 +13403,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m3935BD41D5ABBDA3CFE993F654B6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mDB43FF11AA5E298ECAD3F1029FF37A823D2127AB_gshared (InspectedTypeScope_1_t1F2A6FF2C07DA72369E80EE598C3CDF78932AB63* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13437,7 +13437,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mDB43FF11AA5E298ECAD3F1029FF37A
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t1F2A6FF2C07DA72369E80EE598C3CDF78932AB63*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mDB43FF11AA5E298ECAD3F1029FF37A823D2127AB(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m5BC5088C733B8DE976FECBCFA2C7022FB93D2E38_gshared (InspectedTypeScope_1_t1F2A6FF2C07DA72369E80EE598C3CDF78932AB63* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13476,7 +13476,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m5BC5088C733B8DE976FECBCFA2C7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m198BD2CFAC234F77CBDBBF923C54FDF83FA46EC6_gshared (InspectedTypeScope_1_tA6BF1A6A2433DC33390C7B48E6F9304F43DA1594* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13510,7 +13510,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m198BD2CFAC234F77CBDBBF923C54FD
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tA6BF1A6A2433DC33390C7B48E6F9304F43DA1594*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m198BD2CFAC234F77CBDBBF923C54FDF83FA46EC6(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m007ECB90AE72197D67E5266328632FAB52B4CAD6_gshared (InspectedTypeScope_1_tA6BF1A6A2433DC33390C7B48E6F9304F43DA1594* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13549,7 +13549,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m007ECB90AE72197D67E526632863
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m23B2990098692D0BDC592E6B54FD3998189DDF6B_gshared (InspectedTypeScope_1_tBAFF1FE56E906119F5A303446BAF635C47EEB4AC* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13583,7 +13583,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m23B2990098692D0BDC592E6B54FD39
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tBAFF1FE56E906119F5A303446BAF635C47EEB4AC*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m23B2990098692D0BDC592E6B54FD3998189DDF6B(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m0D41CAEF00217F51493CCDFB6BDA61AA77B02877_gshared (InspectedTypeScope_1_tBAFF1FE56E906119F5A303446BAF635C47EEB4AC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13622,7 +13622,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m0D41CAEF00217F51493CCDFB6BDA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mC90F9095E89ED1B6C0CE481936199AF4122766AA_gshared (InspectedTypeScope_1_t8370F030EAA3962388D9C9159FA7B62747E5674B* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13656,7 +13656,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mC90F9095E89ED1B6C0CE481936199A
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t8370F030EAA3962388D9C9159FA7B62747E5674B*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mC90F9095E89ED1B6C0CE481936199AF4122766AA(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mA53B40EC9BA8D7D94FBD6BBC4E112E57DF14FCA5_gshared (InspectedTypeScope_1_t8370F030EAA3962388D9C9159FA7B62747E5674B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13695,7 +13695,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mA53B40EC9BA8D7D94FBD6BBC4E11
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mF7C12A497084A207FA89EC5EB400DDA785D8C735_gshared (InspectedTypeScope_1_t1B8ACE61BC53851CE09280F1229B03AB586C2D27* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13729,7 +13729,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mF7C12A497084A207FA89EC5EB400DD
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t1B8ACE61BC53851CE09280F1229B03AB586C2D27*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mF7C12A497084A207FA89EC5EB400DDA785D8C735(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mB54708650552DBBC950538EC3684BFBE2619B305_gshared (InspectedTypeScope_1_t1B8ACE61BC53851CE09280F1229B03AB586C2D27* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13768,7 +13768,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mB54708650552DBBC950538EC3684
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m53253394C095E23909EFFC804531F9CD5CB58DB9_gshared (InspectedTypeScope_1_t8116CE3BD5AA5DCEDBF1B52C5BC8002343021E1D* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13802,7 +13802,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m53253394C095E23909EFFC804531F9
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t8116CE3BD5AA5DCEDBF1B52C5BC8002343021E1D*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m53253394C095E23909EFFC804531F9CD5CB58DB9(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mC05FF4C850964F468F66B304D022DAB288965C38_gshared (InspectedTypeScope_1_t8116CE3BD5AA5DCEDBF1B52C5BC8002343021E1D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13841,7 +13841,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mC05FF4C850964F468F66B304D022
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m4AAC972C8FB0B833CDE38BCBD9FF254BB0AF298F_gshared (InspectedTypeScope_1_tC295F8957AA098F133B990140E8937A2A11E5287* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13875,7 +13875,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m4AAC972C8FB0B833CDE38BCBD9FF25
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tC295F8957AA098F133B990140E8937A2A11E5287*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m4AAC972C8FB0B833CDE38BCBD9FF254BB0AF298F(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m783102BF63529EF1ECA27DA63FCC1DE90434D9E6_gshared (InspectedTypeScope_1_tC295F8957AA098F133B990140E8937A2A11E5287* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13914,7 +13914,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m783102BF63529EF1ECA27DA63FCC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m3C0514999A3C5542D9F51413D757034EBB4A12AA_gshared (InspectedTypeScope_1_t7C6A6D20EE0D0A77BD2A26CC547725FF66F77822* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13948,7 +13948,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m3C0514999A3C5542D9F51413D75703
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t7C6A6D20EE0D0A77BD2A26CC547725FF66F77822*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m3C0514999A3C5542D9F51413D757034EBB4A12AA(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m1B7607EB8A99F5F30F639875D70E85D2D979F23E_gshared (InspectedTypeScope_1_t7C6A6D20EE0D0A77BD2A26CC547725FF66F77822* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13987,7 +13987,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m1B7607EB8A99F5F30F639875D70E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m1169813447AECE1E48559C3E84DC93CC78A58E96_gshared (InspectedTypeScope_1_t60571021C15A07F46798C760A634D415DC8D09F5* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14021,7 +14021,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m1169813447AECE1E48559C3E84DC93
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t60571021C15A07F46798C760A634D415DC8D09F5*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m1169813447AECE1E48559C3E84DC93CC78A58E96(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mB052FF703740D06FC54B6CE55F0197C07A5FF14D_gshared (InspectedTypeScope_1_t60571021C15A07F46798C760A634D415DC8D09F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14060,7 +14060,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mB052FF703740D06FC54B6CE55F01
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m1AE5DB0BE18672BFB846AF9C6B8EC6C2AEFA4731_gshared (InspectedTypeScope_1_t7B36D20156C78FB7120D6E41F0C61AE361D3B609* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14094,7 +14094,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m1AE5DB0BE18672BFB846AF9C6B8EC6
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t7B36D20156C78FB7120D6E41F0C61AE361D3B609*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m1AE5DB0BE18672BFB846AF9C6B8EC6C2AEFA4731(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mF413CB5F5759C01BD53BA7956DAE3A94F551CC0A_gshared (InspectedTypeScope_1_t7B36D20156C78FB7120D6E41F0C61AE361D3B609* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14133,7 +14133,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mF413CB5F5759C01BD53BA7956DAE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m3047D25DA1E2FFF2B4BCC42C6E7B8A34DC5B3C56_gshared (InspectedTypeScope_1_t52736E200E2A585EE0B3D0A946B867A82C94513F* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14167,7 +14167,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m3047D25DA1E2FFF2B4BCC42C6E7B8A
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t52736E200E2A585EE0B3D0A946B867A82C94513F*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m3047D25DA1E2FFF2B4BCC42C6E7B8A34DC5B3C56(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m2D765F4810F416D08D708D55941F148CD98D6E6F_gshared (InspectedTypeScope_1_t52736E200E2A585EE0B3D0A946B867A82C94513F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14206,7 +14206,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m2D765F4810F416D08D708D55941F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m39050EADD95A479B7E4E92DC378F529B8B4E1B2E_gshared (InspectedTypeScope_1_t0B1C7CD8396DE9D6E50EF1442C3E5F79DFC706E5* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14240,7 +14240,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m39050EADD95A479B7E4E92DC378F52
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t0B1C7CD8396DE9D6E50EF1442C3E5F79DFC706E5*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m39050EADD95A479B7E4E92DC378F529B8B4E1B2E(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mD84F1EB3C4E78898F83375B54A45E48B7DB0506A_gshared (InspectedTypeScope_1_t0B1C7CD8396DE9D6E50EF1442C3E5F79DFC706E5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14279,7 +14279,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mD84F1EB3C4E78898F83375B54A45
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m0499A780D787ACBBBBD9FB9468D79E26734EE303_gshared (InspectedTypeScope_1_t722EEF629A221D7C89C48CEBA0B972E5B3091360* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14313,7 +14313,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m0499A780D787ACBBBBD9FB9468D79E
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t722EEF629A221D7C89C48CEBA0B972E5B3091360*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m0499A780D787ACBBBBD9FB9468D79E26734EE303(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mDD918E1DE0FC4A5196F3C06C6FA0F64749E2BC81_gshared (InspectedTypeScope_1_t722EEF629A221D7C89C48CEBA0B972E5B3091360* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14352,7 +14352,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mDD918E1DE0FC4A5196F3C06C6FA0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m9A27354D8F9EE74336B9BD2FAC9A45E0E398E4F7_gshared (InspectedTypeScope_1_t03E0301E53D7007A6CB3D3DDC9181EA32A47B475* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14386,7 +14386,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m9A27354D8F9EE74336B9BD2FAC9A45
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t03E0301E53D7007A6CB3D3DDC9181EA32A47B475*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m9A27354D8F9EE74336B9BD2FAC9A45E0E398E4F7(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mB632D9B32E5C6061DCF677C35E57C400E25C1CF8_gshared (InspectedTypeScope_1_t03E0301E53D7007A6CB3D3DDC9181EA32A47B475* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14425,7 +14425,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mB632D9B32E5C6061DCF677C35E57
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m242B3F9B2843BB3B5A72BDC2B11525BE03F19ED4_gshared (InspectedTypeScope_1_tE57E5A2ED3118F8DAAA12252FA9DEF232CF10EEE* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14459,7 +14459,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m242B3F9B2843BB3B5A72BDC2B11525
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tE57E5A2ED3118F8DAAA12252FA9DEF232CF10EEE*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m242B3F9B2843BB3B5A72BDC2B11525BE03F19ED4(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mA72FD690EF27DBA82FB7285FD9F981DFEA163208_gshared (InspectedTypeScope_1_tE57E5A2ED3118F8DAAA12252FA9DEF232CF10EEE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14498,7 +14498,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mA72FD690EF27DBA82FB7285FD9F9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m358393408640CF368DF7943C19A7832C8D025CBF_gshared (InspectedTypeScope_1_tA4CE06D6F7957696303E41B6D43298E4029F5DA6* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14532,7 +14532,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m358393408640CF368DF7943C19A783
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_tA4CE06D6F7957696303E41B6D43298E4029F5DA6*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m358393408640CF368DF7943C19A7832C8D025CBF(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m03AED76176BD6D50351E60A4EAC2C5DED7D5B182_gshared (InspectedTypeScope_1_tA4CE06D6F7957696303E41B6D43298E4029F5DA6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14571,7 +14571,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m03AED76176BD6D50351E60A4EAC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m1016735C19A71682ADFABF71C3D20D189F616F37_gshared (InspectedTypeScope_1_t90FABFAFEB0070FC3AD6D64AFA28521803BCD118* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14605,7 +14605,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m1016735C19A71682ADFABF71C3D20D
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t90FABFAFEB0070FC3AD6D64AFA28521803BCD118*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m1016735C19A71682ADFABF71C3D20D189F616F37(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m97C6B56B81E4C57E9CCCA6660B0F773EED37C091_gshared (InspectedTypeScope_1_t90FABFAFEB0070FC3AD6D64AFA28521803BCD118* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14644,7 +14644,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m97C6B56B81E4C57E9CCCA6660B0F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m898785F94811BAD8F86AFDEBF764B058B58067AC_gshared (InspectedTypeScope_1_t831044E4D56D64E02EF008DB74BE356A8815941A* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14678,7 +14678,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m898785F94811BAD8F86AFDEBF764B0
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t831044E4D56D64E02EF008DB74BE356A8815941A*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m898785F94811BAD8F86AFDEBF764B058B58067AC(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m7F4B3AFBDE732C3C6C347458D21556EDDCAB7318_gshared (InspectedTypeScope_1_t831044E4D56D64E02EF008DB74BE356A8815941A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14717,7 +14717,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m7F4B3AFBDE732C3C6C347458D215
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_mB400E9C43CAB0A485061AF760FA2C5FAB7FF96C1_gshared (InspectedTypeScope_1_t6C77EC9645944336801E4D23BA4FDC4C4BA2F2AA* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14751,7 +14751,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_mB400E9C43CAB0A485061AF760FA2C5
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t6C77EC9645944336801E4D23BA4FDC4C4BA2F2AA*>(__this + _offset);
 	InspectedTypeScope_1__ctor_mB400E9C43CAB0A485061AF760FA2C5FAB7FF96C1(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_mA9FFC119D3D70199FE40DC07BF424F37639BC159_gshared (InspectedTypeScope_1_t6C77EC9645944336801E4D23BA4FDC4C4BA2F2AA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14790,7 +14790,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_mA9FFC119D3D70199FE40DC07BF42
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 23124
+// Method Definition Index: 23130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1__ctor_m81574608CF3C47E48CC6FF4C8EA96C099422648C_gshared (InspectedTypeScope_1_t02FE7CB83945A2462C3B101968ABFD80AF129E73* __this, VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14824,7 +14824,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1__ctor_m81574608CF3C47E48CC6FF4C8EA96C
 	_thisAdjusted = reinterpret_cast<InspectedTypeScope_1_t02FE7CB83945A2462C3B101968ABFD80AF129E73*>(__this + _offset);
 	InspectedTypeScope_1__ctor_m81574608CF3C47E48CC6FF4C8EA96C099422648C(_thisAdjusted, ___0_context, method);
 }
-// Method Definition Index: 23125
+// Method Definition Index: 23131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InspectedTypeScope_1_Dispose_m59F33FE5783A60AF674C2CA0167736D2A851FE78_gshared (InspectedTypeScope_1_t02FE7CB83945A2462C3B101968ABFD80AF129E73* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14863,7 +14863,7 @@ IL2CPP_EXTERN_C  void InspectedTypeScope_1_Dispose_m59F33FE5783A60AF674C2CA01677
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 88718
+// Method Definition Index: 88751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* IntegratedSubsystemDescriptor_1_CreateImpl_m0BB7C03B1E858A74DEDE7A007F7E642F03F5F069_gshared (IntegratedSubsystemDescriptor_1_t70BCBD395B99126866E0354041C8DCD1CE80A714* __this, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -14880,7 +14880,7 @@ IL_000f:
 		return L_1;
 	}
 }
-// Method Definition Index: 88719
+// Method Definition Index: 88752
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* IntegratedSubsystemDescriptor_1_Create_m7487DAAC6BD8E3BF2361488E7CFF54F6836F6E4C_gshared (IntegratedSubsystemDescriptor_1_t70BCBD395B99126866E0354041C8DCD1CE80A714* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14932,7 +14932,7 @@ IL_0036:
 		return L_8;
 	}
 }
-// Method Definition Index: 88720
+// Method Definition Index: 88753
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystemDescriptor_1__ctor_m94FAA0F6D63A0144035D2645AAE00202B36BE7DC_gshared (IntegratedSubsystemDescriptor_1_t70BCBD395B99126866E0354041C8DCD1CE80A714* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14948,7 +14948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystemDescriptor_1__ctor_m9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 88712
+// Method Definition Index: 88745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystem_1__ctor_mA130811A078A40712D15BFE67E73D0517AB0E989_gshared (IntegratedSubsystem_1_t6CAFC4ADB928A1CB6A1BAA66C12250FB6C841842* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14964,7 +14964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystem_1__ctor_mA130811A078
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 88712
+// Method Definition Index: 88745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystem_1__ctor_m7CD60BB3E8804A8025BDFBB0D4A7105E49241272_gshared (IntegratedSubsystem_1_t3B907B798DD93755882D579835AFAD39127E75F7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -38827,7 +38827,7 @@ IL2CPP_EXTERN_C  RuntimeObject* InternalEnumerator_1_System_Collections_IEnumera
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 23118
+// Method Definition Index: 23124
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HashSet_1_tAE2F12E55878645F5BE7C4D5603228A6FAB429C7* VisitContext_get_types_m061A3E9948C49F1492D8FB10EDF80692F007BD60_inline (VisitContext_tD8792BE884AAACF8175FFE35CBE2AB831D3C77EA* __this, const RuntimeMethod* method) 
 {
 	{
