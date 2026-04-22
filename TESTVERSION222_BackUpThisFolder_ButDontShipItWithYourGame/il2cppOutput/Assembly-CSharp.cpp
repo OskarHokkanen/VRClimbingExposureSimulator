@@ -175,6 +175,7 @@ struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 struct Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B;
 struct CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076;
 struct CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131;
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
 struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
@@ -268,6 +269,7 @@ struct TMP_StyleSheet_t70C71699F5CB2D855C361DBB78A44C901236C859;
 struct TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5;
 struct TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D;
 struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
 struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4;
 struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957;
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
@@ -283,6 +285,7 @@ struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773;
+struct WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3;
 struct WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A;
 struct WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE;
 struct WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C;
@@ -292,8 +295,8 @@ struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
 struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
 struct ExtendedProtectionSelector_t92B47BADD9172C82C0FCB8DBE510911774DE632F;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
-struct U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB;
 struct U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3;
+struct U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19;
 struct ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
@@ -345,8 +348,8 @@ IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t9FC06B895667161D61CFCCBF8826F3236BF2F538_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ValueTuple_5U5BU5D_tE6DE72DC63987C1582A685098CF40D752EA3654B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA_il2cpp_TypeInfo_var;
@@ -360,13 +363,14 @@ IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD
 IL2CPP_EXTERN_C String_t* _stringLiteral0307841D64370497F83ADF9921EEA2A480B28D56;
 IL2CPP_EXTERN_C String_t* _stringLiteral031E0DB535080E4BEECF6B73492469E02C54FBE0;
 IL2CPP_EXTERN_C String_t* _stringLiteral0522E10D17968D6CF4A6543797BD3F9DD5FF6310;
+IL2CPP_EXTERN_C String_t* _stringLiteral066414C1E1B266B126FC51A0D8092B7BBE05B359;
 IL2CPP_EXTERN_C String_t* _stringLiteral0878491CAF112935D22140C9EBA59E748D3F8C78;
 IL2CPP_EXTERN_C String_t* _stringLiteral09B11B6CC411D8B9FFB75EAAE9A35B2AF248CE40;
+IL2CPP_EXTERN_C String_t* _stringLiteral0A103CF85C3227FBB8C512B5ED37D62636741777;
 IL2CPP_EXTERN_C String_t* _stringLiteral0AC61F6BCEB4DFE48D9FDC46E1412252F809DF51;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8;
 IL2CPP_EXTERN_C String_t* _stringLiteral0C3C6829C3CCF8020C6AC45B87963ADC095CD44A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D5844583C407913BDFE67648D079F20CF8E2A37;
-IL2CPP_EXTERN_C String_t* _stringLiteral100BD853CDAE22D9F6876BBF21BCB498A0461ECA;
 IL2CPP_EXTERN_C String_t* _stringLiteral107BADA2752D02051B47332D56135C1B3F5CD9E2;
 IL2CPP_EXTERN_C String_t* _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D;
 IL2CPP_EXTERN_C String_t* _stringLiteral1535B58BAB49F5727C55AEF9FE1CAE3A3BCB5B99;
@@ -388,6 +392,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4
 IL2CPP_EXTERN_C String_t* _stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A;
 IL2CPP_EXTERN_C String_t* _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6;
 IL2CPP_EXTERN_C String_t* _stringLiteral2A263B0584E93803DF6D35F5033311528D736495;
+IL2CPP_EXTERN_C String_t* _stringLiteral2A61EEA0E88413D28836C2674B2DAF01D479C43E;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1;
 IL2CPP_EXTERN_C String_t* _stringLiteral2BA2288EE72576EB119D40513787C36985B47E8C;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
@@ -397,6 +402,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral35490FEE9099EC4EC575DA150AC1B0E450A59215
 IL2CPP_EXTERN_C String_t* _stringLiteral3708CDBCC9F390AB99D52FE7DEE4724401B69B9F;
 IL2CPP_EXTERN_C String_t* _stringLiteral3781CFEEF925855A4B7284E1783A7D715A6333F6;
 IL2CPP_EXTERN_C String_t* _stringLiteral37AC771BFDE5990D264DAA9F33B6442F03A3C5E3;
+IL2CPP_EXTERN_C String_t* _stringLiteral3C7A27557B0BD490C35EC4C1908CC6E34B641A73;
 IL2CPP_EXTERN_C String_t* _stringLiteral3D93A89666F831FB9324883A9347EA29365E69DF;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E40FE1BB45DAC73DC379C335F23E57EE2334A0E;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E47C7A5CE83D1C7D3F89C6D566A2D457BEA5E0D;
@@ -482,6 +488,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA12682AE90E8046F70D293ABD03C4BE3456B4230
 IL2CPP_EXTERN_C String_t* _stringLiteralA298EE2BDA191374A270F624B7319C427495E1CA;
 IL2CPP_EXTERN_C String_t* _stringLiteralA2A3FFE1B590077C4E182B50F6A7BCF6C77D01E2;
 IL2CPP_EXTERN_C String_t* _stringLiteralA333953DEB7B3F631AE4FEB93E9C3AD7F349F8C0;
+IL2CPP_EXTERN_C String_t* _stringLiteralA3C860713DCDE8F5163ADD209836D5D739790798;
 IL2CPP_EXTERN_C String_t* _stringLiteralA3DFDD1C75685F4BD136ACAF08E535626B718D2C;
 IL2CPP_EXTERN_C String_t* _stringLiteralA4F0096B2B6352AF858C7422C152C11363F84CD7;
 IL2CPP_EXTERN_C String_t* _stringLiteralA5C2654409CA68F306CBD9EA232F5BE2A652CF95;
@@ -497,6 +504,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB19A26FBE24741DB8709E6BD7EF7F0EC714EB6A1
 IL2CPP_EXTERN_C String_t* _stringLiteralB25CF1C6B74339FBFCE846454A70688CE58C094C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D;
 IL2CPP_EXTERN_C String_t* _stringLiteralB4C4A570D344291F8586DECBB6E13FFE1E22A3D1;
+IL2CPP_EXTERN_C String_t* _stringLiteralB6DD86BB7A340ED745AFB537354F6F59606A8EB2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB9CD42A70EA3DA7A68EBD58982D550B83FAB45EA;
 IL2CPP_EXTERN_C String_t* _stringLiteralBB8346F4E7C0DEB6676965D6621B56D1A87A491A;
@@ -540,7 +548,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF59CD77561EC5C162AD9CC5B62482CB6B727D1A9
 IL2CPP_EXTERN_C String_t* _stringLiteralF61E79E2C064708295B805EE00A88809BC61307C;
 IL2CPP_EXTERN_C String_t* _stringLiteralF64509D380259E0E94633C0AB9C37AFD6551CADE;
 IL2CPP_EXTERN_C String_t* _stringLiteralF85263F579BDEEADCEC89CFCDB0C3F6C51D186BF;
-IL2CPP_EXTERN_C String_t* _stringLiteralFAAAC563EB53B1A893E1C9C7E8E77CA9567171DA;
 IL2CPP_EXTERN_C String_t* _stringLiteralFB4142048EF91ECB5EC8FBA000E98792900483B7;
 IL2CPP_EXTERN_C String_t* _stringLiteralFBE3E55755B5ED570EBAAA90DE0E04D3952E636C;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC80B6807067FE307F80391C17B96C93746EA731;
@@ -620,10 +627,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F5
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_mB986A63C8D68BD8606522BF24176D36503CFD9C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_U3CHandleRecalibrateScanU3Eb__32_0_m96FDFD4ED1E9A780169D8DDD3509C94847102E2A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RemoteControlServer_U3CHandleResetU3Eb__33_0_m43AF3215FD34F2C403528DA419E2B01C566A5FAD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CFindAdjacentWallsU3Eb__11_0_mDE013FEF80C50BEE1F3F6E2154162445DBCFB71B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass30_0_U3CHandleSetU3Eb__0_m104FDD208E23446BAC4B76D23CB9FF278D6B0DAD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass31_0_U3CHandlePresetU3Eb__0_mA119EF49A2B9F9DF0DFFE812D84F1316DAAED858_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_5__ctor_m63152ED6989D304BA53C14AE098A958E5591836F_RuntimeMethod_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
@@ -991,14 +999,14 @@ struct WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C  : public RuntimeObj
 	float ___wingWidth;
 	int32_t ___environmentIndex;
 };
-struct U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB  : public RuntimeObject
+struct U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3  : public RuntimeObject
 {
 	String_t* ___key;
 	RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* ___U3CU3E4__this;
 	float ___value;
 	String_t* ___body;
 };
-struct U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3  : public RuntimeObject
+struct U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19  : public RuntimeObject
 {
 	RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* ___U3CU3E4__this;
 	WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* ___p;
@@ -1925,6 +1933,10 @@ struct WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0_marshaled_com
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___edgePoint;
 	float ___planeDistance;
 };
+struct CalibState_t3BBD69819336CD17DF232F2F7D72EBF21909CC20 
+{
+	int32_t ___value__;
+};
 struct CalibrationState_tFA8B49A376C49F3CF6AAC3B9AEB55C79254F6686 
 {
 	int32_t ___value__;
@@ -2498,6 +2510,7 @@ struct RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7  : public M
 	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___frustumCalibrator;
 	ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* ___climbingRope;
 	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* ___holdPlacementManager;
+	WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* ___wallCManager;
 	int32_t ___port;
 	bool ___showIPInVR;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___statusText;
@@ -2622,6 +2635,33 @@ struct WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773  : public Mon
 	bool ___showAngleLabels;
 	WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* ____manager;
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ____edgeVisuals;
+};
+struct WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___leftControllerTransform;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rightControllerTransform;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___wallRoot;
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___virtualReferencePoints;
+	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___frustumCalibrator;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___headTransform;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___pointPlacedClip;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___calibrationCompleteClip;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___calibrationStartedClip;
+	float ___hudDistance;
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___leftDevice;
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___rightDevice;
+	bool ___leftGripPrev;
+	bool ___rightGripPrev;
+	int32_t ___calibState;
+	List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___physicalPoints;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___hudRoot;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___hudText;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___headCamera;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___pointSpheres;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CCalibratedWallNormalU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CCalibratedWallCenterU3Ek__BackingField;
+	bool ___U3CIsScanCalibratedU3Ek__BackingField;
 };
 struct WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4196,8 +4236,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A5DA2689E612B960E7277A31B1FEE0E2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandlePreset_m71226C907DBF6E88E5D5AA1464C95435F05BA3D6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleReset_m5EBE22421820600203DC9E63E512FB1802F17134 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleRecalibrateScan_mC1ACAEBABC8234C0CCD7728E9EE5E7DA41D495F3 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627 (HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, String_t* ___1_content, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WallCManager_get_IsScanCalibrated_mE65870C68D918846765A8619B096CB481A5CEA87_inline (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60 (StringBuilder_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D (StringBuilder_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
@@ -4216,7 +4258,7 @@ inline int32_t List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_inline
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0 (HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* __this, String_t* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* HttpListenerRequest_get_InputStream_m82EAFAD0E5C62D5CDC9503495BB1133BF9D69C9A (HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpListenerRequest_get_ContentEncoding_m17F868921B2CA926019A0DAC683A60D53F29C973 (HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReader__ctor_m7712DDC735E99B6833E2666ADFD8A06CB96A58B1 (StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
@@ -4224,7 +4266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_action, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass31_0__ctor_mB177DBC7F94344096045A3CD10DC9F0E8475FA47 (U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) ;
 inline void Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4 (Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_item, const RuntimeMethod* method)
 {
@@ -4252,6 +4294,7 @@ inline void Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272 (Queue_1_tDC
 {
 	((  void (*) (Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA*, const RuntimeMethod*))Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB_gshared)(__this, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_StartCalibration_mDCFC60EACEE846C0392260208E943C6AE506E544 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (String_t* ___0_s, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoldPlacementManager_SetActiveHold_m69078EBBEE5B2C60C44987EAD5A8BC770309452E (HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* __this, int32_t ___0_index, const RuntimeMethod* method) ;
@@ -13948,6 +13991,62 @@ IL_03c9:
 	}
 }
 // Method Definition Index: 81008
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_CalibrateFromScan_mAEA8D00794F7B3B94E5CE5C9766806FD325D491A (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_wallCenter, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallNormal, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A103CF85C3227FBB8C512B5ED37D62636741777);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6DD86BB7A340ED745AFB537354F6F59606A8EB2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:429>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_wallCenter;
+		__this->____wallCenter = L_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:430>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_wallNormal;
+		__this->____wallNormal = L_1;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:433>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->____wallNormal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____wallRight);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____wallUp);
+		WallFrustumCalibrator_ComputeWallFrame_m2F3BA7F103E2A12483417583D351DC18DE83B430(L_2, L_3, L_4, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:436>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->____wallCenter;
+		NullCheck(L_5);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_5, L_6, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:438>
+		__this->____calibrated = (bool)1;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:439>
+		WallFrustumCalibrator_set_CurrentPhase_m0E5436D8FD3F63817A19DB6E5D69027CD9C15A7C_inline(__this, 1, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:441>
+		WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD(__this, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:442>
+		WallFrustumCalibrator_SendHaptic_m1BA42EA667347127D3587B5A24AEFD2D5B8B3C8B(__this, (0.5f), (0.200000003f), NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:444>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:445>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->____wallCenter;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = __this->____wallNormal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = L_10;
+		RuntimeObject* L_12 = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &L_11);
+		String_t* L_13;
+		L_13 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral0A103CF85C3227FBB8C512B5ED37D62636741777, L_9, L_12, NULL);
+		String_t* L_14;
+		L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralB6DD86BB7A340ED745AFB537354F6F59606A8EB2, L_13, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:446>
+		return;
+	}
+}
+// Method Definition Index: 81009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_ResetCalibration_m721A9FB50BC77F0A6CCEA65628FDFA52AF9D10E8 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13965,13 +14064,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_ResetCalibration_m
 	memset((&V_0), 0, sizeof(V_0));
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:423>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:450>
 		__this->____calibrated = (bool)0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:424>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:451>
 		WallFrustumCalibrator_set_CurrentPhase_m0E5436D8FD3F63817A19DB6E5D69027CD9C15A7C_inline(__this, 0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:425>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:452>
 		WallFrustumCalibrator_ClearSamples_m9BAFB27A4B55E9F4203E82ED4CA2457B110FE151(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:427>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = __this->____previewHolds;
 		NullCheck(L_0);
 		Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 L_1;
@@ -13996,11 +14095,11 @@ FINALLY_0044:
 
 IL_0022_1:
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:427>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 				L_2 = Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_inline((&V_0), Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
 				V_1 = L_2;
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:427>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				bool L_4;
@@ -14011,7 +14110,7 @@ IL_0022_1:
 				}
 			}
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:427>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_5, NULL);
@@ -14019,7 +14118,7 @@ IL_0022_1:
 
 IL_0039_1:
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:427>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
 				bool L_6;
 				L_6 = Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27((&V_0), Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
 				if (L_6)
@@ -14039,11 +14138,11 @@ IL_0039_1:
 
 IL_0052:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:428>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:455>
 		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_7 = __this->____previewHolds;
 		NullCheck(L_7);
 		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_7, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:430>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:457>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_8 = __this->____mesh;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_9;
@@ -14054,7 +14153,7 @@ IL_0052:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:430>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:457>
 		Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* L_10 = __this->____mesh;
 		NullCheck(L_10);
 		Mesh_Clear_m0F95397EA143D31AD0B4D332E8C6FA25A7957BC0(L_10, NULL);
@@ -14062,38 +14161,38 @@ IL_0052:
 
 IL_0076:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:431>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:458>
 		return;
 	}
 }
-// Method Definition Index: 81009
+// Method Definition Index: 81010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_get_WallNormal_m0BA6302EB658E617581AA120BDF2093C9890D4B3 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:433>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:460>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____wallNormal;
 		return L_0;
 	}
 }
-// Method Definition Index: 81010
+// Method Definition Index: 81011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_get_WallCenter_m466F714B6F1EA9910B580710EEB0BCF0AE567EF9 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:434>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:461>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->____wallCenter;
 		return L_0;
 	}
 }
-// Method Definition Index: 81011
+// Method Definition Index: 81012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:435>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:462>
 		bool L_0 = __this->____calibrated;
 		return L_0;
 	}
 }
-// Method Definition Index: 81012
+// Method Definition Index: 81013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* WallFrustumCalibrator_GetNearPlaneAsWall_mC8F0BC5BF17B6C3CC7437DD4F4C9D647530D3275 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14113,7 +14212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA8535
 	float G_B6_0 = 0.0f;
 	float G_B9_0 = 0.0f;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:443>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:470>
 		bool L_0 = __this->___flipDirection;
 		if (L_0)
 		{
@@ -14137,7 +14236,7 @@ IL_0010:
 IL_001b:
 	{
 		V_0 = G_B3_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:445>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:472>
 		int32_t L_4 = __this->___mode;
 		if ((((int32_t)L_4) == ((int32_t)1)))
 		{
@@ -14159,7 +14258,7 @@ IL_002d:
 IL_0033:
 	{
 		V_1 = G_B6_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:446>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:473>
 		int32_t L_7 = __this->___mode;
 		if ((((int32_t)L_7) == ((int32_t)1)))
 		{
@@ -14181,18 +14280,18 @@ IL_0045:
 IL_004b:
 	{
 		V_2 = G_B9_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:448>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:449>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:450>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:451>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:452>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:453>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:454>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:455>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:456>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:457>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:458>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:459>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:475>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:476>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:477>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:478>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:479>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:480>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:481>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:482>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:483>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:484>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:485>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:486>
 		CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* L_10 = (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076*)il2cpp_codegen_object_new(CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076_il2cpp_TypeInfo_var);
 		CalibratedWall__ctor_mC6EC279DA6EE022C8761F98BD453ECAC8D98DEFD(L_10, NULL);
 		CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* L_11 = L_10;
@@ -14239,7 +14338,7 @@ IL_004b:
 		return L_27;
 	}
 }
-// Method Definition Index: 81013
+// Method Definition Index: 81014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UpdateStatusText_mA4A1B4AD342840DF0528ABEA51105562470C2A05 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14267,7 +14366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UpdateStatusText_m
 	RuntimeObject* G_B9_1 = NULL;
 	String_t* G_B9_2 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:468>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:495>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___statusText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -14278,20 +14377,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_UpdateStatusText_m
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:468>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:495>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:470>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:471>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:472>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:473>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:474>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:475>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:476>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:477>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:497>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:498>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:499>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:500>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:501>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:502>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:503>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:504>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___statusText;
 		V_0 = L_2;
 		int32_t L_3;
@@ -14316,8 +14415,8 @@ IL_000f:
 
 IL_0026:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:472>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:473>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:499>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:500>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_6 = __this->____samplePoints;
 		NullCheck(L_6);
 		int32_t L_7;
@@ -14334,8 +14433,8 @@ IL_0026:
 
 IL_004d:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:474>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:475>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:501>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:502>
 		int32_t L_12 = __this->___mode;
 		int32_t L_13 = L_12;
 		RuntimeObject* L_14 = Box(FrustumMode_t5CA57B512A966E6717DD47FB4B0CB0F5DE339437_il2cpp_TypeInfo_var, &L_13);
@@ -14375,7 +14474,7 @@ IL_0071:
 
 IL_0083:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:476>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:503>
 		String_t* L_18 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
 		V_1 = L_18;
 	}
@@ -14386,15 +14485,15 @@ IL_0089:
 		String_t* L_20 = V_1;
 		NullCheck(L_19);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_19, L_20);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:478>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:505>
 		return;
 	}
 }
-// Method Definition Index: 81014
+// Method Definition Index: 81015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* WallFrustumCalibrator_GetController_mBE56F2158796482C56DFC259FAE1CAEE4EFE6C13 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:485>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:512>
 		int32_t L_0 = __this->___activeHand;
 		if (!L_0)
 		{
@@ -14412,7 +14511,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81015
+// Method Definition Index: 81016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD WallFrustumCalibrator_GetDevice_mE4457C5D5F80C92120A6A94328C8D0CA836DC813 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14429,9 +14528,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F2
 	memset((&V_1), 0, sizeof(V_1));
 	int32_t G_B3_0 = 0;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:489>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:490>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:491>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:516>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:517>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:518>
 		int32_t L_0 = __this->___activeHand;
 		if (!L_0)
 		{
@@ -14450,14 +14549,14 @@ IL_000f:
 
 IL_0014:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:493>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:520>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_1 = (List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE*)il2cpp_codegen_object_new(List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE_il2cpp_TypeInfo_var);
 		List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4(L_1, List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:494>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:521>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_2 = V_0;
 		InputDevices_GetDevicesWithCharacteristics_m82F54DE2802FCE4EB730FCFBF8731CA91A27DEB0(G_B3_0, L_2, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:495>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:522>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_3 = V_0;
 		NullCheck(L_3);
 		int32_t L_4;
@@ -14482,17 +14581,17 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81016
+// Method Definition Index: 81017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_SendHaptic_m1BA42EA667347127D3587B5A24AEFD2D5B8B3C8B (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_amplitude, float ___1_duration, const RuntimeMethod* method) 
 {
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:500>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:527>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_0;
 		L_0 = WallFrustumCalibrator_GetDevice_mE4457C5D5F80C92120A6A94328C8D0CA836DC813(__this, NULL);
 		V_0 = L_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:501>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:528>
 		bool L_1;
 		L_1 = InputDevice_get_isValid_mA908CF8195CECA44FF457430AFF9198C3FEC0948((&V_0), NULL);
 		if (!L_1)
@@ -14501,7 +14600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_SendHaptic_m1BA42E
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:501>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:528>
 		float L_2 = ___0_amplitude;
 		float L_3 = ___1_duration;
 		bool L_4;
@@ -14510,11 +14609,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator_SendHaptic_m1BA42E
 
 IL_001b:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:502>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:529>
 		return;
 	}
 }
-// Method Definition Index: 81017
+// Method Definition Index: 81018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* WallFrustumCalibrator_BuildDefaultMaterial_m1D347C2B506AAEBBE204A4809FF07B686F58C9E0 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14544,12 +14643,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B6_0 = NULL;
 	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B5_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:506>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:507>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:508>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:509>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:510>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:511>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:533>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:534>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:535>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:536>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:537>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:538>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)3);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -14560,9 +14659,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
 		NullCheck(L_3);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral2620038B8A71EF21A205CC921576171A3CA9B0F4);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:513>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:540>
 		V_0 = (Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692*)NULL;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:514>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:541>
 		V_2 = L_3;
 		V_3 = 0;
 		goto IL_003b;
@@ -14570,17 +14669,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8
 
 IL_0025:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:514>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:541>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = V_2;
 		int32_t L_5 = V_3;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		String_t* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:516>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:543>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_8;
 		L_8 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(L_7, NULL);
 		V_0 = L_8;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:517>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:544>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_9 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -14597,7 +14696,7 @@ IL_0025:
 
 IL_003b:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:514>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:541>
 		int32_t L_12 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = V_2;
 		NullCheck(L_13);
@@ -14609,7 +14708,7 @@ IL_003b:
 
 IL_0041:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:520>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:547>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_14 = V_0;
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_15 = L_14;
 		if (L_15)
@@ -14630,12 +14729,12 @@ IL_0050:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_17 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
 		Material__ctor_m7FDF47105D66D19591BE505A0C42B0F90D88C9BF(L_17, G_B6_0, NULL);
 		V_1 = L_17;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:521>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:548>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_18 = V_1;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_19 = __this->___frustumColor;
 		NullCheck(L_18);
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_18, L_19, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:523>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:550>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_20 = V_1;
 		NullCheck(L_20);
 		bool L_21;
@@ -14646,35 +14745,35 @@ IL_0050:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:525>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:552>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_22 = V_1;
 		NullCheck(L_22);
 		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_22, _stringLiteral7D61FA9D9BE7581D7E2EE28C775ABE0D4B8C3D69, (3.0f), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:526>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:553>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23 = V_1;
 		NullCheck(L_23);
 		Material_SetInt_m41DF5404A9942239265888105E1DC83F2FBF901A(L_23, _stringLiteral3708CDBCC9F390AB99D52FE7DEE4724401B69B9F, 5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:527>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:554>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_24 = V_1;
 		NullCheck(L_24);
 		Material_SetInt_m41DF5404A9942239265888105E1DC83F2FBF901A(L_24, _stringLiteral73B13DE9817379145386BC6ECC87E983FC8ED41A, ((int32_t)10), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:528>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:555>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_25 = V_1;
 		NullCheck(L_25);
 		Material_SetInt_m41DF5404A9942239265888105E1DC83F2FBF901A(L_25, _stringLiteralB25CF1C6B74339FBFCE846454A70688CE58C094C, 0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:529>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:556>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_26 = V_1;
 		NullCheck(L_26);
 		Material_DisableKeyword_mC123927EBF2F2A19220A4456C8EA19F2BA416E8C(L_26, _stringLiteralCBCD3D866AF896F9B010A0FEE7F961DBC91A08C5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:530>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:557>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_27 = V_1;
 		NullCheck(L_27);
 		Material_EnableKeyword_mE8523EF6CF694284DF976D47ADEDE9363A1174AC(L_27, _stringLiteral52CBE4A5A42509939BB9DB58A4B9A2C9BBA81C1C, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:531>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:558>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_28 = V_1;
 		NullCheck(L_28);
 		Material_DisableKeyword_mC123927EBF2F2A19220A4456C8EA19F2BA416E8C(L_28, _stringLiteral61304A4D1A7F7C3C856F975F251F1F79885933C8, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:532>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:559>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_29 = V_1;
 		NullCheck(L_29);
 		Material_set_renderQueue_mFBB72A781DCCF0D4B85670B597788EC2D02D1C14(L_29, ((int32_t)3000), NULL);
@@ -14682,7 +14781,7 @@ IL_0050:
 
 IL_00d0:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:535>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:562>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_30 = V_1;
 		NullCheck(L_30);
 		bool L_31;
@@ -14693,7 +14792,7 @@ IL_00d0:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:536>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:563>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_32 = V_1;
 		NullCheck(L_32);
 		Material_SetFloat_m879CF81D740BAE6F23C9822400679F4D16365836(L_32, _stringLiteral181BB4565C7AA61CC8716A421960A53BA01AEE22, (0.0f), NULL);
@@ -14701,12 +14800,12 @@ IL_00d0:
 
 IL_00ed:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:538>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:565>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_33 = V_1;
 		return L_33;
 	}
 }
-// Method Definition Index: 81018
+// Method Definition Index: 81019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator__ctor_m276D5613F8FEAE017558C164CC06F43162EB4CEB (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14773,7 +14872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallFrustumCalibrator__ctor_m276D5613F8F
 		return;
 	}
 }
-// Method Definition Index: 81019
+// Method Definition Index: 81020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C48_0_m2580C060159B5B8235388752EA8EB3FF091745F0 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_x, float ___1_y, float ___2_z, U3CU3Ec__DisplayClass48_0_t9E04C21EC77C9916B5E5D3BBC0D15069FF20C90A* ___3_p, const RuntimeMethod* method) 
 {
 	{
@@ -14800,7 +14899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_11;
 	}
 }
-// Method Definition Index: 81020
+// Method Definition Index: 81021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C50_0_mBD88643A9B2313AC29C1389F435CB8B4B7CC0219 (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, float ___0_x, float ___1_y, float ___2_z, U3CU3Ec__DisplayClass50_0_t3B67F390D327C4E9072F0627F2D4F65CF7EB79B3* ___3_p, const RuntimeMethod* method) 
 {
 	{
@@ -14877,16 +14976,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81021
+// Method Definition Index: 81022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_LocalIP_mE554AEBFC8BF00E22273BC282BFF784BE1625A0A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:61>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:62>
 		String_t* L_0 = __this->____localIP;
 		return L_0;
 	}
 }
-// Method Definition Index: 81022
+// Method Definition Index: 81023
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14896,7 +14995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:62>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:63>
 		String_t* L_0 = __this->____localIP;
 		int32_t L_1 = __this->___port;
 		int32_t L_2 = L_1;
@@ -14906,7 +15005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_get_URL_mD5FC7C
 		return L_4;
 	}
 }
-// Method Definition Index: 81023
+// Method Definition Index: 81024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Start_m1E22DA33EF06A9CC71D2BED83F334BFD98ACD276 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14917,25 +15016,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Start_m1E22DA33EF06A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:70>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:71>
 		String_t* L_0;
 		L_0 = RemoteControlServer_GetLocalIP_mCB2646189F0A2E9EE6DE28CEB080DDD7826A9AA7(__this, NULL);
 		__this->____localIP = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____localIP), (void*)L_0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:71>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:72>
 		String_t* L_1;
 		L_1 = RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247(__this, NULL);
 		String_t* L_2;
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral0307841D64370497F83ADF9921EEA2A480B28D56, L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_2, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:72>
-		RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52(__this, NULL);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:73>
+		RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52(__this, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:74>
 		return;
 	}
 }
-// Method Definition Index: 81024
+// Method Definition Index: 81025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Update_m5EB9B3644001E1A0D553DD7CCE16D2478B82ECE6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14950,7 +15049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_Update_m5EB9B3644001
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B4_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B3_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:78>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:79>
 		RuntimeObject* L_0 = __this->____queueLock;
 		V_0 = L_0;
 		V_1 = (bool)0;
@@ -14989,7 +15088,7 @@ IL_0042:
 
 IL_0013_1:
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:82>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:83>
 				Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_4 = __this->____mainThreadQueue;
 				NullCheck(L_4);
 				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5;
@@ -15014,7 +15113,7 @@ IL_0024_1:
 
 IL_0029_1:
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:80>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:81>
 				Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_7 = __this->____mainThreadQueue;
 				NullCheck(L_7);
 				int32_t L_8;
@@ -15025,7 +15124,7 @@ IL_0029_1:
 				}
 			}
 			{
-				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:84>
+				//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:85>
 				goto IL_0043;
 			}
 		}
@@ -15037,31 +15136,31 @@ IL_0029_1:
 
 IL_0043:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:85>
-		return;
-	}
-}
-// Method Definition Index: 81025
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnDestroy_m636884AA7E76B93636075D559ED0A589E79F8D2F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:89>
-		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:90>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:86>
 		return;
 	}
 }
 // Method Definition Index: 81026
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnApplicationQuit_m59994E68AF0B17E513672923089559DBE7AAC1AF (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnDestroy_m636884AA7E76B93636075D559ED0A589E79F8D2F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:94>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:90>
 		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:95>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:91>
 		return;
 	}
 }
 // Method Definition Index: 81027
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_OnApplicationQuit_m59994E68AF0B17E513672923089559DBE7AAC1AF (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:95>
+		RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61(__this, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:96>
+		return;
+	}
+}
+// Method Definition Index: 81028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF67CF957161791340FFB4BDA4801399E52 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15080,12 +15179,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 	Exception_t* V_0 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:103>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:104>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = (HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01*)il2cpp_codegen_object_new(HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01_il2cpp_TypeInfo_var);
 		HttpListener__ctor_m16577B4C2A3E2D5CA19F2CB38EEEC6DE3DD70463(L_0, NULL);
 		__this->____listener = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener), (void*)L_0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:104>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:105>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_1 = __this->____listener;
 		NullCheck(L_1);
 		HttpListenerPrefixCollection_tC33808D167E85BCF19C8EA7B02709F95FC604897* L_2;
@@ -15101,13 +15200,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 	try
 	{
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:108>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:109>
 			HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_7 = __this->____listener;
 			NullCheck(L_7);
 			HttpListener_Start_mFFF59C04274FCAA5F9C86A1908DDBE1FDC48D867(L_7, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:109>
-			__this->____running = (bool)1;
 			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:110>
+			__this->____running = (bool)1;
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:111>
 			ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_8 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 			ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_8, __this, (intptr_t)((void*)RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F_RuntimeMethod_var), NULL);
 			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_9 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
@@ -15117,11 +15216,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			Thread_set_IsBackground_m45F00BD4C46F9B8A7C46A20A170B22BABB8FBA30(L_10, (bool)1, NULL);
 			__this->____serverThread = L_10;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->____serverThread), (void*)L_10);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:111>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:112>
 			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_11 = __this->____serverThread;
 			NullCheck(L_11);
 			Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA(L_11, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:112>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:113>
 			int32_t L_12 = __this->___port;
 			int32_t L_13 = L_12;
 			RuntimeObject* L_14 = Box(il2cpp_defaults.int32_class, &L_13);
@@ -15129,7 +15228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			L_15 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralB9CD42A70EA3DA7A68EBD58982D550B83FAB45EA, L_14, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:113>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:114>
 			TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_16 = __this->___statusText;
 			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 			bool L_17;
@@ -15140,7 +15239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:115>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:116>
 			TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = __this->___statusText;
 			String_t* L_19;
 			L_19 = RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247(__this, NULL);
@@ -15150,7 +15249,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StartServer_mC0A29DF
 
 IL_00a4_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:117>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:118>
 			goto IL_00be;
 		}
 	}
@@ -15167,9 +15266,9 @@ IL_00a4_1:
 CATCH_00a6:
 	{
 		Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:118>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:119>
 		V_0 = L_20;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:120>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:121>
 		Exception_t* L_21 = V_0;
 		NullCheck(L_21);
 		String_t* L_22;
@@ -15178,24 +15277,24 @@ CATCH_00a6:
 		L_23 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral88E0D020D4C21B154FB2E3C50398FC015EF6EF84)), L_22, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_23, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:121>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:122>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00be;
 	}
 
 IL_00be:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:122>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:123>
 		return;
 	}
 }
-// Method Definition Index: 81028
+// Method Definition Index: 81029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F28BCB2B53AF5B3546D403073237B7A61 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:126>
-		__this->____running = (bool)0;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:127>
+		__this->____running = (bool)0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:128>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = __this->____listener;
 		if (!L_0)
 		{
@@ -15213,11 +15312,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:129>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:130>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_3 = __this->____listener;
 		NullCheck(L_3);
 		HttpListener_Stop_mCE62183FF81F99305C3AB6E30B79B3A457DDC350(L_3, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:130>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:131>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_4 = __this->____listener;
 		NullCheck(L_4);
 		HttpListener_Close_m2EA568D9C3A846D03B56A823EF120D3619D13CCC(L_4, NULL);
@@ -15225,11 +15324,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_StopServer_mC47B479F
 
 IL_0032:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:132>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:133>
 		return;
 	}
 }
-// Method Definition Index: 81029
+// Method Definition Index: 81030
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ListenLoop_m7F7035FC45E05EC8666C73599AED36CC3819CC0F (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* V_0 = NULL;
@@ -15244,16 +15343,16 @@ IL_0002:
 	}
 	try
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:140>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:141>
 		HttpListener_t64CDB1E1A5227C151C7A271A8747DBC88EBC8F01* L_0 = __this->____listener;
 		NullCheck(L_0);
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_1;
 		L_1 = HttpListener_GetContext_m5E954E672B070E730511A6925B384E6DD092F484(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:141>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:142>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_2 = V_0;
 		RemoteControlServer_ProcessRequest_m0D4C1DC52F91ADB8B0173A2C794CEFD1F9890F1A(__this, L_2, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:142>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:143>
 		goto IL_0033;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -15274,8 +15373,8 @@ IL_0002:
 CATCH_0018:
 	{
 		HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E* L_3 = ((HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E*)IL2CPP_GET_ACTIVE_EXCEPTION(HttpListenerException_tF4A29D48856873D2400C9ABB0DAD8966B7491E1E*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:143>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:146>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:144>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:147>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0050;
 	}
@@ -15283,9 +15382,9 @@ CATCH_0018:
 CATCH_001b:
 	{
 		Exception_t* L_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:148>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:149>
 		V_1 = L_4;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:150>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:151>
 		Exception_t* L_5 = V_1;
 		NullCheck(L_5);
 		String_t* L_6;
@@ -15294,14 +15393,14 @@ CATCH_001b:
 		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8FF7BC6C749C7FBC6FF723A9A5FAB86C85F5802A)), L_6, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_7, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:151>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:152>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0033;
 	}
 
 IL_0033:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:136>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:137>
 		bool L_8 = __this->____running;
 		if (!L_8)
 		{
@@ -15328,11 +15427,11 @@ IL_0033:
 
 IL_0050:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:153>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:154>
 		return;
 	}
 }
-// Method Definition Index: 81030
+// Method Definition Index: 81031
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C1DC52F91ADB8B0173A2C794CEFD1F9890F1A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15345,6 +15444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral866EDFE3F72DD888BA131B98F77006FC19A2B27D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8E11673F8EBFC2D636FDF07BA77A73D6F3A87636);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA3C860713DCDE8F5163ADD209836D5D739790798);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE1786E6CE95551F6A00D0B34E2D43B17B373425);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD01331E3F2723B5566597F42A92F429FEC90B73F);
 		s_Il2CppMethodInitialized = true;
@@ -15354,7 +15454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 	Exception_t* V_2 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:161>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:162>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_0 = ___0_context;
 		NullCheck(L_0);
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_1;
@@ -15366,7 +15466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 		String_t* L_3;
 		L_3 = Uri_get_AbsolutePath_mABB93DD30D4C0F11948DE5C117650B1C3A9925CA(L_2, NULL);
 		V_0 = L_3;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:162>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:163>
 		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_4 = ___0_context;
 		NullCheck(L_4);
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_5;
@@ -15379,7 +15479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 	try
 	{
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:166>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:167>
 			String_t* L_7 = V_0;
 			bool L_8;
 			L_8 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_7, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, NULL);
@@ -15400,18 +15500,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ProcessRequest_m0D4C
 
 IL_0037_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:168>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:169>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_11 = ___0_context;
 			NullCheck(L_11);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_12;
 			L_12 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_11, NULL);
 			RemoteControlServer_ServeHTML_mA50DC28F5770621D47D1C9602D652189071EE944(__this, L_12, NULL);
-			goto IL_0118_1;
+			goto IL_0143_1;
 		}
 
 IL_0048_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:170>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:171>
 			String_t* L_13 = V_0;
 			bool L_14;
 			L_14 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_13, _stringLiteralCE1786E6CE95551F6A00D0B34E2D43B17B373425, NULL);
@@ -15430,24 +15530,24 @@ IL_0048_1:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:172>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:173>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_17 = ___0_context;
 			NullCheck(L_17);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_18;
 			L_18 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_17, NULL);
 			RemoteControlServer_ServeState_mC9594AD9645C7A26255C05D15C6BDD7A556CD9B6(__this, L_18, NULL);
-			goto IL_0118_1;
+			goto IL_0143_1;
 		}
 
 IL_0073_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:174>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:175>
 			String_t* L_19 = V_0;
 			bool L_20;
 			L_20 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_19, _stringLiteral866EDFE3F72DD888BA131B98F77006FC19A2B27D, NULL);
 			if (!L_20)
 			{
-				goto IL_00a1_1;
+				goto IL_00a4_1;
 			}
 		}
 		{
@@ -15456,11 +15556,11 @@ IL_0073_1:
 			L_22 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_21, _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D, NULL);
 			if (!L_22)
 			{
-				goto IL_00a1_1;
+				goto IL_00a4_1;
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:176>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:177>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_23 = ___0_context;
 			NullCheck(L_23);
 			HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_24;
@@ -15470,18 +15570,18 @@ IL_0073_1:
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_26;
 			L_26 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_25, NULL);
 			RemoteControlServer_HandleSet_m2D8C5946A5DA2689E612B960E7277A31B1FEE0E2(__this, L_24, L_26, NULL);
-			goto IL_0118_1;
+			goto IL_0143_1;
 		}
 
-IL_00a1_1:
+IL_00a4_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:178>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:179>
 			String_t* L_27 = V_0;
 			bool L_28;
 			L_28 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_27, _stringLiteral1D9A60562572741F59285BB7550A3A3A16887421, NULL);
 			if (!L_28)
 			{
-				goto IL_00cf_1;
+				goto IL_00d2_1;
 			}
 		}
 		{
@@ -15490,11 +15590,11 @@ IL_00a1_1:
 			L_30 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_29, _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D, NULL);
 			if (!L_30)
 			{
-				goto IL_00cf_1;
+				goto IL_00d2_1;
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:180>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:181>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_31 = ___0_context;
 			NullCheck(L_31);
 			HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_32;
@@ -15504,18 +15604,18 @@ IL_00a1_1:
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_34;
 			L_34 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_33, NULL);
 			RemoteControlServer_HandlePreset_m71226C907DBF6E88E5D5AA1464C95435F05BA3D6(__this, L_32, L_34, NULL);
-			goto IL_0118_1;
+			goto IL_0143_1;
 		}
 
-IL_00cf_1:
+IL_00d2_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:182>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:183>
 			String_t* L_35 = V_0;
 			bool L_36;
 			L_36 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_35, _stringLiteral1AEB99CB8C61203DA6EA2AC09B764D15A0EF0E52, NULL);
 			if (!L_36)
 			{
-				goto IL_00f7_1;
+				goto IL_00fa_1;
 			}
 		}
 		{
@@ -15524,40 +15624,70 @@ IL_00cf_1:
 			L_38 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_37, _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D, NULL);
 			if (!L_38)
 			{
-				goto IL_00f7_1;
+				goto IL_00fa_1;
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:184>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:185>
 			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_39 = ___0_context;
 			NullCheck(L_39);
 			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_40;
 			L_40 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_39, NULL);
 			RemoteControlServer_HandleReset_m5EBE22421820600203DC9E63E512FB1802F17134(__this, L_40, NULL);
-			goto IL_0118_1;
+			goto IL_0143_1;
 		}
 
-IL_00f7_1:
+IL_00fa_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:188>
-			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_41 = ___0_context;
-			NullCheck(L_41);
-			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_42;
-			L_42 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_41, NULL);
-			NullCheck(L_42);
-			HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_42, ((int32_t)404), NULL);
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:187>
+			String_t* L_41 = V_0;
+			bool L_42;
+			L_42 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_41, _stringLiteralA3C860713DCDE8F5163ADD209836D5D739790798, NULL);
+			if (!L_42)
+			{
+				goto IL_0122_1;
+			}
+		}
+		{
+			String_t* L_43 = V_1;
+			bool L_44;
+			L_44 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_43, _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D, NULL);
+			if (!L_44)
+			{
+				goto IL_0122_1;
+			}
+		}
+		{
 			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:189>
-			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_43 = ___0_context;
-			NullCheck(L_43);
-			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_44;
-			L_44 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_43, NULL);
-			RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_44, _stringLiteral8E11673F8EBFC2D636FDF07BA77A73D6F3A87636, NULL);
+			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_45 = ___0_context;
+			NullCheck(L_45);
+			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_46;
+			L_46 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_45, NULL);
+			RemoteControlServer_HandleRecalibrateScan_mC1ACAEBABC8234C0CCD7728E9EE5E7DA41D495F3(__this, L_46, NULL);
+			goto IL_0143_1;
 		}
 
-IL_0118_1:
+IL_0122_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:191>
-			goto IL_013f;
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:193>
+			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_47 = ___0_context;
+			NullCheck(L_47);
+			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_48;
+			L_48 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_47, NULL);
+			NullCheck(L_48);
+			HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_48, ((int32_t)404), NULL);
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:194>
+			HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_49 = ___0_context;
+			NullCheck(L_49);
+			HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_50;
+			L_50 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_49, NULL);
+			RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_50, _stringLiteral8E11673F8EBFC2D636FDF07BA77A73D6F3A87636, NULL);
+		}
+
+IL_0143_1:
+		{
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:197>
+			goto IL_016a;
 		}
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -15565,45 +15695,45 @@ IL_0118_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_011a;
+			goto CATCH_0145;
 		}
 		throw e;
 	}
 
-CATCH_011a:
+CATCH_0145:
 	{
-		Exception_t* L_45 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:192>
-		V_2 = L_45;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:194>
-		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_46 = ___0_context;
-		NullCheck(L_46);
-		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_47;
-		L_47 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_46, NULL);
-		NullCheck(L_47);
-		HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_47, ((int32_t)500), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:195>
-		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_48 = ___0_context;
-		NullCheck(L_48);
-		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_49;
-		L_49 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_48, NULL);
-		Exception_t* L_50 = V_2;
-		NullCheck(L_50);
-		String_t* L_51;
-		L_51 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_50);
-		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_49, L_51, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:196>
+		Exception_t* L_51 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:198>
+		V_2 = L_51;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:200>
+		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_52 = ___0_context;
+		NullCheck(L_52);
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_53;
+		L_53 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_52, NULL);
+		NullCheck(L_53);
+		HttpListenerResponse_set_StatusCode_m5A3C3995DC618FBA6347ACA9544BD3C5F54DB627(L_53, ((int32_t)500), NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:201>
+		HttpListenerContext_tCD5824B5A03F644280D1F171203A2A03F7377412* L_54 = ___0_context;
+		NullCheck(L_54);
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_55;
+		L_55 = HttpListenerContext_get_Response_m64CA8756CB54BE4A08A336ACCAC5EED26EF42867_inline(L_54, NULL);
+		Exception_t* L_56 = V_2;
+		NullCheck(L_56);
+		String_t* L_57;
+		L_57 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_56);
+		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_55, L_57, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:202>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_013f;
+		goto IL_016a;
 	}
 
-IL_013f:
+IL_016a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:197>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:203>
 		return;
 	}
 }
-// Method Definition Index: 81031
+// Method Definition Index: 81032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9645C7A26255C05D15C6BDD7A556CD9B6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15628,6 +15758,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21BAFEC4092C75D8FD7A711942580401E36387D1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral233B30EAC669E692040BFFC0E35C704746291B72);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2A61EEA0E88413D28836C2674B2DAF01D479C43E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C7A27557B0BD490C35EC4C1908CC6E34B641A73);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral567693C0DFC4C8B2FF3CE75C444E4D1334D1569F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D54E959817188DBAD9E65FA3DB55F06B70F5E3C);
@@ -15658,58 +15790,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDBDB932A3BE7C7AE6E0011E7B64C1A04D81D6072);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE17051BFB15ED301AD14003803C6BB01D5C673DD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFAAAC563EB53B1A893E1C9C7E8E77CA9567171DA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB4142048EF91ECB5EC8FBA000E98792900483B7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFE1EDE3635160B9AE68883D60E39BB0F10A25BC6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFF221350B3F2342034C1357836C9EC0D7AE38083);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	String_t* V_1 = NULL;
-	bool V_2 = false;
-	int32_t V_3 = 0;
-	StringBuilder_t* V_4 = NULL;
-	String_t* V_5 = NULL;
-	float V_6 = 0.0f;
+	bool V_1 = false;
+	String_t* V_2 = NULL;
+	bool V_3 = false;
+	int32_t V_4 = 0;
+	StringBuilder_t* V_5 = NULL;
+	String_t* V_6 = NULL;
 	float V_7 = 0.0f;
 	float V_8 = 0.0f;
 	float V_9 = 0.0f;
 	float V_10 = 0.0f;
-	int32_t V_11 = 0;
+	float V_11 = 0.0f;
 	int32_t V_12 = 0;
-	String_t* V_13 = NULL;
-	StringBuilder_t* V_14 = NULL;
+	int32_t V_13 = 0;
+	String_t* V_14 = NULL;
 	StringBuilder_t* V_15 = NULL;
-	String_t* V_16 = NULL;
+	StringBuilder_t* V_16 = NULL;
 	String_t* V_17 = NULL;
-	List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* V_18 = NULL;
-	int32_t V_19 = 0;
-	String_t* V_20 = NULL;
-	int32_t V_21 = 0;
-	WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* V_22 = NULL;
-	int32_t V_23 = 0;
-	String_t* V_24 = NULL;
-	int32_t V_25 = 0;
-	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B4_0 = NULL;
-	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B3_0 = NULL;
-	HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* G_B5_0 = NULL;
-	String_t* G_B17_0 = NULL;
-	EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* G_B25_0 = NULL;
-	EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* G_B24_0 = NULL;
-	String_t* G_B26_0 = NULL;
-	String_t* G_B28_0 = NULL;
-	String_t* G_B27_0 = NULL;
-	String_t* G_B43_0 = NULL;
-	int32_t G_B45_0 = 0;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B45_1 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B45_2 = NULL;
-	int32_t G_B44_0 = 0;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B44_1 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B44_2 = NULL;
+	String_t* V_18 = NULL;
+	List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* V_19 = NULL;
+	int32_t V_20 = 0;
+	String_t* V_21 = NULL;
+	int32_t V_22 = 0;
+	WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* V_23 = NULL;
+	int32_t V_24 = 0;
+	String_t* V_25 = NULL;
+	int32_t V_26 = 0;
+	int32_t G_B3_0 = 0;
+	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B7_0 = NULL;
+	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B6_0 = NULL;
+	HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* G_B8_0 = NULL;
+	String_t* G_B20_0 = NULL;
+	EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* G_B28_0 = NULL;
+	EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* G_B27_0 = NULL;
+	String_t* G_B29_0 = NULL;
+	String_t* G_B31_0 = NULL;
+	String_t* G_B30_0 = NULL;
 	String_t* G_B46_0 = NULL;
-	int32_t G_B46_1 = 0;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B46_2 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B46_3 = NULL;
 	int32_t G_B48_0 = 0;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B48_1 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B48_2 = NULL;
@@ -15720,686 +15843,725 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeState_mC9594AD9
 	int32_t G_B49_1 = 0;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B49_2 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B49_3 = NULL;
-	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B51_0 = NULL;
-	String_t* G_B51_1 = NULL;
-	int32_t G_B51_2 = 0;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B51_3 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B51_4 = NULL;
-	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B50_0 = NULL;
-	String_t* G_B50_1 = NULL;
-	int32_t G_B50_2 = 0;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B50_3 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B50_4 = NULL;
-	int32_t G_B52_0 = 0;
-	String_t* G_B52_1 = NULL;
-	int32_t G_B52_2 = 0;
+	int32_t G_B51_0 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B51_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B51_2 = NULL;
+	int32_t G_B50_0 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B50_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B50_2 = NULL;
+	String_t* G_B52_0 = NULL;
+	int32_t G_B52_1 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B52_2 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B52_3 = NULL;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B52_4 = NULL;
+	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B54_0 = NULL;
+	String_t* G_B54_1 = NULL;
+	int32_t G_B54_2 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B54_3 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B54_4 = NULL;
+	HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* G_B53_0 = NULL;
+	String_t* G_B53_1 = NULL;
+	int32_t G_B53_2 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B53_3 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B53_4 = NULL;
+	int32_t G_B55_0 = 0;
+	String_t* G_B55_1 = NULL;
+	int32_t G_B55_2 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B55_3 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B55_4 = NULL;
+	int32_t G_B57_0 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B57_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B57_2 = NULL;
+	int32_t G_B56_0 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B56_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B56_2 = NULL;
+	String_t* G_B58_0 = NULL;
+	int32_t G_B58_1 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B58_2 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B58_3 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:201>
-		V_0 = (bool)0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:202>
-		V_1 = _stringLiteralDBDB932A3BE7C7AE6E0011E7B64C1A04D81D6072;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:203>
-		V_2 = (bool)0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:205>
-		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_0 = __this->___frustumCalibrator;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:207>
+		WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* L_0 = __this->___wallCManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_0047;
+			goto IL_001b;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:207>
-		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_2 = __this->___frustumCalibrator;
+		WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* L_2 = __this->___wallCManager;
 		NullCheck(L_2);
-		bool L_3 = L_2->___flipDirection;
-		V_0 = L_3;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:208>
-		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_4 = __this->___frustumCalibrator;
-		NullCheck(L_4);
-		int32_t* L_5 = (int32_t*)(&L_4->___mode);
-		Il2CppFakeBox<int32_t> L_6(FrustumMode_t5CA57B512A966E6717DD47FB4B0CB0F5DE339437_il2cpp_TypeInfo_var, L_5);
-		String_t* L_7;
-		L_7 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_6), NULL);
-		V_1 = L_7;
+		bool L_3;
+		L_3 = WallCManager_get_IsScanCalibrated_mE65870C68D918846765A8619B096CB481A5CEA87_inline(L_2, NULL);
+		G_B3_0 = ((int32_t)(L_3));
+		goto IL_001c;
+	}
+
+IL_001b:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_001c:
+	{
+		V_0 = (bool)G_B3_0;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:209>
+		V_1 = (bool)0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:210>
+		V_2 = _stringLiteralDBDB932A3BE7C7AE6E0011E7B64C1A04D81D6072;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:211>
+		V_3 = (bool)0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:213>
+		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_4 = __this->___frustumCalibrator;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:215>
+		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_6 = __this->___frustumCalibrator;
+		NullCheck(L_6);
+		bool L_7 = L_6->___flipDirection;
+		V_1 = L_7;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:216>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_8 = __this->___frustumCalibrator;
 		NullCheck(L_8);
-		bool L_9;
-		L_9 = WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE_inline(L_8, NULL);
-		V_2 = L_9;
-	}
-
-IL_0047:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:212>
-		V_3 = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:213>
-		StringBuilder_t* L_10 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
-		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_10, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
-		V_4 = L_10;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:214>
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_11 = __this->___holdPlacementManager;
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_12 = L_11;
-		if (L_12)
-		{
-			G_B4_0 = L_12;
-			goto IL_0062;
-		}
-		G_B3_0 = L_12;
-	}
-	{
-		G_B5_0 = ((HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD*)(NULL));
-		goto IL_0067;
-	}
-
-IL_0062:
-	{
-		NullCheck(G_B4_0);
-		HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* L_13 = G_B4_0->___holdLibrary;
-		G_B5_0 = L_13;
-	}
-
-IL_0067:
-	{
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_14;
-		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(G_B5_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_14)
-		{
-			goto IL_0121;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:216>
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_15 = __this->___holdPlacementManager;
-		NullCheck(L_15);
-		HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* L_16 = L_15->___holdLibrary;
-		NullCheck(L_16);
-		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_17 = L_16->___holds;
-		V_18 = L_17;
+		int32_t* L_9 = (int32_t*)(&L_8->___mode);
+		Il2CppFakeBox<int32_t> L_10(FrustumMode_t5CA57B512A966E6717DD47FB4B0CB0F5DE339437_il2cpp_TypeInfo_var, L_9);
+		String_t* L_11;
+		L_11 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_10), NULL);
+		V_2 = L_11;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:217>
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_18 = __this->___holdPlacementManager;
-		NullCheck(L_18);
-		int32_t L_19 = L_18->___activeHoldIndex;
-		V_3 = L_19;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:218>
-		V_19 = 0;
-		goto IL_0113;
+		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_12 = __this->___frustumCalibrator;
+		NullCheck(L_12);
+		bool L_13;
+		L_13 = WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE_inline(L_12, NULL);
+		V_3 = L_13;
 	}
 
-IL_0095:
+IL_0064:
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:220>
-		int32_t L_20 = V_19;
-		if ((((int32_t)L_20) <= ((int32_t)0)))
-		{
-			goto IL_00a7;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:220>
-		StringBuilder_t* L_21 = V_4;
-		NullCheck(L_21);
-		StringBuilder_t* L_22;
-		L_22 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_21, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
-	}
-
-IL_00a7:
-	{
+		V_4 = 0;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:221>
-		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_23 = V_18;
-		int32_t L_24 = V_19;
-		NullCheck(L_23);
-		HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B* L_25;
-		L_25 = List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A(L_23, L_24, List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A_RuntimeMethod_var);
-		NullCheck(L_25);
-		float* L_26 = (float*)(&L_25->___scale);
-		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
-		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_27;
-		L_27 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		String_t* L_28;
-		L_28 = Single_ToString_mF468A56B3A746EFD805E0604EE7A2873DA157ADE(L_26, _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, L_27, NULL);
-		V_20 = L_28;
+		StringBuilder_t* L_14 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_14, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
+		V_5 = L_14;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:222>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:223>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:224>
-		StringBuilder_t* L_29 = V_4;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_30 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = L_30;
-		NullCheck(L_31);
-		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralA91689C8285E607DFBF26CFC3112043BAAFBCEB9);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_32 = L_31;
-		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_33 = V_18;
-		int32_t L_34 = V_19;
-		NullCheck(L_33);
-		HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B* L_35;
-		L_35 = List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A(L_33, L_34, List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A_RuntimeMethod_var);
-		NullCheck(L_35);
-		String_t* L_36 = L_35->___name;
-		String_t* L_37;
-		L_37 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_36, NULL);
-		NullCheck(L_32);
-		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_37);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = L_32;
-		NullCheck(L_38);
-		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralFE1EDE3635160B9AE68883D60E39BB0F10A25BC6);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_39 = L_38;
-		String_t* L_40 = V_20;
-		NullCheck(L_39);
-		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_40);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_41 = L_39;
-		NullCheck(L_41);
-		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
-		String_t* L_42;
-		L_42 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_41, NULL);
-		NullCheck(L_29);
-		StringBuilder_t* L_43;
-		L_43 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_29, L_42, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:218>
-		int32_t L_44 = V_19;
-		V_19 = ((int32_t)il2cpp_codegen_add(L_44, 1));
-	}
-
-IL_0113:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:218>
-		int32_t L_45 = V_19;
-		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_46 = V_18;
-		NullCheck(L_46);
-		int32_t L_47;
-		L_47 = List_1_get_Count_mB9C2A1E920300F0A708B6C1E81A68A11B3A761CA_inline(L_46, List_1_get_Count_mB9C2A1E920300F0A708B6C1E81A68A11B3A761CA_RuntimeMethod_var);
-		if ((((int32_t)L_45) < ((int32_t)L_47)))
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_15 = __this->___holdPlacementManager;
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_16 = L_15;
+		if (L_16)
 		{
-			goto IL_0095;
+			G_B7_0 = L_16;
+			goto IL_0080;
 		}
+		G_B6_0 = L_16;
+	}
+	{
+		G_B8_0 = ((HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD*)(NULL));
+		goto IL_0085;
 	}
 
-IL_0121:
+IL_0080:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:227>
-		StringBuilder_t* L_48 = V_4;
-		NullCheck(L_48);
-		StringBuilder_t* L_49;
-		L_49 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_48, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:229>
-		V_5 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:230>
-		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_50 = __this->___climbingRope;
+		NullCheck(G_B7_0);
+		HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* L_17 = G_B7_0->___holdLibrary;
+		G_B8_0 = L_17;
+	}
+
+IL_0085:
+	{
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_51;
-		L_51 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_50, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_51)
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(G_B8_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
 		{
-			goto IL_0174;
+			goto IL_0140;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:232>
-		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_52 = __this->___climbingRope;
-		NullCheck(L_52);
-		bool L_53;
-		L_53 = ClimbingRope_get_IsVisible_m382ECFFB4D21366FF7B61825568141F330EB8614_inline(L_52, NULL);
-		if (L_53)
-		{
-			goto IL_0159;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:233>
-		V_5 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
-		goto IL_0174;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:224>
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_19 = __this->___holdPlacementManager;
+		NullCheck(L_19);
+		HoldLibrary_tBD6BFBC5D048613399FA1A7BE8D9E4C82A8CE5BD* L_20 = L_19->___holdLibrary;
+		NullCheck(L_20);
+		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_21 = L_20->___holds;
+		V_19 = L_21;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:225>
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_22 = __this->___holdPlacementManager;
+		NullCheck(L_22);
+		int32_t L_23 = L_22->___activeHoldIndex;
+		V_4 = L_23;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:226>
+		V_20 = 0;
+		goto IL_0132;
 	}
 
-IL_0159:
+IL_00b4:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:228>
+		int32_t L_24 = V_20;
+		if ((((int32_t)L_24) <= ((int32_t)0)))
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:228>
+		StringBuilder_t* L_25 = V_5;
+		NullCheck(L_25);
+		StringBuilder_t* L_26;
+		L_26 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_25, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
+	}
+
+IL_00c6:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:229>
+		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_27 = V_19;
+		int32_t L_28 = V_20;
+		NullCheck(L_27);
+		HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B* L_29;
+		L_29 = List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A(L_27, L_28, List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A_RuntimeMethod_var);
+		NullCheck(L_29);
+		float* L_30 = (float*)(&L_29->___scale);
+		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_31;
+		L_31 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_32;
+		L_32 = Single_ToString_mF468A56B3A746EFD805E0604EE7A2873DA157ADE(L_30, _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, L_31, NULL);
+		V_21 = L_32;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:230>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:231>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:232>
+		StringBuilder_t* L_33 = V_5;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_35 = L_34;
+		NullCheck(L_35);
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralA91689C8285E607DFBF26CFC3112043BAAFBCEB9);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = L_35;
+		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_37 = V_19;
+		int32_t L_38 = V_20;
+		NullCheck(L_37);
+		HoldDefinition_t62E45E5268D38862CB660FAC51176F0A30A5134B* L_39;
+		L_39 = List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A(L_37, L_38, List_1_get_Item_mA25D42F8F81E1078FC834842E1C750BD9CF79B0A_RuntimeMethod_var);
+		NullCheck(L_39);
+		String_t* L_40 = L_39->___name;
+		String_t* L_41;
+		L_41 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_40, NULL);
+		NullCheck(L_36);
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_41);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_42 = L_36;
+		NullCheck(L_42);
+		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralFE1EDE3635160B9AE68883D60E39BB0F10A25BC6);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_43 = L_42;
+		String_t* L_44 = V_21;
+		NullCheck(L_43);
+		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_44);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_45 = L_43;
+		NullCheck(L_45);
+		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		String_t* L_46;
+		L_46 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_45, NULL);
+		NullCheck(L_33);
+		StringBuilder_t* L_47;
+		L_47 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_33, L_46, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:226>
+		int32_t L_48 = V_20;
+		V_20 = ((int32_t)il2cpp_codegen_add(L_48, 1));
+	}
+
+IL_0132:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:226>
+		int32_t L_49 = V_20;
+		List_1_tEF3B90793B4B877FFEA02993530B5D60A8FB17EF* L_50 = V_19;
+		NullCheck(L_50);
+		int32_t L_51;
+		L_51 = List_1_get_Count_mB9C2A1E920300F0A708B6C1E81A68A11B3A761CA_inline(L_50, List_1_get_Count_mB9C2A1E920300F0A708B6C1E81A68A11B3A761CA_RuntimeMethod_var);
+		if ((((int32_t)L_49) < ((int32_t)L_51)))
+		{
+			goto IL_00b4;
+		}
+	}
+
+IL_0140:
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:235>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:236>
+		StringBuilder_t* L_52 = V_5;
+		NullCheck(L_52);
+		StringBuilder_t* L_53;
+		L_53 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_52, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:237>
+		V_6 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:238>
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_54 = __this->___climbingRope;
-		NullCheck(L_54);
-		int32_t L_55 = L_54->___anchorMode;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_55;
+		L_55 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_54, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_55)
 		{
-			goto IL_016d;
+			goto IL_0193;
 		}
 	}
 	{
-		G_B17_0 = _stringLiteralB157F89A1C7FC50EFF8E1244B8DB0FF3A13F5118;
-		goto IL_0172;
-	}
-
-IL_016d:
-	{
-		G_B17_0 = _stringLiteral1690B3E0A7ABF26C7432995D1219914EE9822024;
-	}
-
-IL_0172:
-	{
-		V_5 = G_B17_0;
-	}
-
-IL_0174:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:239>
-		V_6 = (5.0f);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:240>
-		V_7 = (0.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:240>
-		V_8 = (0.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:241>
-		V_9 = (1.5f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:241>
-		V_10 = (3.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:242>
-		V_11 = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:243>
-		V_12 = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:244>
-		V_13 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:247>
-		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_56 = __this->___environmentManager;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_56 = __this->___climbingRope;
+		NullCheck(L_56);
 		bool L_57;
-		L_57 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_56, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_57)
+		L_57 = ClimbingRope_get_IsVisible_m382ECFFB4D21366FF7B61825568141F330EB8614_inline(L_56, NULL);
+		if (L_57)
 		{
-			goto IL_01bf;
+			goto IL_0178;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:247>
-		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_58 = __this->___environmentManager;
-		NullCheck(L_58);
-		float L_59 = L_58->___wallHeight;
-		V_6 = L_59;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:241>
+		V_6 = _stringLiteral7DB229E4B4513366157C0D536C533A2B6C5F7AA5;
+		goto IL_0193;
 	}
 
-IL_01bf:
+IL_0178:
 	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:243>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:244>
+		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_58 = __this->___climbingRope;
+		NullCheck(L_58);
+		int32_t L_59 = L_58->___anchorMode;
+		if (!L_59)
+		{
+			goto IL_018c;
+		}
+	}
+	{
+		G_B20_0 = _stringLiteralB157F89A1C7FC50EFF8E1244B8DB0FF3A13F5118;
+		goto IL_0191;
+	}
+
+IL_018c:
+	{
+		G_B20_0 = _stringLiteral1690B3E0A7ABF26C7432995D1219914EE9822024;
+	}
+
+IL_0191:
+	{
+		V_6 = G_B20_0;
+	}
+
+IL_0193:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:247>
+		V_7 = (5.0f);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:248>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_60 = __this->___wallSystem;
+		V_8 = (0.0f);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:248>
+		V_9 = (0.0f);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:249>
+		V_10 = (1.5f);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:249>
+		V_11 = (3.0f);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:250>
+		V_12 = 0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:251>
+		V_13 = 0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:252>
+		V_14 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:255>
+		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_60 = __this->___environmentManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_61;
 		L_61 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_60, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_61)
 		{
-			goto IL_0201;
+			goto IL_01de;
 		}
 	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:250>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_62 = __this->___wallSystem;
-		NullCheck(L_62);
-		float L_63 = L_62->___leftWingAngle;
-		V_7 = L_63;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:251>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_64 = __this->___wallSystem;
-		NullCheck(L_64);
-		float L_65 = L_64->___rightWingAngle;
-		V_8 = L_65;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:252>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_66 = __this->___wallSystem;
-		NullCheck(L_66);
-		float L_67 = L_66->___wingWidth;
-		V_9 = L_67;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:253>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_68 = __this->___wallSystem;
-		NullCheck(L_68);
-		float L_69 = L_68->___wallWidth;
-		V_10 = L_69;
-	}
-
-IL_0201:
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:255>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_70 = __this->___environmentSwitcher;
+		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_62 = __this->___environmentManager;
+		NullCheck(L_62);
+		float L_63 = L_62->___wallHeight;
+		V_7 = L_63;
+	}
+
+IL_01de:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:256>
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_64 = __this->___wallSystem;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_71;
-		L_71 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_70, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_71)
+		bool L_65;
+		L_65 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_64, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_65)
 		{
-			goto IL_0250;
+			goto IL_0220;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:257>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_72 = __this->___environmentSwitcher;
-		NullCheck(L_72);
-		int32_t L_73;
-		L_73 = EnvironmentSwitcher_get_ActiveIndex_m99F0723A063641E7F261D0CF035E6D634EA002C9_inline(L_72, NULL);
-		V_11 = L_73;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:258>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_74 = __this->___environmentSwitcher;
-		NullCheck(L_74);
-		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_75 = L_74->___environments;
-		NullCheck(L_75);
-		int32_t L_76;
-		L_76 = List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_inline(L_75, List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_RuntimeMethod_var);
-		V_12 = L_76;
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_66 = __this->___wallSystem;
+		NullCheck(L_66);
+		float L_67 = L_66->___leftWingAngle;
+		V_8 = L_67;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:259>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_77 = __this->___environmentSwitcher;
-		NullCheck(L_77);
-		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_78;
-		L_78 = EnvironmentSwitcher_get_ActiveEnvironment_mBE6B6B09F7BCD9B12BEA85522CD166526B10022A(L_77, NULL);
-		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_79 = L_78;
-		if (L_79)
-		{
-			G_B25_0 = L_79;
-			goto IL_0240;
-		}
-		G_B24_0 = L_79;
-	}
-	{
-		G_B26_0 = ((String_t*)(NULL));
-		goto IL_0245;
-	}
-
-IL_0240:
-	{
-		NullCheck(G_B25_0);
-		String_t* L_80 = G_B25_0->___displayName;
-		G_B26_0 = L_80;
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_68 = __this->___wallSystem;
+		NullCheck(L_68);
+		float L_69 = L_68->___rightWingAngle;
+		V_9 = L_69;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:260>
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_70 = __this->___wallSystem;
+		NullCheck(L_70);
+		float L_71 = L_70->___wingWidth;
+		V_10 = L_71;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:261>
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_72 = __this->___wallSystem;
+		NullCheck(L_72);
+		float L_73 = L_72->___wallWidth;
+		V_11 = L_73;
 	}
 
-IL_0245:
-	{
-		String_t* L_81 = G_B26_0;
-		if (L_81)
-		{
-			G_B28_0 = L_81;
-			goto IL_024e;
-		}
-		G_B27_0 = L_81;
-	}
-	{
-		G_B28_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-	}
-
-IL_024e:
-	{
-		V_13 = G_B28_0;
-	}
-
-IL_0250:
+IL_0220:
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:263>
-		StringBuilder_t* L_82 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
-		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_82, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
-		V_14 = L_82;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:264>
-		V_21 = 0;
-		goto IL_0355;
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_74 = __this->___environmentSwitcher;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_75;
+		L_75 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_74, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_75)
+		{
+			goto IL_026f;
+		}
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:265>
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_76 = __this->___environmentSwitcher;
+		NullCheck(L_76);
+		int32_t L_77;
+		L_77 = EnvironmentSwitcher_get_ActiveIndex_m99F0723A063641E7F261D0CF035E6D634EA002C9_inline(L_76, NULL);
+		V_12 = L_77;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:266>
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_78 = __this->___environmentSwitcher;
+		NullCheck(L_78);
+		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_79 = L_78->___environments;
+		NullCheck(L_79);
+		int32_t L_80;
+		L_80 = List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_inline(L_79, List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_RuntimeMethod_var);
+		V_13 = L_80;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:267>
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_81 = __this->___environmentSwitcher;
+		NullCheck(L_81);
+		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_82;
+		L_82 = EnvironmentSwitcher_get_ActiveEnvironment_mBE6B6B09F7BCD9B12BEA85522CD166526B10022A(L_81, NULL);
+		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_83 = L_82;
+		if (L_83)
+		{
+			G_B28_0 = L_83;
+			goto IL_025f;
+		}
+		G_B27_0 = L_83;
+	}
+	{
+		G_B29_0 = ((String_t*)(NULL));
+		goto IL_0264;
+	}
+
+IL_025f:
+	{
+		NullCheck(G_B28_0);
+		String_t* L_84 = G_B28_0->___displayName;
+		G_B29_0 = L_84;
 	}
 
 IL_0264:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:266>
-		int32_t L_83 = V_21;
-		if ((((int32_t)L_83) <= ((int32_t)0)))
+		String_t* L_85 = G_B29_0;
+		if (L_85)
 		{
-			goto IL_0276;
+			G_B31_0 = L_85;
+			goto IL_026d;
 		}
+		G_B30_0 = L_85;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:266>
-		StringBuilder_t* L_84 = V_14;
-		NullCheck(L_84);
-		StringBuilder_t* L_85;
-		L_85 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_84, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
+		G_B31_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 
-IL_0276:
+IL_026d:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:267>
-		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_86 = __this->___presets;
-		int32_t L_87 = V_21;
-		NullCheck(L_86);
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_88;
-		L_88 = List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9(L_86, L_87, List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9_RuntimeMethod_var);
-		V_22 = L_88;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:268>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:269>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:270>
+		V_14 = G_B31_0;
+	}
+
+IL_026f:
+	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:271>
+		StringBuilder_t* L_86 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_86, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
+		V_15 = L_86;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:272>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:273>
+		V_22 = 0;
+		goto IL_0374;
+	}
+
+IL_0283:
+	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:274>
-		StringBuilder_t* L_89 = V_14;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_90 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_91 = L_90;
-		NullCheck(L_91);
-		(L_91)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralA91689C8285E607DFBF26CFC3112043BAAFBCEB9);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_92 = L_91;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_93 = V_22;
-		NullCheck(L_93);
-		String_t* L_94 = L_93->___name;
-		String_t* L_95;
-		L_95 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_94, NULL);
-		NullCheck(L_92);
-		(L_92)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_95);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_96 = L_92;
-		NullCheck(L_96);
-		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_97 = L_96;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_98 = V_22;
-		NullCheck(L_98);
-		float L_99 = L_98->___wallHeight;
-		float L_100 = L_99;
-		RuntimeObject* L_101 = Box(il2cpp_defaults.single_class, &L_100);
-		String_t* L_102;
-		L_102 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralC8BDFFCD33639D1180C0017302F7FD2D9894DC8D, L_101, NULL);
-		NullCheck(L_97);
-		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_102);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_103 = L_97;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_104 = V_22;
-		NullCheck(L_104);
-		float L_105 = L_104->___leftWingAngle;
-		float L_106 = L_105;
-		RuntimeObject* L_107 = Box(il2cpp_defaults.single_class, &L_106);
-		String_t* L_108;
-		L_108 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFF221350B3F2342034C1357836C9EC0D7AE38083, L_107, NULL);
-		NullCheck(L_103);
-		(L_103)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_108);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_109 = L_103;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_110 = V_22;
-		NullCheck(L_110);
-		float L_111 = L_110->___rightWingAngle;
-		float L_112 = L_111;
-		RuntimeObject* L_113 = Box(il2cpp_defaults.single_class, &L_112);
-		String_t* L_114;
-		L_114 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral94F28E977B85D4CD993F86F4FDBF92E2B81C9405, L_113, NULL);
-		NullCheck(L_109);
-		(L_109)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_114);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_115 = L_109;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_116 = V_22;
-		NullCheck(L_116);
-		float L_117 = L_116->___wingWidth;
-		float L_118 = L_117;
-		RuntimeObject* L_119 = Box(il2cpp_defaults.single_class, &L_118);
-		String_t* L_120;
-		L_120 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral21BAFEC4092C75D8FD7A711942580401E36387D1, L_119, NULL);
-		NullCheck(L_115);
-		(L_115)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_120);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_121 = L_115;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_122 = V_22;
-		NullCheck(L_122);
-		float L_123 = L_122->___wallWidth;
-		float L_124 = L_123;
-		RuntimeObject* L_125 = Box(il2cpp_defaults.single_class, &L_124);
-		String_t* L_126;
-		L_126 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7E95AA4DD64CA5F57880C4E2A3FD0C59F2C5DA97, L_125, NULL);
-		NullCheck(L_121);
-		(L_121)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)L_126);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_127 = L_121;
-		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_128 = V_22;
-		NullCheck(L_128);
-		int32_t L_129 = L_128->___environmentIndex;
-		int32_t L_130 = L_129;
-		RuntimeObject* L_131 = Box(il2cpp_defaults.int32_class, &L_130);
-		String_t* L_132;
-		L_132 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral9C8D1C3B52F7B0E3F00B987CAA5A05FD09D8C437, L_131, NULL);
-		NullCheck(L_127);
-		(L_127)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_132);
-		String_t* L_133;
-		L_133 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_127, NULL);
-		NullCheck(L_89);
-		StringBuilder_t* L_134;
-		L_134 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_89, L_133, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:264>
-		int32_t L_135 = V_21;
-		V_21 = ((int32_t)il2cpp_codegen_add(L_135, 1));
-	}
-
-IL_0355:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:264>
-		int32_t L_136 = V_21;
-		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_137 = __this->___presets;
-		NullCheck(L_137);
-		int32_t L_138;
-		L_138 = List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_inline(L_137, List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_RuntimeMethod_var);
-		if ((((int32_t)L_136) < ((int32_t)L_138)))
+		int32_t L_87 = V_22;
+		if ((((int32_t)L_87) <= ((int32_t)0)))
 		{
-			goto IL_0264;
+			goto IL_0295;
 		}
 	}
 	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:274>
+		StringBuilder_t* L_88 = V_15;
+		NullCheck(L_88);
+		StringBuilder_t* L_89;
+		L_89 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_88, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
+	}
+
+IL_0295:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:275>
+		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_90 = __this->___presets;
+		int32_t L_91 = V_22;
+		NullCheck(L_90);
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_92;
+		L_92 = List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9(L_90, L_91, List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9_RuntimeMethod_var);
+		V_23 = L_92;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:276>
-		StringBuilder_t* L_139 = V_14;
-		NullCheck(L_139);
-		StringBuilder_t* L_140;
-		L_140 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_139, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:277>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:278>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:279>
-		StringBuilder_t* L_141 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
-		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_141, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
-		V_15 = L_141;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:280>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_142 = __this->___environmentSwitcher;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_143;
-		L_143 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_142, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_143)
-		{
-			goto IL_03f7;
-		}
-	}
-	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:281>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:282>
-		V_23 = 0;
-		goto IL_03e3;
+		StringBuilder_t* L_93 = V_15;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_94 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_95 = L_94;
+		NullCheck(L_95);
+		(L_95)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralA91689C8285E607DFBF26CFC3112043BAAFBCEB9);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_96 = L_95;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_97 = V_23;
+		NullCheck(L_97);
+		String_t* L_98 = L_97->___name;
+		String_t* L_99;
+		L_99 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_98, NULL);
+		NullCheck(L_96);
+		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_99);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_100 = L_96;
+		NullCheck(L_100);
+		(L_100)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_101 = L_100;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_102 = V_23;
+		NullCheck(L_102);
+		float L_103 = L_102->___wallHeight;
+		float L_104 = L_103;
+		RuntimeObject* L_105 = Box(il2cpp_defaults.single_class, &L_104);
+		String_t* L_106;
+		L_106 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralC8BDFFCD33639D1180C0017302F7FD2D9894DC8D, L_105, NULL);
+		NullCheck(L_101);
+		(L_101)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_106);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_107 = L_101;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_108 = V_23;
+		NullCheck(L_108);
+		float L_109 = L_108->___leftWingAngle;
+		float L_110 = L_109;
+		RuntimeObject* L_111 = Box(il2cpp_defaults.single_class, &L_110);
+		String_t* L_112;
+		L_112 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFF221350B3F2342034C1357836C9EC0D7AE38083, L_111, NULL);
+		NullCheck(L_107);
+		(L_107)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_112);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_113 = L_107;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_114 = V_23;
+		NullCheck(L_114);
+		float L_115 = L_114->___rightWingAngle;
+		float L_116 = L_115;
+		RuntimeObject* L_117 = Box(il2cpp_defaults.single_class, &L_116);
+		String_t* L_118;
+		L_118 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral94F28E977B85D4CD993F86F4FDBF92E2B81C9405, L_117, NULL);
+		NullCheck(L_113);
+		(L_113)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_118);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_119 = L_113;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_120 = V_23;
+		NullCheck(L_120);
+		float L_121 = L_120->___wingWidth;
+		float L_122 = L_121;
+		RuntimeObject* L_123 = Box(il2cpp_defaults.single_class, &L_122);
+		String_t* L_124;
+		L_124 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral21BAFEC4092C75D8FD7A711942580401E36387D1, L_123, NULL);
+		NullCheck(L_119);
+		(L_119)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_124);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_125 = L_119;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_126 = V_23;
+		NullCheck(L_126);
+		float L_127 = L_126->___wallWidth;
+		float L_128 = L_127;
+		RuntimeObject* L_129 = Box(il2cpp_defaults.single_class, &L_128);
+		String_t* L_130;
+		L_130 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7E95AA4DD64CA5F57880C4E2A3FD0C59F2C5DA97, L_129, NULL);
+		NullCheck(L_125);
+		(L_125)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)L_130);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_131 = L_125;
+		WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* L_132 = V_23;
+		NullCheck(L_132);
+		int32_t L_133 = L_132->___environmentIndex;
+		int32_t L_134 = L_133;
+		RuntimeObject* L_135 = Box(il2cpp_defaults.int32_class, &L_134);
+		String_t* L_136;
+		L_136 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral9C8D1C3B52F7B0E3F00B987CAA5A05FD09D8C437, L_135, NULL);
+		NullCheck(L_131);
+		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_136);
+		String_t* L_137;
+		L_137 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_131, NULL);
+		NullCheck(L_93);
+		StringBuilder_t* L_138;
+		L_138 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_93, L_137, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:272>
+		int32_t L_139 = V_22;
+		V_22 = ((int32_t)il2cpp_codegen_add(L_139, 1));
 	}
 
-IL_0393:
+IL_0374:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:272>
+		int32_t L_140 = V_22;
+		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_141 = __this->___presets;
+		NullCheck(L_141);
+		int32_t L_142;
+		L_142 = List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_inline(L_141, List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_RuntimeMethod_var);
+		if ((((int32_t)L_140) < ((int32_t)L_142)))
+		{
+			goto IL_0283;
+		}
+	}
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:284>
-		int32_t L_144 = V_23;
-		if ((((int32_t)L_144) <= ((int32_t)0)))
-		{
-			goto IL_03a5;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:284>
-		StringBuilder_t* L_145 = V_15;
-		NullCheck(L_145);
-		StringBuilder_t* L_146;
-		L_146 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_145, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
-	}
-
-IL_03a5:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:285>
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_147 = __this->___environmentSwitcher;
-		NullCheck(L_147);
-		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_148 = L_147->___environments;
-		int32_t L_149 = V_23;
-		NullCheck(L_148);
-		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_150;
-		L_150 = List_1_get_Item_m9E31DEE7A2AEA88F0BAD764FCB67F250BF83B659(L_148, L_149, List_1_get_Item_m9E31DEE7A2AEA88F0BAD764FCB67F250BF83B659_RuntimeMethod_var);
-		NullCheck(L_150);
-		String_t* L_151 = L_150->___displayName;
-		V_24 = L_151;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:286>
-		StringBuilder_t* L_152 = V_15;
-		String_t* L_153 = V_24;
-		String_t* L_154;
-		L_154 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_153, NULL);
-		String_t* L_155;
-		L_155 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_154, _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, NULL);
-		NullCheck(L_152);
-		StringBuilder_t* L_156;
-		L_156 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_152, L_155, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:282>
-		int32_t L_157 = V_23;
-		V_23 = ((int32_t)il2cpp_codegen_add(L_157, 1));
-	}
-
-IL_03e3:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:282>
-		int32_t L_158 = V_23;
-		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_159 = __this->___environmentSwitcher;
-		NullCheck(L_159);
-		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_160 = L_159->___environments;
-		NullCheck(L_160);
-		int32_t L_161;
-		L_161 = List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_inline(L_160, List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_RuntimeMethod_var);
-		if ((((int32_t)L_158) < ((int32_t)L_161)))
-		{
-			goto IL_0393;
-		}
-	}
-
-IL_03f7:
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:289>
-		StringBuilder_t* L_162 = V_15;
-		NullCheck(L_162);
-		StringBuilder_t* L_163;
-		L_163 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_162, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:291>
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_164 = __this->___wallSystem;
+		StringBuilder_t* L_143 = V_15;
+		NullCheck(L_143);
+		StringBuilder_t* L_144;
+		L_144 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_143, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:287>
+		StringBuilder_t* L_145 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
+		StringBuilder__ctor_mCD797D942316CB356205FD96415B0B7581CDAD60(L_145, _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
+		V_16 = L_145;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:288>
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_146 = __this->___environmentSwitcher;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_165;
-		L_165 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_164, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (L_165)
+		bool L_147;
+		L_147 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_146, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_147)
 		{
-			goto IL_0419;
+			goto IL_0416;
 		}
 	}
 	{
-		G_B43_0 = _stringLiteral5D54E959817188DBAD9E65FA3DB55F06B70F5E3C;
-		goto IL_0433;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:290>
+		V_24 = 0;
+		goto IL_0402;
 	}
 
-IL_0419:
+IL_03b2:
 	{
-		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_166 = __this->___wallSystem;
-		NullCheck(L_166);
-		int32_t L_167;
-		L_167 = SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline(L_166, NULL);
-		V_25 = L_167;
-		Il2CppFakeBox<int32_t> L_168(Phase_tAA741A8ABA95E5BFF0BE01C174118B0977629E2D_il2cpp_TypeInfo_var, (&V_25));
-		String_t* L_169;
-		L_169 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_168), NULL);
-		G_B43_0 = L_169;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:292>
+		int32_t L_148 = V_24;
+		if ((((int32_t)L_148) <= ((int32_t)0)))
+		{
+			goto IL_03c4;
+		}
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:292>
+		StringBuilder_t* L_149 = V_16;
+		NullCheck(L_149);
+		StringBuilder_t* L_150;
+		L_150 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_149, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
 	}
 
-IL_0433:
+IL_03c4:
 	{
-		V_16 = G_B43_0;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:293>
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_151 = __this->___environmentSwitcher;
+		NullCheck(L_151);
+		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_152 = L_151->___environments;
+		int32_t L_153 = V_24;
+		NullCheck(L_152);
+		EnvironmentPreset_t9C458D838C54BECEA6721F35F3271891CB0EFB3D* L_154;
+		L_154 = List_1_get_Item_m9E31DEE7A2AEA88F0BAD764FCB67F250BF83B659(L_152, L_153, List_1_get_Item_m9E31DEE7A2AEA88F0BAD764FCB67F250BF83B659_RuntimeMethod_var);
+		NullCheck(L_154);
+		String_t* L_155 = L_154->___displayName;
+		V_25 = L_155;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:294>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:295>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:296>
+		StringBuilder_t* L_156 = V_16;
+		String_t* L_157 = V_25;
+		String_t* L_158;
+		L_158 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_157, NULL);
+		String_t* L_159;
+		L_159 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_158, _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, NULL);
+		NullCheck(L_156);
+		StringBuilder_t* L_160;
+		L_160 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_156, L_159, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:290>
+		int32_t L_161 = V_24;
+		V_24 = ((int32_t)il2cpp_codegen_add(L_161, 1));
+	}
+
+IL_0402:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:290>
+		int32_t L_162 = V_24;
+		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_163 = __this->___environmentSwitcher;
+		NullCheck(L_163);
+		List_1_t34DB99A6DE4DC572E251257C1B383F5F22A9F99A* L_164 = L_163->___environments;
+		NullCheck(L_164);
+		int32_t L_165;
+		L_165 = List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_inline(L_164, List_1_get_Count_m00C68C50159EA6FA4559B85FCC8E707A7FE5B1B9_RuntimeMethod_var);
+		if ((((int32_t)L_162) < ((int32_t)L_165)))
+		{
+			goto IL_03b2;
+		}
+	}
+
+IL_0416:
+	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:297>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:298>
+		StringBuilder_t* L_166 = V_16;
+		NullCheck(L_166);
+		StringBuilder_t* L_167;
+		L_167 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_166, _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:299>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:300>
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_168 = __this->___wallSystem;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_169;
+		L_169 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_168, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_169)
+		{
+			goto IL_0438;
+		}
+	}
+	{
+		G_B46_0 = _stringLiteral5D54E959817188DBAD9E65FA3DB55F06B70F5E3C;
+		goto IL_0452;
+	}
+
+IL_0438:
+	{
+		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_170 = __this->___wallSystem;
+		NullCheck(L_170);
+		int32_t L_171;
+		L_171 = SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline(L_170, NULL);
+		V_26 = L_171;
+		Il2CppFakeBox<int32_t> L_172(Phase_tAA741A8ABA95E5BFF0BE01C174118B0977629E2D_il2cpp_TypeInfo_var, (&V_26));
+		String_t* L_173;
+		L_173 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_172), NULL);
+		G_B46_0 = L_173;
+	}
+
+IL_0452:
+	{
+		V_17 = G_B46_0;
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:301>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:302>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:303>
@@ -16412,146 +16574,119 @@ IL_0433:
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:310>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:311>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:312>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_170 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)29));
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_171 = L_170;
-		NullCheck(L_171);
-		(L_171)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral0C3C6829C3CCF8020C6AC45B87963ADC095CD44A);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_172 = L_171;
-		float L_173 = V_6;
-		float L_174 = L_173;
-		RuntimeObject* L_175 = Box(il2cpp_defaults.single_class, &L_174);
-		String_t* L_176;
-		L_176 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral6B6AA228386615A569336AB61BA2F2C6779DB490, L_175, NULL);
-		NullCheck(L_172);
-		(L_172)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_176);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_177 = L_172;
-		float L_178 = V_7;
-		float L_179 = L_178;
-		RuntimeObject* L_180 = Box(il2cpp_defaults.single_class, &L_179);
-		String_t* L_181;
-		L_181 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral680B31D2F75F77E6ABD3EA625955ED252060F00A, L_180, NULL);
-		NullCheck(L_177);
-		(L_177)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_181);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_182 = L_177;
-		float L_183 = V_8;
-		float L_184 = L_183;
-		RuntimeObject* L_185 = Box(il2cpp_defaults.single_class, &L_184);
-		String_t* L_186;
-		L_186 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral603BAD1642EF85288EC8468F4BF62A560035D9A9, L_185, NULL);
-		NullCheck(L_182);
-		(L_182)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_186);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_187 = L_182;
-		float L_188 = V_9;
-		float L_189 = L_188;
-		RuntimeObject* L_190 = Box(il2cpp_defaults.single_class, &L_189);
-		String_t* L_191;
-		L_191 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral21BAFEC4092C75D8FD7A711942580401E36387D1, L_190, NULL);
-		NullCheck(L_187);
-		(L_187)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_191);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_192 = L_187;
-		float L_193 = V_10;
-		float L_194 = L_193;
-		RuntimeObject* L_195 = Box(il2cpp_defaults.single_class, &L_194);
-		String_t* L_196;
-		L_196 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7E95AA4DD64CA5F57880C4E2A3FD0C59F2C5DA97, L_195, NULL);
-		NullCheck(L_192);
-		(L_192)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_196);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_197 = L_192;
-		int32_t L_198 = V_11;
-		int32_t L_199 = L_198;
-		RuntimeObject* L_200 = Box(il2cpp_defaults.int32_class, &L_199);
-		String_t* L_201;
-		L_201 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralC5FFC14A38D27D6F17010ACE417587687891F92E, L_200, NULL);
-		NullCheck(L_197);
-		(L_197)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_201);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_202 = L_197;
-		NullCheck(L_202);
-		(L_202)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteralA12682AE90E8046F70D293ABD03C4BE3456B4230);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_203 = L_202;
-		String_t* L_204 = V_13;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:313>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:314>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:315>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:316>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:317>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:318>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:319>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:320>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:321>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_174 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)31));
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_175 = L_174;
+		NullCheck(L_175);
+		(L_175)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral0C3C6829C3CCF8020C6AC45B87963ADC095CD44A);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_176 = L_175;
+		float L_177 = V_7;
+		float L_178 = L_177;
+		RuntimeObject* L_179 = Box(il2cpp_defaults.single_class, &L_178);
+		String_t* L_180;
+		L_180 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral6B6AA228386615A569336AB61BA2F2C6779DB490, L_179, NULL);
+		NullCheck(L_176);
+		(L_176)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_180);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_181 = L_176;
+		float L_182 = V_8;
+		float L_183 = L_182;
+		RuntimeObject* L_184 = Box(il2cpp_defaults.single_class, &L_183);
+		String_t* L_185;
+		L_185 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral680B31D2F75F77E6ABD3EA625955ED252060F00A, L_184, NULL);
+		NullCheck(L_181);
+		(L_181)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_185);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_186 = L_181;
+		float L_187 = V_9;
+		float L_188 = L_187;
+		RuntimeObject* L_189 = Box(il2cpp_defaults.single_class, &L_188);
+		String_t* L_190;
+		L_190 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral603BAD1642EF85288EC8468F4BF62A560035D9A9, L_189, NULL);
+		NullCheck(L_186);
+		(L_186)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_190);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_191 = L_186;
+		float L_192 = V_10;
+		float L_193 = L_192;
+		RuntimeObject* L_194 = Box(il2cpp_defaults.single_class, &L_193);
+		String_t* L_195;
+		L_195 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral21BAFEC4092C75D8FD7A711942580401E36387D1, L_194, NULL);
+		NullCheck(L_191);
+		(L_191)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_195);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_196 = L_191;
+		float L_197 = V_11;
+		float L_198 = L_197;
+		RuntimeObject* L_199 = Box(il2cpp_defaults.single_class, &L_198);
+		String_t* L_200;
+		L_200 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7E95AA4DD64CA5F57880C4E2A3FD0C59F2C5DA97, L_199, NULL);
+		NullCheck(L_196);
+		(L_196)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_200);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_201 = L_196;
+		int32_t L_202 = V_12;
+		int32_t L_203 = L_202;
+		RuntimeObject* L_204 = Box(il2cpp_defaults.int32_class, &L_203);
 		String_t* L_205;
-		L_205 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_204, NULL);
-		NullCheck(L_203);
-		(L_203)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_205);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_206 = L_203;
+		L_205 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralC5FFC14A38D27D6F17010ACE417587687891F92E, L_204, NULL);
+		NullCheck(L_201);
+		(L_201)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_205);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_206 = L_201;
 		NullCheck(L_206);
-		(L_206)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
+		(L_206)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteralA12682AE90E8046F70D293ABD03C4BE3456B4230);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_207 = L_206;
-		int32_t L_208 = V_12;
-		int32_t L_209 = L_208;
-		RuntimeObject* L_210 = Box(il2cpp_defaults.int32_class, &L_209);
-		String_t* L_211;
-		L_211 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral567693C0DFC4C8B2FF3CE75C444E4D1334D1569F, L_210, NULL);
+		String_t* L_208 = V_14;
+		String_t* L_209;
+		L_209 = RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A(__this, L_208, NULL);
 		NullCheck(L_207);
-		(L_207)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (String_t*)L_211);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_212 = L_207;
-		NullCheck(L_212);
-		(L_212)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (String_t*)_stringLiteralD6DDE238804B12A745DC3A38F14A1B3556BE2F4D);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_213 = L_212;
-		String_t* L_214 = V_16;
-		NullCheck(L_213);
-		(L_213)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (String_t*)L_214);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_215 = L_213;
-		NullCheck(L_215);
-		(L_215)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (String_t*)_stringLiteral233B30EAC669E692040BFFC0E35C704746291B72);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_216 = L_215;
-		bool L_217 = V_2;
-		if (L_217)
+		(L_207)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_209);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_210 = L_207;
+		NullCheck(L_210);
+		(L_210)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_211 = L_210;
+		int32_t L_212 = V_13;
+		int32_t L_213 = L_212;
+		RuntimeObject* L_214 = Box(il2cpp_defaults.int32_class, &L_213);
+		String_t* L_215;
+		L_215 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral567693C0DFC4C8B2FF3CE75C444E4D1334D1569F, L_214, NULL);
+		NullCheck(L_211);
+		(L_211)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (String_t*)L_215);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_216 = L_211;
+		NullCheck(L_216);
+		(L_216)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (String_t*)_stringLiteralD6DDE238804B12A745DC3A38F14A1B3556BE2F4D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_217 = L_216;
+		String_t* L_218 = V_17;
+		NullCheck(L_217);
+		(L_217)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (String_t*)L_218);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_219 = L_217;
+		NullCheck(L_219);
+		(L_219)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (String_t*)_stringLiteral233B30EAC669E692040BFFC0E35C704746291B72);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_220 = L_219;
+		bool L_221 = V_3;
+		if (L_221)
 		{
-			G_B45_0 = ((int32_t)14);
-			G_B45_1 = L_216;
-			G_B45_2 = L_216;
-			goto IL_0512;
+			G_B48_0 = ((int32_t)14);
+			G_B48_1 = L_220;
+			G_B48_2 = L_220;
+			goto IL_0531;
 		}
-		G_B44_0 = ((int32_t)14);
-		G_B44_1 = L_216;
-		G_B44_2 = L_216;
-	}
-	{
-		G_B46_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
-		G_B46_1 = G_B44_0;
-		G_B46_2 = G_B44_1;
-		G_B46_3 = G_B44_2;
-		goto IL_0517;
-	}
-
-IL_0512:
-	{
-		G_B46_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
-		G_B46_1 = G_B45_0;
-		G_B46_2 = G_B45_1;
-		G_B46_3 = G_B45_2;
-	}
-
-IL_0517:
-	{
-		NullCheck(G_B46_2);
-		(G_B46_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B46_1), (String_t*)G_B46_0);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_218 = G_B46_3;
-		NullCheck(L_218);
-		(L_218)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (String_t*)_stringLiteralA628C7FC1F6D4C570160BFCD22D74E5663103FF6);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_219 = L_218;
-		bool L_220 = V_0;
-		if (L_220)
-		{
-			G_B48_0 = ((int32_t)16);
-			G_B48_1 = L_219;
-			G_B48_2 = L_219;
-			goto IL_052e;
-		}
-		G_B47_0 = ((int32_t)16);
-		G_B47_1 = L_219;
-		G_B47_2 = L_219;
+		G_B47_0 = ((int32_t)14);
+		G_B47_1 = L_220;
+		G_B47_2 = L_220;
 	}
 	{
 		G_B49_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
 		G_B49_1 = G_B47_0;
 		G_B49_2 = G_B47_1;
 		G_B49_3 = G_B47_2;
-		goto IL_0533;
+		goto IL_0536;
 	}
 
-IL_052e:
+IL_0531:
 	{
 		G_B49_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
 		G_B49_1 = G_B48_0;
@@ -16559,122 +16694,194 @@ IL_052e:
 		G_B49_3 = G_B48_2;
 	}
 
-IL_0533:
+IL_0536:
 	{
 		NullCheck(G_B49_2);
 		(G_B49_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B49_1), (String_t*)G_B49_0);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_221 = G_B49_3;
-		NullCheck(L_221);
-		(L_221)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (String_t*)_stringLiteralB19A26FBE24741DB8709E6BD7EF7F0EC714EB6A1);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_222 = L_221;
-		String_t* L_223 = V_1;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_222 = G_B49_3;
 		NullCheck(L_222);
-		(L_222)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)18)), (String_t*)L_223);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_224 = L_222;
-		NullCheck(L_224);
-		(L_224)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)19)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_225 = L_224;
-		StringBuilder_t* L_226 = V_15;
-		String_t* L_227;
-		L_227 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral0878491CAF112935D22140C9EBA59E748D3F8C78, L_226, NULL);
-		NullCheck(L_225);
-		(L_225)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)20)), (String_t*)L_227);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_228 = L_225;
-		StringBuilder_t* L_229 = V_14;
-		String_t* L_230;
-		L_230 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFB4142048EF91ECB5EC8FBA000E98792900483B7, L_229, NULL);
-		NullCheck(L_228);
-		(L_228)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (String_t*)L_230);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_231 = L_228;
-		NullCheck(L_231);
-		(L_231)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (String_t*)_stringLiteral98A1C47FA917CEFF078F1703876EF3521B4665A2);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_232 = L_231;
-		String_t* L_233 = V_5;
-		NullCheck(L_232);
-		(L_232)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (String_t*)L_233);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_234 = L_232;
-		NullCheck(L_234);
-		(L_234)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_235 = L_234;
-		int32_t L_236 = V_3;
-		int32_t L_237 = L_236;
-		RuntimeObject* L_238 = Box(il2cpp_defaults.int32_class, &L_237);
-		String_t* L_239;
-		L_239 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralAE505585C1C60652678F9D757CC1224F1DC56FAB, L_238, NULL);
-		NullCheck(L_235);
-		(L_235)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (String_t*)L_239);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_240 = L_235;
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_241 = __this->___holdPlacementManager;
-		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_242 = L_241;
-		if (L_242)
+		(L_222)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (String_t*)_stringLiteralA628C7FC1F6D4C570160BFCD22D74E5663103FF6);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_223 = L_222;
+		bool L_224 = V_1;
+		if (L_224)
 		{
-			G_B51_0 = L_242;
-			G_B51_1 = _stringLiteralE17051BFB15ED301AD14003803C6BB01D5C673DD;
-			G_B51_2 = ((int32_t)26);
-			G_B51_3 = L_240;
-			G_B51_4 = L_240;
-			goto IL_05ac;
+			G_B51_0 = ((int32_t)16);
+			G_B51_1 = L_223;
+			G_B51_2 = L_223;
+			goto IL_054d;
 		}
-		G_B50_0 = L_242;
-		G_B50_1 = _stringLiteralE17051BFB15ED301AD14003803C6BB01D5C673DD;
-		G_B50_2 = ((int32_t)26);
-		G_B50_3 = L_240;
-		G_B50_4 = L_240;
+		G_B50_0 = ((int32_t)16);
+		G_B50_1 = L_223;
+		G_B50_2 = L_223;
 	}
 	{
-		G_B52_0 = 0;
-		G_B52_1 = G_B50_1;
-		G_B52_2 = G_B50_2;
-		G_B52_3 = G_B50_3;
-		G_B52_4 = G_B50_4;
-		goto IL_05b1;
+		G_B52_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
+		G_B52_1 = G_B50_0;
+		G_B52_2 = G_B50_1;
+		G_B52_3 = G_B50_2;
+		goto IL_0552;
 	}
 
-IL_05ac:
+IL_054d:
 	{
-		NullCheck(G_B51_0);
-		int32_t L_243;
-		L_243 = HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB(G_B51_0, NULL);
-		G_B52_0 = L_243;
-		G_B52_1 = G_B51_1;
-		G_B52_2 = G_B51_2;
-		G_B52_3 = G_B51_3;
-		G_B52_4 = G_B51_4;
+		G_B52_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
+		G_B52_1 = G_B51_0;
+		G_B52_2 = G_B51_1;
+		G_B52_3 = G_B51_2;
 	}
 
-IL_05b1:
+IL_0552:
 	{
-		int32_t L_244 = G_B52_0;
-		RuntimeObject* L_245 = Box(il2cpp_defaults.int32_class, &L_244);
-		String_t* L_246;
-		L_246 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(G_B52_1, L_245, NULL);
-		NullCheck(G_B52_3);
-		(G_B52_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B52_2), (String_t*)L_246);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_247 = G_B52_4;
-		StringBuilder_t* L_248 = V_4;
-		String_t* L_249;
-		L_249 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFAAAC563EB53B1A893E1C9C7E8E77CA9567171DA, L_248, NULL);
-		NullCheck(L_247);
-		(L_247)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)27)), (String_t*)L_249);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_250 = L_247;
-		NullCheck(L_250);
-		(L_250)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)28)), (String_t*)_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
-		String_t* L_251;
-		L_251 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_250, NULL);
-		V_17 = L_251;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:314>
-		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_252 = ___0_response;
-		NullCheck(L_252);
-		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_252, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:315>
-		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_253 = ___0_response;
-		String_t* L_254 = V_17;
-		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_253, L_254, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:316>
+		NullCheck(G_B52_2);
+		(G_B52_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B52_1), (String_t*)G_B52_0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_225 = G_B52_3;
+		NullCheck(L_225);
+		(L_225)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (String_t*)_stringLiteralB19A26FBE24741DB8709E6BD7EF7F0EC714EB6A1);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_226 = L_225;
+		String_t* L_227 = V_2;
+		NullCheck(L_226);
+		(L_226)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)18)), (String_t*)L_227);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_228 = L_226;
+		NullCheck(L_228);
+		(L_228)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)19)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_229 = L_228;
+		StringBuilder_t* L_230 = V_16;
+		String_t* L_231;
+		L_231 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral0878491CAF112935D22140C9EBA59E748D3F8C78, L_230, NULL);
+		NullCheck(L_229);
+		(L_229)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)20)), (String_t*)L_231);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_232 = L_229;
+		StringBuilder_t* L_233 = V_15;
+		String_t* L_234;
+		L_234 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralFB4142048EF91ECB5EC8FBA000E98792900483B7, L_233, NULL);
+		NullCheck(L_232);
+		(L_232)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (String_t*)L_234);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_235 = L_232;
+		NullCheck(L_235);
+		(L_235)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (String_t*)_stringLiteral98A1C47FA917CEFF078F1703876EF3521B4665A2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_236 = L_235;
+		String_t* L_237 = V_6;
+		NullCheck(L_236);
+		(L_236)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (String_t*)L_237);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_238 = L_236;
+		NullCheck(L_238);
+		(L_238)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (String_t*)_stringLiteral0B6D138D8454083A41D1C936D8DFA8099F161DA8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_239 = L_238;
+		int32_t L_240 = V_4;
+		int32_t L_241 = L_240;
+		RuntimeObject* L_242 = Box(il2cpp_defaults.int32_class, &L_241);
+		String_t* L_243;
+		L_243 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralAE505585C1C60652678F9D757CC1224F1DC56FAB, L_242, NULL);
+		NullCheck(L_239);
+		(L_239)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (String_t*)L_243);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_244 = L_239;
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_245 = __this->___holdPlacementManager;
+		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_246 = L_245;
+		if (L_246)
+		{
+			G_B54_0 = L_246;
+			G_B54_1 = _stringLiteralE17051BFB15ED301AD14003803C6BB01D5C673DD;
+			G_B54_2 = ((int32_t)26);
+			G_B54_3 = L_244;
+			G_B54_4 = L_244;
+			goto IL_05cc;
+		}
+		G_B53_0 = L_246;
+		G_B53_1 = _stringLiteralE17051BFB15ED301AD14003803C6BB01D5C673DD;
+		G_B53_2 = ((int32_t)26);
+		G_B53_3 = L_244;
+		G_B53_4 = L_244;
+	}
+	{
+		G_B55_0 = 0;
+		G_B55_1 = G_B53_1;
+		G_B55_2 = G_B53_2;
+		G_B55_3 = G_B53_3;
+		G_B55_4 = G_B53_4;
+		goto IL_05d1;
+	}
+
+IL_05cc:
+	{
+		NullCheck(G_B54_0);
+		int32_t L_247;
+		L_247 = HoldPlacementManager_get_HoldCount_mAE4BB910409B8B231490BF02BDD3A8477DDF42AB(G_B54_0, NULL);
+		G_B55_0 = L_247;
+		G_B55_1 = G_B54_1;
+		G_B55_2 = G_B54_2;
+		G_B55_3 = G_B54_3;
+		G_B55_4 = G_B54_4;
+	}
+
+IL_05d1:
+	{
+		int32_t L_248 = G_B55_0;
+		RuntimeObject* L_249 = Box(il2cpp_defaults.int32_class, &L_248);
+		String_t* L_250;
+		L_250 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(G_B55_1, L_249, NULL);
+		NullCheck(G_B55_3);
+		(G_B55_3)->SetAt(static_cast<il2cpp_array_size_t>(G_B55_2), (String_t*)L_250);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_251 = G_B55_4;
+		StringBuilder_t* L_252 = V_5;
+		String_t* L_253;
+		L_253 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral3C7A27557B0BD490C35EC4C1908CC6E34B641A73, L_252, NULL);
+		NullCheck(L_251);
+		(L_251)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)27)), (String_t*)L_253);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_254 = L_251;
+		NullCheck(L_254);
+		(L_254)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)28)), (String_t*)_stringLiteral2A61EEA0E88413D28836C2674B2DAF01D479C43E);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_255 = L_254;
+		bool L_256 = V_0;
+		if (L_256)
+		{
+			G_B57_0 = ((int32_t)29);
+			G_B57_1 = L_255;
+			G_B57_2 = L_255;
+			goto IL_0602;
+		}
+		G_B56_0 = ((int32_t)29);
+		G_B56_1 = L_255;
+		G_B56_2 = L_255;
+	}
+	{
+		G_B58_0 = _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB;
+		G_B58_1 = G_B56_0;
+		G_B58_2 = G_B56_1;
+		G_B58_3 = G_B56_2;
+		goto IL_0607;
+	}
+
+IL_0602:
+	{
+		G_B58_0 = _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
+		G_B58_1 = G_B57_0;
+		G_B58_2 = G_B57_1;
+		G_B58_3 = G_B57_2;
+	}
+
+IL_0607:
+	{
+		NullCheck(G_B58_2);
+		(G_B58_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B58_1), (String_t*)G_B58_0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_257 = G_B58_3;
+		NullCheck(L_257);
+		(L_257)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)30)), (String_t*)_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		String_t* L_258;
+		L_258 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_257, NULL);
+		V_18 = L_258;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:323>
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_259 = ___0_response;
+		NullCheck(L_259);
+		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_259, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:324>
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_260 = ___0_response;
+		String_t* L_261 = V_18;
+		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_260, L_261, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:325>
 		return;
 	}
 }
-// Method Definition Index: 81032
+// Method Definition Index: 81033
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A5DA2689E612B960E7277A31B1FEE0E2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16683,8 +16890,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_U3CHandleSetU3Eb__0_m104FDD208E23446BAC4B76D23CB9FF278D6B0DAD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
@@ -16692,17 +16899,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleSet_m2D8C5946A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7D028CCE3B6E7B61AE2C752D7AE970DA04AB7C6);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* V_0 = NULL;
+	U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* V_0 = NULL;
 	StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* V_1 = NULL;
 	{
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_0 = (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B(L_0, NULL);
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_0 = (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E(L_0, NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_1 = V_0;
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_1 = V_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:321>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:330>
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_2 = ___0_request;
 		NullCheck(L_2);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3;
@@ -16742,8 +16949,8 @@ IL_0036:
 		});
 		try
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:322>
-			U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_9 = V_0;
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:331>
+			U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_9 = V_0;
 			StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_10 = V_1;
 			NullCheck(L_10);
 			String_t* L_11;
@@ -16761,9 +16968,9 @@ IL_0036:
 
 IL_0037:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:326>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_12 = V_0;
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_13 = V_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:335>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_12 = V_0;
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_13 = V_0;
 		NullCheck(L_13);
 		String_t* L_14 = L_13->___body;
 		String_t* L_15;
@@ -16771,30 +16978,21 @@ IL_0037:
 		NullCheck(L_12);
 		L_12->___key = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___key), (void*)L_15);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:327>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_16 = V_0;
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_17 = V_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:336>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_16 = V_0;
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_17 = V_0;
 		NullCheck(L_17);
 		String_t* L_18 = L_17->___body;
 		float L_19;
 		L_19 = RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383(__this, L_18, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, NULL);
 		NullCheck(L_16);
 		L_16->___value = L_19;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:328>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_20 = V_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:337>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_20 = V_0;
 		NullCheck(L_20);
 		String_t* L_21 = L_20->___body;
 		String_t* L_22;
 		L_22 = RemoteControlServer_ExtractJsonString_m92AC5E2A8AA01E1A9C7D3EF39B525585B57DF390(__this, L_21, _stringLiteral9A631D67F45076985AE0592A66EFEB4D48DF1B0C, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:330>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:331>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:332>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:333>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:334>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:335>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:336>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:337>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:338>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:339>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:340>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:341>
@@ -16870,22 +17068,31 @@ IL_0037:
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:411>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:412>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:413>
-		U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* L_23 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8_RuntimeMethod_var), NULL);
-		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_24, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:414>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:415>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:416>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:417>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:418>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:419>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:420>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:421>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:422>
+		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_23 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass30_0_U3CHandleSetU3Eb__0_m104FDD208E23446BAC4B76D23CB9FF278D6B0DAD_RuntimeMethod_var), NULL);
+		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_24, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:424>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_25 = ___1_response;
 		NullCheck(L_25);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_25, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:416>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:425>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_26 = ___1_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_26, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:417>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:426>
 		return;
 	}
 }
-// Method Definition Index: 81033
+// Method Definition Index: 81034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandlePreset_m71226C907DBF6E88E5D5AA1464C95435F05BA3D6 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* ___0_request, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16896,26 +17103,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandlePreset_m71226C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mBC2D6408FB23D40D6137ED00B00E1D6321DD5A93_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m64BC5FD16294A1E6658F07A6DBD9A0E3684648B9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass31_0_U3CHandlePresetU3Eb__0_mA119EF49A2B9F9DF0DFFE812D84F1316DAAED858_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* V_0 = NULL;
+	U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* V_0 = NULL;
 	String_t* V_1 = NULL;
 	int32_t V_2 = 0;
 	StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* V_3 = NULL;
 	{
-		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_0 = (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E(L_0, NULL);
+		U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* L_0 = (U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass31_0__ctor_mB177DBC7F94344096045A3CD10DC9F0E8475FA47(L_0, NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_1 = V_0;
+		U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* L_1 = V_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:422>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:431>
 		HttpListenerRequest_t30206889F6CB705A9774EAD0C76C905096237FA8* L_2 = ___0_request;
 		NullCheck(L_2);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_3;
@@ -16955,7 +17162,7 @@ IL_0031:
 		});
 		try
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:423>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:432>
 			StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_9 = V_3;
 			NullCheck(L_9);
 			String_t* L_10;
@@ -16971,12 +17178,12 @@ IL_0031:
 
 IL_0032:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:425>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:434>
 		String_t* L_11 = V_1;
 		float L_12;
 		L_12 = RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383(__this, L_11, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, NULL);
 		V_2 = il2cpp_codegen_cast_double_to_int<int32_t>(L_12);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:427>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:436>
 		int32_t L_13 = V_2;
 		if ((((int32_t)L_13) < ((int32_t)0)))
 		{
@@ -16995,8 +17202,8 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:429>
-		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_17 = V_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:438>
+		U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* L_17 = V_0;
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_18 = __this->___presets;
 		int32_t L_19 = V_2;
 		NullCheck(L_18);
@@ -17005,73 +17212,105 @@ IL_0032:
 		NullCheck(L_17);
 		L_17->___p = L_20;
 		Il2CppCodeGenWriteBarrier((void**)(&L_17->___p), (void*)L_20);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:430>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:431>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:432>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:433>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:434>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:435>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:436>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:437>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:438>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:439>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:440>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:441>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:442>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:443>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:444>
-		U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* L_21 = V_0;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:445>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:446>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:447>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:448>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:449>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:450>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:451>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:452>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:453>
+		U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* L_21 = V_0;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_22 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass31_0_U3CHandlePresetU3Eb__0_mA119EF49A2B9F9DF0DFFE812D84F1316DAAED858_RuntimeMethod_var), NULL);
 		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_22, NULL);
 	}
 
 IL_0076:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:447>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:456>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_23 = ___1_response;
 		NullCheck(L_23);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_23, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:448>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:457>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_24 = ___1_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_24, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:449>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:458>
 		return;
 	}
 }
-// Method Definition Index: 81034
+// Method Definition Index: 81035
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleRecalibrateScan_mC1ACAEBABC8234C0CCD7728E9EE5E7DA41D495F3 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RemoteControlServer_U3CHandleRecalibrateScanU3Eb__32_0_m96FDFD4ED1E9A780169D8DDD3509C94847102E2A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:462>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:463>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:464>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:465>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:466>
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)RemoteControlServer_U3CHandleRecalibrateScanU3Eb__32_0_m96FDFD4ED1E9A780169D8DDD3509C94847102E2A_RuntimeMethod_var), NULL);
+		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_0, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:468>
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_1 = ___0_response;
+		NullCheck(L_1);
+		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_1, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:469>
+		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_2 = ___0_response;
+		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_2, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:470>
+		return;
+	}
+}
+// Method Definition Index: 81036
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_HandleReset_m5EBE22421820600203DC9E63E512FB1802F17134 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RemoteControlServer_U3CHandleResetU3Eb__33_0_m43AF3215FD34F2C403528DA419E2B01C566A5FAD_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:453>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:454>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:455>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:456>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:457>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:474>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:475>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:476>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:477>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:478>
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)RemoteControlServer_U3CHandleResetU3Eb__33_0_m43AF3215FD34F2C403528DA419E2B01C566A5FAD_RuntimeMethod_var), NULL);
 		RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0(__this, L_0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:459>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:480>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_1 = ___0_response;
 		NullCheck(L_1);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_1, _stringLiteral64058CC688A96A90239811EF06C9D20DB0499C3E, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:460>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:481>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_2 = ___0_response;
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_2, _stringLiteral29DA2A7868ABBF3161636BF5BEF2731D1097F2A6, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:461>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:482>
 		return;
 	}
 }
-// Method Definition Index: 81035
+// Method Definition Index: 81037
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeHTML_mA50DC28F5770621D47D1C9602D652189071EE944 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17081,50 +17320,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_ServeHTML_mA50DC28F5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:469>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:490>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_0 = ___0_response;
 		NullCheck(L_0);
 		HttpListenerResponse_set_ContentType_mE9EAD119EC0397DF8D7C95EA7F5F3B734679D1F0(L_0, _stringLiteral1535B58BAB49F5727C55AEF9FE1CAE3A3BCB5B99, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:470>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:491>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_1 = ___0_response;
 		String_t* L_2;
 		L_2 = RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88(__this, NULL);
 		RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2(__this, L_1, L_2, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:471>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:492>
 		return;
 	}
 }
-// Method Definition Index: 81036
+// Method Definition Index: 81038
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageHTML_mF1FE1556FABA59D6112E60B25839F9C197E34C88 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral100BD853CDAE22D9F6876BBF21BCB498A0461ECA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral066414C1E1B266B126FC51A0D8092B7BBE05B359);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:475>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:476>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:477>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:478>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:479>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:480>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:481>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:482>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:483>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:484>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:485>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:486>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:487>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:488>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:489>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:490>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:491>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:492>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:493>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:494>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:495>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:496>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:497>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:498>
@@ -17444,10 +17662,60 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetControlPageH
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:812>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:813>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:814>
-		return _stringLiteral100BD853CDAE22D9F6876BBF21BCB498A0461ECA;
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:815>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:816>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:817>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:818>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:819>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:820>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:821>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:822>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:823>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:824>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:825>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:826>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:827>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:828>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:829>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:830>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:831>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:832>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:833>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:834>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:835>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:836>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:837>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:838>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:839>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:840>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:841>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:842>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:843>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:844>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:845>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:846>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:847>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:848>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:849>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:850>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:851>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:852>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:853>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:854>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:855>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:856>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:857>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:858>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:859>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:860>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:861>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:862>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:863>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:864>
+		return _stringLiteral066414C1E1B266B126FC51A0D8092B7BBE05B359;
 	}
 }
-// Method Definition Index: 81037
+// Method Definition Index: 81039
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36E07EF54DBD2E22BA21CFB21B9B2FB71B7A1B0 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_action, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17459,7 +17727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_RunOnMainThread_mE36
 	RuntimeObject* V_0 = NULL;
 	bool V_1 = false;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:823>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:873>
 		RuntimeObject* L_0 = __this->____queueLock;
 		V_0 = L_0;
 		V_1 = (bool)0;
@@ -17492,12 +17760,12 @@ IL_0028:
 		{
 			RuntimeObject* L_3 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:825>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:875>
 			Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_4 = __this->____mainThreadQueue;
 			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = ___0_action;
 			NullCheck(L_4);
 			Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4(L_4, L_5, Queue_1_Enqueue_m9B59C0455EACB768D8D74CA1F57E003C91F6E3D4_RuntimeMethod_var);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:826>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:876>
 			goto IL_0029;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -17508,16 +17776,16 @@ IL_0028:
 
 IL_0029:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:827>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:877>
 		return;
 	}
 }
-// Method Definition Index: 81038
+// Method Definition Index: 81040
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD60710B2542723D4DF49E38ED376E5A692A2 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* ___0_response, String_t* ___1_content, const RuntimeMethod* method) 
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:831>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:881>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_1 = ___1_content;
@@ -17525,13 +17793,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_1);
 		V_0 = L_2;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:832>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:882>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_3 = ___0_response;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = V_0;
 		NullCheck(L_4);
 		NullCheck(L_3);
 		HttpListenerResponse_set_ContentLength64_m74DE30C7F71ECD88A03D44FCB97520CCDDB60B18(L_3, ((int64_t)((int32_t)(((RuntimeArray*)L_4)->max_length))), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:833>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:883>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_5 = ___0_response;
 		NullCheck(L_5);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_6;
@@ -17541,18 +17809,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_WriteResponse_m464DD
 		NullCheck(L_8);
 		NullCheck(L_6);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(29, L_6, L_7, 0, ((int32_t)(((RuntimeArray*)L_8)->max_length)));
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:834>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:884>
 		HttpListenerResponse_tE2A3F65DF2E0B73D19CE1FBDCFE622CADE7B38B1* L_9 = ___0_response;
 		NullCheck(L_9);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_10;
 		L_10 = HttpListenerResponse_get_OutputStream_m7A8666B4CFAE080313690B80D59CF27FB665B376(L_9, NULL);
 		NullCheck(L_10);
 		VirtualActionInvoker0::Invoke(13, L_10);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:835>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:885>
 		return;
 	}
 }
-// Method Definition Index: 81039
+// Method Definition Index: 81041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2646189F0A2E9EE6DE28CEB080DDD7826A9AA7 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17577,7 +17845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2
 	try
 	{
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:841>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:891>
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_0;
 			L_0 = NetworkInterface_GetAllNetworkInterfaces_m4E5A4AAEED8B11868BDC8F78975460D9B6F3CD70(NULL);
 			V_0 = L_0;
@@ -17587,14 +17855,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_GetLocalIP_mCB2
 
 IL_000a_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:841>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:891>
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_1 = V_0;
 			int32_t L_2 = V_1;
 			NullCheck(L_1);
 			int32_t L_3 = L_2;
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 			V_2 = L_4;
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:843>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:893>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_5 = V_2;
 			NullCheck(L_5);
 			int32_t L_6;
@@ -17605,7 +17873,7 @@ IL_000a_1:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:845>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:895>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_7 = V_2;
 			NullCheck(L_7);
 			int32_t L_8;
@@ -17616,7 +17884,7 @@ IL_000a_1:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:848>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:898>
 			NetworkInterface_t3E7DDFADB8912D0F9D001D1195EBD0FB08B7F47A* L_9 = V_2;
 			NullCheck(L_9);
 			IPInterfaceProperties_t60A00D504E4F72CAFE4C0AE4DA6A062B44D1512F* L_10;
@@ -17662,13 +17930,13 @@ IL_0080_1:
 
 IL_0034_2:
 				{
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:848>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:898>
 					RuntimeObject* L_15 = V_3;
 					NullCheck(L_15);
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_16;
 					L_16 = InterfaceFuncInvoker0< UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* >::Invoke(0, IEnumerator_1_tA218C3658C89562941B7435E73E48E2EDC26D9BD_il2cpp_TypeInfo_var, L_15);
 					V_4 = L_16;
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:850>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:900>
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_17 = V_4;
 					NullCheck(L_17);
 					IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_18;
@@ -17682,7 +17950,7 @@ IL_0034_2:
 					}
 				}
 				{
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:852>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:902>
 					UnicastIPAddressInformation_t4ACCADE9FBC1F8243A602439C94301E2C30295F3* L_20 = V_4;
 					NullCheck(L_20);
 					IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_21;
@@ -17691,7 +17959,7 @@ IL_0034_2:
 					String_t* L_22;
 					L_22 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_21);
 					V_5 = L_22;
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:853>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:903>
 					String_t* L_23 = V_5;
 					NullCheck(L_23);
 					bool L_24;
@@ -17702,7 +17970,7 @@ IL_0034_2:
 					}
 				}
 				{
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:853>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:903>
 					String_t* L_25 = V_5;
 					V_6 = L_25;
 					goto IL_00b0;
@@ -17710,7 +17978,7 @@ IL_0034_2:
 
 IL_006d_2:
 				{
-					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:848>
+					//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:898>
 					RuntimeObject* L_26 = V_3;
 					NullCheck(L_26);
 					bool L_27;
@@ -17738,7 +18006,7 @@ IL_0081_1:
 
 IL_0085_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:841>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:891>
 			int32_t L_29 = V_1;
 			NetworkInterfaceU5BU5D_t62783E27F1C4A989B118CDBBE2FCBE65EE5CA080* L_30 = V_0;
 			NullCheck(L_30);
@@ -17748,7 +18016,7 @@ IL_0085_1:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:857>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:907>
 			goto IL_00aa;
 		}
 	}
@@ -17765,9 +18033,9 @@ IL_0085_1:
 CATCH_0090:
 	{
 		Exception_t* L_31 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:858>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:908>
 		V_7 = L_31;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:860>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:910>
 		Exception_t* L_32 = V_7;
 		NullCheck(L_32);
 		String_t* L_33;
@@ -17776,25 +18044,25 @@ CATCH_0090:
 		L_34 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5228E530EB8CF8283F96D0CFBC908C0C3075CD13)), L_33, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_34, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:861>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:911>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00aa;
 	}
 
 IL_00aa:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:862>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:912>
 		return _stringLiteralE71CEA2F4DC92DEB85E44E625E13F0973AA40B52;
 	}
 
 IL_00b0:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:863>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:913>
 		String_t* L_35 = V_6;
 		return L_35;
 	}
 }
-// Method Definition Index: 81040
+// Method Definition Index: 81042
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonString_m92AC5E2A8AA01E1A9C7D3EF39B525585B57DF390 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17809,19 +18077,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:868>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:918>
 		String_t* L_0 = ___1_key;
 		String_t* L_1;
 		L_1 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_0, _stringLiteralE1FA7984F63F6132B83FB4302371499FCEE3AAE0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:869>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:919>
 		String_t* L_2 = ___0_json;
 		String_t* L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = String_IndexOf_m69E9BDAFD93767C85A7FF861B453415D3B4A200F(L_2, L_3, NULL);
 		V_1 = L_4;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:870>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:920>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) >= ((int32_t)0)))
 		{
@@ -17829,27 +18097,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_ExtractJsonStri
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:870>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:920>
 		return _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 
 IL_0023:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:871>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:921>
 		int32_t L_6 = V_1;
 		String_t* L_7 = V_0;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, L_8));
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:872>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:922>
 		String_t* L_9 = ___0_json;
 		int32_t L_10 = V_1;
 		NullCheck(L_9);
 		int32_t L_11;
 		L_11 = String_IndexOf_mCBADAB35416ED6F5F733DF46CC86C23E5C9E5A56(L_9, _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_10, NULL);
 		V_2 = L_11;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:873>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:923>
 		int32_t L_12 = V_2;
 		int32_t L_13 = V_1;
 		if ((((int32_t)L_12) > ((int32_t)L_13)))
@@ -17873,7 +18141,7 @@ IL_0043:
 		return L_18;
 	}
 }
-// Method Definition Index: 81041
+// Method Definition Index: 81043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mAB9E15CFEDDC6D2C08471ABA067C6477EDF48383 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_json, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17889,19 +18157,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mA
 	int32_t V_2 = 0;
 	float V_3 = 0.0f;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:878>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:928>
 		String_t* L_0 = ___1_key;
 		String_t* L_1;
 		L_1 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, L_0, _stringLiteralA333953DEB7B3F631AE4FEB93E9C3AD7F349F8C0, NULL);
 		V_0 = L_1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:879>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:929>
 		String_t* L_2 = ___0_json;
 		String_t* L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = String_IndexOf_m69E9BDAFD93767C85A7FF861B453415D3B4A200F(L_2, L_3, NULL);
 		V_1 = L_4;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:880>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:930>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) >= ((int32_t)0)))
 		{
@@ -17909,20 +18177,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RemoteControlServer_ExtractJsonFloat_mA
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:880>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:930>
 		return (0.0f);
 	}
 
 IL_0023:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:881>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:931>
 		int32_t L_6 = V_1;
 		String_t* L_7 = V_0;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, L_8));
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:882>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:932>
 		int32_t L_9 = V_1;
 		V_2 = L_9;
 		goto IL_0034;
@@ -17930,14 +18198,14 @@ IL_0023:
 
 IL_0030:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:884>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:934>
 		int32_t L_10 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
 IL_0034:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:883>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:933>
 		int32_t L_11 = V_2;
 		String_t* L_12 = ___0_json;
 		NullCheck(L_12);
@@ -17987,9 +18255,9 @@ IL_0034:
 
 IL_0061:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:885>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:886>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:887>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:935>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:936>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:937>
 		String_t* L_24 = ___0_json;
 		int32_t L_25 = V_1;
 		int32_t L_26 = V_2;
@@ -18002,12 +18270,12 @@ IL_0061:
 		L_29 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
 		bool L_30;
 		L_30 = Single_TryParse_mFB8CC32F0016FBB6EFCB97953CF3515767EB6431(L_28, ((int32_t)167), L_29, (&V_3), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:888>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:938>
 		float L_31 = V_3;
 		return L_31;
 	}
 }
-// Method Definition Index: 81042
+// Method Definition Index: 81044
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_EscapeJson_m89EA45382AAEB538AB5257DEA803915DDDAFE25A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18024,7 +18292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RemoteControlServer_EscapeJson_m89E
 	String_t* G_B5_0 = NULL;
 	String_t* G_B4_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:891>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:941>
 		String_t* L_0 = ___0_s;
 		if (L_0)
 		{
@@ -18067,7 +18335,7 @@ IL_002e:
 		return G_B5_0;
 	}
 }
-// Method Definition Index: 81043
+// Method Definition Index: 81045
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer__ctor_mD889BD87C769818DE161D55A27635D7CF3EA06D9 (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18082,34 +18350,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer__ctor_mD889BD87C7698
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:41>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:42>
 		__this->___port = ((int32_t)8080);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:44>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:45>
 		__this->___showIPInVR = (bool)1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:48>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:49>
 		List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F* L_0 = (List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F*)il2cpp_codegen_object_new(List_1_t219CAF571160C93E0F09E824FEF9FF559D6C542F_il2cpp_TypeInfo_var);
 		List_1__ctor_mE611D57EDA19073D3F1B4A989BCB712E150C0B6E(L_0, List_1__ctor_mE611D57EDA19073D3F1B4A989BCB712E150C0B6E_RuntimeMethod_var);
 		__this->___presets = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___presets), (void*)L_0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:55>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:56>
 		Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA* L_1 = (Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA*)il2cpp_codegen_object_new(Queue_1_tDCDB1CEF747EF8D38C6708645EC5FD3799C168BA_il2cpp_TypeInfo_var);
 		Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272(L_1, Queue_1__ctor_mCB1D86FC102A8C3B82A02702CAEDAE815FE04272_RuntimeMethod_var);
 		__this->____mainThreadQueue = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____mainThreadQueue), (void*)L_1);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:56>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:57>
 		RuntimeObject* L_2 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(L_2, NULL);
 		__this->____queueLock = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____queueLock), (void*)L_2);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:59>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:60>
 		__this->____localIP = _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____localIP), (void*)_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81044
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__31_0_mAEB6E820A9398DF9B4F8EC635D5B3D657E08ADEC (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81046
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleRecalibrateScanU3Eb__32_0_m96FDFD4ED1E9A780169D8DDD3509C94847102E2A (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18118,7 +18386,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:455>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:464>
+		WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* L_0 = __this->___wallCManager;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:465>
+		WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* L_2 = __this->___wallCManager;
+		NullCheck(L_2);
+		WallCManager_StartCalibration_mDCFC60EACEE846C0392260208E943C6AE506E544(L_2, NULL);
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:466>
+		return;
+	}
+}
+// Method Definition Index: 81047
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__33_0_m43AF3215FD34F2C403528DA419E2B01C566A5FAD (RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:476>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_0 = __this->___wallSystem;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -18129,7 +18430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:456>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:477>
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_2 = __this->___wallSystem;
 		NullCheck(L_2);
 		SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1(L_2, NULL);
@@ -18137,7 +18438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteControlServer_U3CHandleResetU3Eb__
 
 IL_0019:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:457>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:478>
 		return;
 	}
 }
@@ -18149,16 +18450,16 @@ IL_0019:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81045
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0__ctor_mCA9C5B2E7C0E01B6831A32CDDBEBCF11738FB52B (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81048
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81046
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass29_0_U3CHandleSetU3Eb__0_mB016ECE74E856CB24599FFC4F9CF02658EF13DF8 (U3CU3Ec__DisplayClass29_0_t39E36110D62E55566C9711344526994B0008CBAB* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81049
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandleSetU3Eb__0_m104FDD208E23446BAC4B76D23CB9FF278D6B0DAD (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18445,7 +18746,7 @@ IL_0122:
 
 IL_0133:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:335>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:344>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_36 = __this->___U3CU3E4__this;
 		NullCheck(L_36);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_37 = L_36->___environmentManager;
@@ -18458,7 +18759,7 @@ IL_0133:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:336>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:345>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_39 = __this->___U3CU3E4__this;
 		NullCheck(L_39);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_40 = L_39->___environmentManager;
@@ -18469,7 +18770,7 @@ IL_0133:
 
 IL_015c:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:337>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:346>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_42 = __this->___U3CU3E4__this;
 		NullCheck(L_42);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_43 = L_42->___wallSystem;
@@ -18494,19 +18795,19 @@ IL_015c:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:338>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:347>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_48 = __this->___U3CU3E4__this;
 		NullCheck(L_48);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_49 = L_48->___wallSystem;
 		NullCheck(L_49);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_49, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:339>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:348>
 		return;
 	}
 
 IL_0198:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:341>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:350>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_50 = __this->___U3CU3E4__this;
 		NullCheck(L_50);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_51 = L_50->___wallSystem;
@@ -18519,7 +18820,7 @@ IL_0198:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:343>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:352>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_53 = __this->___U3CU3E4__this;
 		NullCheck(L_53);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_54 = L_53->___wallSystem;
@@ -18528,7 +18829,7 @@ IL_0198:
 		L_56 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_55, (-135.0f), (135.0f), NULL);
 		NullCheck(L_54);
 		L_54->___leftWingAngle = L_56;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:344>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:353>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_57 = __this->___U3CU3E4__this;
 		NullCheck(L_57);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_58 = L_57->___wallSystem;
@@ -18541,19 +18842,19 @@ IL_0198:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:344>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:353>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_60 = __this->___U3CU3E4__this;
 		NullCheck(L_60);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_61 = L_60->___wallSystem;
 		NullCheck(L_61);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_61, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:346>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:355>
 		return;
 	}
 
 IL_01f9:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:348>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:357>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_62 = __this->___U3CU3E4__this;
 		NullCheck(L_62);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_63 = L_62->___wallSystem;
@@ -18566,7 +18867,7 @@ IL_01f9:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:350>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:359>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_65 = __this->___U3CU3E4__this;
 		NullCheck(L_65);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_66 = L_65->___wallSystem;
@@ -18575,7 +18876,7 @@ IL_01f9:
 		L_68 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_67, (-135.0f), (135.0f), NULL);
 		NullCheck(L_66);
 		L_66->___rightWingAngle = L_68;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:351>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:360>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_69 = __this->___U3CU3E4__this;
 		NullCheck(L_69);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_70 = L_69->___wallSystem;
@@ -18588,19 +18889,19 @@ IL_01f9:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:351>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:360>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_72 = __this->___U3CU3E4__this;
 		NullCheck(L_72);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_73 = L_72->___wallSystem;
 		NullCheck(L_73);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_73, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:353>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:362>
 		return;
 	}
 
 IL_025a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:355>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:364>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_74 = __this->___U3CU3E4__this;
 		NullCheck(L_74);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_75 = L_74->___wallSystem;
@@ -18613,7 +18914,7 @@ IL_025a:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:357>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:366>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_77 = __this->___U3CU3E4__this;
 		NullCheck(L_77);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_78 = L_77->___wallSystem;
@@ -18622,7 +18923,7 @@ IL_025a:
 		L_80 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_79, (0.200000003f), (5.0f), NULL);
 		NullCheck(L_78);
 		L_78->___wingWidth = L_80;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:358>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:367>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_81 = __this->___U3CU3E4__this;
 		NullCheck(L_81);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_82 = L_81->___wallSystem;
@@ -18635,19 +18936,19 @@ IL_025a:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:358>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:367>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_84 = __this->___U3CU3E4__this;
 		NullCheck(L_84);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_85 = L_84->___wallSystem;
 		NullCheck(L_85);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_85, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:360>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:369>
 		return;
 	}
 
 IL_02bb:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:362>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:371>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_86 = __this->___U3CU3E4__this;
 		NullCheck(L_86);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_87 = L_86->___wallSystem;
@@ -18660,7 +18961,7 @@ IL_02bb:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:364>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:373>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_89 = __this->___U3CU3E4__this;
 		NullCheck(L_89);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_90 = L_89->___wallSystem;
@@ -18669,7 +18970,7 @@ IL_02bb:
 		L_92 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_91, (1.0f), (15.0f), NULL);
 		NullCheck(L_90);
 		L_90->___wallWidth = L_92;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:365>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:374>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_93 = __this->___U3CU3E4__this;
 		NullCheck(L_93);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_94 = L_93->___wallSystem;
@@ -18682,19 +18983,19 @@ IL_02bb:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:365>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:374>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_96 = __this->___U3CU3E4__this;
 		NullCheck(L_96);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_97 = L_96->___wallSystem;
 		NullCheck(L_97);
 		SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D(L_97, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:367>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:376>
 		return;
 	}
 
 IL_031c:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:369>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:378>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_98 = __this->___U3CU3E4__this;
 		NullCheck(L_98);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_99 = L_98->___environmentSwitcher;
@@ -18707,20 +19008,20 @@ IL_031c:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:370>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:379>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_101 = __this->___U3CU3E4__this;
 		NullCheck(L_101);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_102 = L_101->___environmentSwitcher;
 		float L_103 = __this->___value;
 		NullCheck(L_102);
 		EnvironmentSwitcher_SwitchTo_m905F8A8B81C87DD8013373F18EEEDA6602A20D98(L_102, il2cpp_codegen_cast_double_to_int<int32_t>(L_103), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:371>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:380>
 		return;
 	}
 
 IL_034a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:373>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:382>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_104 = __this->___U3CU3E4__this;
 		NullCheck(L_104);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_105 = L_104->___frustumCalibrator;
@@ -18745,26 +19046,26 @@ IL_034a:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:375>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:384>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_110 = __this->___U3CU3E4__this;
 		NullCheck(L_110);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_111 = L_110->___frustumCalibrator;
 		float L_112 = __this->___value;
 		NullCheck(L_111);
 		L_111->___flipDirection = (bool)((((float)L_112) > ((float)(0.5f)))? 1 : 0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:376>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:385>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_113 = __this->___U3CU3E4__this;
 		NullCheck(L_113);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_114 = L_113->___frustumCalibrator;
 		NullCheck(L_114);
 		WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD(L_114, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:378>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:387>
 		return;
 	}
 
 IL_03a3:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:380>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:389>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_115 = __this->___U3CU3E4__this;
 		NullCheck(L_115);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_116 = L_115->___frustumCalibrator;
@@ -18789,9 +19090,9 @@ IL_03a3:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:382>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:383>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:384>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:391>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:392>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:393>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_121 = __this->___U3CU3E4__this;
 		NullCheck(L_121);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_122 = L_121->___frustumCalibrator;
@@ -18819,19 +19120,19 @@ IL_03ea:
 	{
 		NullCheck(G_B64_1);
 		G_B64_1->___mode = G_B64_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:385>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:394>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_124 = __this->___U3CU3E4__this;
 		NullCheck(L_124);
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_125 = L_124->___frustumCalibrator;
 		NullCheck(L_125);
 		WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD(L_125, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:387>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:396>
 		return;
 	}
 
 IL_0400:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:389>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:398>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_126 = __this->___U3CU3E4__this;
 		NullCheck(L_126);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_127 = L_126->___climbingRope;
@@ -18844,7 +19145,7 @@ IL_0400:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:391>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:400>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_129 = __this->___U3CU3E4__this;
 		String_t* L_130 = __this->___body;
 		NullCheck(L_129);
@@ -18883,55 +19184,55 @@ IL_0400:
 
 IL_0455:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:395>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:404>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_138 = __this->___U3CU3E4__this;
 		NullCheck(L_138);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_139 = L_138->___climbingRope;
 		NullCheck(L_139);
 		ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631(L_139, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:396>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:405>
 		return;
 	}
 
 IL_0467:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:398>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:407>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_140 = __this->___U3CU3E4__this;
 		NullCheck(L_140);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_141 = L_140->___climbingRope;
 		NullCheck(L_141);
 		ClimbingRope_SetAnchorMode_m0061E29E0B252EA750D9FDAE61AE1D0709D50664(L_141, 0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:399>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:408>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_142 = __this->___U3CU3E4__this;
 		NullCheck(L_142);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_143 = L_142->___climbingRope;
 		NullCheck(L_143);
 		ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631(L_143, (bool)1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:400>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:409>
 		return;
 	}
 
 IL_048a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:402>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:411>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_144 = __this->___U3CU3E4__this;
 		NullCheck(L_144);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_145 = L_144->___climbingRope;
 		NullCheck(L_145);
 		ClimbingRope_SetAnchorMode_m0061E29E0B252EA750D9FDAE61AE1D0709D50664(L_145, 1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:403>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:412>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_146 = __this->___U3CU3E4__this;
 		NullCheck(L_146);
 		ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* L_147 = L_146->___climbingRope;
 		NullCheck(L_147);
 		ClimbingRope_SetVisible_mD68B02C6EA518300257236696CCAD76A56727631(L_147, (bool)1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:404>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:413>
 		return;
 	}
 
 IL_04ad:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:409>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:418>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_148 = __this->___U3CU3E4__this;
 		NullCheck(L_148);
 		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_149 = L_148->___holdPlacementManager;
@@ -18944,7 +19245,7 @@ IL_04ad:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:410>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:419>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_151 = __this->___U3CU3E4__this;
 		NullCheck(L_151);
 		HoldPlacementManager_t42CB3099BA03A8CAABC7BBA2587FCADCD18BE6F8* L_152 = L_151->___holdPlacementManager;
@@ -18955,7 +19256,7 @@ IL_04ad:
 
 IL_04d7:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:413>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:422>
 		return;
 	}
 }
@@ -18967,16 +19268,16 @@ IL_04d7:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81047
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0__ctor_mD35CB0E6342B11CFDC90EC37B67C7C5629AD775E (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81050
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass31_0__ctor_mB177DBC7F94344096045A3CD10DC9F0E8475FA47 (U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 81048
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandlePresetU3Eb__0_mE1FC6D2140758F07048AF1EB64D2776B5AB8A1BB (U3CU3Ec__DisplayClass30_0_t09BDE67C1EC19E7483189F54617E71EBED0704B3* __this, const RuntimeMethod* method) 
+// Method Definition Index: 81051
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass31_0_U3CHandlePresetU3Eb__0_mA119EF49A2B9F9DF0DFFE812D84F1316DAAED858 (U3CU3Ec__DisplayClass31_0_tBCE09E8F52059AF1750169DBAAF19973B352FB19* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18985,7 +19286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandlePrese
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:432>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:441>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_0 = __this->___U3CU3E4__this;
 		NullCheck(L_0);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_1 = L_0->___environmentManager;
@@ -18998,7 +19299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandlePrese
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:433>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:442>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_3 = __this->___U3CU3E4__this;
 		NullCheck(L_3);
 		EnvironmentManager_tF91609625D43E19B5FAC19FF705809F93701A63D* L_4 = L_3->___environmentManager;
@@ -19011,7 +19312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass30_0_U3CHandlePrese
 
 IL_002e:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:434>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:443>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_7 = __this->___U3CU3E4__this;
 		NullCheck(L_7);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_8 = L_7->___wallSystem;
@@ -19024,7 +19325,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:436>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:445>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_10 = __this->___U3CU3E4__this;
 		NullCheck(L_10);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_11 = L_10->___wallSystem;
@@ -19033,7 +19334,7 @@ IL_002e:
 		float L_13 = L_12->___wallWidth;
 		NullCheck(L_11);
 		L_11->___wallWidth = L_13;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:437>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:446>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_14 = __this->___U3CU3E4__this;
 		NullCheck(L_14);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_15 = L_14->___wallSystem;
@@ -19042,7 +19343,7 @@ IL_002e:
 		float L_17 = L_16->___leftWingAngle;
 		NullCheck(L_15);
 		L_15->___leftWingAngle = L_17;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:438>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:447>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_18 = __this->___U3CU3E4__this;
 		NullCheck(L_18);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_19 = L_18->___wallSystem;
@@ -19051,7 +19352,7 @@ IL_002e:
 		float L_21 = L_20->___rightWingAngle;
 		NullCheck(L_19);
 		L_19->___rightWingAngle = L_21;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:439>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:448>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_22 = __this->___U3CU3E4__this;
 		NullCheck(L_22);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_23 = L_22->___wallSystem;
@@ -19060,7 +19361,7 @@ IL_002e:
 		float L_25 = L_24->___wingWidth;
 		NullCheck(L_23);
 		L_23->___wingWidth = L_25;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:440>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:449>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_26 = __this->___U3CU3E4__this;
 		NullCheck(L_26);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_27 = L_26->___wallSystem;
@@ -19073,7 +19374,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:440>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:449>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_29 = __this->___U3CU3E4__this;
 		NullCheck(L_29);
 		SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* L_30 = L_29->___wallSystem;
@@ -19083,7 +19384,7 @@ IL_002e:
 
 IL_00d2:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:442>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:451>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_31 = __this->___U3CU3E4__this;
 		NullCheck(L_31);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_32 = L_31->___environmentSwitcher;
@@ -19105,7 +19406,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:443>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:452>
 		RemoteControlServer_t41EE598427E9E6C9072F61315D031720B8D393C7* L_36 = __this->___U3CU3E4__this;
 		NullCheck(L_36);
 		EnvironmentSwitcher_tF38453AD6F1C5D48BB293F0A694863D480BDEDE4* L_37 = L_36->___environmentSwitcher;
@@ -19118,7 +19419,7 @@ IL_00d2:
 
 IL_010e:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:444>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:453>
 		return;
 	}
 }
@@ -19130,7 +19431,7 @@ IL_010e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81049
+// Method Definition Index: 81052
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3451203E303658B62DE (WallPreset_t073C82B7EF3670597FF5FCC4172CEC334742073C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19140,14 +19441,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:901>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:951>
 		__this->___name = _stringLiteralCCB58ECFF5BA5137F3C73F699B87A828BFFA7797;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___name), (void*)_stringLiteralCCB58ECFF5BA5137F3C73F699B87A828BFFA7797);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:902>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:952>
 		__this->___wallHeight = (5.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:903>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:953>
 		__this->___wallWidth = (3.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:906>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/RemoteControlServer.cs:956>
 		__this->___wingWidth = (1.5f);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
@@ -19161,7 +19462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallPreset__ctor_m5FA984EC2D36342D9D39E3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81050
+// Method Definition Index: 81053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_LateUpdate_m474DC8B7947994168D5C529551897CBB7C092308 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19196,7 +19497,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 81051
+// Method Definition Index: 81054
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_ComputeTargets_m937D1CB5A0584E84175EB958378C1668C9CDA5A5 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19308,7 +19609,7 @@ IL_0097:
 		return;
 	}
 }
-// Method Definition Index: 81052
+// Method Definition Index: 81055
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RopeController_ComputeMiddlePoint_m7FE0EAABCB66A4269D5F6D3966E1ECEC638B1A71 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_harnessPos, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19472,7 +19773,7 @@ IL_007e:
 		return L_42;
 	}
 }
-// Method Definition Index: 81053
+// Method Definition Index: 81056
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController_ApplySmoothed_mC1FFB5696E9B1315A8F6F4A1C600AD24249C30FB (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19573,7 +19874,7 @@ IL_009d:
 		return;
 	}
 }
-// Method Definition Index: 81054
+// Method Definition Index: 81057
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController__ctor_m206D38DC05C1A9348670C3ECB31CDCAEB4A11F73 (RopeController_tEA8FB88E2976A69A99499D2F81E8291031CA4E54* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19603,7 +19904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeController__ctor_m206D38DC05C1A93486
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81055
+// Method Definition Index: 81058
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Start_m8290B73AE3AB62C748EF6EC2A9DEE75D329C8189 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19611,7 +19912,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Start_m8290B73AE3AB62C
 		return;
 	}
 }
-// Method Definition Index: 81056
+// Method Definition Index: 81059
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Update_m050DCCC7D55E2F1741100638A2EC52ECBB2CD323 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19644,7 +19945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager_Update_m050DCCC7D55E2F
 		return;
 	}
 }
-// Method Definition Index: 81057
+// Method Definition Index: 81060
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager__ctor_m0E4EE7915E5DB37D0B1C1B7058F01B0FF4F80AD1 (RopeMiddleManager_t38273642DB7A045CB8B0C9E22165EB438898B715* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19660,7 +19961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeMiddleManager__ctor_m0E4EE7915E5DB37
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81058
+// Method Definition Index: 81061
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Start_m1C3EF3B2F4581F5DDB628BEC5EAFD698EF25A8F7 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19668,7 +19969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Start_m1C3EF3B2F4581F5DD
 		return;
 	}
 }
-// Method Definition Index: 81059
+// Method Definition Index: 81062
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Update_mB5A5F48DB1BD468A904E6BD7BCD32E90BA02C412 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19701,7 +20002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager_Update_mB5A5F48DB1BD468A
 		return;
 	}
 }
-// Method Definition Index: 81060
+// Method Definition Index: 81063
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager__ctor_m3EA67F52F16518AE5BB68A0B9E90EB5EBEA435D1 (RopeRootManager_tC3DECB8AAABA8FEE27D16CF28B119037FBD64AA8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19717,7 +20018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RopeRootManager__ctor_m3EA67F52F16518AE5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81061
+// Method Definition Index: 81064
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19726,7 +20027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37
 		return L_0;
 	}
 }
-// Method Definition Index: 81062
+// Method Definition Index: 81065
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840EF33165B660A0ADED05A69F6500D2C8AB6A (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -19736,7 +20037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840
 		return;
 	}
 }
-// Method Definition Index: 81063
+// Method Definition Index: 81066
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_Wall1Normal_m22CCCEACE7444CB787767BBB56384F541DF8C44D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19745,7 +20046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81064
+// Method Definition Index: 81067
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_Wall2Normal_m1A108CB3D6C6F8BA180736A57D2639DE4FA5B310 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19754,7 +20055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81065
+// Method Definition Index: 81068
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_CornerPoint_m2B72F2399BF4ED6CB129EDBB6F10D84E44BEAB19 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19763,7 +20064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 81066
+// Method Definition Index: 81069
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SimpleWallSystem_get_IsCalibrated_m86AC845D82AE00F81F0A106C1D0AA1B49E9EFB41 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19784,7 +20085,7 @@ IL_000f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 81067
+// Method Definition Index: 81070
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_Update_mC8D2D749C7C6DD0E0ECDBA8E92795F7D32570FB1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20164,7 +20465,7 @@ IL_024b:
 		return;
 	}
 }
-// Method Definition Index: 81068
+// Method Definition Index: 81071
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SamplePoint_mD32CB9FA7EA5FE861E0875C7FDC76598DCA7AFDA (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20282,7 +20583,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 81069
+// Method Definition Index: 81072
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UndoLastSample_m1FE4D1A536E955E59E1DED16C575026CF65E7593 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20336,7 +20637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UndoLastSample_m1FE4D1A
 		return;
 	}
 }
-// Method Definition Index: 81070
+// Method Definition Index: 81073
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearSamples_m8D9F8DB937A55BC9B89B74FC0BF4ED4FEB290FF4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20439,7 +20740,7 @@ IL_0054:
 		return;
 	}
 }
-// Method Definition Index: 81071
+// Method Definition Index: 81074
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_FinalizeCurrentWall_mE08D0DA8E0733F1312B4F7D2F3C00C99310447F2 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20778,7 +21079,7 @@ IL_0200:
 		return;
 	}
 }
-// Method Definition Index: 81072
+// Method Definition Index: 81075
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeWallFrame_mB5462F3F3D701D64703906A9A0A92954AA4EF653 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_up, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -20844,7 +21145,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 81073
+// Method Definition Index: 81076
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ComputeCorner_m65F8BD4C0901071C3FD5966D34EF36999726BA6E (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -20971,7 +21272,7 @@ IL_00dc:
 		return;
 	}
 }
-// Method Definition Index: 81074
+// Method Definition Index: 81077
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildMeshes_m010AB3D0CC96883722A906196D04BF79D2CBAB5D (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21201,7 +21502,7 @@ IL_01f7:
 		return;
 	}
 }
-// Method Definition Index: 81075
+// Method Definition Index: 81078
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_GetOuterEdge_mBD993387468020C70A4173B8A671AA8ADE10C1AE (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_corner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallCenter, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -21304,7 +21605,7 @@ IL_007a:
 		return L_26;
 	}
 }
-// Method Definition Index: 81076
+// Method Definition Index: 81079
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_RotateNormalAroundEdge_mC649D86328DA5C198671BB00B7E33DE2E16D6659 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_wallNormal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_wallUp, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_wallRight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_outerDir, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_corner, float ___5_angleDeg, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -21325,7 +21626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_5;
 	}
 }
-// Method Definition Index: 81077
+// Method Definition Index: 81080
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWallMesh_m3F9579EC9EF150093961E41237284CE2DB50B500 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_cornerPoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_wallCenter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21537,7 +21838,7 @@ IL_009a:
 		return;
 	}
 }
-// Method Definition Index: 81078
+// Method Definition Index: 81081
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_BuildWingMesh_m83871B02F31DA58BC8759292B2368A1A7A716430 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_up, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_hingePoint, float ___5_height, float ___6_width, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___7_color, float ___8_groundY, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___9_outerDir, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21765,7 +22066,7 @@ IL_00a6:
 		return;
 	}
 }
-// Method Definition Index: 81079
+// Method Definition Index: 81082
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_CreateMeshObject_m1F7FC4682C296506CD12AEAB476E374880D89C6F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, String_t* ___0_name, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_verts, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_up, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___4_surfaceColor, float ___5_groundY, float ___6_centerY, float ___7_halfH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22123,7 +22424,7 @@ IL_01d1:
 		return;
 	}
 }
-// Method Definition Index: 81080
+// Method Definition Index: 81083
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ClearMeshes_mFA0EA9CB73F1D20BA05D7FFC046793AD516A0897 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22217,7 +22518,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 81081
+// Method Definition Index: 81084
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* SimpleWallSystem_CreateDefaultMaterial_m9185AE012C04DB7007F9D3E0224F677380B17A12 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22391,7 +22692,7 @@ IL_00bc:
 		return L_29;
 	}
 }
-// Method Definition Index: 81082
+// Method Definition Index: 81085
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22400,7 +22701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m23
 		return L_0;
 	}
 }
-// Method Definition Index: 81083
+// Method Definition Index: 81086
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_RebuildCalibratedWalls_mA64CA88D48B597DC1B89D3F43BCEFDCDFCEAF5AD (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22710,7 +23011,7 @@ IL_0243:
 		return;
 	}
 }
-// Method Definition Index: 81084
+// Method Definition Index: 81087
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* SimpleWallSystem_BuildCalibratedWall_m94199E33760C29A53459F18DAEEB6FEF3E0E63A4 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_normal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_right, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_up, float ___5_width, float ___6_height, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22779,7 +23080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CalibratedWall_t2F149F7410D71BA898D3A26BA8535
 		return L_17;
 	}
 }
-// Method Definition Index: 81085
+// Method Definition Index: 81088
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_ResetCalibration_mDFC4C7310A6E807DDD1932782FF6DA44D61152A1 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22827,7 +23128,7 @@ IL_0045:
 		return;
 	}
 }
-// Method Definition Index: 81086
+// Method Definition Index: 81089
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC313E1AADAE0A87ADDEA3AEAA758F5F1C (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_leftAngle, float ___1_rightAngle, const RuntimeMethod* method) 
 {
 	{
@@ -22847,7 +23148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingAngles_m17C0DEDC
 		return;
 	}
 }
-// Method Definition Index: 81087
+// Method Definition Index: 81090
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07571CAD7B613137CF94B12C35BF4F665 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_width, const RuntimeMethod* method) 
 {
 	{
@@ -22862,7 +23163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SetWingWidth_m1FD0B5E07
 		return;
 	}
 }
-// Method Definition Index: 81088
+// Method Definition Index: 81091
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SimpleWallSystem__getHoldCount_m9E631C2A39A8315A151B88D9FEC80C1D68A77B48 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22895,7 +23196,7 @@ IL_0010:
 		return L_3;
 	}
 }
-// Method Definition Index: 81089
+// Method Definition Index: 81092
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_UpdateStatusText_m2ECE3A6B7155A89720D8EA1EB3CB6E14E2DCA09F (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23182,7 +23483,7 @@ IL_0184:
 		return;
 	}
 }
-// Method Definition Index: 81090
+// Method Definition Index: 81093
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* SimpleWallSystem_GetController_m81EA579B42CF182B84C845CA36530E0346150F1B (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23205,7 +23506,7 @@ IL_000f:
 		return L_2;
 	}
 }
-// Method Definition Index: 81091
+// Method Definition Index: 81094
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD SimpleWallSystem_GetDevice_m91B3D5DD57B59CC0DC55BE9383FF1C52CA9055CB (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23275,7 +23576,7 @@ IL_0033:
 		return L_7;
 	}
 }
-// Method Definition Index: 81092
+// Method Definition Index: 81095
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem_SendHaptic_m58341255E13A4038815904C06FC45A6BD57EBB11 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, float ___0_amplitude, float ___1_duration, const RuntimeMethod* method) 
 {
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD V_0;
@@ -23307,7 +23608,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 81093
+// Method Definition Index: 81096
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CBF5B9EAE59A7EAF36384F23C7 (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23410,7 +23711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleWallSystem__ctor_m31AB7A2526E925CB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81094
+// Method Definition Index: 81097
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Start_mECEF9139B620F1A7E83F02231A8505FFD572939C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23438,7 +23739,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 81095
+// Method Definition Index: 81098
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Update_mA5D9E3B7940AE2C3377B6B9B48371C8770945810 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23565,7 +23866,7 @@ IL_0088:
 		return;
 	}
 }
-// Method Definition Index: 81096
+// Method Definition Index: 81099
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_Recenter_m4D7340E1EE7B8E9A89DABB1B0DDC116B709F9A85 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23718,7 +24019,7 @@ IL_0079:
 		return;
 	}
 }
-// Method Definition Index: 81097
+// Method Definition Index: 81100
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterTowardWall_mAAB5364AD3AE3620B09D42CF97D42FF2E5C4D3F1 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23798,7 +24099,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 81098
+// Method Definition Index: 81101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4DA011BE1832DF8EECFB05644431B79EFA94 (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldDirection, const RuntimeMethod* method) 
 {
 	{
@@ -23811,7 +24112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter_RecenterToDirection_m39AF4D
 		return;
 	}
 }
-// Method Definition Index: 81099
+// Method Definition Index: 81102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6E5B6DA3184B366971D3C (ViewRecenter_t252CC441C011E692593F34DB720A2289E97B7C20* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23837,7 +24138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewRecenter__ctor_m9B54CD8465C19CE856A6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 81100
+// Method Definition Index: 81103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60ABDC2AE786AA3152F160E0B03A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23856,7 +24157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Awake_m6420C562755E60A
 		return;
 	}
 }
-// Method Definition Index: 81101
+// Method Definition Index: 81104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_Update_m06C2BE7FE1AAADC5C6F1EC10EB18FFBCC10AA3E7 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23878,7 +24179,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 81102
+// Method Definition Index: 81105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WallPairAnalysis_t657E9F737E601275C3EEA66D5BDACC607C5A16E0 WallAngleAnalyzer_AnalyzePair_m7D7E7A9A179AD50940C375BA7E7636360DA79F34 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, int32_t ___0_indexA, int32_t ___1_indexB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23997,7 +24298,7 @@ IL_00a7:
 		return L_28;
 	}
 }
-// Method Definition Index: 81103
+// Method Definition Index: 81106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_AnalyzeAllPairs_m61C82B759E01207F645FE0018DB34C9F21952005 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24090,7 +24391,7 @@ IL_003b:
 		return L_16;
 	}
 }
-// Method Definition Index: 81104
+// Method Definition Index: 81107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8EDE9371213701101AF841BE523AC206C0EDB40* WallAngleAnalyzer_FindAdjacentWalls_mCDE8D5C1C12E982E371670701FEBD524ACEBD992 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24143,7 +24444,7 @@ IL_0025:
 		return L_6;
 	}
 }
-// Method Definition Index: 81105
+// Method Definition Index: 81108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallAngleAnalyzer_GetTiltCategory_mE5BB24E605C21F65E8B44741E1CBDC9BC6D98FB7 (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_wall, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24254,7 +24555,7 @@ IL_005b:
 		return _stringLiteral719DC4C792BEE02C4C7BAB1D974D09000F87BB1B;
 	}
 }
-// Method Definition Index: 81106
+// Method Definition Index: 81109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_ComputePlaneIntersection_m2023705E376BEF5E8ADB765409F372B89F6796CB (CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___0_a, CalibratedWall_t2F149F7410D71BA898D3A26BA85357D4A7D7F076* ___1_b, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_lineDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_linePoint, float* ___4_planeDistance, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -24478,7 +24779,7 @@ IL_0108:
 		return;
 	}
 }
-// Method Definition Index: 81107
+// Method Definition Index: 81110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_UpdateEdgeVisuals_m0AE0BDE230D3F5F88B9DBFA05B69BE9052857C81 (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24737,7 +25038,7 @@ IL_0157:
 		return;
 	}
 }
-// Method Definition Index: 81108
+// Method Definition Index: 81111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer_LogFullReport_mBC62A12EC19E75484AE2B7614ED73D9105CC7A9A (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24994,7 +25295,7 @@ IL_0196:
 		return;
 	}
 }
-// Method Definition Index: 81109
+// Method Definition Index: 81112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallAngleAnalyzer__ctor_m478E655215475B06663A3CE0696AC67665ECB7BC (WallAngleAnalyzer_tFA303A713E5AC1B76C00305D06D3B255ECAEB773* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25569,16 +25870,16 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 81011
+// Method Definition Index: 81012
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WallFrustumCalibrator_get_IsCalibrated_m6069659A811AE8B0A0F27FF8DC8E5C08D2B242EE_inline (WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:435>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/PyramidWallBuilder.cs:462>
 		bool L_0 = __this->____calibrated;
 		return L_0;
 	}
 }
-// Method Definition Index: 81082
+// Method Definition Index: 81085
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* SimpleWallSystem_get_Walls_m235B293C1993BE6B15A8A013BC0EFE0D39EB7829_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25733,7 +26034,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 81061
+// Method Definition Index: 81064
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t SimpleWallSystem_get_CurrentPhase_m37FA835AFCC44EFB8DB37220954AD702EC34E350_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26119,6 +26420,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpListenerResponse_tE2A3F65DF2E
 		return L_0;
 	}
 }
+// Method Definition Index: 81150
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WallCManager_get_IsScanCalibrated_mE65870C68D918846765A8619B096CB481A5CEA87_inline (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:55>
+		bool L_0 = __this->___U3CIsScanCalibratedU3Ek__BackingField;
+		return L_0;
+	}
+}
 // Method Definition Index: 80921
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ClimbingRope_get_IsVisible_m382ECFFB4D21366FF7B61825568141F330EB8614_inline (ClimbingRope_tFF49A599452200CE1099257F658EE166C3C2D5E8* __this, const RuntimeMethod* method) 
 {
@@ -26145,7 +26455,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 81062
+// Method Definition Index: 81065
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SimpleWallSystem_set_CurrentPhase_m37840EF33165B660A0ADED05A69F6500D2C8AB6A_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -26337,7 +26647,7 @@ IL_0065:
 		return;
 	}
 }
-// Method Definition Index: 81065
+// Method Definition Index: 81068
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SimpleWallSystem_get_CornerPoint_m2B72F2399BF4ED6CB129EDBB6F10D84E44BEAB19_inline (SimpleWallSystem_tAAD0AE597A7B93AE9E5C55350C9FE17BF5648385* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26346,7 +26656,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 81116
+// Method Definition Index: 81119
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* WallCalibrationManager_get_Walls_mA96195C9EF184885E070FA7F72B6524E9404DDCB_inline (WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A* __this, const RuntimeMethod* method) 
 {
 	{

@@ -418,6 +418,33 @@ public class WallFrustumCalibrator : MonoBehaviour
     // Public API
     // ────────────────────────────────────────────────────────────────────
 
+    /// <summary>
+    /// Called by WallCManager after 3D scan calibration completes.
+    /// Bypasses manual sampling and snaps the frustum directly to the
+    /// physical wall surface defined by the scan.
+    /// </summary>
+    public void CalibrateFromScan(Vector3 wallCenter, Vector3 wallNormal)
+    {
+        // Use the provided wall data directly — no sampling needed
+        _wallCenter = wallCenter;
+        _wallNormal = wallNormal;
+
+        // Build orthonormal frame from the given normal
+        ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
+
+        // Move the GameObject to the wall center so mesh verts are in local space
+        transform.position = _wallCenter;
+
+        _calibrated  = true;
+        CurrentPhase = Phase.Done;
+
+        BuildFrustumMesh();
+        SendHaptic(0.5f, 0.2f);
+
+        Debug.Log($"[WallFrustum] Calibrated from scan — " +
+                  $"center={_wallCenter:F3} normal={_wallNormal:F3}");
+    }
+    
     public void ResetCalibration()
     {
         _calibrated  = false;

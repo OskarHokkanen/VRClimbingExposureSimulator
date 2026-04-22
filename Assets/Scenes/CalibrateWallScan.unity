@@ -28535,6 +28535,8 @@ MonoBehaviour:
   - {fileID: 644963757}
   - {fileID: 1775702337}
   - {fileID: 27479608}
+  frustumCalibrator: {fileID: 0}
+  headTransform: {fileID: 0}
   audioSource: {fileID: 59648574}
   pointPlacedClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   calibrationCompleteClip: {fileID: 8300000, guid: d14b106713a74b448bcab90869f1706e, type: 3}

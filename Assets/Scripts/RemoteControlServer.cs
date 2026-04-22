@@ -35,7 +35,8 @@ public class RemoteControlServer : MonoBehaviour
     public WallFrustumCalibrator frustumCalibrator;
     public ClimbingRope climbingRope;
     public HoldPlacementManager holdPlacementManager;
-
+    public WallCManager wallCManager;
+    
     [Header("Server Settings")]
     [Tooltip("Port to listen on")]
     public int port = 8080;
@@ -183,11 +184,16 @@ public class RemoteControlServer : MonoBehaviour
             {
                 HandleReset(context.Response);
             }
+            else if (path == "/api/recalibratescan" && method == "POST")
+            {
+                HandleRecalibrateScan(context.Response);
+            }
             else
             {
                 context.Response.StatusCode = 404;
                 WriteResponse(context.Response, "Not found");
             }
+            
         }
         catch (Exception e)
         {
@@ -198,6 +204,8 @@ public class RemoteControlServer : MonoBehaviour
 
     void ServeState(HttpListenerResponse response)
     {
+        bool scanCalibrated = wallCManager != null && wallCManager.IsScanCalibrated;
+        
         bool frustumFlipped = false;
         string frustumMode = "Frustum";
         bool frustumCalibrated = false;
@@ -308,7 +316,8 @@ public class RemoteControlServer : MonoBehaviour
                       $"\"ropeMode\":\"{ropeMode}\"," +
                       $"\"activeHold\":{activeHold}," +
                       $"\"holdCount\":{holdPlacementManager?.HoldCount ?? 0}," +
-                      $"\"holds\":{holdListJson}" +
+                      $"\"holds\":{holdListJson}," +
+                      $"\"scanCalibrated\":{(scanCalibrated ? "true" : "false")}" +
                       $"}}";
 
         response.ContentType = "application/json";
@@ -447,7 +456,19 @@ public class RemoteControlServer : MonoBehaviour
         response.ContentType = "application/json";
         WriteResponse(response, "{\"ok\":true}");
     }
+    
+    void HandleRecalibrateScan(HttpListenerResponse response)
+    {
+        RunOnMainThread(() =>
+        {
+            if (wallCManager != null)
+                wallCManager.StartCalibration();
+        });
 
+        response.ContentType = "application/json";
+        WriteResponse(response, "{\"ok\":true}");
+    }
+    
     void HandleReset(HttpListenerResponse response)
     {
         RunOnMainThread(() =>
@@ -592,6 +613,17 @@ h2 { font-size: 14px; font-weight: 500; color: #888; text-transform: uppercase;
     <button class=""env-btn"" id=""btn-flat""    onclick=""setFrustumMode('flat')"">Flat Wall</button>
   </div>
 </div>
+
+<div class=""card"">
+  <h2>3D Wall Scan</h2>
+  <div id=""scan-status"" style=""font-size:13px;color:#888;margin-bottom:10px;"">
+    Not calibrated
+  </div>
+  <button class=""env-btn"" onclick=""recalibrateScan()"">
+    Recalibrate Scan
+  </button>
+</div>
+
 <div class=""card"">
   <h2>Environment</h2>
   <div class=""env-grid"" id=""env-grid""></div>
@@ -651,6 +683,7 @@ function updateUI() {
   updateFrustumUI();
   updateRopeUI();
 buildHoldButtons();
+updateScanUI();
 }
 
 function setSlider(id, value, fmt) {
@@ -806,6 +839,23 @@ function buildHoldButtons() {
     grid.appendChild(btn);
   });
 }
+
+function recalibrateScan() {
+  if (confirm('Start scan recalibration? The participant will need to press ' +
+              'grip at the 3 reference points on the wall.')) {
+    fetch(API + '/api/recalibratescan', { method: 'POST' })
+      .then(() => setTimeout(fetchState, 500));
+  }
+}
+
+function updateScanUI() {
+  const el = document.getElementById('scan-status');
+  if (el) {
+    el.textContent = state.scanCalibrated ? 'Calibrated' : 'Not calibrated';
+    el.style.color = state.scanCalibrated ? '#64ffda' : '#888';
+  }
+}
+
 // Poll state
 fetchState();
 setInterval(fetchState, 2000);
