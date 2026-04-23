@@ -445,7 +445,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral035281A66C8959D468F6DB1BE492692D5EB68837
 IL2CPP_EXTERN_C String_t* _stringLiteral0CE5DA0D88CAAE2BD1888CBDE5FB84C12B36D6D5;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CFDDBB65B2F0B34F82735DE104538C41FF0E108;
 IL2CPP_EXTERN_C String_t* _stringLiteral0F2E44254DFA18FC3F0C23A500FFF1EA30BD7F5C;
-IL2CPP_EXTERN_C String_t* _stringLiteral0F92DD55F10C94185C48598386AF70F0241DC4B4;
 IL2CPP_EXTERN_C String_t* _stringLiteral16A70DC8C790D0EFD53AE03FF23CB99D8B7A53CA;
 IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0;
 IL2CPP_EXTERN_C String_t* _stringLiteral181BB4565C7AA61CC8716A421960A53BA01AEE22;
@@ -480,13 +479,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteral675D495E61C139628601D1F560A558803C58CB67
 IL2CPP_EXTERN_C String_t* _stringLiteral684F9F5743C3D1DE5AF358333F20040FBA298574;
 IL2CPP_EXTERN_C String_t* _stringLiteral68F8877FCF5FA1352B94F487C8E2384C138F86EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral6B6E6FD1DAB7427F6F1992161B3C7F2C61BCDA0C;
-IL2CPP_EXTERN_C String_t* _stringLiteral6C752302F2BC1877CF163F50599809F6F59B95EF;
 IL2CPP_EXTERN_C String_t* _stringLiteral70253F929BCE7F81DF1A5A1C0900BED744E86C9C;
 IL2CPP_EXTERN_C String_t* _stringLiteral73B13DE9817379145386BC6ECC87E983FC8ED41A;
 IL2CPP_EXTERN_C String_t* _stringLiteral771042EFC979D34A5C35B4109215E528A9306A2B;
 IL2CPP_EXTERN_C String_t* _stringLiteral79C53BDE51B8B07E1EC75AEFC2E16E036C0E0EDC;
 IL2CPP_EXTERN_C String_t* _stringLiteral7A4A4D220FDCC6919BB1E71D72D129B00CED9EB3;
-IL2CPP_EXTERN_C String_t* _stringLiteral7F081587C53DD08EC712D1E280994A65BEBCA5FC;
 IL2CPP_EXTERN_C String_t* _stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E;
 IL2CPP_EXTERN_C String_t* _stringLiteral88BEE283254D7094E258B3A88730F4CC4F1E4AC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral8BBBBAD75DAA082E621FB2D96C165B1DFDBDB7FE;
@@ -4878,17 +4875,14 @@ inline void List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC (List_1_tB951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___0_path1, String_t* ___1_path2, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF038383CD55E0D5E674C8B1279 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_CreatePointSpheres_m9DD917227B19FDE134EE3B4C964FE8A4BFA72B9D (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ValidateSetup_m8EBE275EA4AB4F68A82111B8B63670CB09C26ECD (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, String_t* ___0_msg, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_TryLoadCalibration_mA16523905A08DCBC5CC85D62D1953EF6DCF649DC (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_RefreshDevices_m2A1B417ED1C8FF06A0A5A4CFAE08D8E6D50D1D45 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_HandleGripInput_m56ED043106D95CD5E7B9DCF3F3A9FD7B7788C986 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_UpdateHUDPosition_m71FB240E3E4E32026B7AB42CC2388C598A80B7B4 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ResetPointSpheres_mF4AF18624E1CE7FEBE3CE65D4C5D51B50947D87E (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, String_t* ___0_msg, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A (String_t* ___0_path, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_Delete_mE29829DA504F3E1B8BCB78F21E2862C9ED7EC386 (String_t* ___0_path, const RuntimeMethod* method) ;
@@ -8567,62 +8561,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WallCManager_get_SavePath_m2C84C87D
 // Method Definition Index: 81153
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_Start_mDA08DAAC04B219D7A28AF4D3B56E4A43DAE1C054 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0F92DD55F10C94185C48598386AF70F0241DC4B4);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C752302F2BC1877CF163F50599809F6F59B95EF);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F081587C53DD08EC712D1E280994A65BEBCA5FC);
-		s_Il2CppMethodInitialized = true;
-	}
 	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:64>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
 		L_0 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		__this->___headCamera = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___headCamera), (void*)L_0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:65>
-		WallCManager_BuildHUD_m6046EA4BA06F5DF038383CD55E0D5E674C8B1279(__this, NULL);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:66>
 		WallCManager_CreatePointSpheres_m9DD917227B19FDE134EE3B4C964FE8A4BFA72B9D(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:68>
-		bool L_1;
-		L_1 = WallCManager_ValidateSetup_m8EBE275EA4AB4F68A82111B8B63670CB09C26ECD(__this, NULL);
-		if (L_1)
-		{
-			goto IL_002b;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:70>
-		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral7F081587C53DD08EC712D1E280994A65BEBCA5FC, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:71>
-		return;
-	}
-
-IL_002b:
-	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:74>
-		bool L_2;
-		L_2 = WallCManager_TryLoadCalibration_mA16523905A08DCBC5CC85D62D1953EF6DCF649DC(__this, NULL);
-		if (!L_2)
+		bool L_1;
+		L_1 = WallCManager_TryLoadCalibration_mA16523905A08DCBC5CC85D62D1953EF6DCF649DC(__this, NULL);
+		if (!L_1)
 		{
-			goto IL_0045;
+			goto IL_001f;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:76>
-		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral0F92DD55F10C94185C48598386AF70F0241DC4B4, NULL);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:78>
 		WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A(__this, NULL);
-		return;
 	}
 
-IL_0045:
+IL_001f:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:82>
-		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral6C752302F2BC1877CF163F50599809F6F59B95EF, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:84>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:81>
 		return;
 	}
 }
@@ -8630,13 +8592,11 @@ IL_0045:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_Update_mB19F74FDA1750357699386BEB8C29279DF8B0F1E (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:88>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:85>
 		WallCManager_RefreshDevices_m2A1B417ED1C8FF06A0A5A4CFAE08D8E6D50D1D45(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:89>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:86>
 		WallCManager_HandleGripInput_m56ED043106D95CD5E7B9DCF3F3A9FD7B7788C986(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:90>
-		WallCManager_UpdateHUDPosition_m71FB240E3E4E32026B7AB42CC2388C598A80B7B4(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:91>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:88>
 		return;
 	}
 }
@@ -8651,19 +8611,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_StartCalibration_mDCFC60EAC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:97>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:94>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = __this->___physicalPoints;
 		NullCheck(L_0);
 		List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_inline(L_0, List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:98>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:95>
 		__this->___calibState = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:99>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:96>
 		WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline(__this, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:100>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:97>
 		WallCManager_ResetPointSpheres_mF4AF18624E1CE7FEBE3CE65D4C5D51B50947D87E(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:101>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:98>
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteralA639E200256A26B3830FF742C7535D393B27DE2D, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:102>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:99>
 		return;
 	}
 }
@@ -8678,7 +8638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ClearCalibration_mC6B0B8404
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:106>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:103>
 		String_t* L_0;
 		L_0 = WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383(__this, NULL);
 		bool L_1;
@@ -8689,7 +8649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ClearCalibration_mC6B0B8404
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:106>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:103>
 		String_t* L_2;
 		L_2 = WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383(__this, NULL);
 		File_Delete_mE29829DA504F3E1B8BCB78F21E2862C9ED7EC386(L_2, NULL);
@@ -8697,7 +8657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ClearCalibration_mC6B0B8404
 
 IL_0018:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:107>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:104>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___wallRoot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
@@ -8705,25 +8665,25 @@ IL_0018:
 		L_5 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		NullCheck(L_3);
 		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_3, L_4, L_5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:108>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:105>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___wallRoot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		NullCheck(L_6);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_6, L_7, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:109>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:106>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_8 = __this->___physicalPoints;
 		NullCheck(L_8);
 		List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_inline(L_8, List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:110>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:107>
 		__this->___calibState = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:111>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:108>
 		WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline(__this, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:112>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:109>
 		WallCManager_ResetPointSpheres_mF4AF18624E1CE7FEBE3CE65D4C5D51B50947D87E(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:113>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:110>
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral4B210C9AC20CBCDC637C6D4C2AFC700699AEA707, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:114>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:111>
 		return;
 	}
 }
@@ -8731,13 +8691,13 @@ IL_0018:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_RefreshDevices_m2A1B417ED1C8FF06A0A5A4CFAE08D8E6D50D1D45 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:120>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:117>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* L_0 = (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD*)(&__this->___leftDevice);
 		WallCManager_TryRefreshDevice_m4C584CFA1260C3F5958458B5D762AE81ADBDC1F2(L_0, ((int32_t)256), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:121>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:118>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* L_1 = (InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD*)(&__this->___rightDevice);
 		WallCManager_TryRefreshDevice_m4C584CFA1260C3F5958458B5D762AE81ADBDC1F2(L_1, ((int32_t)512), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:122>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:119>
 		return;
 	}
 }
@@ -8755,7 +8715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_TryRefreshDevice_m4C584CFA1
 	}
 	List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* V_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:127>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:124>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* L_0 = ___0_device;
 		bool L_1;
 		L_1 = InputDevice_get_isValid_mA908CF8195CECA44FF457430AFF9198C3FEC0948(L_0, NULL);
@@ -8765,22 +8725,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_TryRefreshDevice_m4C584CFA1
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:127>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:124>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:128>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:125>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_2 = (List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE*)il2cpp_codegen_object_new(List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE_il2cpp_TypeInfo_var);
 		List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4(L_2, List_1__ctor_mF7ACC153F11A3260DAACDCA56B0A70A4BFA61EA4_RuntimeMethod_var);
 		V_0 = L_2;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:129>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:130>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:126>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:127>
 		uint32_t L_3 = ___1_side;
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_4 = V_0;
 		InputDevices_GetDevicesWithCharacteristics_m82F54DE2802FCE4EB730FCFBF8731CA91A27DEB0(((int32_t)((int32_t)L_3|((int32_t)64))), L_4, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:131>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:128>
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_5 = V_0;
 		NullCheck(L_5);
 		int32_t L_6;
@@ -8791,7 +8751,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:131>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:128>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD* L_7 = ___0_device;
 		List_1_tB66D13E0427CA48C600AEA4DBA5B173C3734C6CE* L_8 = V_0;
 		NullCheck(L_8);
@@ -8802,7 +8762,7 @@ IL_0009:
 
 IL_002f:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:132>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:129>
 		return;
 	}
 }
@@ -8817,7 +8777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_HandleGripInput_m56ED043106
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:136>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:133>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_0 = __this->___leftDevice;
 		bool* L_1 = (bool*)(&__this->___leftGripPrev);
 		bool L_2;
@@ -8828,20 +8788,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_HandleGripInput_m56ED043106
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:138>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:139>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:135>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:136>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___leftControllerTransform;
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_4 = __this->___leftDevice;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = WallCManager_GetControllerWorldPos_m3CF5A403D86FAEBA29A6AA117C66FDDFD37D0FD7(L_3, L_4, _stringLiteralAE24C5BE9B741FFFA87D2A951BFE7EA0440461CD, NULL);
 		WallCManager_OnGripPressed_mCB16A39B2B9D687640D7B4DE0373AA1B9AFF397B(__this, L_5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:140>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:137>
 		return;
 	}
 
 IL_0030:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:142>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:139>
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_6 = __this->___rightDevice;
 		bool* L_7 = (bool*)(&__this->___rightGripPrev);
 		bool L_8;
@@ -8852,8 +8812,8 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:144>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:145>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:141>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:142>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = __this->___rightControllerTransform;
 		InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD L_10 = __this->___rightDevice;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
@@ -8863,7 +8823,7 @@ IL_0030:
 
 IL_005f:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:147>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:144>
 		return;
 	}
 }
@@ -8879,7 +8839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_GripRisingEdge_mACFADCC28E2
 	bool V_0 = false;
 	int32_t G_B5_0 = 0;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:151>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:148>
 		bool L_0;
 		L_0 = InputDevice_get_isValid_mA908CF8195CECA44FF457430AFF9198C3FEC0948((&___0_device), NULL);
 		if (L_0)
@@ -8888,21 +8848,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_GripRisingEdge_mACFADCC28E2
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:151>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:148>
 		bool* L_1 = ___1_prevState;
 		*((int8_t*)L_1) = (int8_t)0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:151>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:148>
 		return (bool)0;
 	}
 
 IL_000e:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:152>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:149>
 		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
 		InputFeatureUsage_1_tE336B2F0B9AC721519BFA17A08D6353FD5221637 L_2 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___gripButton;
 		bool L_3;
 		L_3 = InputDevice_TryGetFeatureValue_m24EC3B6C41AE4098269427232AD5F52E786BF884((&___0_device), L_2, (&V_0), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:153>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:150>
 		bool L_4 = V_0;
 		if (!L_4)
 		{
@@ -8923,11 +8883,11 @@ IL_0027:
 
 IL_0028:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:154>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:151>
 		bool* L_7 = ___1_prevState;
 		bool L_8 = V_0;
 		*((int8_t*)L_7) = (int8_t)L_8;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:155>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:152>
 		return (bool)G_B5_0;
 	}
 }
@@ -8947,7 +8907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:161>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:158>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_t;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8958,7 +8918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:161>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:158>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ___0_t;
 		NullCheck(L_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
@@ -8968,19 +8928,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_0010:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:162>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:159>
 		il2cpp_codegen_runtime_class_init_inline(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var);
 		InputFeatureUsage_1_t2E901FA41650EB29399194768CAA93D477CEBC58 L_4 = ((CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields*)il2cpp_codegen_static_fields_for(CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var))->___devicePosition;
 		bool L_5;
 		L_5 = InputDevice_TryGetFeatureValue_m472B5ECE996FB7440CACCF1E85722DA4963E3167((&___1_device), L_4, (&V_0), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:163>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:164>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:160>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:161>
 		String_t* L_6 = ___2_side;
 		String_t* L_7;
 		L_7 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral68F8877FCF5FA1352B94F487C8E2384C138F86EF, L_6, _stringLiteralAF10BD39D1C9E635C6DD73C917D3371E1392890A, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_7, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:165>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:162>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = V_0;
 		return L_8;
 	}
@@ -9004,7 +8964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_OnGripPressed_mCB16A39B2B9D
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:172>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:169>
 		int32_t L_0 = __this->___calibState;
 		if (L_0)
 		{
@@ -9012,40 +8972,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_OnGripPressed_mCB16A39B2B9D
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:174>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:171>
 		__this->___calibState = 1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:175>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:172>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_1 = __this->___physicalPoints;
 		NullCheck(L_1);
 		List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_inline(L_1, List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:176>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:173>
 		WallCManager_ResetPointSpheres_mF4AF18624E1CE7FEBE3CE65D4C5D51B50947D87E(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:177>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:174>
 		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_2 = __this->___calibrationStartedClip;
 		WallCManager_PlayClip_m587D0021FCB0B23D006513C111F177FC09ABA2F6(__this, L_2, NULL);
 	}
 
 IL_002c:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:180>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:177>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_3 = __this->___physicalPoints;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_inline(L_3, List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_RuntimeMethod_var);
 		V_0 = L_4;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:181>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:178>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_5 = __this->___physicalPoints;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_worldPos;
 		NullCheck(L_5);
 		List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_inline(L_5, L_6, List_1_Add_m79E50C4F592B1703F4B76A8BE7B4855515460CA1_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:182>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:179>
 		int32_t L_7 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_worldPos;
 		WallCManager_ShowPointSphere_m4E4BA1093AF002D098A78793A1B7E2D1C140DF45(__this, L_7, L_8, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:183>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:180>
 		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_9 = __this->___pointPlacedClip;
 		WallCManager_PlayClip_m587D0021FCB0B23D006513C111F177FC09ABA2F6(__this, L_9, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:185>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:182>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_10 = __this->___physicalPoints;
 		NullCheck(L_10);
 		int32_t L_11;
@@ -9056,14 +9016,14 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:187>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:184>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_12 = __this->___physicalPoints;
 		NullCheck(L_12);
 		int32_t L_13;
 		L_13 = List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_inline(L_12, List_1_get_Count_m46EEFFA770BE665EA0CB3A5332E941DA4B3C1D37_RuntimeMethod_var);
 		V_1 = L_13;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:188>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:189>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:185>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:186>
 		int32_t L_14 = V_0;
 		int32_t L_15 = L_14;
 		RuntimeObject* L_16 = Box(il2cpp_defaults.int32_class, &L_15);
@@ -9077,48 +9037,48 @@ IL_002c:
 		String_t* L_22;
 		L_22 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_17, L_21, NULL);
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, L_22, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:190>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:187>
 		return;
 	}
 
 IL_009e:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:193>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:190>
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral9DB9921B15F720EDCE5E8F121DD1B356C01F16D3, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:194>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:191>
 		bool L_23;
 		L_23 = WallCManager_ComputeAndApply_m28E32A4F1795BA55D362D1E9207F363422C29619(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:195>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:192>
 		__this->___calibState = 0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:197>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:194>
 		if (!L_23)
 		{
 			goto IL_00d6;
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:199>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:196>
 		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_24 = __this->___calibrationCompleteClip;
 		WallCManager_PlayClip_m587D0021FCB0B23D006513C111F177FC09ABA2F6(__this, L_24, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:200>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:197>
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteralA89C04904E2D069C80CE44C6861F65699CFFD370, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:201>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:198>
 		WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A(__this, NULL);
 		return;
 	}
 
 IL_00d6:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:205>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:202>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_25 = __this->___physicalPoints;
 		NullCheck(L_25);
 		List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_inline(L_25, List_1_Clear_m455780C5A45049F9BDC25EAD3BA10A681D16385D_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:206>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:203>
 		WallCManager_ResetPointSpheres_mF4AF18624E1CE7FEBE3CE65D4C5D51B50947D87E(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:207>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:208>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:204>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:205>
 		WallCManager_SetHUD_m95594F2E82901AE0FB610C0FE48CA2978007C81C(__this, _stringLiteral93174057B4CA4BA5374BFFA8A413FF91D184D53A, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:210>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:207>
 		return;
 	}
 }
@@ -9181,25 +9141,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_22;
 	memset((&V_22), 0, sizeof(V_22));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:216>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:213>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = __this->___physicalPoints;
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_0, 0, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:217>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:214>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = __this->___physicalPoints;
 		NullCheck(L_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_2, 1, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		V_1 = L_3;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:218>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:215>
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_4 = __this->___physicalPoints;
 		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810(L_4, 2, List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_RuntimeMethod_var);
 		V_2 = L_5;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:220>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:217>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_6 = __this->___virtualReferencePoints;
 		NullCheck(L_6);
 		int32_t L_7 = 0;
@@ -9208,7 +9168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_8, NULL);
 		V_3 = L_9;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:221>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:218>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_10 = __this->___virtualReferencePoints;
 		NullCheck(L_10);
 		int32_t L_11 = 1;
@@ -9217,7 +9177,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
 		L_13 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_12, NULL);
 		V_4 = L_13;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:222>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:219>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_14 = __this->___virtualReferencePoints;
 		NullCheck(L_14);
 		int32_t L_15 = 2;
@@ -9226,9 +9186,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
 		L_17 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_16, NULL);
 		V_5 = L_17;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:224>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:221>
 		V_6 = (1.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:226>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:223>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
@@ -9237,7 +9197,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_20), NULL);
 		V_7 = L_21;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:227>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:224>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_0;
@@ -9246,7 +9206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
 		L_26 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_22, L_25, NULL);
 		V_8 = L_26;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:228>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:225>
 		float L_27;
 		L_27 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_8), NULL);
 		if ((!(((float)L_27) < ((float)(0.00100000005f)))))
@@ -9255,26 +9215,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F17
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:230>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:227>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral3741278EFE2A789B948632D14B0F0C46079D4A8A, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:231>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:228>
 		return (bool)0;
 	}
 
 IL_0096:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:233>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:230>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
 		L_28 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_8), NULL);
 		V_9 = L_28;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:234>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:231>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_9;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
 		L_31 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_29, L_30, NULL);
 		V_10 = L_31;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:236>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:233>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
@@ -9283,7 +9243,7 @@ IL_0096:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
 		L_35 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_20), NULL);
 		V_11 = L_35;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:237>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:234>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_11;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_3;
@@ -9292,7 +9252,7 @@ IL_0096:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
 		L_40 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_36, L_39, NULL);
 		V_12 = L_40;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:238>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:235>
 		float L_41;
 		L_41 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_12), NULL);
 		if ((!(((float)L_41) < ((float)(0.00100000005f)))))
@@ -9301,39 +9261,39 @@ IL_0096:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:240>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:237>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral1C540EB21FE2953E42A05202632AF6CCF46D8835, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:241>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:238>
 		return (bool)0;
 	}
 
 IL_00e8:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:243>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:240>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
 		L_42 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_12), NULL);
 		V_13 = L_42;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:244>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:241>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = V_13;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = V_11;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
 		L_45 = Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline(L_43, L_44, NULL);
 		V_14 = L_45;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:246>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:243>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_10;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = V_9;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_49;
 		L_49 = WallCManager_FrameMatrix_m50AE6FD77BDFBA46FA53B4170EC5E47DD44138C3(L_46, L_47, L_48, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:247>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:244>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_11;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51 = V_14;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_13;
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_53;
 		L_53 = WallCManager_FrameMatrix_m50AE6FD77BDFBA46FA53B4170EC5E47DD44138C3(L_50, L_51, L_52, NULL);
 		V_15 = L_53;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:248>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:245>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_54;
 		L_54 = Matrix4x4_get_transpose_mE85C7D21ED5CF86A8066073E6548E77162AA2C89_inline((&V_15), NULL);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_55;
@@ -9342,7 +9302,7 @@ IL_00e8:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_56;
 		L_56 = Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline((&V_21), NULL);
 		V_16 = L_56;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:250>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:247>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_0;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_58 = V_16;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59 = V_3;
@@ -9354,7 +9314,7 @@ IL_00e8:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
 		L_63 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_57, L_62, NULL);
 		V_17 = L_63;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:252>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:249>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_64 = __this->___wallRoot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65;
 		L_65 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
@@ -9363,13 +9323,13 @@ IL_00e8:
 		L_67 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_65, L_66, NULL);
 		NullCheck(L_64);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_64, L_67, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:253>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:250>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_68 = __this->___wallRoot;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = V_17;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_70 = V_16;
 		NullCheck(L_68);
 		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_68, L_69, L_70, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:257>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:254>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73;
@@ -9380,10 +9340,10 @@ IL_00e8:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76;
 		L_76 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_75, (3.0f), NULL);
 		V_18 = L_76;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:258>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:255>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = V_9;
 		V_19 = L_77;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:260>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:257>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_78 = __this->___headTransform;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_79;
@@ -9394,7 +9354,7 @@ IL_00e8:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:262>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:259>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_80 = __this->___headTransform;
 		NullCheck(L_80);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
@@ -9403,7 +9363,7 @@ IL_00e8:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_83;
 		L_83 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_81, L_82, NULL);
 		V_22 = L_83;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:263>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:260>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84 = V_19;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_22;
 		float L_86;
@@ -9414,7 +9374,7 @@ IL_00e8:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:264>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:261>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87 = V_19;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88;
 		L_88 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_87, NULL);
@@ -9423,20 +9383,20 @@ IL_00e8:
 
 IL_01c0:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:267>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:264>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89 = V_19;
 		WallCManager_set_CalibratedWallNormal_mC35219350D2A18C8F668A19E68FBADBBE26AB63B_inline(__this, L_89, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:268>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:265>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90 = V_18;
 		WallCManager_set_CalibratedWallCenter_mF415C08DFE3BB91973C8AD50AF11329A954F8C76_inline(__this, L_90, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:269>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:266>
 		WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline(__this, (bool)1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:271>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:268>
 		float L_91 = V_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92 = V_17;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_93 = V_16;
 		WallCManager_SaveCalibration_mE85B9A8E637CF08CB8C3B6B558340D41080036C3(__this, L_91, L_92, L_93, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:272>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:269>
 		return (bool)1;
 	}
 }
@@ -9450,7 +9410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_NotifyFrustumCalibrator_m79
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:281>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:278>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_0 = __this->___frustumCalibrator;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -9461,13 +9421,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_NotifyFrustumCalibrator_m79
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:281>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:278>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:282>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:279>
 		bool L_2;
 		L_2 = WallCManager_get_IsScanCalibrated_mE65870C68D918846765A8619B096CB481A5CEA87_inline(__this, NULL);
 		if (L_2)
@@ -9476,15 +9436,15 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:282>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:279>
 		return;
 	}
 
 IL_0018:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:284>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:285>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:286>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:281>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:282>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:283>
 		WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* L_3 = __this->___frustumCalibrator;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = WallCManager_get_CalibratedWallCenter_m37CD40A181B270F775660F6E2FF8F7A3A8C47945_inline(__this, NULL);
@@ -9492,7 +9452,7 @@ IL_0018:
 		L_5 = WallCManager_get_CalibratedWallNormal_m274360110A5A15EA429DD336AB722B6E30541481_inline(__this, NULL);
 		NullCheck(L_3);
 		WallFrustumCalibrator_CalibrateFromScan_mAEA8D00794F7B3B94E5CE5C9766806FD325D491A(L_3, L_4, L_5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:287>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:284>
 		return;
 	}
 }
@@ -9502,11 +9462,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:291>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:288>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_0;
 		L_0 = Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline(NULL);
 		V_0 = L_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:292>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:289>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_x;
 		float L_2 = L_1.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_x;
@@ -9517,7 +9477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2
 		memset((&L_7), 0, sizeof(L_7));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_7), L_2, L_4, L_6, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_0), 0, L_7, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:293>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:290>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___1_y;
 		float L_9 = L_8.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_y;
@@ -9528,7 +9488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2
 		memset((&L_14), 0, sizeof(L_14));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_14), L_9, L_11, L_13, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_0), 1, L_14, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:294>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:291>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___2_z;
 		float L_16 = L_15.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___2_z;
@@ -9539,7 +9499,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2
 		memset((&L_21), 0, sizeof(L_21));
 		Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_21), L_16, L_18, L_20, (0.0f), NULL);
 		Matrix4x4_SetColumn_mC1CBEB2C29C0A9F1434C601786CE1B6DED1E1234_inline((&V_0), 2, L_21, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:295>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:292>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_22 = V_0;
 		return L_22;
 	}
@@ -9557,12 +9517,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SaveCalibration_mE85B9A8E63
 	Exception_t* V_1 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:299>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:300>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:301>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:302>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:303>
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:304>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:305>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:306>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:307>
 		CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131* L_0 = (CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131*)il2cpp_codegen_object_new(CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131_il2cpp_TypeInfo_var);
 		CalibrationData__ctor_m4FD1EBDBA3B22DE22B36FDE8A5FD1CB826B2177D(L_0, NULL);
 		CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131* L_1 = L_0;
@@ -9587,15 +9547,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SaveCalibration_mE85B9A8E63
 	}
 	try
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:310>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:311>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:307>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:308>
 		String_t* L_9;
 		L_9 = WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383(__this, NULL);
 		CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131* L_10 = V_0;
 		String_t* L_11;
 		L_11 = JsonUtility_ToJson_m53A1FEE0D388CF3A629E093C04B5E1A6D5463B53(L_10, (bool)1, NULL);
 		File_WriteAllText_m8AE8932A417928EF1E86F1E6B37C7A41904614D1(L_9, L_11, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:312>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:309>
 		goto IL_0051;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -9611,9 +9571,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SaveCalibration_mE85B9A8E63
 CATCH_0039:
 	{
 		Exception_t* L_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:313>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:310>
 		V_1 = L_12;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:315>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:312>
 		Exception_t* L_13 = V_1;
 		NullCheck(L_13);
 		String_t* L_14;
@@ -9622,14 +9582,14 @@ CATCH_0039:
 		L_15 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF28BB44CDFF929DE79A44A30A890D0F6EC103774)), L_14, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_15, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:316>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:313>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0051;
 	}
 
 IL_0051:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:317>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:314>
 		return;
 	}
 }
@@ -9650,7 +9610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_TryLoadCalibration_mA165239
 	Exception_t* V_3 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:321>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:318>
 		String_t* L_0;
 		L_0 = WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383(__this, NULL);
 		bool L_1;
@@ -9661,7 +9621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_TryLoadCalibration_mA165239
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:321>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:318>
 		return (bool)0;
 	}
 
@@ -9671,8 +9631,8 @@ IL_000f:
 	try
 	{
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:324>
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:325>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:321>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:322>
 			String_t* L_2;
 			L_2 = WallCManager_get_SavePath_m2C84C87DDD947C420598D2E7630D8F57983FA383(__this, NULL);
 			String_t* L_3;
@@ -9680,7 +9640,7 @@ IL_000f:
 			CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131* L_4;
 			L_4 = JsonUtility_FromJson_TisCalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131_m22AB06D1DE5B3DAAF014C8068F41D38FF3617660(L_3, JsonUtility_FromJson_TisCalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131_m22AB06D1DE5B3DAAF014C8068F41D38FF3617660_RuntimeMethod_var);
 			V_0 = L_4;
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:326>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:323>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___wallRoot;
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 			L_6 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
@@ -9691,9 +9651,9 @@ IL_000f:
 			L_9 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, L_8, NULL);
 			NullCheck(L_5);
 			Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_5, L_9, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:327>
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:328>
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:329>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:324>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:325>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:326>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = __this->___wallRoot;
 			CalibrationData_t849778A3BCC7EFD2663D2D9B302C79DA0DD56131* L_11 = V_0;
 			NullCheck(L_11);
@@ -9707,19 +9667,19 @@ IL_000f:
 			L_16 = SerializableQuaternion_ToQuaternion_mF8B8846E28747024A59E538B08AAED63281C0848(L_15, NULL);
 			NullCheck(L_10);
 			Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_10, L_13, L_16, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:333>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:330>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___wallRoot;
 			NullCheck(L_17);
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 			L_18 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_17, NULL);
 			WallCManager_set_CalibratedWallNormal_mC35219350D2A18C8F668A19E68FBADBBE26AB63B_inline(__this, L_18, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:334>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:331>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = __this->___wallRoot;
 			NullCheck(L_19);
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 			L_20 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_19, NULL);
 			WallCManager_set_CalibratedWallCenter_mF415C08DFE3BB91973C8AD50AF11329A954F8C76_inline(__this, L_20, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:337>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:334>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = __this->___headTransform;
 			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 			bool L_22;
@@ -9730,7 +9690,7 @@ IL_000f:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:339>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:336>
 			Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___headTransform;
 			NullCheck(L_23);
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
@@ -9740,7 +9700,7 @@ IL_000f:
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
 			L_26 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_24, L_25, NULL);
 			V_1 = L_26;
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:340>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:337>
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
 			L_27 = WallCManager_get_CalibratedWallNormal_m274360110A5A15EA429DD336AB722B6E30541481_inline(__this, NULL);
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_1;
@@ -9752,7 +9712,7 @@ IL_000f:
 			}
 		}
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:341>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:338>
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
 			L_30 = WallCManager_get_CalibratedWallNormal_m274360110A5A15EA429DD336AB722B6E30541481_inline(__this, NULL);
 			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
@@ -9762,9 +9722,9 @@ IL_000f:
 
 IL_00c8_1:
 		{
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:344>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:341>
 			WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline(__this, (bool)1, NULL);
-			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:345>
+			//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:342>
 			V_2 = (bool)1;
 			goto IL_00ed;
 		}
@@ -9782,9 +9742,9 @@ IL_00c8_1:
 CATCH_00d3:
 	{
 		Exception_t* L_32 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:347>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:344>
 		V_3 = L_32;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:349>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:346>
 		Exception_t* L_33 = V_3;
 		NullCheck(L_33);
 		String_t* L_34;
@@ -9793,7 +9753,7 @@ CATCH_00d3:
 		L_35 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5E2419776FF6071F5086724D23FA4C905EAE3783)), L_34, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_35, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:350>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:347>
 		V_2 = (bool)0;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00ed;
@@ -9801,7 +9761,7 @@ CATCH_00d3:
 
 IL_00ed:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:352>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:349>
 		bool L_36 = V_2;
 		return L_36;
 	}
@@ -9832,53 +9792,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF03
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:358>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:355>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_0, _stringLiteral302677E236853247109B8B22D0234B75C9918F90, NULL);
 		__this->___hudRoot = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hudRoot), (void*)L_0);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:359>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:356>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___hudRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7(L_1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:361>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:358>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___hudRoot;
 		NullCheck(L_2);
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_3;
 		L_3 = GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5(L_2, GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:362>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:359>
 		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_4 = L_3;
 		NullCheck(L_4);
 		Canvas_set_renderMode_mD73E953F8A115CF469508448A00D0EDAFAF5AB47(L_4, 2, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:363>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:360>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_5 = __this->___headCamera;
 		NullCheck(L_4);
 		Canvas_set_worldCamera_m007F7DABDB5A3A6BFB043E3500DA82A4D936EDD4(L_4, L_5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:365>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:362>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___hudRoot;
 		NullCheck(L_6);
 		CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* L_7;
 		L_7 = GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A(L_6, GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:366>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:363>
 		NullCheck(L_7);
 		CanvasScaler_set_dynamicPixelsPerUnit_m7A081D5FD963F751140DCF1E5190ED4E51308CA2_inline(L_7, (1.0f), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:368>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:365>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___hudRoot;
 		NullCheck(L_8);
 		GraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B* L_9;
 		L_9 = GameObject_AddComponent_TisGraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B_m308DCE149216D4787C3E6147729C0DF79423E1BF(L_8, GameObject_AddComponent_TisGraphicRaycaster_t16FC39434AE5B47D3C2993134CDCF7F4AE6A6D7B_m308DCE149216D4787C3E6147729C0DF79423E1BF_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:370>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:367>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___hudRoot;
 		NullCheck(L_10);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_11;
 		L_11 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_10, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:371>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:368>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
 		memset((&L_12), 0, sizeof(L_12));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_12), (2000.0f), (1200.0f), NULL);
 		NullCheck(L_11);
 		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_11, L_12, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:372>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:369>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___hudRoot;
 		NullCheck(L_13);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
@@ -9889,10 +9849,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF03
 		L_16 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, (0.000500000024f), NULL);
 		NullCheck(L_14);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_14, L_16, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:374>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:371>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_17, _stringLiteral0CE5DA0D88CAAE2BD1888CBDE5FB84C12B36D6D5, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:375>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:372>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = L_17;
 		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
@@ -9903,34 +9863,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF03
 		L_21 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_20, NULL);
 		NullCheck(L_19);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_19, L_21, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:376>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:373>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = L_18;
 		NullCheck(L_22);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_23;
 		L_23 = GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0(L_22, GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:377>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:374>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
 		memset((&L_24), 0, sizeof(L_24));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_24), (0.0f), (0.0f), (0.0f), (0.850000024f), NULL);
 		NullCheck(L_23);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_23, L_24);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:378>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:375>
 		NullCheck(L_22);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_25;
 		L_25 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_22, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:379>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:376>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_26 = L_25;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
 		L_27 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_26);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_26, L_27, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:380>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:377>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_28 = L_26;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_29;
 		L_29 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
 		NullCheck(L_28);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_28, L_29, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:381>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:378>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_30 = L_28;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_31;
 		L_31 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
@@ -9941,11 +9901,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF03
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33 = V_1;
 		NullCheck(L_30);
 		RectTransform_set_offsetMin_m07F38B4105C7CA9CC9FBDC9ED0DB008602880AB9(L_30, L_33, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:383>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:380>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_34, _stringLiteral771042EFC979D34A5C35B4109215E528A9306A2B, NULL);
 		V_0 = L_34;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:384>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:381>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = V_0;
 		NullCheck(L_35);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
@@ -9956,72 +9916,72 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_BuildHUD_m6046EA4BA06F5DF03
 		L_38 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_37, NULL);
 		NullCheck(L_36);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_36, L_38, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:385>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:382>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39 = V_0;
 		NullCheck(L_39);
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_40;
 		L_40 = GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9(L_39, GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9_RuntimeMethod_var);
 		__this->___hudText = L_40;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hudText), (void*)L_40);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:386>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:383>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_41 = __this->___hudText;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_42;
 		L_42 = Resources_GetBuiltinResource_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m3B4545F25A016D36D9AE93723A3449804A127D73(_stringLiteral91EABC919E48AAD7331BDBE21DBB8D4C623A4A25, Resources_GetBuiltinResource_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m3B4545F25A016D36D9AE93723A3449804A127D73_RuntimeMethod_var);
 		NullCheck(L_41);
 		Text_set_font_mA0D2999281A72029A5BC7294A886C5674F07DC5F(L_41, L_42, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:387>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:384>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_43 = __this->___hudText;
 		NullCheck(L_43);
 		Text_set_fontSize_m426338B0A2CDA58609028FFD471EF5F2C9F364D4(L_43, ((int32_t)110), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:388>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:385>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_44 = __this->___hudText;
 		NullCheck(L_44);
 		Text_set_alignment_m9FAD6C1C270FA28C610AB1E07414FBF96403157A(L_44, 4, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:389>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:386>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_45 = __this->___hudText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_46;
 		L_46 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
 		NullCheck(L_45);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_45, L_46);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:390>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:387>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_47 = __this->___hudText;
 		NullCheck(L_47);
 		Text_set_supportRichText_mB4DB141150AEBCCADEFFF4EC7A799F85FD075265(L_47, (bool)1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:391>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:388>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_48 = __this->___hudText;
 		NullCheck(L_48);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_48, _stringLiteralEECC6F8A56BCF76B634F456EDBC5A6E4AEC73125);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:393>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:390>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = V_0;
 		NullCheck(L_49);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_50;
 		L_50 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_49, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:394>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:391>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_51 = L_50;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_52;
 		L_52 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		NullCheck(L_51);
 		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_51, L_52, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:395>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:392>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_53 = L_51;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_54;
 		L_54 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
 		NullCheck(L_53);
 		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_53, L_54, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:396>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:393>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_55 = L_53;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_56;
 		memset((&L_56), 0, sizeof(L_56));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_56), (60.0f), (60.0f), NULL);
 		NullCheck(L_55);
 		RectTransform_set_offsetMin_m07F38B4105C7CA9CC9FBDC9ED0DB008602880AB9(L_55, L_56, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:397>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:394>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_57;
 		memset((&L_57), 0, sizeof(L_57));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_57), (-60.0f), (-60.0f), NULL);
 		NullCheck(L_55);
 		RectTransform_set_offsetMax_m5514D09D86516F2C0E25FA6D11A3A4274D3D002D(L_55, L_57, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:398>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:395>
 		return;
 	}
 }
@@ -10035,7 +9995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SetHUD_m95594F2E82901AE0FB6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:400>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:397>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___hudText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10046,7 +10006,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SetHUD_m95594F2E82901AE0FB6
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:400>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:397>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___hudText;
 		String_t* L_3 = ___0_msg;
 		NullCheck(L_2);
@@ -10055,7 +10015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_SetHUD_m95594F2E82901AE0FB6
 
 IL_001a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:400>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:397>
 		return;
 	}
 }
@@ -10073,7 +10033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_UpdateHUDPosition_m71FB240E
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:404>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:401>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___hudRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10096,13 +10056,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_UpdateHUDPosition_m71FB240E
 
 IL_001c:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:404>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:401>
 		return;
 	}
 
 IL_001d:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:405>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:402>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = __this->___headCamera;
 		NullCheck(L_4);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
@@ -10111,9 +10071,9 @@ IL_001d:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_5, NULL);
 		V_0 = L_6;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:406>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:403>
 		(&V_0)->___y = (0.0f);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:407>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:404>
 		float L_7;
 		L_7 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
 		if ((!(((float)L_7) < ((float)(0.00999999978f)))))
@@ -10122,7 +10082,7 @@ IL_001d:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:407>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:404>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_8 = __this->___headCamera;
 		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
@@ -10135,10 +10095,10 @@ IL_001d:
 
 IL_0059:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:408>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:405>
 		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_0), NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:409>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:410>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:406>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:407>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_11 = __this->___headCamera;
 		NullCheck(L_11);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
@@ -10159,8 +10119,8 @@ IL_0059:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_17, L_19, NULL);
 		V_1 = L_20;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:411>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:412>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:408>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:409>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___hudRoot;
 		NullCheck(L_21);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
@@ -10179,7 +10139,7 @@ IL_0059:
 		L_28 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_25, L_26, ((float)il2cpp_codegen_multiply(L_27, (4.0f))), NULL);
 		NullCheck(L_22);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_22, L_28, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:413>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:410>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___hudRoot;
 		NullCheck(L_29);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30;
@@ -10189,7 +10149,7 @@ IL_0059:
 		L_32 = Quaternion_LookRotation_mDB2CCA75B8E1AB98104F2A6E1A1EA57D0D1298D7_inline(L_31, NULL);
 		NullCheck(L_30);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_30, L_32, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:414>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:411>
 		return;
 	}
 }
@@ -10216,7 +10176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_CreatePointSpheres_m9DD9172
 	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B3_0 = NULL;
 	Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* G_B2_0 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:420>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:417>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_0 = (ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)SZArrayNew(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var, (uint32_t)3);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_1 = L_0;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
@@ -10235,18 +10195,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_CreatePointSpheres_m9DD9172
 		NullCheck(L_5);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F)L_6);
 		V_0 = L_5;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:421>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:418>
 		V_1 = 0;
 		goto IL_00ce;
 	}
 
 IL_0041:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:423>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:420>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
 		L_7 = GameObject_CreatePrimitive_m13C0A691E679A83DD595913200A1DD9A906EB47B(0, NULL);
 		V_2 = L_7;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:424>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:421>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = V_2;
 		int32_t L_9 = V_1;
 		int32_t L_10 = L_9;
@@ -10255,7 +10215,7 @@ IL_0041:
 		L_12 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral667BE73064A83DBE05ACE324D644D86EDA3B31DE, L_11, NULL);
 		NullCheck(L_8);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_8, L_12, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:425>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:422>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_2;
 		NullCheck(L_13);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
@@ -10266,15 +10226,15 @@ IL_0041:
 		L_16 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, (0.0599999987f), NULL);
 		NullCheck(L_14);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_14, L_16, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:426>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:423>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_2;
 		NullCheck(L_17);
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_18;
 		L_18 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_17, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_18, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:427>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:428>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:424>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:425>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_19;
 		L_19 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(_stringLiteral9B4FEEFA76B93D58B6E47CD9FF76F6E287D0D321, NULL);
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_20 = L_19;
@@ -10294,8 +10254,8 @@ IL_0041:
 IL_009b:
 	{
 		V_3 = G_B3_0;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:429>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:430>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:426>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:427>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = V_2;
 		NullCheck(L_22);
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_23;
@@ -10313,24 +10273,24 @@ IL_009b:
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_26, L_30, NULL);
 		NullCheck(L_23);
 		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(L_23, L_26, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:431>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:428>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = V_2;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:432>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:429>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_32 = __this->___pointSpheres;
 		int32_t L_33 = V_1;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = V_2;
 		NullCheck(L_32);
 		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(L_33), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_34);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:421>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:418>
 		int32_t L_35 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 	}
 
 IL_00ce:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:421>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:418>
 		int32_t L_36 = V_1;
 		if ((((int32_t)L_36) < ((int32_t)3)))
 		{
@@ -10338,7 +10298,7 @@ IL_00ce:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:434>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:431>
 		return;
 	}
 }
@@ -10352,7 +10312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ShowPointSphere_m4E4BA1093A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:438>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:435>
 		int32_t L_0 = ___0_idx;
 		if ((((int32_t)L_0) < ((int32_t)0)))
 		{
@@ -10383,13 +10343,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ShowPointSphere_m4E4BA1093A
 
 IL_0018:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:438>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:435>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:439>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:436>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_7 = __this->___pointSpheres;
 		int32_t L_8 = ___0_idx;
 		NullCheck(L_7);
@@ -10401,7 +10361,7 @@ IL_0019:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___1_pos;
 		NullCheck(L_11);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_11, L_12, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:440>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:437>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_13 = __this->___pointSpheres;
 		int32_t L_14 = ___0_idx;
 		NullCheck(L_13);
@@ -10409,7 +10369,7 @@ IL_0019:
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)1, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:441>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:438>
 		return;
 	}
 }
@@ -10426,7 +10386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ResetPointSpheres_mF4AF1862
 	int32_t V_1 = 0;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:445>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:442>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___pointSpheres;
 		V_0 = L_0;
 		V_1 = 0;
@@ -10435,14 +10395,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ResetPointSpheres_mF4AF1862
 
 IL_000b:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:445>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:442>
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		V_2 = L_4;
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:446>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:443>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -10453,7 +10413,7 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:446>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:443>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = V_2;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
@@ -10467,7 +10427,7 @@ IL_001f:
 
 IL_0023:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:445>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:442>
 		int32_t L_9 = V_1;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = V_0;
 		NullCheck(L_10);
@@ -10477,7 +10437,7 @@ IL_0023:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:447>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:444>
 		return;
 	}
 }
@@ -10497,7 +10457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ValidateSetup_m8EBE275EA4AB
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:453>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:450>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___wallRoot;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10508,16 +10468,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ValidateSetup_m8EBE275EA4AB
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:455>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:452>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral8F65A6C430EE90B217FEC5FFAAC6ACB41D5BDC3F, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:455>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:452>
 		return (bool)0;
 	}
 
 IL_001a:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:457>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:454>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_2 = __this->___virtualReferencePoints;
 		if (!L_2)
 		{
@@ -10535,23 +10495,23 @@ IL_001a:
 
 IL_002d:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:459>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:456>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralAB711988D1DF7FE2A633080B3652FA6577A6634A, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:459>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:456>
 		return (bool)0;
 	}
 
 IL_0039:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:461>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:458>
 		V_0 = 0;
 		goto IL_0068;
 	}
 
 IL_003d:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:463>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:460>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_4 = __this->___virtualReferencePoints;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
@@ -10566,7 +10526,7 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:465>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:462>
 		int32_t L_9 = V_0;
 		int32_t L_10 = L_9;
 		RuntimeObject* L_11 = Box(il2cpp_defaults.int32_class, &L_10);
@@ -10574,20 +10534,20 @@ IL_003d:
 		L_12 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralE43806085D962DE7FDE8D24AC44FDFCD54C52584, L_11, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_12, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:466>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:463>
 		return (bool)0;
 	}
 
 IL_0064:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:461>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:458>
 		int32_t L_13 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 	}
 
 IL_0068:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:461>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:458>
 		int32_t L_14 = V_0;
 		if ((((int32_t)L_14) < ((int32_t)3)))
 		{
@@ -10595,7 +10555,7 @@ IL_0068:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:469>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:466>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___headTransform;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -10606,15 +10566,15 @@ IL_0068:
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:470>
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:471>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:467>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:468>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteralF87A1326F259D9AEE9425B4F95BC2DFF676DA563, NULL);
 	}
 
 IL_0084:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:472>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:469>
 		return (bool)1;
 	}
 }
@@ -10628,7 +10588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_PlayClip_m587D0021FCB0B23D0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:477>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:474>
 		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0 = __this->___audioSource;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10649,7 +10609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_PlayClip_m587D0021FCB0B23D0
 		}
 	}
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:478>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:475>
 		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_4 = __this->___audioSource;
 		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_5 = ___0_clip;
 		NullCheck(L_4);
@@ -10658,7 +10618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_PlayClip_m587D0021FCB0B23D0
 
 IL_0023:
 	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:479>
+		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:476>
 		return;
 	}
 }

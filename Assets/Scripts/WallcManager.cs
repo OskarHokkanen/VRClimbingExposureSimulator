@@ -62,32 +62,29 @@ public class WallCManager : MonoBehaviour
     void Start()
     {
         headCamera = Camera.main;
-        BuildHUD();
+        //BuildHUD();
         CreatePointSpheres();
 
-        if (!ValidateSetup())
-        {
-            SetHUD("<color=red>SETUP ERROR\nCheck Inspector</color>");
-            return;
-        }
+        // if (!ValidateSetup())
+        // {
+        //     SetHUD("<color=red>SETUP ERROR\nCheck Inspector</color>");
+        //     return;
+        // }
 
         if (TryLoadCalibration())
         {
-            SetHUD("<color=lime>Calibration loaded!\n\nPress GRIP to recalibrate.</color>");
+            //SetHUD("<color=lime>Calibration loaded!\n\nPress GRIP to recalibrate.</color>");
             // Re-derive wall normal from loaded transform so frustum can use it
             NotifyFrustumCalibrator();
         }
-        else
-        {
-            SetHUD("<color=yellow>No calibration saved.\n\nPress GRIP at\nReference Point 0</color>");
-        }
+        
     }
 
     void Update()
     {
         RefreshDevices();
         HandleGripInput();
-        UpdateHUDPosition();
+        //UpdateHUDPosition();
     }
 
     // ── Public API ────────────────────────────────────────────────────────────
