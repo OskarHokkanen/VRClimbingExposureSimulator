@@ -71,12 +71,12 @@ public class WallCManager : MonoBehaviour
         //     return;
         // }
 
-        if (TryLoadCalibration())
-        {
-            //SetHUD("<color=lime>Calibration loaded!\n\nPress GRIP to recalibrate.</color>");
-            // Re-derive wall normal from loaded transform so frustum can use it
-            NotifyFrustumCalibrator();
-        }
+        // if (TryLoadCalibration())
+        // {
+        //     //SetHUD("<color=lime>Calibration loaded!\n\nPress GRIP to recalibrate.</color>");
+        //     // Re-derive wall normal from loaded transform so frustum can use it
+        //     NotifyFrustumCalibrator();
+        // }
         
     }
 
