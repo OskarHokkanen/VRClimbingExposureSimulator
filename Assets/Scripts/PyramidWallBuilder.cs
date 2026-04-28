@@ -425,15 +425,22 @@ public class WallFrustumCalibrator : MonoBehaviour
     /// </summary>
     public void CalibrateFromScan(Vector3 wallCenter, Vector3 wallNormal)
     {
-        // Use the provided wall data directly — no sampling needed
         _wallCenter = wallCenter;
-        _wallNormal = wallNormal;
 
-        // Build orthonormal frame from the given normal
+        // Force the frustum to a flat 90° vertical plane regardless of
+        // the wall's actual angle — zero out Y and renormalize so the
+        // near face always stands perfectly upright behind the scan
+        Vector3 flatNormal = new Vector3(wallNormal.x, 0f, wallNormal.z).normalized;
+
+        // Fallback if normal is pointing straight up/down (shouldn't happen)
+        if (flatNormal.sqrMagnitude < 0.001f)
+            flatNormal = wallNormal;
+
+        _wallNormal = flatNormal;
+
         ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
 
-        // Move the GameObject to the wall center so mesh verts are in local space
-        transform.position = _wallCenter;
+        transform.position = _wallCenter - flatNormal * 0.05f;
 
         _calibrated  = true;
         CurrentPhase = Phase.Done;
@@ -441,8 +448,8 @@ public class WallFrustumCalibrator : MonoBehaviour
         BuildFrustumMesh();
         SendHaptic(0.5f, 0.2f);
 
-        Debug.Log($"[WallFrustum] Calibrated from scan — " +
-                  $"center={_wallCenter:F3} normal={_wallNormal:F3}");
+        Debug.Log($"[WallFrustum] Calibrated from scan (flat) — " +
+                  $"center={_wallCenter:F3} flatNormal={_wallNormal:F3}");
     }
     
     public void ResetCalibration()

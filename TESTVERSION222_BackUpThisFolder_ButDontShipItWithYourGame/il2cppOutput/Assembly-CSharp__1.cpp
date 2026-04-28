@@ -4876,8 +4876,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___0_path1, String_t* ___1_path2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_CreatePointSpheres_m9DD917227B19FDE134EE3B4C964FE8A4BFA72B9D (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_TryLoadCalibration_mA16523905A08DCBC5CC85D62D1953EF6DCF649DC (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_RefreshDevices_m2A1B417ED1C8FF06A0A5A4CFAE08D8E6D50D1D45 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_HandleGripInput_m56ED043106D95CD5E7B9DCF3F3A9FD7B7788C986 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WallCManager_set_IsScanCalibrated_m2F49DEFE624245F891963586350C4D0883513E74_inline (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, bool ___0_value, const RuntimeMethod* method) ;
@@ -4896,6 +4894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_PlayClip_m587D0021FCB0B23D006513C111F177FC09ABA2F6 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_clip, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_ShowPointSphere_m4E4BA1093AF002D098A78793A1B7E2D1C140DF45 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, int32_t ___0_idx, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_pos, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WallCManager_ComputeAndApply_m28E32A4F1795BA55D362D1E9207F363422C29619 (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A (WallCManager_t239EC91FE109427B2086C077D8D53D51F84F62B3* __this, const RuntimeMethod* method) ;
 inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810 (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
 	return ((  Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (*) (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B*, int32_t, const RuntimeMethod*))List_1_get_Item_m8F2E15FC96DA75186C51228128A0660709E4E810_gshared)(__this, ___0_index, method);
@@ -8569,21 +8568,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WallCManager_Start_mDA08DAAC04B219D7A28A
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___headCamera), (void*)L_0);
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:66>
 		WallCManager_CreatePointSpheres_m9DD917227B19FDE134EE3B4C964FE8A4BFA72B9D(__this, NULL);
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:74>
-		bool L_1;
-		L_1 = WallCManager_TryLoadCalibration_mA16523905A08DCBC5CC85D62D1953EF6DCF649DC(__this, NULL);
-		if (!L_1)
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:78>
-		WallCManager_NotifyFrustumCalibrator_m79E15A5EC1FCEACA277951FEA24792B33B15394A(__this, NULL);
-	}
-
-IL_001f:
-	{
 		//<source_info:/Users/oskar_hokkanen/development/VRClimbingExposureSimulator/Assets/Scripts/WallcManager.cs:81>
 		return;
 	}
