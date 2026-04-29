@@ -440,7 +440,7 @@ public class WallFrustumCalibrator : MonoBehaviour
 
         ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
 
-        transform.position = _wallCenter - flatNormal * 0.05f;
+        transform.position = _wallCenter - flatNormal * 0.8f;
 
         _calibrated  = true;
         CurrentPhase = Phase.Done;
