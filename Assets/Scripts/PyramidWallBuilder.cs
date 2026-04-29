@@ -22,20 +22,11 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     // ── Frustum Shape ───────────────────────────────────────────────────
     [Header("Frustum Shape")]
-    [Tooltip("Distance from the wall to the far (large) face")]
     public float farDistance = 3f;
-
-    [Tooltip("Width of the near face")]
-    public float nearWidth = 0.4f;
-
-    [Tooltip("Height of the near face")]
-    public float nearHeight = 0.3f;
-
-    [Tooltip("Width of the far face")]
-    public float farWidth = 2f;
-
-    [Tooltip("Height of the far face")]
-    public float farHeight = 1.5f;
+    public float nearWidth   = 0.4f;
+    public float nearHeight  = 0.3f;
+    public float farWidth    = 2f;
+    public float farHeight   = 1.5f;
 
     // ── Orientation ──────────────────────────────────────────────────────
     [Header("Orientation")]
@@ -49,38 +40,57 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     // ── Preview Holds ────────────────────────────────────────────────────
     [Header("Preview Holds")]
-    [Tooltip("Total number of preview holds spread across the 4 side faces")]
     public int previewHoldCount = 16;
     public GameObject holdPrefab;
-    public float holdScale = 1f;
-    [Tooltip("Scale of each preview hold sphere")]
+    public float holdScale      = 1f;
     public float previewHoldScale = 0.06f;
     public Color previewHoldColor = new Color(1f, 0.4f, 0.1f);
-    [Tooltip("Seed for random hold placement — change to shuffle positions")]
     public int randomSeed = 42;
 
     private List<GameObject> _previewHolds = new List<GameObject>();
+
+    // ── Gym Holds (GPU Instanced) ─────────────────────────────────────────
+    [Header("Gym Holds")]
+    [Tooltip("Same mesh used by GymWall")]
+    public Mesh gymHoldMesh;
+    [Tooltip("Must have Enable GPU Instancing ticked")]
+    public Material gymHoldMaterial;
+    public int gymHoldCount = 20;
+    public float gymHoldMinScale    = 0.04f;
+    public float gymHoldMaxScale    = 0.09f;
+    public float gymHoldProtrusion  = 0.03f;
+    public Vector3 gymHoldRotationOffset = new Vector3(90f, 0f, 0f);
+    public Color[] gymHoldColors = new Color[]
+    {
+        Color.white,
+        Color.red,
+        new Color(0f, 0.5f, 1f),
+        new Color(1f, 0.5f, 0f),
+        Color.yellow
+    };
+    public int gymHoldSeed = 42;
+
+    private Matrix4x4[]         _gymHoldMatrices;
+    private Vector4[]           _gymHoldColors;
+    private MaterialPropertyBlock _gymHoldBlock;
+    private bool                _gymHoldsReady;
 
     // ── State ────────────────────────────────────────────────────────────
     public enum Phase { Sampling, Done }
     public Phase CurrentPhase { get; private set; } = Phase.Sampling;
 
-    // Calibration
-    private List<Vector3> _samplePoints   = new List<Vector3>();
-    private List<Vector3> _sampleNormals  = new List<Vector3>();
-    private List<GameObject> _sampleMarkers = new List<GameObject>();
+    private List<Vector3>     _samplePoints  = new List<Vector3>();
+    private List<Vector3>     _sampleNormals = new List<Vector3>();
+    private List<GameObject>  _sampleMarkers = new List<GameObject>();
 
-    // Fitted plane
     private Vector3 _wallCenter;
     private Vector3 _wallNormal;
     private Vector3 _wallUp;
     private Vector3 _wallRight;
     private bool    _calibrated;
 
-    // Mesh
     private Mesh _mesh;
 
-    // Input
     private bool _triggerPrev, _primaryPrev, _secondaryPrev, _gripPrev, _thumbPrev;
 
     // ────────────────────────────────────────────────────────────────────
@@ -99,13 +109,35 @@ public class WallFrustumCalibrator : MonoBehaviour
 
     private void Update()
     {
+        // ── Draw GPU instanced gym holds every frame ──────────────────
+        if (_gymHoldsReady && gymHoldMesh != null && gymHoldMaterial != null)
+        {
+            int batchSize = 1023;
+            for (int i = 0; i < _gymHoldMatrices.Length; i += batchSize)
+            {
+                int count = Mathf.Min(batchSize, _gymHoldMatrices.Length - i);
+
+                var batchMatrices = new Matrix4x4[count];
+                var batchColors   = new Vector4[count];
+
+                System.Array.Copy(_gymHoldMatrices, i, batchMatrices, 0, count);
+                System.Array.Copy(_gymHoldColors,   i, batchColors,   0, count);
+
+                _gymHoldBlock.SetVectorArray("_BaseColor", batchColors);
+
+                Graphics.DrawMeshInstanced(gymHoldMesh, 0, gymHoldMaterial,
+                    batchMatrices, count, _gymHoldBlock);
+            }
+        }
+
+        // ── Controller input ──────────────────────────────────────────
         InputDevice dev = GetDevice();
         if (!dev.isValid) { UpdateStatusText(); return; }
 
-        dev.TryGetFeatureValue(CommonUsages.triggerButton,    out bool trigger);
-        dev.TryGetFeatureValue(CommonUsages.primaryButton,    out bool primary);
-        dev.TryGetFeatureValue(CommonUsages.secondaryButton,  out bool secondary);
-        dev.TryGetFeatureValue(CommonUsages.gripButton,       out bool grip);
+        dev.TryGetFeatureValue(CommonUsages.triggerButton,   out bool trigger);
+        dev.TryGetFeatureValue(CommonUsages.primaryButton,   out bool primary);
+        dev.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondary);
+        dev.TryGetFeatureValue(CommonUsages.gripButton,      out bool grip);
 
         if (grip && !_gripPrev)
             ResetCalibration();
@@ -122,14 +154,12 @@ public class WallFrustumCalibrator : MonoBehaviour
                 break;
 
             case Phase.Done:
-                // A → flip direction
                 if (primary && !_primaryPrev)
                 {
                     flipDirection = !flipDirection;
                     BuildFrustumMesh();
                 }
 
-                // Thumbstick click → toggle Frustum / FlatWall
                 dev.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out bool thumb);
                 if (thumb && !_thumbPrev)
                 {
@@ -139,7 +169,6 @@ public class WallFrustumCalibrator : MonoBehaviour
                 }
                 _thumbPrev = thumb;
 
-                // B → re-calibrate
                 if (secondary && !_secondaryPrev)
                     ResetCalibration();
                 break;
@@ -223,7 +252,8 @@ public class WallFrustumCalibrator : MonoBehaviour
         SendHaptic(0.8f, 0.4f);
     }
 
-    private static void ComputeWallFrame(Vector3 normal, out Vector3 right, out Vector3 up)
+    private static void ComputeWallFrame(Vector3 normal,
+        out Vector3 right, out Vector3 up)
     {
         Vector3 refUp = (Mathf.Abs(Vector3.Dot(normal, Vector3.up)) > 0.95f)
             ? Vector3.forward : Vector3.up;
@@ -246,15 +276,11 @@ public class WallFrustumCalibrator : MonoBehaviour
         float fHW = farWidth   * 0.5f;
         float fHH = farHeight  * 0.5f;
 
-        // FlatWall: near face expands to match the far (large) size
         float nearHW = mode == FrustumMode.FlatWall ? fHW : nHW;
         float nearHH = mode == FrustumMode.FlatWall ? fHH : nHH;
 
-        // Local-space — transform.position == _wallCenter so no extra offset needed
         Vector3 P(float x, float y, float z) =>
-            _wallRight * x +
-            _wallUp    * y +
-            normal     * z;
+            _wallRight * x + _wallUp * y + normal * z;
 
         Vector3 n0 = P(-nearHW, -nearHH, 0f);
         Vector3 n1 = P( nearHW, -nearHH, 0f);
@@ -268,36 +294,32 @@ public class WallFrustumCalibrator : MonoBehaviour
 
         Vector3[] vertices =
         {
-            // ── FRONT ──────────────────────────────────────
-            n0, n1, n2, n3,     // Near cap  [0-3]
-            n0, n1, f1, f0,     // Bottom    [4-7]
-            n3, n2, f2, f3,     // Top       [8-11]
-            f0, n0, n3, f3,     // Left      [12-15]
-            n1, f1, f2, n2,     // Right     [16-19]
+            n0, n1, n2, n3,
+            n0, n1, f1, f0,
+            n3, n2, f2, f3,
+            f0, n0, n3, f3,
+            n1, f1, f2, n2,
 
-            // ── BACK (reversed winding) ────────────────────
-            n0, n1, n2, n3,     // Near cap  [20-23]
-            n0, n1, f1, f0,     // Bottom    [24-27]
-            n3, n2, f2, f3,     // Top       [28-31]
-            f0, n0, n3, f3,     // Left      [32-35]
-            n1, f1, f2, n2,     // Right     [36-39]
+            n0, n1, n2, n3,
+            n0, n1, f1, f0,
+            n3, n2, f2, f3,
+            f0, n0, n3, f3,
+            n1, f1, f2, n2,
         };
 
         int[] triangles =
         {
-            // ── FRONT ──────────────────────────────────────
-             2,  1,  0,   3,  2,  0,   // Near cap
-             4,  5,  6,   4,  6,  7,   // Bottom
-             8,  9, 10,   8, 10, 11,   // Top
-            12, 13, 14,  12, 14, 15,   // Left
-            16, 17, 18,  16, 18, 19,   // Right
+             2,  1,  0,   3,  2,  0,
+             4,  5,  6,   4,  6,  7,
+             8,  9, 10,   8, 10, 11,
+            12, 13, 14,  12, 14, 15,
+            16, 17, 18,  16, 18, 19,
 
-            // ── BACK ───────────────────────────────────────
-            20, 21, 22,  20, 22, 23,   // Near cap
-            25, 24, 26,  26, 24, 27,   // Bottom
-            29, 28, 30,  30, 28, 31,   // Top
-            33, 32, 34,  34, 32, 35,   // Left
-            37, 36, 38,  38, 36, 39,   // Right
+            20, 21, 22,  20, 22, 23,
+            25, 24, 26,  26, 24, 27,
+            29, 28, 30,  30, 28, 31,
+            33, 32, 34,  34, 32, 35,
+            37, 36, 38,  38, 36, 39,
         };
 
         Vector2[] uvs = new Vector2[40];
@@ -317,6 +339,7 @@ public class WallFrustumCalibrator : MonoBehaviour
         _mesh.RecalculateBounds();
 
         RebuildPreviewHolds(normal, nearHW, nearHH, fHW, fHH);
+        SpawnGymHolds(normal, nearHW, nearHH, fHW, fHH);
     }
 
     private void OnValidate() => BuildFrustumMesh();
@@ -326,113 +349,182 @@ public class WallFrustumCalibrator : MonoBehaviour
     // ────────────────────────────────────────────────────────────────────
 
     private void RebuildPreviewHolds(Vector3 normal,
-    float nearHW, float nearHH, float fHW, float fHH)
-{
-    foreach (var h in _previewHolds) if (h != null) Destroy(h);
-    _previewHolds.Clear();
-
-    if (!_calibrated || previewHoldCount <= 0) return;
-
-    Vector3 origin = transform.position;
-
-    // World-space point on the frustum surface
-    Vector3 W(float x, float y, float z) =>
-        origin + _wallRight * x + _wallUp * y + normal * z;
-
-    // Each face defined as a grid: step along two axes
-    // (edgeA start/end, edgeB start/end, steps along each)
-    int perFace = Mathf.Max(1, previewHoldCount / 4);
-    int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
-    int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
-
-    // Face: (corner00, corner10, corner01, corner11, surfaceNormal)
-    // corners: 00=near-start, 10=near-end, 01=far-start, 11=far-end
-    var faces = new (Vector3 c00, Vector3 c10, Vector3 c01, Vector3 c11, Vector3 faceNormal)[]
+        float nearHW, float nearHH, float fHW, float fHH)
     {
-        // Bottom
-        ( W(-nearHW, -nearHH, 0f),          W( nearHW, -nearHH, 0f),
-          W(-fHW,    -fHH,    farDistance),  W( fHW,   -fHH, farDistance),
-          _wallUp ),
+        foreach (var h in _previewHolds) if (h != null) Destroy(h);
+        _previewHolds.Clear();
 
-        // Top
-        ( W(-nearHW,  nearHH, 0f),          W( nearHW,  nearHH, 0f),
-          W(-fHW,     fHH,    farDistance),  W( fHW,    fHH, farDistance),
-          -_wallUp ),
+        if (!_calibrated || previewHoldCount <= 0) return;
 
-        // Left
-        ( W(-nearHW, -nearHH, 0f),          W(-nearHW,  nearHH, 0f),
-          W(-fHW,    -fHH,    farDistance),  W(-fHW,    fHH, farDistance),
-          _wallRight ),
+        Vector3 origin = transform.position;
 
-        // Right
-        ( W( nearHW, -nearHH, 0f),          W( nearHW,  nearHH, 0f),
-          W( fHW,    -fHH,    farDistance),  W( fHW,    fHH, farDistance),
-          -_wallRight ),
-    };
+        Vector3 W(float x, float y, float z) =>
+            origin + _wallRight * x + _wallUp * y + normal * z;
 
-    foreach (var face in faces)
-    {
-        for (int row = 0; row < rows; row++)
-        for (int col = 0; col < cols; col++)
+        int perFace = Mathf.Max(1, previewHoldCount / 4);
+        int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
+        int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
+
+        var faces = new (Vector3 c00, Vector3 c10, Vector3 c01,
+                         Vector3 c11, Vector3 faceNormal)[]
         {
-            // Evenly spaced t values, inset slightly from edges
-            float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
-            float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
+            ( W(-nearHW, -nearHH, 0f), W( nearHW, -nearHH, 0f),
+              W(-fHW,    -fHH, farDistance), W( fHW, -fHH, farDistance),
+              _wallUp ),
+            ( W(-nearHW,  nearHH, 0f), W( nearHW,  nearHH, 0f),
+              W(-fHW,     fHH, farDistance), W( fHW,  fHH, farDistance),
+              -_wallUp ),
+            ( W(-nearHW, -nearHH, 0f), W(-nearHW,  nearHH, 0f),
+              W(-fHW,    -fHH, farDistance), W(-fHW,  fHH, farDistance),
+              _wallRight ),
+            ( W( nearHW, -nearHH, 0f), W( nearHW,  nearHH, 0f),
+              W( fHW,    -fHH, farDistance), W( fHW,  fHH, farDistance),
+              -_wallRight ),
+        };
 
-            // Bilinear interpolation across the trapezoid
-            Vector3 pos = Vector3.Lerp(
-                Vector3.Lerp(face.c00, face.c10, tCol),
-                Vector3.Lerp(face.c01, face.c11, tCol),
-                tRow);
-
-            // Offset slightly inward so holds sit on the surface
-            pos += face.faceNormal * 0.02f;
-
-            GameObject obj;
-            if (holdPrefab != null)
+        foreach (var face in faces)
+        {
+            for (int row = 0; row < rows; row++)
+            for (int col = 0; col < cols; col++)
             {
-                obj = Instantiate(holdPrefab, pos,
-                    Quaternion.LookRotation(face.faceNormal, _wallUp));
-                obj.transform.localScale *= holdScale;
-            }
-            else
-            {
-                obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                obj.transform.position   = pos;
-                obj.transform.localScale = Vector3.one * previewHoldScale;
-                var mat = new Material(
-                    Shader.Find("Universal Render Pipeline/Lit") ??
-                    Shader.Find("Standard"));
-                mat.color = previewHoldColor;
-                obj.GetComponent<Renderer>().material = mat;
-                Destroy(obj.GetComponent<Collider>());
-            }
+                float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
+                float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
 
-            obj.name = "PreviewHold";
-            _previewHolds.Add(obj);
+                Vector3 pos = Vector3.Lerp(
+                    Vector3.Lerp(face.c00, face.c10, tCol),
+                    Vector3.Lerp(face.c01, face.c11, tCol),
+                    tRow);
+
+                pos += face.faceNormal * 0.02f;
+
+                GameObject obj;
+                if (holdPrefab != null)
+                {
+                    obj = Instantiate(holdPrefab, pos,
+                        Quaternion.LookRotation(face.faceNormal, _wallUp));
+                    obj.transform.localScale *= holdScale;
+                }
+                else
+                {
+                    obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    obj.transform.position   = pos;
+                    obj.transform.localScale = Vector3.one * previewHoldScale;
+                    var mat = new Material(
+                        Shader.Find("Universal Render Pipeline/Lit") ??
+                        Shader.Find("Standard"));
+                    mat.color = previewHoldColor;
+                    obj.GetComponent<Renderer>().material = mat;
+                    Destroy(obj.GetComponent<Collider>());
+                }
+
+                obj.name = "PreviewHold";
+                _previewHolds.Add(obj);
+            }
         }
     }
-}
+
+    // ────────────────────────────────────────────────────────────────────
+    // Gym Holds (GPU Instanced)
+    // ────────────────────────────────────────────────────────────────────
+
+    private void SpawnGymHolds(Vector3 normal,
+        float nearHW, float nearHH, float fHW, float fHH)
+    {
+        _gymHoldsReady = false;
+
+        if (gymHoldMesh == null || gymHoldMaterial == null) return;
+        gymHoldMaterial.enableInstancing = true;
+
+        _gymHoldBlock = new MaterialPropertyBlock();
+
+        Vector3 origin = transform.position;
+
+        Vector3 W(float x, float y, float z) =>
+            origin + _wallRight * x + _wallUp * y + normal * z;
+
+        var faces = new (Vector3 c00, Vector3 c10, Vector3 c01,
+                         Vector3 c11, Vector3 faceNormal)[]
+        {
+            // Bottom
+            ( W(-nearHW, -nearHH, 0f), W( nearHW, -nearHH, 0f),
+              W(-fHW,    -fHH, farDistance), W( fHW, -fHH, farDistance),
+              _wallUp ),
+            // Top
+            ( W(-nearHW,  nearHH, 0f), W( nearHW,  nearHH, 0f),
+              W(-fHW,     fHH, farDistance), W( fHW,  fHH, farDistance),
+              -_wallUp ),
+            // Left
+            ( W(-nearHW, -nearHH, 0f), W(-nearHW,  nearHH, 0f),
+              W(-fHW,    -fHH, farDistance), W(-fHW,  fHH, farDistance),
+              _wallRight ),
+            // Right
+            ( W( nearHW, -nearHH, 0f), W( nearHW,  nearHH, 0f),
+              W( fHW,    -fHH, farDistance), W( fHW,  fHH, farDistance),
+              -_wallRight ),
+        };
+
+        int perFace = Mathf.Max(1, gymHoldCount / faces.Length);
+        int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
+        int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
+        int total   = faces.Length * rows * cols;
+
+        _gymHoldMatrices = new Matrix4x4[total];
+        _gymHoldColors   = new Vector4[total];
+
+        var rng = new System.Random(gymHoldSeed);
+        int idx = 0;
+
+        foreach (var face in faces)
+        {
+            for (int row = 0; row < rows; row++)
+            for (int col = 0; col < cols; col++)
+            {
+                float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
+                float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
+
+                Vector3 pos = Vector3.Lerp(
+                    Vector3.Lerp(face.c00, face.c10, tCol),
+                    Vector3.Lerp(face.c01, face.c11, tCol),
+                    tRow);
+
+                pos += face.faceNormal * gymHoldProtrusion;
+
+                float scale = Mathf.Lerp(gymHoldMinScale, gymHoldMaxScale,
+                                          (float)rng.NextDouble());
+                float yRot  = (float)rng.NextDouble() * 360f;
+
+                Quaternion baseRot    = Quaternion.LookRotation(
+                                            -face.faceNormal, _wallUp) *
+                                        Quaternion.Euler(gymHoldRotationOffset);
+                Quaternion randomSpin = Quaternion.AngleAxis(
+                                            yRot, -face.faceNormal);
+                Quaternion worldRot   = randomSpin * baseRot;
+
+                _gymHoldMatrices[idx] = Matrix4x4.TRS(pos, worldRot,
+                                                       Vector3.one * scale);
+
+                Color c = gymHoldColors.Length > 0
+                    ? gymHoldColors[rng.Next(gymHoldColors.Length)]
+                    : Color.white;
+                _gymHoldColors[idx] = new Vector4(c.r, c.g, c.b, c.a);
+
+                idx++;
+            }
+        }
+
+        _gymHoldsReady = true;
+        Debug.Log($"[WallFrustum] {total} gym holds spawned (GPU instanced).");
+    }
 
     // ────────────────────────────────────────────────────────────────────
     // Public API
     // ────────────────────────────────────────────────────────────────────
 
-    /// <summary>
-    /// Called by WallCManager after 3D scan calibration completes.
-    /// Bypasses manual sampling and snaps the frustum directly to the
-    /// physical wall surface defined by the scan.
-    /// </summary>
     public void CalibrateFromScan(Vector3 wallCenter, Vector3 wallNormal)
     {
         _wallCenter = wallCenter;
 
-        // Force the frustum to a flat 90° vertical plane regardless of
-        // the wall's actual angle — zero out Y and renormalize so the
-        // near face always stands perfectly upright behind the scan
         Vector3 flatNormal = new Vector3(wallNormal.x, 0f, wallNormal.z).normalized;
-
-        // Fallback if normal is pointing straight up/down (shouldn't happen)
         if (flatNormal.sqrMagnitude < 0.001f)
             flatNormal = wallNormal;
 
@@ -448,30 +540,30 @@ public class WallFrustumCalibrator : MonoBehaviour
         BuildFrustumMesh();
         SendHaptic(0.5f, 0.2f);
 
-        Debug.Log($"[WallFrustum] Calibrated from scan (flat) — " +
+        Debug.Log($"[WallFrustum] Calibrated from scan — " +
                   $"center={_wallCenter:F3} flatNormal={_wallNormal:F3}");
     }
-    
+
     public void ResetCalibration()
     {
-        _calibrated  = false;
-        CurrentPhase = Phase.Sampling;
+        _calibrated    = false;
+        _gymHoldsReady = false;
+        CurrentPhase   = Phase.Sampling;
         ClearSamples();
 
         foreach (var h in _previewHolds) if (h != null) Destroy(h);
         _previewHolds.Clear();
 
+        _gymHoldMatrices = null;
+        _gymHoldColors   = null;
+
         if (_mesh != null) _mesh.Clear();
     }
 
-    public Vector3 WallNormal    => _wallNormal;
-    public Vector3 WallCenter    => _wallCenter;
-    public bool    IsCalibrated  => _calibrated;
+    public Vector3 WallNormal   => _wallNormal;
+    public Vector3 WallCenter   => _wallCenter;
+    public bool    IsCalibrated => _calibrated;
 
-    /// <summary>
-    /// Returns the near plane as a CalibratedWall for HoldPlacementManager.
-    /// Normal faces toward the climber for correct hold offsetting.
-    /// </summary>
     public CalibratedWall GetNearPlaneAsWall()
     {
         Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
@@ -481,13 +573,13 @@ public class WallFrustumCalibrator : MonoBehaviour
 
         return new CalibratedWall
         {
-            wallIndex    = 99,
-            center       = _wallCenter,
-            normal       = -normal,
-            localRight   = _wallRight,
-            localUp      = _wallUp,
-            width        = w,
-            height       = h,
+            wallIndex     = 99,
+            center        = _wallCenter,
+            normal        = -normal,
+            localRight    = _wallRight,
+            localUp       = _wallUp,
+            width         = w,
+            height        = h,
             samplePoints  = new List<Vector3>(),
             sampleNormals = new List<Vector3>()
         };
@@ -505,8 +597,10 @@ public class WallFrustumCalibrator : MonoBehaviour
         {
             Phase.Sampling => $"FRUSTUM CAL  |  Samples: {_samplePoints.Count}/3+\n"
                             + "[Trigger] Sample  [A] Finalize  [B] Undo  [Grip] Reset",
-            Phase.Done     => $"FRUSTUM READY  |  {mode}{(flipDirection ? " Flipped" : "")}\n"
-                            + "[A] Flip  [Stick] Flat/Frustum  [B] Re-calibrate  [Grip] Reset",
+            Phase.Done     => $"FRUSTUM READY  |  {mode}" +
+                              $"{(flipDirection ? " Flipped" : "")}\n" +
+                              "[A] Flip  [Stick] Flat/Frustum  " +
+                              "[B] Re-calibrate  [Grip] Reset",
             _              => string.Empty
         };
     }
@@ -557,9 +651,11 @@ public class WallFrustumCalibrator : MonoBehaviour
         if (mat.HasProperty("_Mode"))
         {
             mat.SetFloat("_Mode", 3);
-            mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-            mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-            mat.SetInt("_ZWrite",   0);
+            mat.SetInt("_SrcBlend",
+                (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            mat.SetInt("_DstBlend",
+                (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            mat.SetInt("_ZWrite", 0);
             mat.DisableKeyword("_ALPHATEST_ON");
             mat.EnableKeyword("_ALPHABLEND_ON");
             mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");

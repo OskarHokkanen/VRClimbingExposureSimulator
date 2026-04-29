@@ -28,9 +28,24 @@ public class GymWall : MonoBehaviour
     public float holdMaxScale  = 0.09f;
     public int randomSeed      = 0;
 
+    [Tooltip("Rotation offset applied to all holds — use X:90 to correct holds facing the wrong way")]
+    public Vector3 holdRotationOffset = new Vector3(90f, 0f, 0f);
+    
+    [Header("Hold Colors")]
+    public Color[] holdColors = new Color[]
+    {
+        Color.white,
+        Color.red,
+        new Color(0f, 0.5f, 1f),   // blue
+        new Color(1f, 0.5f, 0f),   // orange
+        Color.yellow
+    };
+    
+    private Vector4[] _holdColors; // Vector4 because GPU needs float4
     private Mesh        _wallMesh;
     private Matrix4x4[] _holdMatrices;
     private bool        _holdsReady;
+    private MaterialPropertyBlock _holdPropertyBlock;
 
     // ────────────────────────────────────────────────────────────────────────
     // Lifecycle
@@ -51,9 +66,17 @@ public class GymWall : MonoBehaviour
             for (int i = 0; i < _holdMatrices.Length; i += batchSize)
             {
                 int count = Mathf.Min(batchSize, _holdMatrices.Length - i);
-                var batch = new Matrix4x4[count];
-                System.Array.Copy(_holdMatrices, i, batch, 0, count);
-                Graphics.DrawMeshInstanced(holdMesh, 0, holdMaterial, batch);
+
+                var batchMatrices = new Matrix4x4[count];
+                var batchColors   = new Vector4[count];
+
+                System.Array.Copy(_holdMatrices, i, batchMatrices, 0, count);
+                System.Array.Copy(_holdColors,   i, batchColors,   0, count);
+
+                _holdPropertyBlock.SetVectorArray("_BaseColor", batchColors);
+
+                Graphics.DrawMeshInstanced(holdMesh, 0, holdMaterial,
+                    batchMatrices, count, _holdPropertyBlock);
             }
         }
     }
@@ -105,39 +128,50 @@ public class GymWall : MonoBehaviour
     _wallMesh.RecalculateBounds();
 }
 
-void SpawnHolds()
-{
-    if (holdMesh == null || holdMaterial == null) return;
-    holdMaterial.enableInstancing = true;
-
-    float hw     = width * 0.5f - edgeMargin;
-    float top    =  initialVisibleHeight  - edgeMargin;
-    float bottom = -(totalHeight - initialVisibleHeight) + edgeMargin;
-
-    var rng = new System.Random(randomSeed + name.GetHashCode());
-    _holdMatrices = new Matrix4x4[holdCount];
-
-    for (int i = 0; i < holdCount; i++)
+    void SpawnHolds()
     {
-        float x     = Mathf.Lerp(-hw, hw,     (float)rng.NextDouble());
-        float y     = Mathf.Lerp(bottom, top,  (float)rng.NextDouble());
-        float yRot  = (float)rng.NextDouble() * 360f;
-        float scale = Mathf.Lerp(holdMinScale, holdMaxScale,
-                                  (float)rng.NextDouble());
+        if (holdMesh == null || holdMaterial == null) return;
+        holdMaterial.enableInstancing = true;
 
-        Vector3    worldPos = transform.TransformPoint(
-                                  new Vector3(x, y, holdProtrusion));
-        Quaternion worldRot = transform.rotation *
-                              Quaternion.Euler(0f, yRot, 0f);
+        // Create property block here — before the loop
+        _holdPropertyBlock = new MaterialPropertyBlock();
 
-        _holdMatrices[i] = Matrix4x4.TRS(worldPos, worldRot,
-                                          Vector3.one * scale);
+        float hw     = width * 0.5f - edgeMargin;
+        float top    =  initialVisibleHeight - edgeMargin;
+        float bottom = -(totalHeight - initialVisibleHeight) + edgeMargin;
+
+        var rng = new System.Random(randomSeed + name.GetHashCode());
+        _holdMatrices = new Matrix4x4[holdCount];
+        _holdColors   = new Vector4[holdCount];
+
+        for (int i = 0; i < holdCount; i++)
+        {
+            float x     = Mathf.Lerp(-hw, hw,    (float)rng.NextDouble());
+            float y     = Mathf.Lerp(bottom, top, (float)rng.NextDouble());
+            float yRot  = (float)rng.NextDouble() * 360f;
+            float scale = Mathf.Lerp(holdMinScale, holdMaxScale,
+                (float)rng.NextDouble());
+
+            Vector3    worldPos = transform.TransformPoint(
+                new Vector3(x, y, holdProtrusion));
+            Quaternion baseRot    = transform.rotation *
+                                    Quaternion.Euler(holdRotationOffset);
+            Quaternion randomSpin = Quaternion.AngleAxis(yRot, transform.forward);
+            Quaternion worldRot   = randomSpin * baseRot;
+
+            _holdMatrices[i] = Matrix4x4.TRS(worldPos, worldRot,
+                Vector3.one * scale);
+
+            // Random color from palette
+            Color c = holdColors.Length > 0
+                ? holdColors[rng.Next(holdColors.Length)]
+                : Color.white;
+            _holdColors[i] = new Vector4(c.r, c.g, c.b, c.a);
+        }
+
+        _holdsReady = true;
+        Debug.Log($"GymWall '{name}': {holdCount} holds spawned.");
     }
-
-    _holdsReady = true;
-    Debug.Log($"GymWall '{name}': {holdCount} holds spawned across " +
-              $"{totalHeight}m total height.");
-}
 
     // ────────────────────────────────────────────────────────────────────────
     // Helpers
