@@ -8,12 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRClimbingExposureSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRClimbingExposureSimulator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ExperimentScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PyramidWallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PyramidWallBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WallcManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WallcManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/Project Configuration/SampleScene.scenetemplate" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Project Configuration/SampleScene.scenetemplate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp__1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Assembly-CSharp__1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataUsage.c" beforeDir="false" afterPath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Il2CppMetadataUsage.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Symbols/LineNumberMappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TESTVERSION222_BackUpThisFolder_ButDontShipItWithYourGame/il2cppOutput/Symbols/LineNumberMappings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +117,7 @@
       <workItem from="1777223079799" duration="151000" />
       <workItem from="1777274510700" duration="1323000" />
       <workItem from="1777308279766" duration="648000" />
+      <workItem from="1777375341111" duration="807000" />
     </task>
     <servers />
   </component>
