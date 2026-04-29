@@ -65,6 +65,12 @@ extern void EnvironmentSwitcher_UpdateStatusText_m461FC6BC5C5A575DFDB1DCBEB96460
 extern void EnvironmentSwitcher_GetDevice_m7001E8B48AD5B3F11EEEA5992B7CF76BAE339F75 (void);
 extern void EnvironmentSwitcher__ctor_mCD2B5096AB4B74BCDBB5B30AB17DD3DC94150FA6 (void);
 extern void EnvironmentPreset__ctor_mEA07A63F2192BE91C2248611B8B9E51CF0127E70 (void);
+extern void GymWall_Start_m2CB5E0948ACBC2366C55A0E6CAE31C827FAB94F9 (void);
+extern void GymWall_Update_mF71D94ED143CCE32F0ADF17E1D30F5FDE602F8D2 (void);
+extern void GymWall_BuildWallMesh_m824FC2A961935D4A120CF53229246B8AB5D10313 (void);
+extern void GymWall_SpawnHolds_m520C5A4A126949B046771365DE51C6005C3198E7 (void);
+extern void GymWall_CreateDefaultMaterial_m2E483EC7E873BFE6E5F52883BE9C8EDAE3BD2CFE (void);
+extern void GymWall__ctor_mE0297EC27B4507780C70C9F6ECF423DC283BE8F5 (void);
 extern void HeightController_Update_m8DA2E2068BAE2869D94AED1F5C19F8FADA7A69FF (void);
 extern void HeightController_Rebuild_mB89ABD39755A9EBBD617D489B26D4B6318D50AF0 (void);
 extern void HeightController_ForceRebuild_m248F935324041E9A6E19690735D5FCB8512DC411 (void);
@@ -123,6 +129,7 @@ extern void WallFrustumCalibrator_ComputeWallFrame_m2F3BA7F103E2A12483417583D351
 extern void WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD (void);
 extern void WallFrustumCalibrator_OnValidate_m7A2340E1C0ADD72B9386984ADF3BB5C50EB2DD86 (void);
 extern void WallFrustumCalibrator_RebuildPreviewHolds_m8697E71B0A1156C10CF3145887393998936AE581 (void);
+extern void WallFrustumCalibrator_SpawnGymHolds_m88EDB991D72079E158324B4FEC158AC49B04B435 (void);
 extern void WallFrustumCalibrator_CalibrateFromScan_mAEA8D00794F7B3B94E5CE5C9766806FD325D491A (void);
 extern void WallFrustumCalibrator_ResetCalibration_m721A9FB50BC77F0A6CCEA65628FDFA52AF9D10E8 (void);
 extern void WallFrustumCalibrator_get_WallNormal_m0BA6302EB658E617581AA120BDF2093C9890D4B3 (void);
@@ -135,8 +142,9 @@ extern void WallFrustumCalibrator_GetDevice_mE4457C5D5F80C92120A6A94328C8D0CA836
 extern void WallFrustumCalibrator_SendHaptic_m1BA42EA667347127D3587B5A24AEFD2D5B8B3C8B (void);
 extern void WallFrustumCalibrator_BuildDefaultMaterial_m1D347C2B506AAEBBE204A4809FF07B686F58C9E0 (void);
 extern void WallFrustumCalibrator__ctor_m276D5613F8FEAE017558C164CC06F43162EB4CEB (void);
-extern void WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C48_0_m2580C060159B5B8235388752EA8EB3FF091745F0 (void);
-extern void WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C50_0_mBD88643A9B2313AC29C1389F435CB8B4B7CC0219 (void);
+extern void WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C61_0_m1D66A6157D6A423D9608FDA922C4F90A6EAF9123 (void);
+extern void WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C63_0_m3E446112156D2D7D0ED23A5636C50E893C709258 (void);
+extern void WallFrustumCalibrator_U3CSpawnGymHoldsU3Eg__WU7C64_0_m29D00DAA4D5528FDDDAEDB6F81F21C818D73F317 (void);
 extern void RemoteControlServer_get_LocalIP_mE554AEBFC8BF00E22273BC282BFF784BE1625A0A (void);
 extern void RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247 (void);
 extern void RemoteControlServer_Start_m1E22DA33EF06A9CC71D2BED83F334BFD98ACD276 (void);
@@ -523,7 +531,7 @@ extern void RMFPSController_UnlockMouse_m2332B925B156C0C3F01DAEDBED79FEE39D0FB68
 extern void RMFPSController_LockMouse_mEB1FCB6BA153D83113B6E7E059449FA2433F82E0 (void);
 extern void RMFPSController__ctor_m283E0DCA6E534A31F9186931499D88748A8724FE (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[516] = 
+static Il2CppMethodPointer s_methodPointers[524] = 
 {
 	SlotPopulator_PopulateHolds_mF0C12C884F4C4E09C755EAF818DF8A5EBC6930C7,
 	SlotPopulator__ctor_m10F81468B1675042EDE8D1E250DFBC80DAE0E454,
@@ -583,6 +591,12 @@ static Il2CppMethodPointer s_methodPointers[516] =
 	EnvironmentSwitcher_GetDevice_m7001E8B48AD5B3F11EEEA5992B7CF76BAE339F75,
 	EnvironmentSwitcher__ctor_mCD2B5096AB4B74BCDBB5B30AB17DD3DC94150FA6,
 	EnvironmentPreset__ctor_mEA07A63F2192BE91C2248611B8B9E51CF0127E70,
+	GymWall_Start_m2CB5E0948ACBC2366C55A0E6CAE31C827FAB94F9,
+	GymWall_Update_mF71D94ED143CCE32F0ADF17E1D30F5FDE602F8D2,
+	GymWall_BuildWallMesh_m824FC2A961935D4A120CF53229246B8AB5D10313,
+	GymWall_SpawnHolds_m520C5A4A126949B046771365DE51C6005C3198E7,
+	GymWall_CreateDefaultMaterial_m2E483EC7E873BFE6E5F52883BE9C8EDAE3BD2CFE,
+	GymWall__ctor_mE0297EC27B4507780C70C9F6ECF423DC283BE8F5,
 	HeightController_Update_m8DA2E2068BAE2869D94AED1F5C19F8FADA7A69FF,
 	HeightController_Rebuild_mB89ABD39755A9EBBD617D489B26D4B6318D50AF0,
 	HeightController_ForceRebuild_m248F935324041E9A6E19690735D5FCB8512DC411,
@@ -641,6 +655,7 @@ static Il2CppMethodPointer s_methodPointers[516] =
 	WallFrustumCalibrator_BuildFrustumMesh_m06BDF677EBB45F0F51662865D555155DE32FBABD,
 	WallFrustumCalibrator_OnValidate_m7A2340E1C0ADD72B9386984ADF3BB5C50EB2DD86,
 	WallFrustumCalibrator_RebuildPreviewHolds_m8697E71B0A1156C10CF3145887393998936AE581,
+	WallFrustumCalibrator_SpawnGymHolds_m88EDB991D72079E158324B4FEC158AC49B04B435,
 	WallFrustumCalibrator_CalibrateFromScan_mAEA8D00794F7B3B94E5CE5C9766806FD325D491A,
 	WallFrustumCalibrator_ResetCalibration_m721A9FB50BC77F0A6CCEA65628FDFA52AF9D10E8,
 	WallFrustumCalibrator_get_WallNormal_m0BA6302EB658E617581AA120BDF2093C9890D4B3,
@@ -653,8 +668,9 @@ static Il2CppMethodPointer s_methodPointers[516] =
 	WallFrustumCalibrator_SendHaptic_m1BA42EA667347127D3587B5A24AEFD2D5B8B3C8B,
 	WallFrustumCalibrator_BuildDefaultMaterial_m1D347C2B506AAEBBE204A4809FF07B686F58C9E0,
 	WallFrustumCalibrator__ctor_m276D5613F8FEAE017558C164CC06F43162EB4CEB,
-	WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C48_0_m2580C060159B5B8235388752EA8EB3FF091745F0,
-	WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C50_0_mBD88643A9B2313AC29C1389F435CB8B4B7CC0219,
+	WallFrustumCalibrator_U3CBuildFrustumMeshU3Eg__PU7C61_0_m1D66A6157D6A423D9608FDA922C4F90A6EAF9123,
+	WallFrustumCalibrator_U3CRebuildPreviewHoldsU3Eg__WU7C63_0_m3E446112156D2D7D0ED23A5636C50E893C709258,
+	WallFrustumCalibrator_U3CSpawnGymHoldsU3Eg__WU7C64_0_m29D00DAA4D5528FDDDAEDB6F81F21C818D73F317,
 	RemoteControlServer_get_LocalIP_mE554AEBFC8BF00E22273BC282BFF784BE1625A0A,
 	RemoteControlServer_get_URL_mD5FC7CCD8F36A9A9CE330E97C7BA4497A0937247,
 	RemoteControlServer_Start_m1E22DA33EF06A9CC71D2BED83F334BFD98ACD276,
@@ -1057,13 +1073,13 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[9] =
 	{ 0x06000011, SerializableVector3_ToVector3_m34B0AA6CC8CB3BFC4AA47314259A28F089797E5D_AdjustorThunk },
 	{ 0x06000012, SerializableQuaternion__ctor_m67D8B7BBCE4E09BCF53AB62EF8E52F044C8CF212_AdjustorThunk },
 	{ 0x06000013, SerializableQuaternion_ToQuaternion_mF8B8846E28747024A59E538B08AAED63281C0848_AdjustorThunk },
-	{ 0x060000DE, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
-	{ 0x060001A5, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
-	{ 0x060001A6, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
-	{ 0x060001A7, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
-	{ 0x060001A8, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
+	{ 0x060000E6, WallPairAnalysis_ToString_m406C9CD0F94F927AEC9C654F2EE6CC66F2D1B6F1_AdjustorThunk },
+	{ 0x060001AD, TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8_AdjustorThunk },
+	{ 0x060001AE, TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425_AdjustorThunk },
+	{ 0x060001AF, TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E_AdjustorThunk },
+	{ 0x060001B0, TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[516] = 
+static const int32_t s_InvokerIndices[524] = 
 {
 	16918,
 	16918,
@@ -1127,6 +1143,12 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
+	16700,
+	16918,
+	16918,
+	16918,
+	16918,
+	16918,
 	16611,
 	16918,
 	16918,
@@ -1157,18 +1179,18 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	20743,
-	21175,
-	17982,
-	27833,
+	20744,
+	21176,
+	17983,
+	27834,
 	17752,
-	19906,
+	19907,
 	17672,
 	17548,
-	19965,
-	27460,
-	23955,
-	23292,
+	19966,
+	27461,
+	23956,
+	23293,
 	16627,
 	12762,
 	16918,
@@ -1177,9 +1199,10 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	22162,
+	22163,
 	16918,
 	16918,
+	1097,
 	1097,
 	6709,
 	16918,
@@ -1193,6 +1216,7 @@ static const int32_t s_InvokerIndices[516] =
 	6642,
 	16700,
 	16918,
+	1813,
 	1813,
 	1813,
 	16700,
@@ -1281,13 +1305,13 @@ static const int32_t s_InvokerIndices[516] =
 	6844,
 	16700,
 	16700,
-	27466,
-	19181,
+	27467,
+	19182,
 	16918,
 	16918,
 	16918,
 	16700,
-	29229,
+	29230,
 	16918,
 	9610,
 	16627,
@@ -1331,14 +1355,14 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	24551,
+	24552,
 	16918,
-	23202,
-	21245,
+	23203,
+	21246,
 	13027,
 	16490,
 	16918,
-	21045,
+	21046,
 	2973,
 	16490,
 	16918,
@@ -1364,8 +1388,8 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	29229,
-	29280,
+	29230,
+	29281,
 	16918,
 	16918,
 	16918,
@@ -1379,7 +1403,7 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	18547,
+	18548,
 	16918,
 	16918,
 	16918,
@@ -1420,7 +1444,7 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	27063,
+	27064,
 	16918,
 	16918,
 	12833,
@@ -1481,7 +1505,7 @@ static const int32_t s_InvokerIndices[516] =
 	12931,
 	16810,
 	16918,
-	21177,
+	21178,
 	16918,
 	16918,
 	16918,
@@ -1580,13 +1604,13 @@ static const int32_t s_InvokerIndices[516] =
 	16918,
 	16918,
 	16918,
-	27721,
+	27722,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	516,
+	524,
 	s_methodPointers,
 	9,
 	s_adjustorThunks,
