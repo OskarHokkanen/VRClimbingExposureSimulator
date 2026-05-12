@@ -2,6 +2,7 @@
   "dependencies": {
     "com.unity.feature.development": "1.0.2",
     "com.unity.ide.rider": "3.0.38",
+    "com.unity.importer.usd": "1.0.0-pre.2",
     "com.unity.inputsystem": "1.18.0",
     "com.unity.learn.iet-framework": "5.0.2",
     "com.unity.mobile.android-logcat": "1.4.7",
