@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CalibrateWallScan.unity
     guid: 89364b17adab7564b8e8e5a553ca808d
+  - enabled: 0
+    path: Assets/Scenes/OutdoorTestScene.unity
+    guid: 31acf2ffa0a599947901972a6fbe2b6c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
