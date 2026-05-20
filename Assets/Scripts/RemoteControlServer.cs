@@ -572,7 +572,7 @@ h2 { font-size: 14px; font-weight: 500; color: #888; text-transform: uppercase;
   <h2>Wall Height</h2>
   <div class=""slider-row"">
     <label>Height</label>
-    <input type=""range"" id=""wallHeight"" min=""2"" max=""50"" step=""0.5"" value=""5"">
+    <input type=""range"" id=""wallHeight"" min=""0"" max=""100"" step=""0.5"" value=""5"">
     <span class=""val"" id=""wallHeight-val"">5.0m</span>
   </div>
 </div>

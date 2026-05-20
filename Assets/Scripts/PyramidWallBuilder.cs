@@ -7,6 +7,7 @@ using TMPro;
 [ExecuteAlways]
 public class WallFrustumCalibrator : MonoBehaviour
 {
+    public bool gymHoldsOnNearFace = false;
     public enum ControllerHand { Right, Left }
     public enum FrustumMode { Frustum, FlatWall }
 
@@ -266,81 +267,100 @@ public class WallFrustumCalibrator : MonoBehaviour
     // ────────────────────────────────────────────────────────────────────
 
     public void BuildFrustumMesh()
+{
+    if (!_calibrated) return;
+
+    Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
+
+    float nHW = nearWidth  * 0.5f;
+    float nHH = nearHeight * 0.5f;
+    float fHW = farWidth   * 0.5f;
+    float fHH = farHeight  * 0.5f;
+
+    float nearHW = mode == FrustumMode.FlatWall ? fHW : nHW;
+    float nearHH = mode == FrustumMode.FlatWall ? fHH : nHH;
+
+    Vector3 P(float x, float y, float z) =>
+        _wallRight * x + _wallUp * y + normal * z;
+
+    Vector3 n0 = P(-nearHW, -nearHH, 0f);
+    Vector3 n1 = P( nearHW, -nearHH, 0f);
+    Vector3 n2 = P( nearHW,  nearHH, 0f);
+    Vector3 n3 = P(-nearHW,  nearHH, 0f);
+
+    Vector3 f0 = P(-fHW, -fHH, farDistance);
+    Vector3 f1 = P( fHW, -fHH, farDistance);
+    Vector3 f2 = P( fHW,  fHH, farDistance);
+    Vector3 f3 = P(-fHW,  fHH, farDistance);
+
+    Vector3[] vertices =
     {
-        if (!_calibrated) return;
+        n0, n1, n2, n3,
+        n0, n1, f1, f0,
+        n3, n2, f2, f3,
+        f0, n0, n3, f3,
+        n1, f1, f2, n2,
 
-        Vector3 normal = flipDirection ? -_wallNormal : _wallNormal;
+        n0, n1, n2, n3,
+        n0, n1, f1, f0,
+        n3, n2, f2, f3,
+        f0, n0, n3, f3,
+        n1, f1, f2, n2,
+    };
 
-        float nHW = nearWidth  * 0.5f;
-        float nHH = nearHeight * 0.5f;
-        float fHW = farWidth   * 0.5f;
-        float fHH = farHeight  * 0.5f;
+    int[] triangles =
+    {
+         2,  1,  0,   3,  2,  0,
+         4,  5,  6,   4,  6,  7,
+         8,  9, 10,   8, 10, 11,
+        12, 13, 14,  12, 14, 15,
+        16, 17, 18,  16, 18, 19,
 
-        float nearHW = mode == FrustumMode.FlatWall ? fHW : nHW;
-        float nearHH = mode == FrustumMode.FlatWall ? fHH : nHH;
+        20, 21, 22,  20, 22, 23,
+        25, 24, 26,  26, 24, 27,
+        29, 28, 30,  30, 28, 31,
+        33, 32, 34,  34, 32, 35,
+        37, 36, 38,  38, 36, 39,
+    };
 
-        Vector3 P(float x, float y, float z) =>
-            _wallRight * x + _wallUp * y + normal * z;
+    // ── World-space UVs — 1 UV unit = 1 metre, no stretching ──────────
+    Vector2[] uvs = new Vector2[40];
 
-        Vector3 n0 = P(-nearHW, -nearHH, 0f);
-        Vector3 n1 = P( nearHW, -nearHH, 0f);
-        Vector3 n2 = P( nearHW,  nearHH, 0f);
-        Vector3 n3 = P(-nearHW,  nearHH, 0f);
-
-        Vector3 f0 = P(-fHW, -fHH, farDistance);
-        Vector3 f1 = P( fHW, -fHH, farDistance);
-        Vector3 f2 = P( fHW,  fHH, farDistance);
-        Vector3 f3 = P(-fHW,  fHH, farDistance);
-
-        Vector3[] vertices =
-        {
-            n0, n1, n2, n3,
-            n0, n1, f1, f0,
-            n3, n2, f2, f3,
-            f0, n0, n3, f3,
-            n1, f1, f2, n2,
-
-            n0, n1, n2, n3,
-            n0, n1, f1, f0,
-            n3, n2, f2, f3,
-            f0, n0, n3, f3,
-            n1, f1, f2, n2,
-        };
-
-        int[] triangles =
-        {
-             2,  1,  0,   3,  2,  0,
-             4,  5,  6,   4,  6,  7,
-             8,  9, 10,   8, 10, 11,
-            12, 13, 14,  12, 14, 15,
-            16, 17, 18,  16, 18, 19,
-
-            20, 21, 22,  20, 22, 23,
-            25, 24, 26,  26, 24, 27,
-            29, 28, 30,  30, 28, 31,
-            33, 32, 34,  34, 32, 35,
-            37, 36, 38,  38, 36, 39,
-        };
-
-        Vector2[] uvs = new Vector2[40];
-        for (int i = 0; i < 40; i += 4)
-        {
-            uvs[i + 0] = new Vector2(0, 0);
-            uvs[i + 1] = new Vector2(1, 0);
-            uvs[i + 2] = new Vector2(1, 1);
-            uvs[i + 3] = new Vector2(0, 1);
-        }
-
-        _mesh.Clear();
-        _mesh.vertices  = vertices;
-        _mesh.triangles = triangles;
-        _mesh.uv        = uvs;
-        _mesh.RecalculateNormals();
-        _mesh.RecalculateBounds();
-
-        RebuildPreviewHolds(normal, nearHW, nearHH, fHW, fHH);
-        SpawnGymHolds(normal, nearHW, nearHH, fHW, fHH);
+    void SetFaceUVs(int startIdx, Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3)
+    {
+        Vector3 uAxis = (v1 - v0).normalized;
+        Vector3 vAxis = (v3 - v0).normalized;
+        uvs[startIdx + 0] = new Vector2(0, 0);
+        uvs[startIdx + 1] = new Vector2(Vector3.Dot(v1 - v0, uAxis), 0);
+        uvs[startIdx + 2] = new Vector2(Vector3.Dot(v2 - v0, uAxis),
+                                         Vector3.Dot(v2 - v0, vAxis));
+        uvs[startIdx + 3] = new Vector2(0, Vector3.Dot(v3 - v0, vAxis));
     }
+
+    // Front faces
+    SetFaceUVs( 0, n0, n1, n2, n3);  // Near cap
+    SetFaceUVs( 4, n0, n1, f1, f0);  // Bottom
+    SetFaceUVs( 8, n3, n2, f2, f3);  // Top
+    SetFaceUVs(12, f0, n0, n3, f3);  // Left
+    SetFaceUVs(16, n1, f1, f2, n2);  // Right
+
+    // Back faces — same UVs as front
+    SetFaceUVs(20, n0, n1, n2, n3);
+    SetFaceUVs(24, n0, n1, f1, f0);
+    SetFaceUVs(28, n3, n2, f2, f3);
+    SetFaceUVs(32, f0, n0, n3, f3);
+    SetFaceUVs(36, n1, f1, f2, n2);
+
+    _mesh.Clear();
+    _mesh.vertices  = vertices;
+    _mesh.triangles = triangles;
+    _mesh.uv        = uvs;
+    _mesh.RecalculateNormals();
+    _mesh.RecalculateBounds();
+
+    RebuildPreviewHolds(normal, nearHW, nearHH, fHW, fHH);
+    SpawnGymHolds(normal, nearHW, nearHH, fHW, fHH);
+}
 
     private void OnValidate() => BuildFrustumMesh();
 
@@ -428,93 +448,104 @@ public class WallFrustumCalibrator : MonoBehaviour
     // ────────────────────────────────────────────────────────────────────
 
     private void SpawnGymHolds(Vector3 normal,
-        float nearHW, float nearHH, float fHW, float fHH)
+    float nearHW, float nearHH, float fHW, float fHH)
+{
+    _gymHoldsReady = false;
+
+    if (gymHoldMesh == null || gymHoldMaterial == null) return;
+    gymHoldMaterial.enableInstancing = true;
+
+    _gymHoldBlock = new MaterialPropertyBlock();
+
+    Vector3 origin = transform.position;
+
+    Vector3 W(float x, float y, float z) =>
+        origin + _wallRight * x + _wallUp * y + normal * z;
+
+    // 4 side faces — near face excluded by default
+    var faces = new List<(Vector3 c00, Vector3 c10, Vector3 c01,
+                           Vector3 c11, Vector3 faceNormal)>
     {
-        _gymHoldsReady = false;
+        // Bottom
+        ( W(-nearHW, -nearHH, 0f), W( nearHW, -nearHH, 0f),
+          W(-fHW,    -fHH, farDistance), W( fHW, -fHH, farDistance),
+          _wallUp ),
+        // Top
+        ( W(-nearHW,  nearHH, 0f), W( nearHW,  nearHH, 0f),
+          W(-fHW,     fHH, farDistance), W( fHW,  fHH, farDistance),
+          -_wallUp ),
+        // Left
+        ( W(-nearHW, -nearHH, 0f), W(-nearHW,  nearHH, 0f),
+          W(-fHW,    -fHH, farDistance), W(-fHW,  fHH, farDistance),
+          _wallRight ),
+        // Right
+        ( W( nearHW, -nearHH, 0f), W( nearHW,  nearHH, 0f),
+          W( fHW,    -fHH, farDistance), W( fHW,  fHH, farDistance),
+          -_wallRight ),
+    };
 
-        if (gymHoldMesh == null || gymHoldMaterial == null) return;
-        gymHoldMaterial.enableInstancing = true;
-
-        _gymHoldBlock = new MaterialPropertyBlock();
-
-        Vector3 origin = transform.position;
-
-        Vector3 W(float x, float y, float z) =>
-            origin + _wallRight * x + _wallUp * y + normal * z;
-
-        var faces = new (Vector3 c00, Vector3 c10, Vector3 c01,
-                         Vector3 c11, Vector3 faceNormal)[]
-        {
-            // Bottom
-            ( W(-nearHW, -nearHH, 0f), W( nearHW, -nearHH, 0f),
-              W(-fHW,    -fHH, farDistance), W( fHW, -fHH, farDistance),
-              _wallUp ),
-            // Top
-            ( W(-nearHW,  nearHH, 0f), W( nearHW,  nearHH, 0f),
-              W(-fHW,     fHH, farDistance), W( fHW,  fHH, farDistance),
-              -_wallUp ),
-            // Left
-            ( W(-nearHW, -nearHH, 0f), W(-nearHW,  nearHH, 0f),
-              W(-fHW,    -fHH, farDistance), W(-fHW,  fHH, farDistance),
-              _wallRight ),
-            // Right
-            ( W( nearHW, -nearHH, 0f), W( nearHW,  nearHH, 0f),
-              W( fHW,    -fHH, farDistance), W( fHW,  fHH, farDistance),
-              -_wallRight ),
-        };
-
-        int perFace = Mathf.Max(1, gymHoldCount / faces.Length);
-        int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
-        int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
-        int total   = faces.Length * rows * cols;
-
-        _gymHoldMatrices = new Matrix4x4[total];
-        _gymHoldColors   = new Vector4[total];
-
-        var rng = new System.Random(gymHoldSeed);
-        int idx = 0;
-
-        foreach (var face in faces)
-        {
-            for (int row = 0; row < rows; row++)
-            for (int col = 0; col < cols; col++)
-            {
-                float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
-                float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
-
-                Vector3 pos = Vector3.Lerp(
-                    Vector3.Lerp(face.c00, face.c10, tCol),
-                    Vector3.Lerp(face.c01, face.c11, tCol),
-                    tRow);
-
-                pos += face.faceNormal * gymHoldProtrusion;
-
-                float scale = Mathf.Lerp(gymHoldMinScale, gymHoldMaxScale,
-                                          (float)rng.NextDouble());
-                float yRot  = (float)rng.NextDouble() * 360f;
-
-                Quaternion baseRot    = Quaternion.LookRotation(
-                                            -face.faceNormal, _wallUp) *
-                                        Quaternion.Euler(gymHoldRotationOffset);
-                Quaternion randomSpin = Quaternion.AngleAxis(
-                                            yRot, -face.faceNormal);
-                Quaternion worldRot   = randomSpin * baseRot;
-
-                _gymHoldMatrices[idx] = Matrix4x4.TRS(pos, worldRot,
-                                                       Vector3.one * scale);
-
-                Color c = gymHoldColors.Length > 0
-                    ? gymHoldColors[rng.Next(gymHoldColors.Length)]
-                    : Color.white;
-                _gymHoldColors[idx] = new Vector4(c.r, c.g, c.b, c.a);
-
-                idx++;
-            }
-        }
-
-        _gymHoldsReady = true;
-        Debug.Log($"[WallFrustum] {total} gym holds spawned (GPU instanced).");
+    // Optionally add near face
+    if (gymHoldsOnNearFace)
+    {
+        faces.Add((
+            W(-nearHW, -nearHH, 0f), W( nearHW, -nearHH, 0f),
+            W(-nearHW,  nearHH, 0f), W( nearHW,  nearHH, 0f),
+            -normal ));
     }
+
+    int perFace = Mathf.Max(1, gymHoldCount / faces.Count);
+    int cols    = Mathf.Max(1, Mathf.CeilToInt(Mathf.Sqrt(perFace)));
+    int rows    = Mathf.Max(1, Mathf.CeilToInt((float)perFace / cols));
+    int total   = faces.Count * rows * cols;
+
+    _gymHoldMatrices = new Matrix4x4[total];
+    _gymHoldColors   = new Vector4[total];
+
+    var rng = new System.Random(gymHoldSeed);
+    int idx = 0;
+
+    foreach (var face in faces)
+    {
+        for (int row = 0; row < rows; row++)
+        for (int col = 0; col < cols; col++)
+        {
+            float tCol = cols > 1 ? (col + 0.5f) / cols : 0.5f;
+            float tRow = rows > 1 ? (row + 0.5f) / rows : 0.5f;
+
+            Vector3 pos = Vector3.Lerp(
+                Vector3.Lerp(face.c00, face.c10, tCol),
+                Vector3.Lerp(face.c01, face.c11, tCol),
+                tRow);
+
+            pos += face.faceNormal * gymHoldProtrusion;
+
+            float scale = Mathf.Lerp(gymHoldMinScale, gymHoldMaxScale,
+                                      (float)rng.NextDouble());
+            float yRot  = (float)rng.NextDouble() * 360f;
+
+            Quaternion baseRot    = Quaternion.LookRotation(
+                                        -face.faceNormal, _wallUp) *
+                                    Quaternion.Euler(gymHoldRotationOffset);
+            Quaternion randomSpin = Quaternion.AngleAxis(
+                                        yRot, -face.faceNormal);
+            Quaternion worldRot   = randomSpin * baseRot;
+
+            _gymHoldMatrices[idx] = Matrix4x4.TRS(pos, worldRot,
+                                                   Vector3.one * scale);
+
+            Color c = gymHoldColors.Length > 0
+                ? gymHoldColors[rng.Next(gymHoldColors.Length)]
+                : Color.white;
+            _gymHoldColors[idx] = new Vector4(c.r, c.g, c.b, c.a);
+
+            idx++;
+        }
+    }
+
+    _gymHoldsReady = true;
+    Debug.Log($"[WallFrustum] {total} gym holds spawned across " +
+              $"{faces.Count} faces (GPU instanced).");
+}
 
     // ────────────────────────────────────────────────────────────────────
     // Public API
@@ -532,7 +563,7 @@ public class WallFrustumCalibrator : MonoBehaviour
 
         ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
 
-        transform.position = _wallCenter - flatNormal * 0.3f;
+        transform.position = _wallCenter - flatNormal * 0.09f; //0.05 Gasverket 4.5 Telefon
 
         _calibrated  = true;
         CurrentPhase = Phase.Done;
