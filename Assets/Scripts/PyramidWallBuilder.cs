@@ -563,7 +563,7 @@ public class WallFrustumCalibrator : MonoBehaviour
 
         ComputeWallFrame(_wallNormal, out _wallRight, out _wallUp);
 
-        transform.position = _wallCenter - flatNormal * 0.5f; //0.05 Gasverket 4.5 Telefon
+        transform.position = _wallCenter - flatNormal * 0.05f; //0.05 Gasverket 4.5 Telefon
 
         _calibrated  = true;
         CurrentPhase = Phase.Done;
