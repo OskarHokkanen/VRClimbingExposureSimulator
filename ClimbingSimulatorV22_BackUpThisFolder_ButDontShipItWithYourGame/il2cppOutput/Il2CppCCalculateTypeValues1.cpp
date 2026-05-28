@@ -37313,18 +37313,19 @@ struct ControllerHand_t790220A80F0A198CBFF57B3319C690D312D4F0A8
 {
 	int32_t ___value__;
 };
-struct U3CU3Ec__DisplayClass61_0_t45C0E204528583342BB48BF5B20E1354797A58C4 
+struct U3CU3Ec__DisplayClass62_0_tDF2D0EF51FCA6FAB80D0B280624A50774FA26235 
 {
 	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___U3CU3E4__this;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___uvs;
 };
-struct U3CU3Ec__DisplayClass63_0_t89FC2D8F82C9F9C67519777D435DC16652DBF364 
+struct U3CU3Ec__DisplayClass64_0_t314DDFF8AFDFA7206D3A4DDB6D37D0BC079298AC 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___origin;
 	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___U3CU3E4__this;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal;
 };
-struct U3CU3Ec__DisplayClass64_0_t314DDFF8AFDFA7206D3A4DDB6D37D0BC079298AC 
+struct U3CU3Ec__DisplayClass65_0_tE9A4EEE7A9881A58FBEC75B521A4C800CAAF39D1 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___origin;
 	WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE* ___U3CU3E4__this;
@@ -56007,6 +56008,7 @@ struct WallCalibrationManager_t15B1AB584B8DA00A167CE23F77854775B79D062A  : publi
 };
 struct WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	bool ___gymHoldsOnNearFace;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___rightController;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___leftController;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___statusText;
@@ -71478,11 +71480,11 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize9428 = { sizeof(int32_t)+ si
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9429;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9429 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9430;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9430 = { sizeof(U3CU3Ec__DisplayClass61_0_t45C0E204528583342BB48BF5B20E1354797A58C4)+ sizeof(RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9430 = { sizeof(U3CU3Ec__DisplayClass62_0_tDF2D0EF51FCA6FAB80D0B280624A50774FA26235)+ sizeof(RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9431;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9431 = { sizeof(U3CU3Ec__DisplayClass63_0_t89FC2D8F82C9F9C67519777D435DC16652DBF364)+ sizeof(RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9431 = { sizeof(U3CU3Ec__DisplayClass64_0_t314DDFF8AFDFA7206D3A4DDB6D37D0BC079298AC)+ sizeof(RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9432;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize9432 = { sizeof(U3CU3Ec__DisplayClass64_0_t314DDFF8AFDFA7206D3A4DDB6D37D0BC079298AC)+ sizeof(RuntimeObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize9432 = { sizeof(U3CU3Ec__DisplayClass65_0_tE9A4EEE7A9881A58FBEC75B521A4C800CAAF39D1)+ sizeof(RuntimeObject), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9433;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize9433 = { sizeof(WallFrustumCalibrator_tEC44F0259BB8566FC495B805E9F3A16FD9EEA3EE), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize9434;
